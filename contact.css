@@ -1,249 +1,208 @@
-/* Contact Page Styling overrides */
+/* ============================================================
+   CONTACT PAGE — Aligned to Grand Holidays Design System v2.0
+   Deep Navy · Amber Gold · High Contrast
+   ============================================================ */
 
-/* Contact Hero Banner */
+/* Contact Hero */
 .contact-hero {
     position: relative;
-    height: 50vh;
-    min-height: 380px;
+    height: 52vh;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: radial-gradient(circle at center, hsla(202, 85%, 48%, 0.08) 0%, transparent 60%);
-    border-bottom: 1px solid var(--glass-border);
-    padding-top: 5rem;
+    border-bottom: 1px solid var(--navy-border);
+    padding-top: 5.5rem;
+    background:
+        radial-gradient(ellipse at 50% 0%, hsla(40, 90%, 54%, 0.1) 0%, transparent 65%),
+        var(--navy-mid);
+    overflow: hidden;
 }
-
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('assets/hero_banner.png') center/cover no-repeat;
+    opacity: 0.1;
+    filter: saturate(0.4);
+}
 .contact-hero-content {
-    max-width: 850px;
+    max-width: 860px;
     padding: 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
-
 .contact-badge {
     display: inline-block;
-    border: 1px solid var(--gold-main);
-    color: var(--gold-light);
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 2.5px;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    color: var(--amber);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    padding: 0.4rem 1.2rem;
-    border-radius: 4px;
+    padding: 0.45rem 1.4rem;
+    border-radius: var(--radius-pill);
     margin-bottom: 1.5rem;
     background: rgba(212, 175, 55, 0.08);
 }
-
 .contact-main-title {
     font-size: clamp(2.2rem, 5vw, 3.8rem);
     font-weight: 700;
-    color: var(--text-light);
+    color: var(--ivory);
     margin-bottom: 1.2rem;
     letter-spacing: 2px;
 }
-
 .contact-hero-subtitle {
+    font-family: var(--font-display);
     font-size: 1.15rem;
-    color: var(--text-light-muted);
+    font-style: italic;
+    color: var(--ivory-muted);
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Contact Main Section */
+/* Contact Main Layout */
 .contact-main-section {
     padding: 6rem 0;
+    background: var(--navy);
 }
-
 .contact-layout-box {
-    padding: 5rem 4.5rem;
-    border-color: var(--gold-border);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 244, 248, 0.85) 100%);
+    padding: clamp(3rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
+    background: rgba(255,255,255,0.025);
+    border-color: rgba(212, 175, 55, 0.3);
 }
-
 .contact-layout-grid {
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
     gap: 6rem;
 }
-
-.contact-left-col {
-    display: flex;
-    flex-direction: column;
+.contact-left-col { display: flex; flex-direction: column; }
+.block-title {
+    font-size: 1.8rem;
+    color: var(--amber);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--navy-border);
+    padding-bottom: 0.8rem;
 }
-
 .block-desc {
-    font-size: 0.95rem;
-    color: var(--text-light-muted);
+    font-size: 0.92rem;
+    color: var(--ivory-muted);
     margin-bottom: 3rem;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
-.offices-details-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-
-.office-item {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-}
-
+/* Office Contacts */
+.offices-details-list { display: flex; flex-direction: column; gap: 2.2rem; }
+.office-item { display: flex; gap: 1.4rem; align-items: flex-start; }
 .office-icon {
-    font-size: 1.8rem;
-    background: rgba(0, 0, 0, 0.02);
-    border: 1px solid var(--glass-border);
-    width: 55px;
-    height: 55px;
+    font-size: 1.6rem;
+    background: rgba(212,175,55,0.08);
+    border: 1px solid rgba(212,175,55,0.25);
+    width: 54px; height: 54px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--gold-light);
+    color: var(--amber);
     flex-shrink: 0;
+    transition: var(--t-fast);
 }
-
 .office-info h4 {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: var(--text-light);
+    color: var(--ivory);
     margin-bottom: 0.3rem;
 }
-.office-info p {
-    font-size: 0.88rem;
-    color: var(--text-light-muted);
-    font-weight: 300;
-    line-height: 1.4;
-}
-
-.office-detail-link {
-    margin-top: 0.3rem;
-    color: var(--text-light) !important;
-}
-
+.office-info p { font-size: 0.85rem; color: var(--ivory-muted); font-weight: 300; line-height: 1.5; }
+.office-detail-link { margin-top: 0.3rem; color: var(--ivory-muted); }
 .office-wa-link {
-    color: #25d366;
-    font-weight: 500;
+    color: #4add8a;
+    font-weight: 600;
     display: inline-block;
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
+    transition: var(--t-fast);
 }
-.office-wa-link:hover {
-    color: #128c7e;
-    text-shadow: none;
-}
+.office-wa-link:hover { color: #25d366; text-shadow: 0 0 12px rgba(37,211,102,0.4); }
 
-/* Right Form */
-.contact-right-col {
-    display: flex;
-    flex-direction: column;
-}
+/* Right Contact Form */
+.contact-right-col { display: flex; flex-direction: column; }
+.contact-page-form { display: flex; flex-direction: column; gap: 2rem; }
 
-.contact-page-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-/* FAQ Section Styling */
+/* FAQ Section */
 .contact-faq-section {
-    padding: 6rem 0 10rem;
-    background: linear-gradient(to bottom, var(--bg-dark), var(--sky-blue-ultra-dark) 60%, var(--bg-dark));
+    padding: 6rem 0 8rem;
+    background: var(--navy-mid);
+    border-top: 1px solid var(--navy-border);
 }
-
 .faq-container {
-    max-width: 850px;
+    max-width: 860px;
     margin: 4rem auto 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
-
 .faq-item {
-    border-color: var(--glass-border);
-    transition: var(--transition-smooth);
-    background: var(--bg-dark-card);
+    border: 1px solid var(--navy-border);
+    border-radius: var(--radius-sm);
+    background: var(--navy-card);
+    transition: border-color 0.3s ease;
+    overflow: hidden;
 }
-.faq-item:hover {
-    border-color: var(--gold-border);
-}
-
+.faq-item:hover { border-color: rgba(212,175,55,0.3); }
 .faq-question {
-    padding: 1.8rem 2.5rem;
+    padding: 1.6rem 2.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-family: var(--font-body);
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
-    color: var(--text-light);
+    color: var(--ivory);
     user-select: none;
+    transition: color 0.2s ease;
 }
-
+.faq-question:hover { color: var(--amber); }
 .faq-icon {
-    font-size: 1.2rem;
-    color: var(--gold-light);
+    font-size: 1.4rem;
+    color: var(--amber);
     transition: transform 0.4s ease;
     flex-shrink: 0;
     margin-left: 1.5rem;
+    line-height: 1;
 }
-
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.4s ease;
-    padding: 0 2.5rem;
+    transition: max-height 0.45s var(--ease-out), padding 0.3s ease;
+    padding: 0 2.2rem;
 }
 .faq-answer p {
-    font-size: 0.95rem;
-    color: var(--text-light-muted);
+    font-size: 0.92rem;
+    color: var(--ivory-muted);
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.7;
     padding-bottom: 1.8rem;
 }
-
-/* Active FAQ Item states */
 .faq-item.active {
-    border-color: var(--gold-border);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 244, 248, 0.9) 100%);
+    border-color: var(--amber);
+    background: rgba(212,175,55,0.04);
 }
-.faq-item.active .faq-answer {
-    max-height: 250px; /* Expands dynamically */
-}
-.faq-item.active .faq-icon {
-    transform: rotate(45deg);
-    color: var(--text-light);
-}
+.faq-item.active .faq-answer { max-height: 300px; }
+.faq-item.active .faq-icon { transform: rotate(45deg); color: var(--ivory); }
 
-/* Responsive configurations */
+/* Responsive */
 @media (max-width: 1024px) {
-    .contact-layout-grid {
-        grid-template-columns: 1fr;
-        gap: 5rem;
-    }
+    .contact-layout-grid { grid-template-columns: 1fr; gap: 4.5rem; }
 }
-
 @media (max-width: 768px) {
-    .contact-hero {
-        height: 40vh;
-        min-height: 320px;
-    }
-    
-    .contact-layout-box {
-        padding: 3rem 2rem;
-    }
-    
-    .faq-question {
-        padding: 1.5rem;
-        font-size: 0.95rem;
-    }
-    
-    .faq-answer {
-        padding: 0 1.5rem;
-    }
+    .contact-hero { height: 44vh; min-height: 320px; }
+    .contact-layout-box { padding: 3rem 1.8rem; }
+    .faq-question { padding: 1.4rem 1.5rem; font-size: 0.95rem; }
+    .faq-answer { padding: 0 1.5rem; }
 }
