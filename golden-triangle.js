@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
             shortDesc: "Witness the crown jewels of North Indian heritage in a private chauffeur-driven car. This itinerary offers a relaxed, customizable pace with scenic highway drives and palace stopovers, allowing you to absorb India's beauty at your own leisure.",
             highlight: "🚗 Includes a dedicated private car with personal driver, mobile Wi-Fi, refreshments, and fast-track highway toll clearances throughout your trip.",
             itinerary: [
-                { day: 1, title: "Welcome to Delhi", desc: "Arrive in Delhi where a private chauffeur greets you. Transfer in a Mercedes V-Class to your luxury hotel (The Leela Palace/The Lodhi) for a welcome dinner." },
+                { day: 1, title: "Welcome to Delhi", desc: "Arrive in Delhi where a private chauffeur greets you. Transfer in a Toyota Innova to your luxury hotel (The Leela Palace/The Lodhi) for a welcome dinner." },
                 { day: 2, title: "Imperial Delhi Curation", desc: "Explore Delhi's contrast. Discover Humayun's Tomb, Qutub Minar, and embark on a private rickshaw ride through the ancient spice markets of Chandni Chowk." },
-                { day: 3, title: "Scenic Drive to Agra", desc: "Drive along the Yamuna Expressway in your luxury SUV. Check-in to the Oberoi Amarvilas, where every room features an uninterrupted view of the Taj Mahal." },
+                { day: 3, title: "Scenic Drive to Agra", desc: "Drive along the Yamuna Expressway in your Toyota Innova. Check-in to the Oberoi Amarvilas, where every room features an uninterrupted view of the Taj Mahal." },
                 { day: 4, title: "Agra Sunrise & Artisan Heritage", desc: "Beat the crowds with a sunrise visit to the Taj Mahal. Explore the red sandstone ramparts of Agra Fort, followed by a private workshop with direct descendants of the Taj's original marble inlay artisans." },
                 { day: 5, title: " फतेहपुर सीकरी to Jaipur", desc: "Drive to Jaipur. Stop en route at the ancient Mughal capital of Fatehpur Sikri and the deep stepwells of Abhaneri. Check-in to the royal Rambagh Palace." },
                 { day: 6, title: "The Royal Jaipur Experience", desc: "Ascend Amber Fort in luxury. Visit the wind-kissed screen of Hawa Mahal, and explore the City Palace, including access to the Maharaja's private chambers." },
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 8, title: "Chauffeur Drive Return to Delhi", desc: "Relax in your SUV as you drive back to Delhi. A private transfer takes you straight to the Delhi Airport for your departure." }
             ],
             inclusions: [
-                "Dedicated Mercedes-Benz V-Class SUV throughout the tour",
+                "Dedicated Toyota Innova throughout the tour",
                 "Private English-speaking historian guides at all cities",
                 "Luxury accommodation in 5-star Heritage Palaces (Oberoi/Taj)",
                 "Daily gourmet breakfasts and three curated palace dinners",
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             shortDesc: "Short on time? This same-day car journey whisks you from Delhi to Agra and back in a private air-conditioned car. Visit the Taj Mahal, Agra Fort, and enjoy a memorable royal lunch — all in one unforgettable day.",
             highlight: "🚗 Private A/C car on the Yamuna Expressway, personal guide at Taj Mahal and Agra Fort, and a curated lunch — back in Delhi by evening.",
             itinerary: [
-                { day: 1, time: "06:00 AM", title: "Luxury Chauffeur Pickup", desc: "Your chauffeur collects you from your Delhi hotel or airport in a Mercedes Sedan. Travel in comfort along the Yamuna Expressway." },
+                { day: 1, time: "06:00 AM", title: "Luxury Chauffeur Pickup", desc: "Your chauffeur collects you from your Delhi hotel or airport in a Toyota Innova. Travel in comfort along the Yamuna Expressway." },
                 { day: 1, time: "09:30 AM", title: "Taj Mahal Private Walk", desc: "Arrive in Agra. Meet your private historian guide and skip the queues to tour the Taj Mahal, learning about its history and architectural secrets." },
                 { day: 1, time: "01:00 PM", title: "Royal Lunch at Oberoi", desc: "Enjoy a multi-course Indian culinary lunch at the Bellevue restaurant in the Oberoi Amarvilas, facing views of the Taj." },
                 { day: 1, time: "02:30 PM", title: "Agra Fort Exploration", desc: "Discover Agra Fort, the spectacular red sandstone walled city of the Mughal Emperors, exploring its marble palaces and chambers." },
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 1, time: "08:30 PM", title: "Delhi Drop-off", desc: "Arrive back in Delhi. Your chauffeur drops you off directly at your hotel or the international airport terminal." }
             ],
             inclusions: [
-                "Yamuna Expressway return transfers in a private Mercedes vehicle",
+                "Yamuna Expressway return transfers in a private Toyota Innova",
                 "Private historian guide in Agra",
                 "Skip-the-line VIP entry tickets to Taj Mahal and Agra Fort",
                 "Multi-course royal lunch at the Oberoi Amarvilas",
