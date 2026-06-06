@@ -1404,33 +1404,29 @@ img {
 /* Floating WhatsApp Widget */
 .whatsapp-float-widget {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background: var(--bg-dark-card);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--gold-border);
+    bottom: 2.5rem;
+    right: 2.5rem;
+    background: #25d366;
+    border: 1px solid #25d366;
     border-radius: 50px;
     padding: 0.5rem;
     display: flex;
     align-items: center;
     gap: 0;
-    color: var(--gold-light);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    box-shadow: 0 5px 25px rgba(37, 211, 102, 0.4);
     z-index: 999;
     cursor: pointer;
     overflow: hidden;
     max-width: 50px;
     height: 50px;
-    transition: max-width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease;
+    transition: max-width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .whatsapp-float-widget:hover {
     max-width: 220px; /* Expand to show text */
-    background: #25d366;
-    border-color: #25d366;
-    color: #fff;
-    box-shadow: 0 5px 25px rgba(37, 211, 102, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
 }
 
 .whatsapp-widget-text {
@@ -1443,6 +1439,7 @@ img {
     transition: opacity 0.3s ease;
     padding-left: 1rem;
     padding-right: 0.5rem;
+    color: #fff;
 }
 
 .whatsapp-float-widget:hover .whatsapp-widget-text {
@@ -1454,7 +1451,7 @@ img {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1463,5 +1460,5 @@ img {
 }
 
 .whatsapp-float-widget:hover .whatsapp-widget-icon {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
 }
