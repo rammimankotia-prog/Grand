@@ -143,66 +143,109 @@
     font-size: 0.9rem; color: var(--ink-mid); font-weight: 400; line-height: 1.7;
 }
 
-/* ── TIMELINE — MATCHES JS CLASS NAMES ──────────────────────── */
+/* ── ITINERARY TIMELINE ──────────────────────────────────────── */
 .itinerary-timeline,
 #itinerary-timeline-box {
-    display: flex; flex-direction: column; gap: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
-/* JS injects .timeline-day-block */
+
+/* Each timeline row */
+.tl-row,
 .timeline-day-block {
-    display: grid;
-    grid-template-columns: 56px 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 1.5rem;
-    padding-bottom: 2rem;
+    display: flex;
+    gap: 1.6rem;
+    align-items: flex-start;
     position: relative;
+    padding-bottom: 2rem;
 }
+.tl-row:last-child,
 .timeline-day-block:last-child { padding-bottom: 0; }
-/* Connecting line */
+
+/* Vertical connector line */
+.tl-row::before,
 .timeline-day-block::before {
     content: '';
     position: absolute;
-    left: 27px; top: 56px; bottom: 0;
+    left: 26px;
+    top: 54px;
+    bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--gold-border), transparent);
+    background: linear-gradient(to bottom, var(--gold-border) 0%, transparent 100%);
 }
+.tl-row:last-child::before,
 .timeline-day-block:last-child::before { display: none; }
 
-/* JS injects .timeline-day-number */
+/* Gold circle — new class .tl-circle */
+.tl-circle,
 .timeline-day-number {
-    width: 54px; height: 54px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--gold), #c99a2e);
-    color: #fff; display: flex; align-items: center; justify-content: center;
-    font-family: var(--f-display); font-size: 1.2rem; font-weight: 700;
-    flex-shrink: 0; box-shadow: 0 4px 14px rgba(166,124,49,0.3);
-    grid-column: 1; grid-row: 1 / span 2;
+    flex-shrink: 0;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c99a2e 0%, #a67c31 60%, #8b6120 100%);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--f-display);
+    font-size: 1.15rem; font-weight: 700;
+    box-shadow: 0 4px 16px rgba(166,124,49,0.35);
+    border: 2.5px solid rgba(255,255,255,0.6);
+    position: relative; z-index: 2;
+    min-width: 52px;
 }
 
-/* JS injects .timeline-day-title */
+/* Right-side body */
+.tl-body,
+.timeline-day-title-wrapper {
+    flex: 1;
+    padding-top: 0.45rem;
+    min-width: 0;
+}
+
+/* Head row: title + tag on same line */
+.tl-head,
 .timeline-day-title {
-    grid-column: 2; grid-row: 1;
-    display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap;
-    padding-top: 0.6rem;
-}
-.timeline-day-title h4 {
-    font-family: var(--f-display); font-size: 1.05rem;
-    color: var(--ink); font-weight: 700; margin: 0; line-height: 1.2;
-}
-/* JS injects .day-tag */
-.day-tag {
-    font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
-    letter-spacing: 2.5px; text-transform: uppercase;
-    color: var(--gold); background: var(--gold-bg);
-    border: 1px solid var(--gold-border);
-    padding: 0.2rem 0.7rem; border-radius: var(--rp);
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.45rem;
 }
 
-/* JS injects .timeline-day-desc */
+.tl-title,
+.timeline-day-title h4 {
+    font-family: var(--f-display);
+    font-size: 1.05rem; font-weight: 700;
+    color: var(--ink); margin: 0; line-height: 1.2;
+}
+
+/* Tags: day label or time label */
+.day-tag {
+    display: inline-block;
+    font-family: var(--f-body);
+    font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold);
+    background: var(--gold-bg);
+    border: 1px solid var(--gold-border);
+    padding: 0.22rem 0.75rem;
+    border-radius: var(--rp);
+    white-space: nowrap;
+}
+.time-tag {
+    color: #b45309;
+    background: #fef3c7;
+    border-color: #fcd34d;
+}
+
+/* Description text */
+.tl-desc,
 .timeline-day-desc {
-    grid-column: 2; grid-row: 2;
-    font-size: 0.88rem; color: var(--ink-soft);
-    font-weight: 300; line-height: 1.75; padding-top: 0.5rem;
-    padding-bottom: 1.2rem;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 0;
 }
 
 /* ── INCLUSIONS / EXCLUSIONS ────────────────────────────────── */

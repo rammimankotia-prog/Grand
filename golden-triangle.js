@@ -150,21 +150,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render Timeline
         timelineBox.innerHTML = '';
-        modeData.itinerary.forEach((item) => {
+        modeData.itinerary.forEach((item, idx) => {
             const dayBlock = document.createElement('div');
             dayBlock.className = 'timeline-day-block';
 
-            // Check if time is defined (e.g. for same day tour)
-            const timeLabel = item.time ? `<span class="day-tag">${item.time}</span>` : `<span class="day-tag">Day ${item.day}</span>`;
-            const dayCircleText = item.day ? item.day : '✦';
+            // For same-day tours use step number, for multi-day tours use Day X
+            const stepNum = idx + 1;
+            const circleLabel = item.time ? stepNum : item.day;
+            const tagLabel = item.time
+                ? `<span class="day-tag time-tag">${item.time}</span>`
+                : `<span class="day-tag">Day ${item.day}</span>`;
 
             dayBlock.innerHTML = `
-                <div class="timeline-day-number">${dayCircleText}</div>
-                <div class="timeline-day-title">
-                    <h4>${item.title}</h4>
-                    ${timeLabel}
+                <div class="tl-circle">${circleLabel}</div>
+                <div class="tl-body">
+                    <div class="tl-head">
+                        <h4 class="tl-title">${item.title}</h4>
+                        ${tagLabel}
+                    </div>
+                    <p class="tl-desc">${item.desc}</p>
                 </div>
-                <p class="timeline-day-desc">${item.desc}</p>
             `;
             timelineBox.appendChild(dayBlock);
         });
