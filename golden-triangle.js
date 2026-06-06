@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur",
             price: "$12,500 p.p.",
-            shortDesc: "Witness the crown jewels of North Indian heritage in a private chauffeur-driven luxury SUV. This itinerary offers a relaxed, customizable pace with scenic highway drives and palace stopovers, allowing you to absorb India's beauty at your own leisure.",
-            highlight: "🚙 Includes a dedicated Mercedes-Benz V-Class SUV with personal chauffeur, mobile Wi-Fi, refreshments, and fast-track highway toll clearances throughout your trip.",
+            shortDesc: "Witness the crown jewels of North Indian heritage in a private chauffeur-driven car. This itinerary offers a relaxed, customizable pace with scenic highway drives and palace stopovers, allowing you to absorb India's beauty at your own leisure.",
+            highlight: "🚗 Includes a dedicated private car with personal driver, mobile Wi-Fi, refreshments, and fast-track highway toll clearances throughout your trip.",
             itinerary: [
                 { day: 1, title: "Welcome to Delhi", desc: "Arrive in Delhi where a private chauffeur greets you. Transfer in a Mercedes V-Class to your luxury hotel (The Leela Palace/The Lodhi) for a welcome dinner." },
                 { day: 2, title: "Imperial Delhi Curation", desc: "Explore Delhi's contrast. Discover Humayun's Tomb, Qutub Minar, and embark on a private rickshaw ride through the ancient spice markets of Chandni Chowk." },
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
         train: {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur",
-            price: "$11,800 p.p.",
-            shortDesc: "Experience India's iconic rail network in absolute comfort. Bypassing road traffic, you will ride on board express trains in executive coaches, enjoying priority boarding, lounge access, and a unique look at rural Indian landscapes.",
-            highlight: "🚂 Includes Executive Coach reservations on the Gatimaan Express and Shatabdi Express, private VIP station porter services, and executive lounge access.",
+            price: "$8,500 p.p.",
+            shortDesc: "Explore the Golden Triangle in a private air-conditioned taxi with an experienced local driver-guide. A cost-effective yet comfortable option allowing you to stop at scenic viewpoints, local markets, and heritage villages along the way.",
+            highlight: "🚕 Includes a private A/C taxi with knowledgeable driver-guide, flexible pit stops, mineral water, and full itinerary coverage at your preferred pace.",
             itinerary: [
                 { day: 1, title: "Arrival in the Capital", desc: "Welcome to Delhi. Private luxury transfer to your hotel. Unwind and enjoy a bespoke briefing of your upcoming rail holiday." },
                 { day: 2, title: "Delhi Heritage Tour", desc: "Tour Delhi's primary historical points. Visit the Lotus Temple, India Gate, and the Mughal-era Red Fort with your private guide." },
@@ -62,39 +62,40 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         flight: {
-            duration: "6 Days / 5 Nights",
+            duration: "7 Days / 6 Nights",
             cities: "Delhi - Agra - Jaipur",
-            price: "$19,500 p.p.",
-            shortDesc: "The ultimate luxury aviation tour. Bypassing roads and rails entirely, you will fly between Delhi, Agra, and Jaipur in private charter aircraft. Save hours of transit time and maximize your exploration of royal history.",
-            highlight: "✈️ Includes private charter flights (Turbo-props/Light Jets) with VIP FBO terminal boarding, skipping commercial queues and road congestion entirely.",
+            price: "$15,800 p.p.",
+            shortDesc: "The best of both worlds — private car transfers for scenic highway stretches combined with domestic flight segments to save time between key cities. Enjoy the flexibility of road travel and the speed of air for maximum comfort.",
+            highlight: "🚘✈️ Includes private car transfers Delhi-Agra + domestic IndiGo/Vistara flight Agra-Jaipur, airport lounge access, and a personal travel coordinator throughout.",
             itinerary: [
-                { day: 1, title: "Capital Arrival & Palace Check-in", desc: "Arrive in Delhi. Transfer via private chauffeur to the Leela Palace. Enjoy a private dinner and presentation by a heritage expert." },
-                { day: 2, title: "Private Charter to Agra", desc: "Board your private charter aircraft. A short 25-minute flight takes you to Agra. Check-in to Oberoi Amarvilas. Discover Agra Fort and enjoy sunset Taj views." },
-                { day: 3, title: "Sunrise Taj & Charter to Jaipur", desc: "Witness the Taj Mahal at sunrise. Late morning, fly via private charter to Jaipur. Transfer to the Rambagh Palace. Sunset drinks at the Palace gardens." },
-                { day: 4, title: "Royal Jaipur Curated Tour", desc: "Take a private tour of Jaipur's heritage. Enjoy a royal lunch inside the private courtyards of the City Palace, hosted by a palace curator." },
-                { day: 5, title: "Fly back to Delhi", desc: "Fly your private charter back to Delhi. Check-in to a luxury suite and enjoy a custom Indian culinary tasting dinner." },
-                { day: 6, title: "Departure", desc: "Private transfer to Delhi Airport terminal for your international flight home." }
+                { day: 1, title: "Delhi Arrival & Private Car to Agra", desc: "Arrive in Delhi. Your private car departs for Agra via the Yamuna Expressway. Check-in to Oberoi Amarvilas with views of the Taj Mahal." },
+                { day: 2, title: "Sunrise Taj Mahal & Agra Fort", desc: "Beat the crowds with a private guided sunrise visit to the Taj Mahal. Explore Agra Fort, the red sandstone Mughal citadel, in the afternoon." },
+                { day: 3, title: "Domestic Flight: Agra to Jaipur", desc: "Drive to Agra Airport and board a domestic flight to Jaipur. Transfer to the Rambagh Palace upon arrival. Evening at leisure in the Pink City." },
+                { day: 4, title: "Royal Jaipur Exploration", desc: "Explore Amber Fort, Hawa Mahal, and the City Palace with a private guide. Attend a sunset cultural show at Nahargarh Fort." },
+                { day: 5, title: "Jaipur Artisan Heritage Day", desc: "Morning block-printing workshop and local bazaar exploration. Afternoon at leisure or optional Jal Mahal photo tour." },
+                { day: 6, title: "Jaipur to Delhi by Car", desc: "Scenic drive back to Delhi via NH48. Sightseeing en route at Neemrana Fort. Check-in to your Delhi hotel for the final night." },
+                { day: 7, title: "Delhi Departure", desc: "Private transfer to Delhi International Airport for your onward flight home." }
             ],
             inclusions: [
-                "All flights via private luxury charter aircraft",
-                "FBO airport terminal boarding (no security lines/delays)",
-                "Premium Suite accommodations at Oberoi Amarvilas and Rambagh Palace",
-                "All gourmet meals, including curated palace dinners and private chef menus",
-                "Personal 24/7 tour curator traveling with you",
-                "Skip-the-line VIP entries at all sights"
+                "Private A/C car transfers (Delhi-Agra and Jaipur-Delhi)",
+                "Domestic flight: Agra to Jaipur (economy or business class)",
+                "Airport transfers and lounge access at Agra Airport",
+                "Luxury accommodation in 5-star properties",
+                "Daily breakfasts and two curated palace dinners",
+                "Personal guide and VIP monument access"
             ],
             exclusions: [
-                "International commercial flights",
-                "Visa processing fees",
-                "Personal boutique purchases"
+                "International airfare and visa fees",
+                "Meals not specified in the itinerary",
+                "Personal shopping and gratuities"
             ]
         },
         sameday: {
             duration: "1 Day (14 Hours)",
             cities: "Delhi - Agra - Delhi",
-            price: "$4,500 p.p.",
-            shortDesc: "Short on time but refuse to compromise on luxury? This high-speed 1-day express curation whisks you from Delhi to Agra in a premium chauffeur-driven Mercedes, offering private guided access to the Taj Mahal and royal dining.",
-            highlight: "⚡ Yamuna Expressway speed transfers in a luxury Mercedes Sedan/SUV, private historian guide, and royal dining at Oberoi Amarvilas.",
+            price: "$3,200 p.p.",
+            shortDesc: "Short on time? This same-day car journey whisks you from Delhi to Agra and back in a private air-conditioned car. Visit the Taj Mahal, Agra Fort, and enjoy a memorable royal lunch — all in one unforgettable day.",
+            highlight: "🚗 Private A/C car on the Yamuna Expressway, personal guide at Taj Mahal and Agra Fort, and a curated lunch — back in Delhi by evening.",
             itinerary: [
                 { day: 1, time: "06:00 AM", title: "Luxury Chauffeur Pickup", desc: "Your chauffeur collects you from your Delhi hotel or airport in a Mercedes Sedan. Travel in comfort along the Yamuna Expressway." },
                 { day: 1, time: "09:30 AM", title: "Taj Mahal Private Walk", desc: "Arrive in Agra. Meet your private historian guide and skip the queues to tour the Taj Mahal, learning about its history and architectural secrets." },
