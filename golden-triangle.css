@@ -379,3 +379,95 @@
     .detail-block .block-title { font-size: 1.2rem; }
     .mode-tab-btn { padding: 0.65rem 1.2rem; font-size: 0.75rem; }
 }
+
+/* ══════════════════════════════════════════════
+   GOLDEN TRIANGLE MAP SECTION
+══════════════════════════════════════════════ */
+.gt-map-section {
+    padding: 5.5rem 0 6rem;
+    background: linear-gradient(to bottom, var(--cream-alt) 0%, #fff 100%);
+    border-top: 1px solid var(--b-soft);
+}
+.gt-map-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.gt-map-title {
+    font-family: var(--f-display);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--ink); font-weight: 700; margin: 0.6rem 0 1rem;
+}
+.gt-map-subtitle {
+    font-size: 1rem; color: var(--ink-soft); font-weight: 300;
+    max-width: 560px; margin: 0 auto; line-height: 1.7;
+}
+.gt-map-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 3rem; align-items: start;
+}
+.gt-map-canvas {
+    background: #fff;
+    border: 1px solid var(--b-soft);
+    border-radius: var(--r3);
+    box-shadow: var(--sh-md);
+    overflow: hidden;
+}
+.gt-svg { width: 100%; display: block; }
+.gt-city-cards {
+    display: flex; flex-direction: column; gap: 1.5rem;
+}
+.gt-city-card {
+    background: #fff;
+    border: 1px solid var(--b-soft);
+    border-radius: var(--r2);
+    padding: 1.8rem 2rem;
+    box-shadow: var(--sh-xs);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    position: relative; overflow: hidden;
+}
+.gt-city-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-bright));
+}
+.gt-city-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.1);
+}
+.city-card-num {
+    font-family: var(--f-display);
+    font-size: 2.8rem; font-weight: 900;
+    color: var(--b-mid); line-height: 1;
+    margin-bottom: 0.3rem;
+}
+.city-card-icon {
+    font-size: 1.9rem; margin-bottom: 0.6rem; line-height: 1;
+}
+.city-card-name {
+    font-family: var(--f-display); font-size: 1.3rem; font-weight: 700;
+    color: var(--ink); margin-bottom: 0.6rem; line-height: 1.1;
+}
+.city-card-desc {
+    font-size: 0.86rem; color: var(--ink-soft);
+    font-weight: 300; line-height: 1.7; margin-bottom: 1rem;
+}
+.city-card-tags {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+}
+.city-card-tags span {
+    font-family: var(--f-body); font-size: 0.68rem; font-weight: 700;
+    letter-spacing: 0.5px; text-transform: uppercase;
+    color: var(--gold); background: var(--gold-bg);
+    border: 1px solid var(--gold-border);
+    padding: 0.22rem 0.7rem; border-radius: var(--rp);
+}
+@media (max-width: 960px) {
+    .gt-map-wrapper { grid-template-columns: 1fr; }
+    .gt-city-cards { flex-direction: row; flex-wrap: wrap; }
+    .gt-city-card { flex: 1; min-width: 200px; }
+}
+@media (max-width: 640px) {
+    .gt-city-cards { flex-direction: column; }
+    .gt-map-section { padding: 3.5rem 0 4rem; }
+}
