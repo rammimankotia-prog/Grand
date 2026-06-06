@@ -974,6 +974,14 @@ img {
 .footer-brand .logo {
     margin-bottom: 1.5rem;
 }
+.footer-brand .logo-main {
+    background: linear-gradient(120deg, var(--text-dark) 40%, var(--gold-main) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-brand .logo-sub {
+    color: var(--text-dark-muted);
+}
 .footer-desc {
     font-size: 0.9rem;
     color: var(--text-light-muted);
@@ -1448,14 +1456,17 @@ img {
     letter-spacing: 1px;
     white-space: nowrap;
     opacity: 0;
-    transition: opacity 0.3s ease;
-    padding-left: 1rem;
-    padding-right: 0.5rem;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
     color: #fff;
 }
 
 .whatsapp-float-widget:hover .whatsapp-widget-text {
     opacity: 1;
+    width: 140px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
     transition-delay: 0.15s;
 }
 
