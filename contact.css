@@ -207,3 +207,90 @@
     .faq-question { padding: 1.4rem 1.5rem; font-size: 0.9rem; }
     .faq-answer { padding: 0 1.5rem; }
 }
+
+/* ══════════════════════════════════════════════
+   FORCE WHITE THEME — contact page form inputs
+   (override any dark styles from old cached CSS)
+══════════════════════════════════════════════ */
+
+/* Contact main section */
+.contact-main-section {
+    background: #fff !important;
+}
+.contact-layout-box {
+    background: #fff !important;
+}
+
+/* All form inputs — force white/cream */
+.contact-page-form input,
+.contact-page-form select,
+.contact-page-form textarea,
+.form-input,
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    background: #f8f3ec !important;
+    background-color: #f8f3ec !important;
+    color: #1a1208 !important;
+    border: 1.5px solid #d9cdb8 !important;
+    border-radius: 8px !important;
+    padding: 1rem 1.1rem !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 0.9rem !important;
+    width: 100% !important;
+    outline: none !important;
+    transition: border-color 0.22s ease, box-shadow 0.22s ease !important;
+}
+.contact-page-form input:focus,
+.contact-page-form select:focus,
+.contact-page-form textarea:focus,
+.form-input:focus {
+    border-color: #a67c31 !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(166,124,49,0.12) !important;
+}
+.contact-page-form select option,
+#contactForm select option {
+    background: #fff !important;
+    color: #1a1208 !important;
+}
+/* Labels */
+.form-label,
+.contact-page-form label {
+    color: #7a6a52 !important;
+    background: transparent !important;
+}
+.contact-page-form input:focus ~ .form-label,
+.contact-page-form input:not(:placeholder-shown) ~ .form-label,
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+    color: #a67c31 !important;
+    background: #f8f3ec !important;
+    font-size: 0.63rem !important;
+    font-weight: 700 !important;
+}
+
+/* Office icons — force cream background */
+.office-icon {
+    background: #faf5ec !important;
+    border: 1px solid #e0d5bf !important;
+}
+.office-info h4 {
+    color: #1a1208 !important;
+}
+.office-info p,
+.office-detail-link {
+    color: #7a6a52 !important;
+}
+
+/* FAQ section */
+.faq-item {
+    background: #fff !important;
+    border-color: #e8dece !important;
+}
+.faq-question {
+    color: #1a1208 !important;
+}
+.faq-answer p {
+    color: #7a6a52 !important;
+}
