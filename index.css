@@ -565,7 +565,7 @@ img {
 .visual-card {
     padding: 2rem;
     border-color: var(--gold-border);
-    background: linear-gradient(135deg, rgba(20, 30, 48, 0.6) 0%, rgba(36, 59, 85, 0.4) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 244, 248, 0.85) 100%);
 }
 
 .visual-header {
@@ -779,7 +779,7 @@ img {
 .concierge-box {
     padding: 5rem 4rem;
     border-color: var(--gold-border);
-    background: linear-gradient(135deg, rgba(13, 20, 33, 0.8) 0%, rgba(20, 35, 60, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 244, 248, 0.85) 100%);
 }
 
 .concierge-grid {
@@ -824,7 +824,7 @@ img {
 }
 .contact-icon {
     font-size: 1.8rem;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(0, 0, 0, 0.02);
     border: 1px solid var(--gold-border);
     width: 60px;
     height: 60px;
@@ -904,7 +904,7 @@ img {
     font-size: 0.75rem;
     font-weight: 500;
     color: var(--gold-light);
-    background: var(--sky-blue-ultra-dark);
+    background: var(--white-marble);
     padding: 0 0.5rem;
     margin-left: -0.2rem;
 }
