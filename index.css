@@ -1,27 +1,27 @@
 /* Design System & Premium Variables */
 :root {
-    /* Color Palette */
+    /* Color Palette - Premium White Marble & Gold Theme */
     --sky-blue-main: hsl(202, 85%, 48%);
     --sky-blue-light: hsl(200, 90%, 68%);
     --sky-blue-dark: hsl(215, 90%, 20%);
-    --sky-blue-ultra-dark: hsl(218, 55%, 10%);
+    --sky-blue-ultra-dark: hsl(210, 20%, 94%); /* light grey/blue for footer/scroll track */
     
-    --gold-main: hsl(43, 75%, 55%);
-    --gold-light: hsl(45, 85%, 65%);
-    --gold-dark: hsl(38, 85%, 42%);
-    --gold-glow: hsla(43, 75%, 55%, 0.25);
+    --gold-main: hsl(38, 85%, 42%); /* slightly darker gold for high contrast on light bg */
+    --gold-light: hsl(43, 75%, 48%);
+    --gold-dark: hsl(35, 90%, 35%);
+    --gold-glow: hsla(38, 85%, 42%, 0.15);
     
-    --white-marble: hsl(0, 0%, 98%);
-    --white-marble-soft: hsl(210, 20%, 96%);
+    --white-marble: hsl(0, 0%, 100%);
+    --white-marble-soft: hsl(210, 20%, 95%);
     
-    --bg-dark: hsl(218, 45%, 7%);
-    --bg-dark-card: rgba(13, 20, 33, 0.65);
-    --bg-light-card: rgba(255, 255, 255, 0.85);
+    --bg-dark: hsl(0, 0%, 100%); /* main body background (light) */
+    --bg-dark-card: rgba(255, 255, 255, 0.85); /* light glass card */
+    --bg-light-card: rgba(13, 20, 33, 0.04);
     
     --text-dark: hsl(218, 40%, 15%);
     --text-dark-muted: hsl(218, 20%, 45%);
-    --text-light: hsl(210, 20%, 96%);
-    --text-light-muted: hsl(210, 15%, 75%);
+    --text-light: hsl(218, 40%, 15%); /* Map light texts to dark slate for light theme */
+    --text-light-muted: hsl(218, 20%, 45%); /* Map light muted texts to dark slate muted */
     
     /* Typography */
     --font-title: 'Cinzel', serif;
@@ -32,8 +32,8 @@
     --transition-fast: all 0.2s ease;
     
     /* Border Gradients */
-    --glass-border: rgba(255, 255, 255, 0.09);
-    --gold-border: rgba(212, 175, 55, 0.25);
+    --glass-border: rgba(0, 0, 0, 0.08); /* Darker borders for light theme */
+    --gold-border: rgba(212, 175, 55, 0.35);
 }
 
 /* Base Reset & Typography */
@@ -47,7 +47,7 @@
 body {
     font-family: var(--font-body);
     background-color: var(--bg-dark);
-    color: var(--text-light);
+    color: var(--text-dark); /* Set body color to dark text */
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -152,7 +152,7 @@ img {
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--glass-border);
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
     position: relative;
     overflow: hidden;
 }
@@ -182,11 +182,11 @@ img {
 
 .main-header.scrolled {
     padding: 1rem 0;
-    background: rgba(13, 20, 33, 0.85);
+    background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .nav-container {
@@ -214,9 +214,11 @@ img {
     font-family: var(--font-title);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-light);
+    color: #fff;
     letter-spacing: 2.5px;
-    background: linear-gradient(120deg, var(--text-light) 40%, var(--gold-light) 90%);
+}
+.main-header.scrolled .logo-main {
+    background: linear-gradient(120deg, var(--text-dark) 40%, var(--gold-main) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -224,7 +226,10 @@ img {
     font-family: var(--font-body);
     font-size: 0.5rem;
     letter-spacing: 5px;
-    color: var(--text-light-muted);
+    color: rgba(255, 255, 255, 0.6);
+}
+.main-header.scrolled .logo-sub {
+    color: var(--text-dark-muted);
 }
 
 .nav-menu {
@@ -238,12 +243,19 @@ img {
     font-weight: 500;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--text-light-muted);
+    color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem 0;
     position: relative;
+    transition: var(--transition-fast);
+}
+.main-header.scrolled .nav-link {
+    color: var(--text-dark-muted);
 }
 .nav-link:hover, .nav-link.active {
-    color: var(--gold-light);
+    color: #fff;
+}
+.main-header.scrolled .nav-link:hover, .main-header.scrolled .nav-link.active {
+    color: var(--gold-main);
 }
 .nav-link::after {
     content: '';
@@ -857,7 +869,7 @@ img {
 
 .form-input {
     width: 100%;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.02);
     border: 1px solid var(--glass-border);
     border-radius: 4px;
     padding: 1rem 1.2rem;
@@ -1000,7 +1012,7 @@ img {
     border: 1px solid var(--glass-border);
     border-radius: 4px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(0, 0, 0, 0.03);
 }
 .newsletter-input {
     flex-grow: 1;
@@ -1158,7 +1170,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle, rgba(13, 20, 33, 0.9) 0%, rgba(5, 10, 20, 0.7) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.98) 0%, rgba(240, 244, 248, 0.9) 100%);
     border-radius: 8px;
     border: 1px solid var(--glass-border);
     overflow: hidden;
@@ -1193,7 +1205,7 @@ img {
     font-size: 0.95rem;
     letter-spacing: 2px;
     color: var(--text-light);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.85);
     border: 1px solid var(--glass-border);
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
