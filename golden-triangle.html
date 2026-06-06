@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="index.css?v=3">
-    <link rel="stylesheet" href="golden-triangle.css?v=3">
+    <link rel="stylesheet" href="index.css?v=4">
+    <link rel="stylesheet" href="golden-triangle.css?v=4">
 </head>
 <body>
 
@@ -130,6 +130,10 @@
                 <!-- Right: Booking Form & Sticky Sidebar -->
                 <div class="tour-right-col">
                     <div class="sticky-booking-card glass-card" id="booking-section">
+                        <div class="price-summary-box price-summary-top">
+                            <span class="summary-label">Estimated Package Price</span>
+                            <span class="summary-value" id="summary-price-display">$12,500 p.p.</span>
+                        </div>
                         <h3 class="sidebar-title">Book This Experience</h3>
                         <p class="sidebar-desc">Request your customized itinerary configuration. Our lead curator will contact you to refine details.</p>
                         
@@ -165,11 +169,6 @@
                             <div class="sidebar-form-group">
                                 <textarea id="b-notes" rows="3" placeholder=" " class="sidebar-input text-area-input"></textarea>
                                 <label for="b-notes" class="sidebar-label">Add custom requirements...</label>
-                            </div>
-
-                            <div class="price-summary-box">
-                                <span class="summary-label">Estimated Package Price:</span>
-                                <span class="summary-value" id="summary-price-display">$12,500 p.p.</span>
                             </div>
 
                             <button type="submit" class="btn btn-solid btn-sidebar-submit">Submit Reservation Request</button>
@@ -305,6 +304,6 @@
     </a>
 
     <!-- Scripts -->
-    <script src="golden-triangle.js?v=3"></script>
+    <script src="golden-triangle.js?v=4"></script>
 </body>
 </html>

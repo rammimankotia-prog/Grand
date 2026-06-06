@@ -514,3 +514,31 @@
     .gt-city-cards { flex-direction: column; }
     .gt-map-section { padding: 3.5rem 0 4rem; }
 }
+
+/* ── PRICE BOX AT TOP OF BOOKING CARD ─────────────────────── */
+.price-summary-top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background: linear-gradient(135deg, #1a1208 0%, #2d1e04 100%) !important;
+    border: none !important;
+    border-radius: var(--r1) !important;
+    padding: 1.2rem 1.6rem !important;
+    margin-bottom: 1.6rem !important;
+    box-shadow: 0 4px 20px rgba(166,124,49,0.25) !important;
+}
+.price-summary-top .summary-label {
+    font-family: var(--f-body) !important;
+    font-size: 0.72rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: rgba(255,220,120,0.75) !important;
+}
+.price-summary-top .summary-value {
+    font-family: var(--f-display) !important;
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: #f0c060 !important;
+    line-height: 1 !important;
+}
