@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Holidays | Luxury Indian Tour Company</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Embark on a breathtaking luxury tour of India with Grand Holidays. Experience the fusion of heritage, history, and premium hospitality across the Taj Mahal, Jaipur, Delhi, and the snow-capped Himalayas.">
+    <meta name="keywords" content="luxury travel India, private tour Taj Mahal, luxury holiday Rajasthan, Kashmir bespoke tour, Grand Holidays">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Grand Holidays | Luxury Indian Tour Company">
+    <meta property="og:description" content="Embark on a breathtaking luxury tour of India. Experience physics-defying heritage and premium curated journeys.">
+    <meta property="og:image" content="assets/hero_banner.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Premium Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Top Glow Accent -->
+    <div class="top-glow"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="main-header" id="mainHeader">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logoLink">
+                <span class="logo-accent">THE</span>
+                <span class="logo-main">GRAND HOLIDAYS</span>
+                <span class="logo-sub">LUXURY TOUR CO.</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#heritage-story" class="nav-link">Heritage Story</a>
+                <a href="#curated-journeys" class="nav-link">Curated Journeys</a>
+                <a href="#bespoke-concierge" class="nav-link">Bespoke Concierge</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline btn-nav" id="openModalBtn">Enquire Now</button>
+                <button class="mobile-nav-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Parallax Background Banner Image -->
+        <div class="hero-bg-wrapper">
+            <img src="assets/hero_banner.png" alt="Antigravity Heritage Fusion Banner" class="hero-bg-img" id="heroBgImg">
+            <div class="hero-overlay"></div>
+            <div class="hero-glow"></div>
+        </div>
+        
+        <!-- Canvas Particle Overlay (floating marigold petals & levitating water droplets) -->
+        <canvas id="hero-particles" class="hero-canvas"></canvas>
+        
+        <!-- Hero Content Overlay -->
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gold-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>A New Dimension of Luxury</span>
+            </div>
+            
+            <h1 class="hero-title" id="mainHeroTitle">
+                <span class="title-light">GRAND</span>
+                <span class="title-bold">HOLIDAYS</span>
+            </h1>
+            
+            <p class="hero-description">
+                Experience a breathtaking realm where heritage transcends physics. Delicate marble arches, levitating water cascades, and ancient stone pavilions blend seamlessly with the snow-capped Himalayan peaks.
+            </p>
+            
+            <div class="hero-ctas">
+                <a href="#curated-journeys" class="btn btn-solid btn-hero">Begin Your Journey</a>
+                <button class="btn btn-glass btn-hero" id="playVideoBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="play-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Explore Concept
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <a href="#heritage-story" class="scroll-down">
+            <span class="scroll-text">Discover More</span>
+            <span class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+            </span>
+        </a>
+    </section>
+
+    <!-- Curated Luxury Journeys Section -->
+    <section class="journeys-section" id="curated-journeys">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">EXCLUSIVE PACKAGES</span>
+                <h2 class="section-title">Curated Luxury Itineraries</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="journeys-grid">
+                <!-- Journey Card 1: The Golden Triangle -->
+                <div class="journey-card" data-tilt>
+                    <div class="card-img-container">
+                        <img src="assets/taj_mahal.png" alt="Golden Triangle Heritage" class="journey-img">
+                        <div class="card-badge">Private Jet Optional</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="duration">8 Days / 7 Nights</span>
+                            <span class="divider">•</span>
+                            <span class="location">Delhi - Agra - Jaipur</span>
+                        </div>
+                        <h3 class="card-title">The Golden Triangle Reimagined</h3>
+                        <p class="card-text">
+                            Witness the crown jewels of North Indian heritage with private curators, personal royal guides, and exclusive dinners facing the Taj Mahal after hours.
+                        </p>
+                        <ul class="card-highlights">
+                            <li>Private sunrise access to the Taj Mahal</li>
+                            <li>Palace stays at the Rambagh Palace</li>
+                            <li>Curated Delhi street food experience with a culinary historian</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="price">From $12,500 <span class="pp">p.p.</span></span>
+                            <button class="btn btn-outline btn-sm open-booking-btn" data-journey="Golden Triangle Reimagined">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Card 2: Himalayan Sanctuary -->
+                <div class="journey-card" data-tilt>
+                    <div class="card-img-container">
+                        <img src="assets/himalayas.png" alt="Himalayas Srinagar" class="journey-img">
+                        <div class="card-badge">Exclusive Access</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="duration">10 Days / 9 Nights</span>
+                            <span class="divider">•</span>
+                            <span class="location">Srinagar - Pahalgam - Shimla</span>
+                        </div>
+                        <h3 class="card-title">The Himalayan Sanctuary</h3>
+                        <p class="card-text">
+                            Escape to the skies. Float on Dal Lake in a custom royal house-boat, explore remote valleys by helicopter, and stay in ultra-luxury retreats nestled in pristine pine forests.
+                        </p>
+                        <ul class="card-highlights">
+                            <li>Scenic private helicopter transfers</li>
+                            <li>Private shikara cruises at sunset with live sitar</li>
+                            <li>Custom trekking with a veteran mountain specialist</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="price">From $15,800 <span class="pp">p.p.</span></span>
+                            <button class="btn btn-outline btn-sm open-booking-btn" data-journey="Himalayan Sanctuary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Card 3: Royal Rajasthan Haveli -->
+                <div class="journey-card" data-tilt>
+                    <div class="card-img-container">
+                        <img src="assets/rajasthan.png" alt="Udaipur Palace Lake" class="journey-img">
+                        <div class="card-badge">Royal Hospitality</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="duration">9 Days / 8 Nights</span>
+                            <span class="divider">•</span>
+                            <span class="location">Jodhpur - Udaipur - Jaisalmer</span>
+                        </div>
+                        <h3 class="card-title">Imperial Rajasthan Retold</h3>
+                        <p class="card-text">
+                            Live like royalty. Indulge in private lake cruises in Udaipur, champagne sundowners in the Thar Desert dunes, and heritage tours of Rajasthan's majestic hill forts.
+                        </p>
+                        <ul class="card-highlights">
+                            <li>Private yacht charters on Lake Pichola</li>
+                            <li>Stargazing luxury desert camps in Jaisalmer</li>
+                            <li>Personal heritage guide & genealogist</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="price">From $14,200 <span class="pp">p.p.</span></span>
+                            <button class="btn btn-outline btn-sm open-booking-btn" data-journey="Imperial Rajasthan Retold">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept / Heritage Story Section -->
+    <section class="story-section" id="heritage-story">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">THE CONTEXT</span>
+                <h2 class="section-title">A Dream Transcending Gravity</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="story-grid">
+                <div class="story-content-box">
+                    <h3 class="story-subheading">Regional Synthesis & Physics-Defying Design</h3>
+                    <p class="story-text">
+                        Inspired by the surreal grandeur of our hero banner, "Grand Holidays" offers luxury tours that weave the architectural wonders of North India with the absolute majesty of nature.
+                    </p>
+                    <p class="story-text">
+                        Here, the red sandstone of Delhi’s historic forts, the intricate pink facades of Jaipur's Hawa Mahal, and the pristine white marble of Agra’s Taj Mahal gently lift and float into the brilliant golden sky. Shimmering pools cascade upwards, reflecting the snow-covered peaks of Kashmir and Himachal Pradesh. 
+                    </p>
+                    
+                    <div class="feature-pills">
+                        <div class="feature-pill">
+                            <span class="pill-icon">✨</span>
+                            <span>Heritage Reimagined</span>
+                        </div>
+                        <div class="feature-pill">
+                            <span class="pill-icon">🏔️</span>
+                            <span>Himalayan Vistas</span>
+                        </div>
+                        <div class="feature-pill">
+                            <span class="pill-icon">🏆</span>
+                            <span>Ultra-Luxury Stays</span>
+                        </div>
+                        <div class="feature-pill">
+                            <span class="pill-icon">🤵</span>
+                            <span>Personal Concierge</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-visuals">
+                    <div class="glass-card visual-card float-anim">
+                        <div class="visual-header">
+                            <div class="visual-dot red"></div>
+                            <div class="visual-dot yellow"></div>
+                            <div class="visual-dot green"></div>
+                        </div>
+                        <div class="visual-body">
+                            <h4 class="visual-title">Architectural Blend</h4>
+                            <ul class="visual-list">
+                                <li>
+                                    <strong>Delhi:</strong> Bold red sandstone ramparts & imperial structures.
+                                </li>
+                                <li>
+                                    <strong>Agra:</strong> Exquisite white marble inlay & pristine minarets.
+                                </li>
+                                <li>
+                                    <strong>Jaipur:</strong> The honeycombed, wind-kissed screen of Hawa Mahal.
+                                </li>
+                                <li>
+                                    <strong>The Himalayas:</strong> Snow-draped pine valleys and alpine streams.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Concierge / Contact Section -->
+    <section class="concierge-section" id="bespoke-concierge">
+        <div class="container">
+            <div class="concierge-box glass-card">
+                <div class="concierge-grid">
+                    <div class="concierge-info">
+                        <span class="section-subtitle gold-text">DESIGN YOUR ESCAPE</span>
+                        <h2 class="concierge-title">Consult a Travel Designer</h2>
+                        <p class="concierge-description">
+                            Every journey is a unique masterpiece. Share your vision of India with us, and our expert travel curators will draft a personalized itinerary tailored to your exact desires.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <h4>Private Desk</h4>
+                                    <p>+1 (800) Luxury-India</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <div>
+                                    <h4>Enquiries</h4>
+                                    <p>concierge@grandholidays.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="concierge-form-wrapper">
+                        <form id="conciergeForm" class="concierge-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" required placeholder=" " class="form-input">
+                                    <label for="name" class="form-label">Your Full Name</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="email" id="email" required placeholder=" " class="form-input">
+                                    <label for="email" class="form-label">Your Email Address</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <select id="journey-type" class="form-input select-input" required>
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="golden-triangle">The Golden Triangle Reimagined</option>
+                                        <option value="himalayan">The Himalayan Sanctuary</option>
+                                        <option value="rajasthan">Imperial Rajasthan Retold</option>
+                                        <option value="bespoke">Completely Custom Journey</option>
+                                    </select>
+                                    <label for="journey-type" class="form-label select-label">Preferred Journey</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <textarea id="notes" rows="4" placeholder=" " class="form-input text-area-input"></textarea>
+                                    <label for="notes" class="form-label">Special requests, preferences, or desires...</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-solid btn-submit">Submit Design Request</button>
+                        </form>
+                        <div id="formSuccessMessage" class="success-message">
+                            <h3>Thank You</h3>
+                            <p>Our Head Travel Curator will contact you via email within 24 hours to schedule your private design consultation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-glow-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Footer -->
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-accent">THE</span>
+                        <span class="logo-main">GRAND HOLIDAYS</span>
+                    </a>
+                    <p class="footer-desc">
+                        A bespoke luxury travel operator creating timeless, surreal journeys across the Indian subcontinent.
+                    </p>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Discover</h4>
+                    <a href="#heritage-story">Heritage Story</a>
+                    <a href="#curated-journeys">Curated Itineraries</a>
+                    <a href="#bespoke-concierge">Travel Designer</a>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Bespoke Desks</h4>
+                    <span>New York Private Desk</span>
+                    <span>London Private Desk</span>
+                    <span>New Delhi Concierge</span>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive curated itineraries and luxury travel logs.</p>
+                    <form class="footer-newsletter" id="newsletterForm">
+                        <input type="email" placeholder="Your Email" class="newsletter-input" required id="newsletterEmail">
+                        <button type="submit" class="btn-newsletter-submit">➔</button>
+                    </form>
+                    <span id="newsletterSuccess" class="newsletter-success">Subscribed successfully.</span>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grand Holidays Tour Company. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <span class="bullet">•</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Glassmorphic Booking/Inquiry Modal -->
+    <div class="modal-overlay" id="inquiryModal">
+        <div class="modal-card glass-card">
+            <button class="modal-close" id="closeModalBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Bespoke Inquiry Concierge</h3>
+                <p class="modal-subtitle" id="modalJourneyTitle">Plan your custom journey with Grand Holidays</p>
+            </div>
+            
+            <form id="modalForm" class="modal-form">
+                <input type="hidden" id="modalJourneyInput">
+                <div class="form-group">
+                    <input type="text" id="modalName" required placeholder=" " class="form-input">
+                    <label for="modalName" class="form-label">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="modalEmail" required placeholder=" " class="form-input">
+                    <label for="modalEmail" class="form-label">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="modalDates" placeholder=" " class="form-input">
+                    <label for="modalDates" class="form-label">Preferred Dates (e.g., Autumn 2026)</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="modalMessage" rows="3" placeholder=" " class="form-input text-area-input"></textarea>
+                    <label for="modalMessage" class="form-label">Any specific experiences you seek?</label>
+                </div>
+                <button type="submit" class="btn btn-solid btn-submit">Submit Concierge Inquiry</button>
+            </form>
+            <div id="modalSuccessMessage" class="success-message">
+                <h3>Request Received</h3>
+                <p>We have reserved a spot on our curation calendar. A dedicated travel designer will email you within 24 hours.</p>
+            </div>
+            <div class="card-glow-effect"></div>
+        </div>
+    </div>
+
+    <!-- Interactive Concept Video / Visual Overlay Modal -->
+    <div class="modal-overlay" id="conceptModal">
+        <div class="concept-modal-content glass-card">
+            <button class="modal-close" id="closeConceptModalBtn" aria-label="Close modal">&times;</button>
+            <div class="concept-header">
+                <h3>Visualizing The Concept</h3>
+                <p>A closer look at the physics-defying aesthetics of the Indian Heritage</p>
+            </div>
+            <div class="concept-body">
+                <div class="interactive-concept-display">
+                    <div class="floating-ring ring-1"></div>
+                    <div class="floating-ring ring-2"></div>
+                    <div class="concept-arch">
+                        <span> Taj Mahal </span>
+                        <span> Hawa Mahal </span>
+                        <span> Delhi Forts </span>
+                    </div>
+                    <div class="concept-visual-text">
+                        <p>"Antigravity travel represents our philosophy: breaking away from standard itineraries to elevate heritage travel into a surreal, weightless art form."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-glow-effect"></div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+</body>
+</html>
