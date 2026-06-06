@@ -1,0 +1,249 @@
+/* Contact Page Styling overrides */
+
+/* Contact Hero Banner */
+.contact-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, hsla(202, 85%, 48%, 0.08) 0%, transparent 60%);
+    border-bottom: 1px solid var(--glass-border);
+    padding-top: 5rem;
+}
+
+.contact-hero-content {
+    max-width: 850px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-badge {
+    display: inline-block;
+    border: 1px solid var(--gold-main);
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 0.4rem 1.2rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    background: rgba(212, 175, 55, 0.08);
+}
+
+.contact-main-title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.contact-hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Contact Main Section */
+.contact-main-section {
+    padding: 6rem 0;
+}
+
+.contact-layout-box {
+    padding: 5rem 4.5rem;
+    border-color: var(--gold-border);
+    background: linear-gradient(135deg, rgba(13, 20, 33, 0.8) 0%, rgba(20, 35, 60, 0.6) 100%);
+}
+
+.contact-layout-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 6rem;
+}
+
+.contact-left-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-desc {
+    font-size: 0.95rem;
+    color: var(--text-light-muted);
+    margin-bottom: 3rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.offices-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.office-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.office-icon {
+    font-size: 1.8rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-light);
+    flex-shrink: 0;
+}
+
+.office-info h4 {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+}
+.office-info p {
+    font-size: 0.88rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.office-detail-link {
+    margin-top: 0.3rem;
+    color: var(--text-light) !important;
+}
+
+.office-wa-link {
+    color: #25d366;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 0.3rem;
+}
+.office-wa-link:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+}
+
+/* Right Form */
+.contact-right-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* FAQ Section Styling */
+.contact-faq-section {
+    padding: 6rem 0 10rem;
+    background: linear-gradient(to bottom, var(--bg-dark), var(--sky-blue-ultra-dark) 60%, var(--bg-dark));
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 4rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item {
+    border-color: var(--glass-border);
+    transition: var(--transition-smooth);
+    background: var(--bg-dark-card);
+}
+.faq-item:hover {
+    border-color: var(--gold-border);
+}
+
+.faq-question {
+    padding: 1.8rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-light);
+    user-select: none;
+}
+
+.faq-icon {
+    font-size: 1.2rem;
+    color: var(--gold-light);
+    transition: transform 0.4s ease;
+    flex-shrink: 0;
+    margin-left: 1.5rem;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.4s ease;
+    padding: 0 2.5rem;
+}
+.faq-answer p {
+    font-size: 0.95rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.6;
+    padding-bottom: 1.8rem;
+}
+
+/* Active FAQ Item states */
+.faq-item.active {
+    border-color: var(--gold-border);
+    background: linear-gradient(135deg, rgba(13, 20, 33, 0.8) 0%, rgba(20, 35, 60, 0.5) 100%);
+}
+.faq-item.active .faq-answer {
+    max-height: 250px; /* Expands dynamically */
+}
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+    color: var(--text-light);
+}
+
+/* Responsive configurations */
+@media (max-width: 1024px) {
+    .contact-layout-grid {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        height: 40vh;
+        min-height: 320px;
+    }
+    
+    .contact-layout-box {
+        padding: 3rem 2rem;
+    }
+    
+    .faq-question {
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .faq-answer {
+        padding: 0 1.5rem;
+    }
+}

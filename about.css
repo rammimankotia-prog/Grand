@@ -1,0 +1,301 @@
+/* About Us Page Styling overrides */
+
+/* About Hero Banner */
+.about-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle at center, hsla(202, 85%, 48%, 0.08) 0%, transparent 60%);
+    border-bottom: 1px solid var(--glass-border);
+    padding-top: 5rem;
+}
+
+.about-hero-content {
+    max-width: 850px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-badge {
+    display: inline-block;
+    border: 1px solid var(--gold-main);
+    color: var(--gold-light);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 0.4rem 1.2rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    background: rgba(212, 175, 55, 0.08);
+}
+
+.about-main-title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.about-hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Story Section */
+.about-story-section {
+    padding: 8rem 0;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.story-image-box {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.about-story-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: brightness(0.8) contrast(1.02);
+    transition: var(--transition-smooth);
+}
+.story-image-box:hover .about-story-img {
+    transform: scale(1.02);
+    filter: brightness(0.9) contrast(1.05);
+}
+
+.story-text-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.story-p {
+    font-size: 1.05rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+.story-p strong {
+    color: var(--gold-light);
+    font-weight: 500;
+}
+
+/* Team Section & Founder Card */
+.about-team-section {
+    padding: 6rem 0;
+    background: linear-gradient(to bottom, var(--bg-dark), var(--sky-blue-ultra-dark), var(--bg-dark));
+}
+
+.founder-card {
+    margin-top: 4rem;
+    padding: 5rem 4.5rem;
+    border-color: var(--gold-border);
+    background: linear-gradient(135deg, rgba(13, 20, 33, 0.8) 0%, rgba(20, 35, 60, 0.6) 100%);
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.founder-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.founder-role {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold-light);
+}
+
+.founder-name {
+    font-size: 2.2rem;
+    color: var(--text-light);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.founder-bio {
+    font-size: 1rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.founder-quote {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--text-light);
+    border-left: 3px solid var(--gold-main);
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* Founder Visual Decor */
+.founder-visual {
+    position: relative;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-decor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.decor-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsla(202, 85%, 48%, 0.1) 0%, transparent 70%);
+}
+.decor-ring {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px dashed rgba(212, 175, 55, 0.2);
+    border-radius: 50%;
+    animation: rotate 30s linear infinite;
+}
+
+.founder-placeholder-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    animation: floating-y 5s ease-in-out infinite;
+}
+.icon-avatar {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+.founder-placeholder-card h4 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 0.3rem;
+}
+.founder-placeholder-card p {
+    font-size: 0.75rem;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Values Grid */
+.about-values-section {
+    padding: 8rem 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.value-card {
+    padding: 4rem 3rem;
+    transition: var(--transition-smooth);
+    border-color: var(--glass-border);
+}
+.value-card:hover {
+    border-color: var(--gold-border);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.08);
+}
+
+.value-number {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--gold-main);
+    display: block;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+    opacity: 0.6;
+}
+
+.value-title {
+    font-size: 1.35rem;
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+}
+
+.value-text {
+    font-size: 0.95rem;
+    color: var(--text-light-muted);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Responsive configurations */
+@media (max-width: 1024px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .about-story-img {
+        height: 350px;
+    }
+    
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .founder-visual {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 40vh;
+        min-height: 320px;
+    }
+    .detail-block {
+        padding: 2rem;
+    }
+    .founder-card {
+        padding: 3rem 2rem;
+    }
+    .value-card {
+        padding: 3rem 2rem;
+    }
+}
