@@ -47,7 +47,7 @@
   --f-body:    'Outfit', sans-serif;
 
   /* Spacing */
-  --py:   8rem;
+  --py:   5.5rem;
   --cw:   1280px;
 
   /* Radii */
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5 {
 /* ── UTILITY ──────────────────────────────────────────────── */
 .top-glow { display: none; }
 .float-anim { animation: float 6s ease-in-out infinite; }
-.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.reveal { opacity: 1; transform: none; transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
 .reveal.visible { opacity: 1; transform: none; }
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.22s; }

@@ -9,6 +9,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 1b. Scroll-Reveal via IntersectionObserver
+    const revealEls = document.querySelectorAll('.reveal');
+    // Immediately mark visible if already in viewport
+    revealEls.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(28px)';
+    });
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'none';
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+
     // Mobile Navigation Toggle
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
