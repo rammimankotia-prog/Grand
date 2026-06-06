@@ -270,15 +270,34 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         
         const submitBtn = modalForm.querySelector('.btn-submit');
-        const originalText = submitBtn.innerText;
         submitBtn.innerText = 'Transmitting to Concierge...';
         submitBtn.disabled = true;
 
-        // Simulate secure API dispatch
-        setTimeout(() => {
+        const data = {
+            _subject: `New Grand Holidays Inquiry: ${document.getElementById('modalJourneyInput').value}`,
+            name: document.getElementById('modalName').value,
+            email: document.getElementById('modalEmail').value,
+            preferredDates: document.getElementById('modalDates').value,
+            message: document.getElementById('modalMessage').value
+        };
+
+        fetch("https://formsubmit.co/ajax/book@godwinhotels.com", {
+            method: "POST",
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(() => {
             modalForm.style.display = 'none';
             modalSuccess.style.display = 'flex';
-        }, 1800);
+        })
+        .catch(err => {
+            console.error(err);
+            submitBtn.innerText = 'Error. Try Again.';
+            submitBtn.disabled = false;
+        });
     });
 
     // Page Concierge Form
@@ -292,10 +311,31 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.innerText = 'Designing Your Itinerary...';
         submitBtn.disabled = true;
 
-        setTimeout(() => {
+        const data = {
+            _subject: "New Grand Holidays Concierge Inquiry",
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            journeyType: document.getElementById('journey-type').value,
+            message: document.getElementById('notes').value
+        };
+
+        fetch("https://formsubmit.co/ajax/book@godwinhotels.com", {
+            method: "POST",
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(() => {
             conciergeForm.style.display = 'none';
             formSuccess.style.display = 'flex';
-        }, 2000);
+        })
+        .catch(err => {
+            console.error(err);
+            submitBtn.innerText = 'Error. Try Again.';
+            submitBtn.disabled = false;
+        });
     });
 
     // Newsletter Form

@@ -214,14 +214,35 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         
         const submitBtn = bookingForm.querySelector('.btn-sidebar-submit');
-        const originalText = submitBtn.innerText;
         submitBtn.innerText = 'Routing to Curator...';
         submitBtn.disabled = true;
 
-        // Simulate API post
-        setTimeout(() => {
+        const data = {
+            _subject: `New Grand Holidays Booking: Golden Triangle (${document.getElementById('selected-tour-mode').value.toUpperCase()})`,
+            name: document.getElementById('b-name').value,
+            email: document.getElementById('b-email').value,
+            preferredDate: document.getElementById('b-date').value,
+            guestsCount: document.getElementById('b-travelers').value,
+            message: document.getElementById('b-notes').value,
+            estimatedPrice: document.getElementById('summary-price-display').innerText
+        };
+
+        fetch("https://formsubmit.co/ajax/book@godwinhotels.com", {
+            method: "POST",
+            headers: { 
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(() => {
             bookingForm.style.display = 'none';
             bookingSuccess.style.display = 'flex';
-        }, 1800);
+        })
+        .catch(err => {
+            console.error(err);
+            submitBtn.innerText = 'Error. Try Again.';
+            submitBtn.disabled = false;
+        });
     });
 });

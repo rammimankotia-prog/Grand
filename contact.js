@@ -32,11 +32,32 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerText = 'Routing to Curation Desk...';
             submitBtn.disabled = true;
 
-            // Simulate secure API post
-            setTimeout(() => {
+            const data = {
+                _subject: "New Grand Holidays Contact Page Inquiry",
+                name: document.getElementById('c-name').value,
+                email: document.getElementById('c-email').value,
+                phone: document.getElementById('c-phone').value,
+                plannedBudget: document.getElementById('c-budget').value,
+                message: document.getElementById('c-message').value
+            };
+
+            fetch("https://formsubmit.co/ajax/book@godwinhotels.com", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
                 contactForm.style.display = 'none';
                 successMessage.style.display = 'flex';
-            }, 2000);
+            })
+            .catch(err => {
+                console.error(err);
+                submitBtn.innerText = 'Error. Try Again.';
+                submitBtn.disabled = false;
+            });
         });
     }
 });
