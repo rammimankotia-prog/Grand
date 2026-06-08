@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Himalayan Sanctuary Database
     const tourModes = {
-        heli: {
+        royal: {
             duration: "10 Days / 9 Nights",
             cities: "Srinagar · Gulmarg · Pahalgam · Shimla",
             price: "$15,800 (For 2 Adults)",
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 4, title: "Gondola Ride & Apharwat Peak", desc: "Skip-the-line VIP tickets to Gulmarg Gondola Phase 1 & 2. Sunset champagne toast at Apharwat Peak." },
                 { day: 5, title: "Scenic Drive to Pahalgam", desc: "Drive in comfort to Pahalgam. Check-in to a luxury pine-forest cottage. Evening campfire with local folk music." },
                 { day: 6, title: "Aru Valley Trekking Curation", desc: "Guided trek through pristine forests with veteran mountaineers. Private picnic lunch by the alpine Lidder river." },
-                { day: 7, title: "Overland Chauffeur to Shimla", desc: "SUV transfer to Srinagar for domestic flight to Chandigarh, followed by luxury road transfer to Shimla. Check-in to Wildflower Hall." },
+                { day: 7, title: "Scenic Overland Drive to Shimla", desc: "Enjoy a private, scenic long-distance road transit by luxury SUV through the breathtaking Himalayan foothills from Pahalgam to Shimla. Check-in to Wildflower Hall." },
                 { day: 8, title: "Wildflower Sanctuary Walk", desc: "Private nature walk in the cedar sanctuary, followed by colonial high tea on the terrace overlooking snow peaks." },
                 { day: 9, title: "Colonial Shimla History Walk", desc: "Guided heritage walk of the Mall Road, Christ Church, and Viceregal Lodge, Lord Kitchener's estate." },
-                { day: 10, title: "Private Departure Transfer", desc: "Private SUV transfer to Chandigarh or Delhi airport for your return flight home." }
+                { day: 10, title: "Private Departure Transfer", desc: "Private SUV transfer to Chandigarh or Delhi railway station/airport for your onward return journey." }
             ],
             inclusions: [
                 "Dedicated private luxury SUV (Audi Q7 / Fortuner) throughout the trip",
@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Private English-speaking historian guides in Srinagar, Gulmarg, and Shimla",
                 "VIP entries to Mughal Gardens, Gondola, and private Shikara",
                 "Daily gourmet breakfasts and curated dinners",
-                "Domestic flights and airport transfers"
+                "All private inter-city overland transits, road taxes, and driver allowances"
             ],
             exclusions: [
-                "International flights and travel visas",
+                "International/domestic flights and travel visas",
                 "Personal expenses (spa, laundry, alcoholic drinks)",
                 "Customary tipping and gratuities"
             ]
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 4, title: "Gulmarg Meadows & Gondola", desc: "Guided snow walk or meadow tour. VIP tickets for the Gulmarg Gondola." },
                 { day: 5, title: "SUV Transfer to Pahalgam", desc: "Drive to Pahalgam. Pass through historic saffron fields and Avantipura ruins." },
                 { day: 6, title: "Betaab Valley & Glacier Rivers", desc: "Guided trek in Betaab Valley. Traditional Kashmiri Wazwan lunch by the river." },
-                { day: 7, title: "Overland Drive to Shimla", desc: "Road drive to Srinagar airport, flight to Chandigarh, and SUV transfer to Shimla." },
+                { day: 7, title: "Overland Drive to Shimla", desc: "Full-day scenic overland road trip by private SUV from Pahalgam to Shimla with stops in the valleys. Check-in to Wildflower Hall." },
                 { day: 8, title: "Jakhoo Temple & Ridge Walk", desc: "Visit Jakhoo Temple and explore the historic wooden colonial buildings of Shimla." },
                 { day: 9, title: "Leisure at Wildflower Hall", desc: "Unwind at Wildflower Hall. Enjoy the heated outdoor infinity pool facing the mountains." },
-                { day: 10, title: "Departure Transfer to Chandigarh", desc: "SUV transfer back to Chandigarh airport for your flight home." }
+                { day: 10, title: "Departure Transfer", desc: "SUV transfer back to Chandigarh airport/railway station for your journey home." }
             ],
             inclusions: [
                 "Private Toyota Innova Crysta for all transfers and tours",
@@ -78,16 +78,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 4, title: "Gulmarg Gondola Ride", desc: "Ride the world's second-highest cable car. Visit the ancient Baba Reshi shrine." },
                 { day: 5, title: "Drive to Pahalgam Valley", desc: "Transfer to Pahalgam. Scenic stops at Awantipora and apple orchards." },
                 { day: 6, title: "Aru Valley Scenic Excursion", desc: "Explore Chandanwari and Aru Valley by local taxi. Enjoy mountain stream views." },
-                { day: 7, title: "Transfer to Shimla", desc: "Sedan transfer to Srinagar airport, flight to Chandigarh, and drive to Shimla." },
+                { day: 7, title: "Scenic Drive to Shimla", desc: "Scenic overland sedan journey through the Himalayan foothills from Pahalgam to Shimla. Check-in to your heritage hotel." },
                 { day: 8, title: "Shimla Ridge & Mall Road", desc: "Heritage walk along the Ridge, Mall Road, and the Lakkar Bazaar." },
                 { day: 9, title: "Kufri Pine Forest Excursion", desc: "Visit Kufri forest area. Enjoy high tea at a local heritage lodge." },
-                { day: 10, title: "Departure via Chandigarh", desc: "Chauffeur transfer to Chandigarh airport for your departure flight." }
+                { day: 10, title: "Departure via Chandigarh", desc: "Chauffeur transfer to Chandigarh airport/railway station for your departure." }
             ],
             inclusions: [
                 "Private Sedan (Toyota Etios / Maruti Dzire) for all road transfers",
                 "Stays in premium heritage boutique hotels",
                 "Local guided sightseeing tours",
-                "Daily breakfast and airport transfers",
+                "Daily breakfast and arrival/departure transfers",
                 "Standard entry tickets to gardens and gondola"
             ],
             exclusions: [
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Set Initial Load
-    updateTourDisplay('heli');
+    updateTourDisplay('royal');
 
     // Tab Event Listeners
     tabButtons.forEach(btn => {
