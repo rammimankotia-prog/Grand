@@ -330,10 +330,19 @@
                         <path d="M80,40 C130,25 220,20 300,30 C390,42 470,28 540,48 C600,65 640,95 645,140 C650,185 638,225 645,268 C652,315 638,360 610,395 C580,432 545,455 505,465 C460,478 410,480 365,475 C315,470 265,465 220,455 C170,443 125,422 90,390 C55,355 38,305 32,260 C24,205 30,145 45,100 C58,65 60,52 80,40 Z" fill="#e0d3bd" opacity="0.45"/>
                         <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                         <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
-                        <line x1="340" y1="148" x2="438" y2="318" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9"><animate attributeName="stroke-dashoffset" from="0" to="-200" dur="2.8s" repeatCount="indefinite"/></line>
-                        <line x1="340" y1="148" x2="190" y2="318" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9"><animate attributeName="stroke-dashoffset" from="0" to="-200" dur="3.4s" repeatCount="indefinite"/></line>
-                        <line x1="438" y1="318" x2="190" y2="318" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9"><animate attributeName="stroke-dashoffset" from="0" to="-200" dur="4s" repeatCount="indefinite"/></line>
-                        <polygon points="340,148 438,318 190,318" fill="rgba(166,124,49,0.07)"/>
+                         <!-- Route Line Paths Connecting Sights -->
+                         <path id="route-path" d="M340,148 L438,318 L190,318 Z" fill="rgba(166,124,49,0.07)" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9">
+                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
+                         </path>
+
+                         <!-- Moving Car Icon along route -->
+                         <g>
+                             <text font-size="22" text-anchor="middle" dominant-baseline="central">🚗
+                                 <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+                                     <mpath href="#route-path"/>
+                                 </animateMotion>
+                             </text>
+                         </g>
                         <g transform="translate(412,228)"><rect x="-44" y="-16" width="88" height="32" rx="16" fill="#1a1208" opacity="0.88"/><text x="0" y="-2" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#f0c060">203 km</text><text x="0" y="11" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="rgba(255,220,120,0.75)">~3 hrs drive</text></g>
                         <g transform="translate(242,228)"><rect x="-44" y="-16" width="88" height="32" rx="16" fill="#1a1208" opacity="0.88"/><text x="0" y="-2" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#f0c060">281 km</text><text x="0" y="11" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="rgba(255,220,120,0.75)">~5 hrs drive</text></g>
                         <g transform="translate(315,300)"><rect x="-44" y="-16" width="88" height="32" rx="16" fill="#1a1208" opacity="0.88"/><text x="0" y="-2" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#f0c060">240 km</text><text x="0" y="11" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="rgba(255,220,120,0.75)">~4 hrs drive</text></g>

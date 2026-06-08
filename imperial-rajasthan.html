@@ -181,7 +181,7 @@
             <div class="tour-meta-strip">
                 <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">9 Days / 8 Nights</span></span>
                 <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">Jodhpur · Udaipur · Jaisalmer</span></span>
-                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $14,200 p.p.</span></span>
+                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $14,200 (For 2 Adults)</span></span>
             </div>
         </div>
     </section>
@@ -195,13 +195,13 @@
                 <p>Tailor your royal journey across Rajasthan. Select between private road curators, domestic air overlays, or heritage express transits.</p>
                 <div class="mode-tabs">
                     <button class="mode-tab-btn active" data-mode="suv">
-                        <span class="tab-icon">🚗</span> Palace Chauffeur SUV (Classic Lux)
+                        <span class="tab-icon">🚗</span> Palace Chauffeur SUV
                     </button>
                     <button class="mode-tab-btn" data-mode="charter">
-                        <span class="tab-icon">✈️</span> Charter Aviation (Ultra-Lux)
+                        <span class="tab-icon">🚘</span> Royal Palace Suite &amp; SUV
                     </button>
                     <button class="mode-tab-btn" data-mode="express">
-                        <span class="tab-icon">🚂</span> Heritage Express (Train &amp; Road)
+                        <span class="tab-icon">🏠</span> Heritage Haveli &amp; Sedan
                     </button>
                 </div>
             </div>
@@ -251,7 +251,7 @@
                     <div class="sticky-booking-card glass-card" id="booking-section">
                         <div class="price-summary-box price-summary-top">
                             <span class="summary-label">Estimated Price</span>
-                            <span class="summary-value" id="summary-price-display">$14,200 p.p.</span>
+                            <span class="summary-value" id="summary-price-display">$14,200 (For 2 Adults)</span>
                         </div>
                         <h3 class="sidebar-title">Book This Experience</h3>
                         <p class="sidebar-desc">Request your customized itinerary configuration. Our lead curator will contact you to refine details.</p>
@@ -275,13 +275,7 @@
                             </div>
 
                             <div class="sidebar-form-group">
-                                <select id="b-travelers" class="sidebar-input select-input" required>
-                                    <option value="" disabled selected hidden></option>
-                                    <option value="1">1 Guest</option>
-                                    <option value="2">2 Guests (Double Sharing)</option>
-                                    <option value="3-5">3 - 5 Guests</option>
-                                    <option value="6+">6+ Guests (Private Group)</option>
-                                </select>
+                                <input type="text" id="b-travelers" value="2 Adults" class="sidebar-input" readonly>
                                 <label for="b-travelers" class="sidebar-label">Number of Guests</label>
                             </div>
 
@@ -328,9 +322,18 @@
                         
                         <!-- Route Line Paths Connecting Sights -->
                         <!-- Jaisalmer (160,180) -> Jodhpur (320,220) -> Udaipur (440,360) -->
-                        <path d="M160,180 Q240,200 320,220 Q380,290 440,360" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <path id="route-path" d="M160,180 Q240,200 320,220 Q380,290 440,360" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
                         </path>
+
+                        <!-- Moving Car Icon along route -->
+                        <g>
+                            <text font-size="22" text-anchor="middle" dominant-baseline="central">🚗
+                                <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#route-path"/>
+                                </animateMotion>
+                            </text>
+                        </g>
 
                         <!-- Distance Labels & Travel Times -->
                         <g transform="translate(240,180)">

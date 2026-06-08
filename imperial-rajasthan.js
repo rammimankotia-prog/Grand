@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         suv: {
             duration: "9 Days / 8 Nights",
             cities: "Jodhpur · Jaisalmer · Udaipur",
-            price: "$14,200 p.p.",
-            shortDesc: "Explore the royal forts and glistening lakes of Rajasthan in a private luxury SUV (Audi Q7 or Mercedes GLE) with a dedicated chauffeur-guide.",
+            price: "$14,200 (For 2 Adults)",
+            shortDesc: "Explore the royal forts and glistening lakes of Rajasthan in a private luxury SUV (Toyota Innova Crysta or Fortuner) with a dedicated chauffeur-guide.",
             highlight: "🚗 Private luxury chauffeur SUV throughout, stays at Umaid Bhawan Palace & Taj Lake Palace, lake cruises, and historic city guides.",
             itinerary: [
                 { day: 1, title: "Arrival in Jodhpur", desc: "Welcome to the Blue City. Your private chauffeur transfers you in a luxury SUV to the majestic Umaid Bhawan Palace." },
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 9, title: "Udaipur Departure", desc: "Private SUV transfer to Udaipur Airport for your departure flight." }
             ],
             inclusions: [
-                "Dedicated premium SUV (Audi Q7 / Fortuner) throughout the itinerary",
+                "Dedicated premium SUV (Fortuner / Innova) throughout the itinerary",
                 "Private local historian guides at all cities",
                 "Heritage palace hotel stays (Umaid Bhawan & Taj Lake Palace)",
                 "Daily gourmet breakfasts and three curated palace dinners",
@@ -35,30 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
         charter: {
             duration: "9 Days / 8 Nights",
             cities: "Jodhpur · Jaisalmer · Udaipur",
-            price: "$19,500 p.p.",
-            shortDesc: "The ultimate royal experience. Fly between destinations by private charter flights, enjoy exclusive rolls-royce transfers, and gain private palace access.",
-            highlight: "✈️ Private charter flights, vintage Rolls Royce transfers, private royal suite stays, and exclusive palace access.",
+            price: "$19,500 (For 2 Adults)",
+            shortDesc: "Unrivaled heritage style. Drive between heritage palace destinations in a private luxury SUV (Audi Q7 or Mercedes GLE) and stay in historical grand suites.",
+            highlight: "🚗 Premium luxury SUV (Audi Q7 / Mercedes GLE) throughout, stay in historical Grand Palace Suites, vintage car transfers, and private curator guides.",
             itinerary: [
-                { day: 1, title: "Charter Flight to Jodhpur", desc: "Arrive in Jodhpur by private charter plane. Chauffeur Rolls Royce transfer to Umaid Bhawan Palace." },
-                { day: 2, title: "Royal Early-Access Fort Tour", desc: "Private early-access tour of Mehrangarh Fort with the royal family's personal curator. Evening polo grounds dinner." },
-                { day: 3, title: "Charter Flight to Jaisalmer", desc: "Short flight by private charter to Jaisalmer. Luxury private tent at Sujan The Serai." },
+                { day: 1, title: "Arrival in Jodhpur", desc: "Welcome to Jodhpur. Your private chauffeur transfers you in a luxury Audi Q7 or Mercedes SUV to the grand Umaid Bhawan Palace royal suite." },
+                { day: 2, title: "Royal Early-Access Fort Tour", desc: "Private early-access tour of Mehrangarh Fort with the personal curator. Evening polo grounds dining." },
+                { day: 3, title: "Scenic Road Journey to Jaisalmer", desc: "Road trip across the desert dunes in your premium luxury SUV. Check-in to Sujan The Serai camp." },
                 { day: 4, title: "Thar Dunes & Astronomer Stargazing", desc: "Desert dunes safari, champagne sunset, private astronomer-guided stargazing using high-end telescopes." },
                 { day: 5, title: "Living Fort Royal Chambers", desc: "Exclusive inside tour of Jaisalmer Fort's private royal chambers and local sandstone art workshops." },
-                { day: 6, title: "Charter Flight to Udaipur", desc: "Fly by private charter to Udaipur. Royal welcome and check-in to Taj Lake Palace grand suite." },
+                { day: 6, title: "SUV Road Transfer to Udaipur", desc: "Scenic road transfer in your luxury SUV to Udaipur. Royal welcome and check-in to Taj Lake Palace grand suite." },
                 { day: 7, title: "Private City Palace & Royal Barge", desc: "Curator-guided tour of Udaipur City Palace. Sunset cruise on a royal historical barge with live classical music." },
                 { day: 8, title: "Sajjangarh High Tea", desc: "Private champagne high tea at Sajjangarh Monsoon Palace overlooking the Aravali Hills." },
-                { day: 9, title: "Charter Return Flight", desc: "Private charter transfer to Delhi or Mumbai airport for your return flight." }
+                { day: 9, title: "Udaipur Departure", desc: "Private luxury SUV transfer to Udaipur Airport for your departure flight." }
             ],
             inclusions: [
-                "Private charter flights between Jodhpur, Jaisalmer, and Udaipur",
-                "Vintage Rolls Royce airport transfers",
-                "Stays in Grand Royal Suites at Oberoi/Taj properties",
+                "Private luxury SUV (Audi Q7 / Mercedes GLE) for all road transfers",
+                "Stays in Grand Royal Suites at premium palace properties",
+                "Private historian/curator guides at all locations",
                 "All monument entry tickets with fast-track VIP access",
                 "All meals and premium beverages included",
-                "Private curator-led local guide service"
+                "Sunset barge cruise on Lake Pichola"
             ],
             exclusions: [
-                "International airfare and visa fees",
+                "Flights and airport departure taxes",
                 "Personal shopping expenses",
                 "Customary tipping"
             ]
@@ -66,31 +66,31 @@ document.addEventListener('DOMContentLoaded', () => {
         express: {
             duration: "9 Days / 8 Nights",
             cities: "Jodhpur · Jaisalmer · Udaipur",
-            price: "$11,500 p.p.",
-            shortDesc: "Board luxury rail links combined with private local SUV transport to experience Rajasthan's heritage in comfort.",
-            highlight: "🚂 Premium rail travel, local SUV transfers, stays in handpicked heritage hotels, and classic sightseeing.",
+            price: "$11,500 (For 2 Adults)",
+            shortDesc: "Experience the timeless cultural heritage of Rajasthan with stays in handpicked boutique Havelis and private Sedan transport.",
+            highlight: "🏠 Stays in boutique heritage Havelis, private Sedan transport (Toyota Etios/Dzire), guided sightseeing, and local cultural tours.",
             itinerary: [
-                { day: 1, title: "Jodhpur Arrival", desc: "Arrive in Jodhpur. Chauffeur transfer to Taj Hari Mahal hotel. Rest and unpack." },
-                { day: 2, title: "Forts & Jaswant Thada", desc: "Guided tour of Mehrangarh Fort, Jaswant Thada cenotaph, and local textile markets." },
-                { day: 3, title: "Express Train to Jaisalmer", desc: "Board the air-conditioned express train to Jaisalmer. Check-in to a boutique desert resort." },
+                { day: 1, title: "Jodhpur Arrival", desc: "Welcome to Jodhpur. Chauffeur Sedan transfer to Taj Hari Mahal hotel. Rest and unpack." },
+                { day: 2, title: "Forts & Jaswant Thada", desc: "Guided tour of Mehrangarh Fort, Jaswant Thada cenotaph, and local spice markets." },
+                { day: 3, title: "Road Drive to Jaisalmer", desc: "Scenic road transfer in your private Sedan to Jaisalmer. Check-in to a boutique desert haveli." },
                 { day: 4, title: "Camel Safari & Bonfire", desc: "Dune safari, sunset cultural dance, traditional desert dinner under the open sky." },
                 { day: 5, title: "Havelis of Jaisalmer", desc: "Walking tour of Jaisalmer Fort and the historic architectural havelis." },
-                { day: 6, title: "Transfer to Udaipur", desc: "Board the express train segment/scenic road transfer to Udaipur. Stay at Raas Devigarh." },
+                { day: 6, title: "Drive to Udaipur", desc: "Road transfer in your Sedan to Udaipur. Check-in to Raas Devigarh or boutique haveli." },
                 { day: 7, title: "City Palace & Lake Boat Tour", desc: "City Palace museum tour, Jagdish Temple, and group boat ride on Lake Pichola." },
                 { day: 8, title: "Eklingji & Nagda Temples", desc: "Excursion to the 10th-century Eklingji and Nagda temples with a private guide." },
                 { day: 9, title: "Departure from Udaipur", desc: "Chauffeur transfer to Udaipur Airport for your departure flight." }
             ],
             inclusions: [
-                "AC Train tickets and local SUV transfers",
-                "Comfortable stays in heritage hotels",
-                "Local guided sightseeing tours",
+                "Private Sedan (Toyota Etios / Maruti Dzire) for all road transfers",
+                "Stays in premium boutique heritage Havelis",
+                "Local guided sightseeing and entrance tickets",
                 "Daily breakfast and airport transfers",
-                "Standard entry tickets to forts and lakes"
+                "Shared boat cruise on Lake Pichola"
             ],
             exclusions: [
                 "Flights and airport departure taxes",
                 "Personal tips and shopping expenses",
-                "Optional hot air balloon rides"
+                "Optional custom excursions"
             ]
         }
     };

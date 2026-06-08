@@ -181,7 +181,7 @@
             <div class="tour-meta-strip">
                 <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">10 Days / 9 Nights</span></span>
                 <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">Srinagar · Pahalgam · Shimla</span></span>
-                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $15,800 p.p.</span></span>
+                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $15,800 (For 2 Adults)</span></span>
             </div>
         </div>
     </section>
@@ -195,13 +195,13 @@
                 <p>Tailor your Himalayan adventure with our bespoke options. Choose between private aviation overlays or complete chauffeur SUV road trips.</p>
                 <div class="mode-tabs">
                     <button class="mode-tab-btn active" data-mode="heli">
-                        <span class="tab-icon">🚁</span> Private Heli &amp; SUV (Ultra-Lux)
+                        <span class="tab-icon">🚗</span> Royal Suite &amp; SUV
                     </button>
                     <button class="mode-tab-btn" data-mode="suv">
-                        <span class="tab-icon">🚗</span> Chauffeur SUV (Classic Lux)
+                        <span class="tab-icon">🚘</span> Premium Room &amp; SUV
                     </button>
                     <button class="mode-tab-btn" data-mode="heritage">
-                        <span class="tab-icon">🏔️</span> Overland Heritage (Bespoke Comfort)
+                        <span class="tab-icon">🏠</span> Heritage Room &amp; Sedan
                     </button>
                 </div>
             </div>
@@ -251,7 +251,7 @@
                     <div class="sticky-booking-card glass-card" id="booking-section">
                         <div class="price-summary-box price-summary-top">
                             <span class="summary-label">Estimated Price</span>
-                            <span class="summary-value" id="summary-price-display">$15,800 p.p.</span>
+                            <span class="summary-value" id="summary-price-display">$15,800 (For 2 Adults)</span>
                         </div>
                         <h3 class="sidebar-title">Request a Curator</h3>
                         <p class="sidebar-desc">Speak directly with our private travel designers. We tailor every villa stay, flight layout, and dining experience to you.</p>
@@ -275,13 +275,7 @@
                             </div>
 
                             <div class="sidebar-form-group">
-                                <select id="b-travelers" class="sidebar-input select-input" required>
-                                    <option value="" disabled selected hidden></option>
-                                    <option value="1">1 Guest</option>
-                                    <option value="2">2 Guests (Double Sharing)</option>
-                                    <option value="3-5">3 - 5 Guests</option>
-                                    <option value="6+">6+ Guests (Private Charter)</option>
-                                </select>
+                                <input type="text" id="b-travelers" value="2 Adults" class="sidebar-input" readonly>
                                 <label for="b-travelers" class="sidebar-label">Number of Guests</label>
                             </div>
 
@@ -328,9 +322,18 @@
                         
                         <!-- Route Line Paths Connecting Sights -->
                         <!-- Gulmarg (180,140) -> Srinagar Houseboat (280,100) -> Pahalgam (380,160) -> Shimla (480,340) -->
-                        <path d="M180,140 Q230,110 280,100 Q330,120 380,160 Q450,230 480,340" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <path id="route-path" d="M180,140 Q230,110 280,100 Q330,120 380,160 Q450,230 480,340" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
                         </path>
+
+                        <!-- Moving Car Icon along route -->
+                        <g>
+                            <text font-size="22" text-anchor="middle" dominant-baseline="central">🚗
+                                <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#route-path"/>
+                                </animateMotion>
+                            </text>
+                        </g>
 
                         <!-- Distance Labels & Travel Times -->
                         <g transform="translate(225,100)">
@@ -343,7 +346,7 @@
                         </g>
                         <g transform="translate(460,240)">
                             <rect x="-40" y="-12" width="80" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
-                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">Flight Segment</text>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">Chauffeur SUV</text>
                         </g>
 
                         <!-- Pins & Locations -->
@@ -396,10 +399,10 @@
                     <div class="gt-city-card">
                         <div class="city-card-icon">🌲</div>
                         <h3 class="city-card-name">Pahalgam</h3>
-                        <p class="city-card-desc">Pristine pine forests, alpine rivers, and exclusive helicopter transfers overlooking glacier valleys.</p>
+                        <p class="city-card-desc">Pristine pine forests, alpine rivers, and exclusive private cottage stays overlooking glacier valleys.</p>
                         <div class="city-card-tags">
                             <span>Pine Forests</span>
-                            <span>Helicopter Ride</span>
+                            <span>Riverside Walks</span>
                         </div>
                     </div>
 

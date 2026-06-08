@@ -336,9 +336,18 @@
                         
                         <!-- Route Line Paths Connecting Sights -->
                         <!-- Old Delhi (340,90) -> Red Fort (395,80) -> Raj Ghat (430,120) -> India Gate (340,210) -> Humayun's Tomb (415,270) -> Lotus Temple (460,355) -> Qutub Minar (280,400) -->
-                        <path d="M340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <path id="route-path" d="M340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
                         </path>
+
+                        <!-- Moving Car Icon along route -->
+                        <g>
+                            <text font-size="22" text-anchor="middle" dominant-baseline="central">🚗
+                                <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#route-path"/>
+                                </animateMotion>
+                            </text>
+                        </g>
 
                         <!-- Distance Labels & Travel Times -->
                         <g transform="translate(390,155)">
