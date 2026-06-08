@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "10 Days / 9 Nights",
             cities: "Srinagar · Gulmarg · Pahalgam · Shimla",
             price: "$15,800 (For 2 Adults)",
-            shortDesc: "Witness the magnificent Himalayas. Travel in a luxury private SUV (Audi Q7 or Toyota Fortuner) with stays in royal suites at Khyber Gulmarg & Wildflower Hall Shimla.",
+            shortDesc: "Witness the magnificent Himalayas. Travel in a luxury private SUV (Toyota Fortuner) with stays in royal suites at Khyber Gulmarg & Wildflower Hall Shimla.",
             highlight: "🚗 Dedicated private luxury SUV throughout, Grand Royal Suites at Oberoi Wildflower Hall & Khyber Resort, sunset sitar recitals, and personal historian guides.",
             itinerary: [
                 { day: 1, title: "Arrival in Srinagar", desc: "Welcome to Kashmir. A private SUV transfers you to a custom royal houseboat on Dal Lake. Sunset Shikara cruise with live sitar." },
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 10, title: "Private Departure Transfer", desc: "Private SUV transfer to Chandigarh or Delhi railway station/airport for your onward return journey." }
             ],
             inclusions: [
-                "Dedicated private luxury SUV (Audi Q7 / Fortuner) throughout the trip",
+                "Dedicated private luxury SUV (Toyota Fortuner) throughout the trip",
                 "Stays in Royal Suites (Oberoi Wildflower Hall & Khyber Resort)",
                 "Private English-speaking historian guides in Srinagar, Gulmarg, and Shimla",
                 "VIP entries to Mughal Gardens, Gondola, and private Shikara",
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "10 Days / 9 Nights",
             cities: "Srinagar · Gulmarg · Pahalgam · Shimla",
             price: "$12,200 (For 2 Adults)",
-            shortDesc: "Explore the scenic paths and local cultures in a private SUV (Toyota Innova Crysta) with premium 5-star hotel accommodations.",
-            highlight: "🚗 Private Innova Crysta, premium rooms at Khyber Resort & Oberoi Wildflower Hall, local guided tours, and Shikara rides.",
+            shortDesc: "Explore the scenic paths and local cultures in a private SUV with premium 5-star hotel accommodations.",
+            highlight: "🚗 Private SUV, premium rooms at Khyber Resort & Oberoi Wildflower Hall, local guided tours, and Shikara rides.",
             itinerary: [
                 { day: 1, title: "Srinagar Valley Arrival", desc: "Arrive in Srinagar. Your private luxury chauffeur transfers you to a Taj Palace Houseboat. Sunset Shikara ride." },
                 { day: 2, title: "Mughal Architecture Curation", desc: "Historian-guided tour of Jama Masjid Srinagar, Shalimar Bagh, and Nishat Bagh." },
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 { day: 10, title: "Departure Transfer", desc: "SUV transfer back to Chandigarh airport/railway station for your journey home." }
             ],
             inclusions: [
-                "Private Toyota Innova Crysta for all transfers and tours",
+                "Private SUV for all transfers and tours",
                 "Stays in premium rooms at 5-star hotels (Khyber & Oberoi)",
                 "Local guided city tours and historic briefs",
                 "Entry tickets to gardens, gondola, and Shikara cruise",
