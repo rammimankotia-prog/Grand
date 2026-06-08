@@ -394,4 +394,18 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = 'auto';
         }
     });
+
+    // 6. Mobile Dropdown Menu Toggle
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                const parent = toggle.closest('.nav-dropdown');
+                if (parent) {
+                    parent.classList.toggle('active');
+                }
+            }
+        });
+    });
 });
