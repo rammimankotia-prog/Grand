@@ -17,7 +17,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="index.css?v=14">
-    <link rel="stylesheet" href="delhi-sightseeing.css?v=5">
+    <link rel="stylesheet" href="delhi-sightseeing.css?v=6">
     
     <!-- Dropdown Navigation Styles to bypass caching -->
     <style>
@@ -224,6 +224,32 @@
                         </div>
                     </div>
 
+                    <!-- Key Info Strip -->
+                    <div class="detail-block glass-card" style="padding: 1.4rem 2rem;">
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1.2rem;">
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🏨</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Pick-Up &amp; Stay</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Hotel Godwin Deluxe</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🍳</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Breakfast Location</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Indian Grill Restaurant</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚗</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Private Transfer</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Pickup &amp; Drop-off</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🎟️</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Monument Tickets</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:#ef4444; margin-top:0.3rem;">Not Included</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Day by Day Itinerary -->
                     <div class="detail-block glass-card">
                         <h2 class="block-title">Sightseeing Itinerary</h2>
@@ -287,6 +313,11 @@
                                     <option value="10">10 Pax / Group (Coach)</option>
                                 </select>
                                 <label for="b-travelers" class="sidebar-label">Selected Configuration</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-hotel" value="Hotel Godwin Deluxe, Paharganj" class="sidebar-input" readonly>
+                                <label for="b-hotel" class="sidebar-label">Pick-Up & Stay Hotel</label>
                             </div>
 
                             <div class="sidebar-form-group">
@@ -645,6 +676,6 @@
     </a>
 
     <!-- Scripts -->
-    <script src="delhi-sightseeing.js?v=6"></script>
+    <script src="delhi-sightseeing.js?v=7"></script>
 </body>
 </html>
