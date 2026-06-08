@@ -16,8 +16,119 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="index.css?v=5">
+    <link rel="stylesheet" href="index.css?v=12">
     <link rel="stylesheet" href="golden-triangle.css?v=5">
+    
+    <!-- Dropdown Navigation Styles to bypass caching -->
+    <style>
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+        .dropdown-toggle .arrow {
+            font-size: 0.55rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: #FFFEFB;
+            border: 1px solid rgba(24,19,14,0.07);
+            border-top: 3px solid #A67C31;
+            border-radius: 8px;
+            min-width: 230px;
+            opacity: 0;
+            visibility: hidden;
+            padding: 0.7rem 0;
+            box-shadow: 0 8px 30px rgba(24,19,14,0.10);
+            transition: opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1), transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.22s;
+            z-index: 1000;
+            margin-top: 0.6rem;
+            display: block;
+        }
+        @media (min-width: 769px) {
+            .nav-dropdown:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(0);
+            }
+            .nav-dropdown:hover .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+        }
+        .dropdown-item {
+            display: block;
+            padding: 0.6rem 1.4rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #6B5F54;
+            white-space: nowrap;
+            transition: all 0.18s ease;
+            text-align: left;
+        }
+        .dropdown-item:hover {
+            background: rgba(166,124,49,0.07);
+            color: #A67C31;
+            padding-left: 1.7rem;
+        }
+        .dropdown-item.active {
+            color: #A67C31;
+            background: rgba(166,124,49,0.07);
+        }
+        @media (max-width: 768px) {
+            .nav-dropdown {
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown-toggle {
+                justify-content: center;
+                font-size: 1rem !important;
+            }
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                border-left: 2px solid rgba(166,124,49,0.28);
+                border-radius: 0;
+                background: transparent;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                padding: 0.5rem 0 0 1.5rem;
+                min-width: unset;
+                text-align: left;
+                margin-top: 0.5rem;
+            }
+            .nav-dropdown.active .dropdown-menu {
+                display: block;
+            }
+            .nav-dropdown.active .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+            .dropdown-item {
+                font-size: 0.85rem;
+                padding: 0.5rem 0;
+                color: #6B5F54;
+            }
+            .dropdown-item:hover {
+                padding-left: 0.3rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -40,7 +151,7 @@
                     <a href="#" class="nav-link active dropdown-toggle">Our Tours <span class="arrow">▼</span></a>
                     <div class="dropdown-menu">
                         <a href="golden-triangle.html" class="dropdown-item active">Golden Triangle Tour</a>
-                        <a href="delhi-sightseeing.html" class="dropdown-item">Same Day Delhi Tour</a>
+                        <a href="delhi-sightseeing.html" class="dropdown-item">Delhi Sightseeing Tour</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-link">Contact Us</a>
