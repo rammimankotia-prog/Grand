@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delhi Food & Spice Tour (Same Day) | Grand Holidays</title>
+    <title>New Delhi Bicycle Tour (Sunrise) | Grand Holidays</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/favicon.png">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Experience Delhi's culinary heritage. Same day local food & spice tour with private vehicle, expert guide, and complimentary breakfast.">
+    <meta name="description" content="Experience New Delhi at sunrise on an immersive guided bicycle tour. Cycle past India Gate, Lutyens' Delhi, and Lodhi Gardens.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="index.css?v=14">
-    <link rel="stylesheet" href="delhi-food-tour.css?v=1">
+    <link rel="stylesheet" href="index.css?v=15">
+    <link rel="stylesheet" href="delhi-bicycle-tour.css?v=1">
     
-    <!-- Dropdown Navigation Styles to bypass caching -->
+    <!-- Dropdown Navigation Styles -->
     <style>
         .nav-dropdown {
             position: relative;
@@ -152,9 +152,9 @@
                     <div class="dropdown-menu">
                         <a href="golden-triangle.html" class="dropdown-item">Golden Triangle Tour</a>
                         <a href="delhi-sightseeing.html" class="dropdown-item">Delhi Sightseeing Tour</a>
-                        <a href="delhi-food-tour.html" class="dropdown-item active">Delhi Food & Spice Tour</a>
+                        <a href="delhi-food-tour.html" class="dropdown-item">Delhi Food & Spice Tour</a>
                         <a href="delhi-spiritual-tour.html" class="dropdown-item">Delhi Spiritual & Temple Tour</a>
-                        <a href="delhi-bicycle-tour.html" class="dropdown-item">New Delhi Bicycle Tour</a>
+                        <a href="delhi-bicycle-tour.html" class="dropdown-item active">New Delhi Bicycle Tour</a>
                         <a href="agra-day-tour.html" class="dropdown-item">Same Day Agra Tour</a>
                         <a href="himalayan-sanctuary.html" class="dropdown-item">Himalayan Sanctuary</a>
                         <a href="imperial-rajasthan.html" class="dropdown-item">Imperial Rajasthan Tour</a>
@@ -175,17 +175,17 @@
     <!-- Tour Banner Header -->
     <section class="tour-hero">
         <div class="tour-hero-bg">
-            <img src="assets/delhi-food-hero.png" alt="Delhi Food Tour Banner" class="tour-hero-img">
+            <img src="assets/delhi-bicycle-hero.png" alt="Delhi Bicycle Tour Banner" class="tour-hero-img">
             <div class="hero-overlay"></div>
         </div>
         
         <div class="tour-hero-content">
-            <span class="tour-badge">CULINARY JOURNEY</span>
-            <h1 class="tour-main-title">Delhi Food & Spice Tour</h1>
+            <span class="tour-badge">ACTIVE JOURNEY</span>
+            <h1 class="tour-main-title">New Delhi Bicycle Tour</h1>
             <div class="tour-meta-strip">
-                <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">8 Hours</span></span>
-                <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">Old &amp; New Delhi</span></span>
-                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $65 p.p.</span></span>
+                <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">4 Hours (Sunrise)</span></span>
+                <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">New Delhi</span></span>
+                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $35 p.p.</span></span>
             </div>
         </div>
     </section>
@@ -195,17 +195,17 @@
         <div class="container">
             <!-- Mode Switcher Widget -->
             <div class="mode-switcher-container glass-card">
-                <h3>Select Vehicle & Group Configuration</h3>
-                <p>Choose your preferred private vehicle. All modes include English-speaking driver, guide, and hotel pickup/drop-off.</p>
-                <div class="mode-tabs">
-                    <button class="mode-tab-btn active" data-mode="sedan">
-                        <span class="tab-icon">🚗</span> Sedan (1-2 Pax)
+                <h3>Select Bicycle & Group Configuration</h3>
+                <p>Choose your preferred cycling experience. All options include a safety helmet, English-speaking cycling guide, and complimentary post-ride breakfast.</p>
+                <div class="mode-tabs" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                    <button class="mode-tab-btn active" data-mode="standard">
+                        <span class="tab-icon">🚲</span> Standard City Bike
                     </button>
-                    <button class="mode-tab-btn" data-mode="suv">
-                        <span class="tab-icon">🚙</span> SUV (3-4 Pax)
+                    <button class="mode-tab-btn" data-mode="ebike">
+                        <span class="tab-icon">⚡</span> Premium E-Bike
                     </button>
-                    <button class="mode-tab-btn" data-mode="minivan">
-                        <span class="tab-icon">🚐</span> Minivan (5-6 Pax)
+                    <button class="mode-tab-btn" data-mode="group">
+                        <span class="tab-icon">👨‍👩‍👧‍👦</span> Private Group (Min 4)
                     </button>
                 </div>
             </div>
@@ -217,7 +217,7 @@
                     <div class="detail-block glass-card">
                         <h2 class="block-title">Tour Description</h2>
                         <p id="tour-short-desc" class="block-text">
-                            Experience the vibrant culinary heritage of Delhi. Travel in a comfortable private vehicle with pick-up, drop-off, and breakfast at Hotel Godwin Deluxe.
+                            Experience the magic of New Delhi at sunrise. Cycle through historic streets and grand avenues on a comfortable bicycle, culminating with a hearty breakfast at Hotel Godwin Deluxe.
                         </p>
                         <div class="mode-highlights" id="mode-highlight-box">
                             <!-- Injected dynamically by JS -->
@@ -229,30 +229,30 @@
                         <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1.2rem;">
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
                                 <div style="font-size:1.6rem; margin-bottom:0.3rem;">🏨</div>
-                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Pick-Up &amp; Stay</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Start &amp; End</div>
                                 <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Hotel Godwin Deluxe</div>
                             </div>
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
                                 <div style="font-size:1.6rem; margin-bottom:0.3rem;">🍳</div>
-                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Breakfast Location</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Post-Ride Breakfast</div>
                                 <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Indian Grill Restaurant</div>
                             </div>
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
-                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚗</div>
-                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Private Transfer</div>
-                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Neat &amp; Clean Car</div>
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚲</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Equipment</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">High-Quality Bikes</div>
                             </div>
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
                                 <div style="font-size:1.6rem; margin-bottom:0.3rem;">🤵</div>
                                 <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Expertise</div>
-                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Driver &amp; Guide</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Cycling Guide</div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Day by Day Itinerary -->
                     <div class="detail-block glass-card">
-                        <h2 class="block-title">Culinary Itinerary</h2>
+                        <h2 class="block-title">Cycling Itinerary</h2>
                         
                         <div class="itinerary-timeline" id="itinerary-timeline-box">
                             <!-- Timeline items will be injected by JS depending on mode -->
@@ -280,14 +280,14 @@
                 <div class="tour-right-col">
                     <div class="sticky-booking-card glass-card" id="booking-section">
                         <div class="price-summary-box price-summary-top">
-                            <span class="summary-label">Estimated Package Price</span>
-                            <span class="summary-value" id="summary-price-display">$65 Total</span>
+                            <span class="summary-label">Estimated Price per Person</span>
+                            <span class="summary-value" id="summary-price-display">$45</span>
                         </div>
                         <h3 class="sidebar-title">Book This Experience</h3>
-                        <p class="sidebar-desc">Request your customized culinary journey configuration. Our lead curator will contact you to refine details.</p>
+                        <p class="sidebar-desc">Reserve your bicycles for an unforgettable sunrise ride. A coordinator will email you shortly.</p>
                         
                         <form id="tourBookingForm" class="sidebar-form">
-                            <input type="hidden" id="selected-tour-mode" value="sedan">
+                            <input type="hidden" id="selected-tour-mode" value="standard">
                             
                             <div class="sidebar-form-group">
                                 <input type="text" id="b-name" required placeholder=" " class="sidebar-input">
@@ -301,29 +301,29 @@
 
                             <div class="sidebar-form-group">
                                 <input type="text" id="b-date" required placeholder=" " class="sidebar-input">
-                                <label for="b-date" class="sidebar-label">Preferred Date of Travel</label>
+                                <label for="b-date" class="sidebar-label">Preferred Date of Ride</label>
                             </div>
 
                             <div class="sidebar-form-group">
                                 <select id="b-travelers" class="sidebar-input select-input" required>
                                     <option value="" disabled selected hidden></option>
-                                    <option value="1">1 Person</option>
-                                    <option value="2">2 Persons</option>
-                                    <option value="3">3 Persons</option>
-                                    <option value="4">4 Persons</option>
-                                    <option value="5+">5+ Persons</option>
+                                    <option value="1">1 Cyclist</option>
+                                    <option value="2">2 Cyclists</option>
+                                    <option value="3">3 Cyclists</option>
+                                    <option value="4">4 Cyclists</option>
+                                    <option value="5+">5+ Cyclists</option>
                                 </select>
-                                <label for="b-travelers" class="sidebar-label">Number of Guests</label>
+                                <label for="b-travelers" class="sidebar-label">Number of Cyclists</label>
                             </div>
 
                             <div class="sidebar-form-group">
                                 <input type="text" id="b-hotel" value="Hotel Godwin Deluxe, Paharganj" class="sidebar-input" readonly>
-                                <label for="b-hotel" class="sidebar-label">Pick-Up & Stay Hotel</label>
+                                <label for="b-hotel" class="sidebar-label">Start & End Point</label>
                             </div>
 
                             <div class="sidebar-form-group">
                                 <textarea id="b-notes" rows="3" placeholder=" " class="sidebar-input text-area-input"></textarea>
-                                <label for="b-notes" class="sidebar-label">Dietary restrictions, allergies...</label>
+                                <label for="b-notes" class="sidebar-label">Any special requirements (heights for bike fitting, etc.)...</label>
                             </div>
 
                             <button type="submit" class="btn btn-solid btn-sidebar-submit">Submit Reservation Request</button>
@@ -339,13 +339,13 @@
         </div>
     </section>
 
-    <!-- DELHI CULINARY MAP SECTION -->
+    <!-- NEW DELHI CYCLING MAP SECTION -->
     <section class="gt-map-section">
         <div class="container">
             <div class="gt-map-header">
                 <span class="eyebrow">Route Overview</span>
-                <h2 class="gt-map-title">Old Delhi Culinary Circuit</h2>
-                <p class="gt-map-subtitle">A sensory journey navigating the legendary spice markets and historic street food alleys of Old Delhi.</p>
+                <h2 class="gt-map-title">New Delhi Cycling Circuit</h2>
+                <p class="gt-map-subtitle">A stunning 15km loop experiencing the architectural grandeur of Lutyens' Delhi at the break of dawn.</p>
             </div>
             <div class="gt-map-wrapper">
                 <div class="gt-map-canvas">
@@ -354,103 +354,96 @@
                             <filter id="pinShadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.28)"/></filter>
                             <filter id="labelShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.1)"/></filter>
                             <radialGradient id="bgG" cx="50%" cy="50%" r="60%">
-                                <stop offset="0%" stop-color="#fdf8f1"/>
-                                <stop offset="100%" stop-color="#ede4d5"/>
+                                <stop offset="0%" stop-color="#f5f9f6"/>
+                                <stop offset="100%" stop-color="#e0ebd9"/>
                             </radialGradient>
                         </defs>
                         <rect x="0" y="0" width="680" height="480" rx="20" fill="url(#bgG)"/>
                         
                         <!-- Map Grid Lines -->
-                        <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
-                        <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        <line x1="340" y1="20" x2="340" y2="460" stroke="#a0b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        <line x1="20" y1="240" x2="660" y2="240" stroke="#a0b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                         
-                        <!-- Route Line Paths Connecting Sights -->
-                        <path id="route-path" d="M220,150 Q280,140 340,160 Q400,180 430,230 Q450,280 400,320 Q350,360 280,340" fill="none" stroke="#e06236" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <!-- Route Line Paths Connecting Sights (Loop) -->
+                        <path id="route-path" d="M150,150 Q240,110 320,160 Q400,210 460,180 Q520,250 480,320 Q380,380 300,340 Q220,300 180,240 Q130,180 150,150" fill="none" stroke="#2b9348" stroke-width="3.5" stroke-dasharray="8,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="8s" repeatCount="indefinite"/>
                         </path>
 
-                         <!-- Moving Car along route -->
+                         <!-- Moving BICYCLE along route -->
                           <g>
-                              <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+                              <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
                                   <mpath href="#route-path"/>
                               </animateMotion>
-                              <g transform="translate(-10, -5)">
-                                  <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
-                                  <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
-                                  <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
-                                  <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                              <g transform="translate(-10, -10) scale(0.8)">
+                                  <!-- Bike Wheels -->
+                                  <circle cx="5" cy="15" r="5" fill="none" stroke="#111" stroke-width="1.5"/>
+                                  <circle cx="23" cy="15" r="5" fill="none" stroke="#111" stroke-width="1.5"/>
+                                  <!-- Bike Frame -->
+                                  <path d="M5,15 L12,7 L20,7 L23,15 M12,7 L15,15 M20,7 L18,3 M11,7 L9,3" fill="none" stroke="#e06236" stroke-width="1.5" stroke-linejoin="round"/>
+                                  <!-- Handlebars & Seat -->
+                                  <line x1="17" y1="3" x2="21" y2="3" stroke="#111" stroke-width="1.5"/>
+                                  <line x1="8" y1="3" x2="11" y2="3" stroke="#111" stroke-width="1.5"/>
                               </g>
                           </g>
 
                         <!-- SIGHT MARKERS -->
                         <!-- 1. Hotel Godwin Deluxe -->
                         <g>
-                            <circle cx="220" cy="150" r="18" fill="rgba(166,124,49,0.15)">
+                            <circle cx="150" cy="150" r="18" fill="rgba(43,147,72,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
                             </circle>
-                            <circle cx="220" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="170" y="120" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="220" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+                            <circle cx="150" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="100" y="120" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="150" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
                         </g>
 
-                        <!-- 2. Khari Baoli -->
+                        <!-- 2. India Gate -->
                         <g>
-                            <circle cx="340" cy="160" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="295" y="128" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="340" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">KHARI BAOLI</text>
+                            <circle cx="320" cy="160" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="275" y="128" width="90" height="20" rx="10" fill="#fff" stroke="#2b9348" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="320" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">INDIA GATE</text>
                         </g>
 
-                        <!-- 3. Chandni Chowk -->
+                        <!-- 3. Rashtrapati Bhavan (Lutyens) -->
                         <g>
-                            <circle cx="430" cy="230" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="385" y="198" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="430" y="211" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">CHANDNI CHOWK</text>
+                            <circle cx="480" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="420" y="340" width="120" height="20" rx="10" fill="#fff" stroke="#2b9348" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="480" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">PRESIDENT's ESTATE</text>
                         </g>
 
-                        <!-- 4. Jama Masjid & Environs -->
+                        <!-- 4. Lodhi Gardens -->
                         <g>
-                            <circle cx="400" cy="320" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="355" y="340" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="400" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">JAMA MASJID</text>
+                            <circle cx="250" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="205" y="340" width="90" height="20" rx="10" fill="#fff" stroke="#2b9348" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="250" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">LODHI GARDENS</text>
                         </g>
 
-                        <!-- 5. Paranthe Wali Gali -->
-                        <g>
-                            <circle cx="280" cy="340" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="235" y="360" width="110" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="290" y="373" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">PARANTHE WALI GALI</text>
-                        </g>
-
-                        <text x="340" y="450" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9.5" font-weight="600" fill="#b0a090" letter-spacing="2.5">DELHI CULINARY CIRCUIT</text>
+                        <text x="340" y="450" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9.5" font-weight="600" fill="#b0a090" letter-spacing="2.5">NEW DELHI CYCLING LOOP</text>
                     </svg>
                 </div>
                 
                 <div class="gt-city-cards">
                     <div class="gt-city-card">
                         <div class="city-card-num">01</div>
-                        <div class="city-card-icon">🌶️</div>
-                        <h3 class="city-card-name">Khari Baoli</h3>
-                        <p class="city-card-desc">Navigate through Asia's largest wholesale spice market. The vibrant colors and intoxicating aromas of cardamom, saffron, and chilies offer an unforgettable sensory experience.</p>
-                        <div class="city-card-tags"><span>Spices</span><span>Photography</span><span>Heritage</span></div>
+                        <div class="city-card-icon">🏛️</div>
+                        <h3 class="city-card-name">India Gate & Rajpath</h3>
+                        <p class="city-card-desc">Ride down the massive Kartavya Path boulevard as the sun comes up, taking in the magnificent India Gate war memorial without the daytime crowds.</p>
+                        <div class="city-card-tags"><span>Sunrise Views</span><span>Monuments</span></div>
                     </div>
                     <div class="gt-city-card">
                         <div class="city-card-num">02</div>
-                        <div class="city-card-icon">🍲</div>
-                        <h3 class="city-card-name">Chandni Chowk</h3>
-                        <p class="city-card-desc">The beating heart of Old Delhi. We guide you to the safest, most legendary stalls to sample authentic Chole Bhature, crispy Jalebis, and savory Aloo Tikki.</p>
-                        <div class="city-card-tags"><span>Street Food</span><span>Sweets</span><span>Bazaars</span></div>
+                        <div class="city-card-icon">🏛️</div>
+                        <h3 class="city-card-name">Lutyens' Delhi</h3>
+                        <p class="city-card-desc">Cycle through the wide, tree-lined streets of the government district, catching glimpses of the majestic Parliament House and the vast Rashtrapati Bhavan.</p>
+                        <div class="city-card-tags"><span>Architecture</span><span>Avenues</span></div>
                     </div>
                     <div class="gt-city-card">
                         <div class="city-card-num">03</div>
-                        <div class="city-card-icon">🫓</div>
-                        <h3 class="city-card-name">Paranthe Wali Gali</h3>
-                        <p class="city-card-desc">Step into the historic alley famous for its deep-fried stuffed bread. A quintessential Delhi lunch experience dating back to the 1870s.</p>
-                        <div class="city-card-tags"><span>Paranthas</span><span>Historic Eateries</span></div>
+                        <div class="city-card-icon">🌳</div>
+                        <h3 class="city-card-name">Lodhi Gardens</h3>
+                        <p class="city-card-desc">A peaceful oasis perfect for a mid-ride breather. Explore the lush 90-acre park dotted with beautiful 15th-century Afghan tombs.</p>
+                        <div class="city-card-tags"><span>Nature</span><span>Heritage</span></div>
                     </div>
                 </div>
             </div>
@@ -463,29 +456,29 @@
             <div class="faq-header">
                 <span class="eyebrow">Common Questions</span>
                 <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about the Delhi Food & Spice Tour.</p>
+                <p>Everything you need to know about the New Delhi Sunrise Bicycle Tour.</p>
             </div>
             <div class="faq-grid">
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        <span class="faq-q-text">Is the street food safe to eat?</span>
+                        <span class="faq-q-text">Do I need to be extremely fit for this tour?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes! We exclusively take you to deeply vetted, historic food vendors renowned for their hygiene and quality. Your guide is an expert at navigating these alleys safely.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Not at all! New Delhi is incredibly flat, and we ride at a leisurely, relaxed pace. We make frequent stops for photos and storytelling. If you are concerned about exertion, we highly recommend upgrading to the Premium E-Bike option.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        <span class="faq-q-text">Are food costs included in the package?</span>
+                        <span class="faq-q-text">Is cycling in Delhi safe?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Your breakfast at Hotel Godwin Deluxe is included. The food during the tour in Old Delhi is "pay as you go", giving you complete flexibility over what you choose to sample and eat.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes, especially at sunrise. We start our tours at 6:30 AM specifically to take advantage of the empty streets, cool air, and safe riding conditions before the city wakes up.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        <span class="faq-q-text">What about allergies or dietary restrictions?</span>
+                        <span class="faq-q-text">What should I wear?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Please let us know in the booking form. We accommodate all dietary requirements (vegetarian, vegan, nut allergies) and will strictly guide your food choices accordingly.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Comfortable athletic clothing and closed-toe shoes are recommended. We provide safety helmets and bottled water.</p></div></div>
                 </div>
             </div>
         </div>
@@ -544,6 +537,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="delhi-food-tour.js?v=1"></script>
+    <script src="delhi-bicycle-tour.js?v=1"></script>
 </body>
 </html>
