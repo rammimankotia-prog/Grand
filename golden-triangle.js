@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur",
             price: "$8,500 p.p.",
-            shortDesc: "Explore the Golden Triangle in a private air-conditioned taxi with an experienced local driver-guide. A cost-effective yet comfortable option allowing you to stop at scenic viewpoints, local markets, and heritage villages along the way.",
-            highlight: "🚕 Includes a private A/C taxi with knowledgeable driver-guide, flexible pit stops, mineral water, and full itinerary coverage at your preferred pace.",
+            shortDesc: "Explore the Golden Triangle via executive class express trains combined with private local taxis at each destination. A comfortable, seamless rail option that skips highway traffic and lets you enjoy scenic views between Delhi, Agra, and Jaipur.",
+            highlight: "🚆 Includes Executive Class tickets on high-speed Gatimaan & Shatabdi trains, private taxi transfers at destinations, dedicated porters, and guided sightseeing.",
             itinerary: [
                 { day: 1, title: "Arrival in the Capital", desc: "Welcome to Delhi. Private luxury transfer to your hotel. Unwind and enjoy a bespoke briefing of your upcoming rail holiday." },
                 { day: 2, title: "Delhi Heritage Tour", desc: "Tour Delhi's primary historical points. Visit the Lotus Temple, India Gate, and the Mughal-era Red Fort with your private guide." },
