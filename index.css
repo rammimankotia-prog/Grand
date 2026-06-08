@@ -947,3 +947,45 @@ h1, h2, h3, h4, h5 {
   .whatsapp-float-widget { bottom: 1.4rem; right: 1.4rem; }
   .marquee-strip { display: none; }
 }
+
+/* ── HEADER CONTACT STRIP ─────────────────────────────────── */
+.header-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-right: 1.5rem;
+}
+.header-contact-link {
+  font-family: var(--f-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  transition: var(--t1);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.main-header.scrolled .header-contact-link {
+  color: var(--ink-soft);
+}
+.header-contact-link:hover {
+  color: var(--gold-pale);
+}
+.main-header.scrolled .header-contact-link:hover {
+  color: var(--gold);
+}
+.header-contact-sep {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+}
+.main-header.scrolled .header-contact-sep {
+  color: var(--b-strong);
+}
+
+@media (max-width: 1024px) {
+  .header-contact-info {
+    display: none; /* Hide on tablets and mobile to avoid clutter */
+  }
+}
