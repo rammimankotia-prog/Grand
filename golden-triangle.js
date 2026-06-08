@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
             estimatedPrice: document.getElementById('summary-price-display').innerText
         };
 
-        fetch("https://formsubmit.co/ajax/book@godwinhotels.com", {
+        fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json",
