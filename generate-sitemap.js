@@ -16,7 +16,7 @@ const OUTPUT     = path.join(__dirname, 'sitemap.xml');
 const DIR        = __dirname;
 
 // Pages excluded from the sitemap (add any you want hidden from search engines)
-const EXCLUDED   = new Set([]);
+const EXCLUDED   = new Set(['googled60501e34605346d.html']);
 
 // Priority & change-frequency rules – matched by filename keyword
 const RULES = [
