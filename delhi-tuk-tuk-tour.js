@@ -2,19 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Delhi Tuk Tuk Tour Database
     const tourModes = {
         standard: {
-            duration: "4 Hours",
+            duration: "8 Hours / 80 Km",
             cities: "New Delhi",
             price: "$45 p.p.",
             shortDesc: "Experience the magic of New Delhi at sunrise. Ride through historic streets and grand avenues on a comfortable tuk tuk, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
-            highlight: "🚲 High-quality tuk tuk, complimentary bottled water, English-speaking local expert guide, and complimentary breakfast at Hotel Godwin Deluxe.",
+            highlight: "🛺 High-quality tuk tuk, complimentary bottled water, English-speaking local expert guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
-                { day: "06:15 AM", title: "Meet at Hotel Godwin Deluxe", desc: "Gather at the hotel lobby. Meet your local expert guide, get fitted for your tuk tuk and complimentary bottled water, and receive a short safety briefing." },
-                { day: "06:30 AM", title: "Start Tuk Tuk Journey", desc: "Set off into the quiet, cool morning air, experiencing Delhi before the traffic begins." },
-                { day: "07:00 AM", title: "Jama Masjid & Chandni Chowk", desc: "Navigate the narrow, bustling lanes of Chandni Chowk and arrive at the magnificent Jama Masjid, enjoying the vibrant morning energy." },
-                { day: "08:00 AM", title: "Red Fort & Khari Baoli Spice Market", desc: "Drive past the imposing red sandstone walls of the Red Fort, then head into Khari Baoli, Asia's largest wholesale spice market." },
-                { day: "08:45 AM", title: "Raj Ghat & India Gate", desc: "Take a peaceful ride through Raj Ghat & India Gate, a beautiful park dotted with 15th-century architectural monuments and lush greenery." },
-                { day: "09:30 AM", title: "Return to Godwin Deluxe", desc: "Ride back to Hotel Godwin Deluxe, returning your equipment." },
-                { day: "09:45 AM", title: "Breakfast", desc: "Celebrate a great morning ride with a delicious, complimentary breakfast at the Indian Grill Restaurant inside the hotel." }
+                { day: "09:00 AM", title: "Meet at Hotel Godwin Deluxe", desc: "Gather at the hotel lobby. Meet your local expert guide and get introduced to your comfortable Tuk Tuk." },
+                { day: "09:30 AM", title: "Jama Masjid & Chandni Chowk", desc: "Navigate the narrow, bustling lanes of Chandni Chowk and arrive at the magnificent Jama Masjid, enjoying the vibrant morning energy." },
+                { day: "11:30 AM", title: "Red Fort & Khari Baoli Spice Market", desc: "Drive past the imposing red sandstone walls of the Red Fort, then head into Khari Baoli, Asia's largest wholesale spice market." },
+                { day: "01:00 PM", title: "Lunch Break", desc: "Stop for an authentic, delicious Delhi lunch (at your own expense) in a curated heritage restaurant." },
+                { day: "02:30 PM", title: "Raj Ghat & India Gate", desc: "Pay respects at Raj Ghat, Mahatma Gandhi's memorial, before driving down the majestic Rajpath to view the iconic India Gate." },
+                { day: "04:00 PM", title: "Parliament House & Lutyens' Delhi", desc: "Drive through the wide, tree-lined avenues of the government district, catching glimpses of the majestic Parliament House and Rashtrapati Bhavan." },
+                { day: "05:00 PM", title: "Return to Godwin Deluxe", desc: "Arrive back at Hotel Godwin Deluxe, concluding your full-day Delhi exploration." }
             ],
             inclusions: [
                 "Start and end at Hotel Godwin Deluxe",
@@ -29,19 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         ebike: {
-            duration: "4 Hours",
+            duration: "8 Hours / 80 Km",
             cities: "New Delhi",
             price: "$65 p.p.",
             shortDesc: "Experience the magic of New Delhi at sunrise effortlessly. Glide through historic streets on a premium Premium EV Tuk Tuk, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "⚡ Premium Electric Tuk Tuk, complimentary bottled water, English-speaking local expert guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
-                { day: "06:15 AM", title: "Meet at Hotel Godwin Deluxe", desc: "Gather at the hotel lobby. Meet your local expert guide, get fitted for your Premium EV Tuk Tuk and complimentary bottled water, and receive a short safety briefing." },
-                { day: "06:30 AM", title: "Start Tuk Tuk Journey", desc: "Set off into the quiet, cool morning air, experiencing Delhi before the traffic begins." },
-                { day: "07:00 AM", title: "Jama Masjid & Chandni Chowk", desc: "Glide down the majestic Rajpath (Kartavya Path) towards India Gate. Enjoy the spectacular sunrise views over this iconic war memorial." },
-                { day: "08:00 AM", title: "Red Fort & Khari Baoli Spice Market", desc: "Ride effortlessly through the wide, tree-lined avenues of Lutyens' Delhi. Pass by the grand Parliament House and Rashtrapati Bhavan (President's Estate)." },
-                { day: "08:45 AM", title: "Raj Ghat & India Gate", desc: "Take a peaceful ride through Raj Ghat & India Gate, a beautiful park dotted with 15th-century architectural monuments and lush greenery." },
-                { day: "09:30 AM", title: "Return to Godwin Deluxe", desc: "Ride back to Hotel Godwin Deluxe, returning your equipment." },
-                { day: "09:45 AM", title: "Breakfast", desc: "Celebrate a great morning ride with a delicious, complimentary breakfast at the Indian Grill Restaurant inside the hotel." }
+                { day: "09:00 AM", title: "Meet at Hotel Godwin Deluxe", desc: "Gather at the hotel lobby. Meet your local expert guide and get introduced to your comfortable Tuk Tuk." },
+                { day: "09:30 AM", title: "Jama Masjid & Chandni Chowk", desc: "Navigate the narrow, bustling lanes of Chandni Chowk and arrive at the magnificent Jama Masjid, enjoying the vibrant morning energy." },
+                { day: "11:30 AM", title: "Red Fort & Khari Baoli Spice Market", desc: "Drive past the imposing red sandstone walls of the Red Fort, then head into Khari Baoli, Asia's largest wholesale spice market." },
+                { day: "01:00 PM", title: "Lunch Break", desc: "Stop for an authentic, delicious Delhi lunch (at your own expense) in a curated heritage restaurant." },
+                { day: "02:30 PM", title: "Raj Ghat & India Gate", desc: "Pay respects at Raj Ghat, Mahatma Gandhi's memorial, before driving down the majestic Rajpath to view the iconic India Gate." },
+                { day: "04:00 PM", title: "Parliament House & Lutyens' Delhi", desc: "Drive through the wide, tree-lined avenues of the government district, catching glimpses of the majestic Parliament House and Rashtrapati Bhavan." },
+                { day: "05:00 PM", title: "Return to Godwin Deluxe", desc: "Arrive back at Hotel Godwin Deluxe, concluding your full-day Delhi exploration." }
             ],
             inclusions: [
                 "Start and end at Hotel Godwin Deluxe",
@@ -56,19 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
             ]
         },
         group: {
-            duration: "4 Hours",
+            duration: "8 Hours / 80 Km",
             cities: "New Delhi",
             price: "$35 p.p.",
             shortDesc: "Join a fun, private group cycling tour (min 4 people) through New Delhi at sunrise, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "👨‍👩‍👧‍👦 Private Group Tour (Min 4), high-quality tuk tuks, English-speaking guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
-                { day: "06:15 AM", title: "Meet at Hotel Godwin Deluxe", desc: "Gather your group at the hotel lobby. Meet your local expert guide, get fitted for tuk tuks and complimentary bottled waters, and receive a safety briefing." },
-                { day: "06:30 AM", title: "Start Tuk Tuk Journey", desc: "Set off into the quiet, cool morning air, experiencing Delhi before the traffic begins." },
-                { day: "07:00 AM", title: "Jama Masjid & Chandni Chowk", desc: "Navigate the narrow, bustling lanes of Chandni Chowk and arrive at the magnificent Jama Masjid, enjoying the vibrant morning energy." },
-                { day: "08:00 AM", title: "Red Fort & Khari Baoli Spice Market", desc: "Drive past the imposing red sandstone walls of the Red Fort, then head into Khari Baoli, Asia's largest wholesale spice market." },
-                { day: "08:45 AM", title: "Raj Ghat & India Gate", desc: "Take a peaceful ride through Raj Ghat & India Gate, a beautiful park dotted with 15th-century architectural monuments and lush greenery." },
-                { day: "09:30 AM", title: "Return to Godwin Deluxe", desc: "Ride back to Hotel Godwin Deluxe, returning your equipment." },
-                { day: "09:45 AM", title: "Breakfast", desc: "Celebrate a great morning ride with a delicious, complimentary breakfast at the Indian Grill Restaurant inside the hotel." }
+                { day: "09:00 AM", title: "Meet at Hotel Godwin Deluxe", desc: "Gather at the hotel lobby. Meet your local expert guide and get introduced to your comfortable Tuk Tuk." },
+                { day: "09:30 AM", title: "Jama Masjid & Chandni Chowk", desc: "Navigate the narrow, bustling lanes of Chandni Chowk and arrive at the magnificent Jama Masjid, enjoying the vibrant morning energy." },
+                { day: "11:30 AM", title: "Red Fort & Khari Baoli Spice Market", desc: "Drive past the imposing red sandstone walls of the Red Fort, then head into Khari Baoli, Asia's largest wholesale spice market." },
+                { day: "01:00 PM", title: "Lunch Break", desc: "Stop for an authentic, delicious Delhi lunch (at your own expense) in a curated heritage restaurant." },
+                { day: "02:30 PM", title: "Raj Ghat & India Gate", desc: "Pay respects at Raj Ghat, Mahatma Gandhi's memorial, before driving down the majestic Rajpath to view the iconic India Gate." },
+                { day: "04:00 PM", title: "Parliament House & Lutyens' Delhi", desc: "Drive through the wide, tree-lined avenues of the government district, catching glimpses of the majestic Parliament House and Rashtrapati Bhavan." },
+                { day: "05:00 PM", title: "Return to Godwin Deluxe", desc: "Arrive back at Hotel Godwin Deluxe, concluding your full-day Delhi exploration." }
             ],
             inclusions: [
                 "Start and end at Hotel Godwin Deluxe",
