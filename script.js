@@ -73,6 +73,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Nationality to Passport Logic
+  const nationalitySelect = document.getElementById('nationality');
+  const passportGroup = document.getElementById('passportGroup');
+  const passportInput = document.getElementById('passportNumber');
+
+  if (nationalitySelect && passportGroup && passportInput) {
+    nationalitySelect.addEventListener('change', (e) => {
+      if (e.target.value !== 'indian') {
+        passportGroup.style.display = 'block';
+        passportInput.required = true;
+      } else {
+        passportGroup.style.display = 'none';
+        passportInput.required = false;
+        passportInput.value = '';
+      }
+    });
+  }
+
   // Form Validation and Submission
   const bookingForm = document.getElementById('mainBookingForm');
   const submitBtn = document.getElementById('submitBtn');

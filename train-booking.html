@@ -212,9 +212,9 @@
               </div>
             </div>
 
-            <!-- Nationality -->
-            <div class="form-row">
-              <div class="field-group half">
+            <!-- Personal Details & Nationality -->
+            <div class="form-row two-col">
+              <div class="field-group">
                 <label for="nationality" class="field-label">Nationality</label>
                 <div class="input-wrap icon-left">
                   <span class="input-icon">🌍</span>
@@ -224,6 +224,16 @@
                     <option value="nri">NRI (Non-Resident Indian)</option>
                     <option value="pio">PIO / OCI Card Holder</option>
                   </select>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+
+              <!-- Passport Field (Hidden by default for Indians) -->
+              <div class="field-group" id="passportGroup" style="display: none;">
+                <label for="passportNumber" class="field-label required">Passport Number</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🛂</span>
+                  <input type="text" id="passportNumber" name="passportNumber" class="field-input" placeholder="Required for non-Indians"/>
                   <div class="input-glow"></div>
                 </div>
               </div>
@@ -237,7 +247,7 @@
           <div class="card-header">
             <div class="card-icon">👤</div>
             <div>
-              <h3 class="card-title">Contact Information</h3>
+              <h3 class="card-title">Passenger &amp; Contact Information</h3>
               <p class="card-desc">Required for booking confirmation & communication</p>
             </div>
           </div>
@@ -261,6 +271,32 @@
                   <div class="input-glow"></div>
                 </div>
                 <span class="field-error" id="mobileError"></span>
+              </div>
+            </div>
+
+            <!-- DOB & Gender -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="dob" class="field-label required">Date of Birth</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🎂</span>
+                  <input type="date" id="dob" name="dob" class="field-input" required max="2026-12-31"/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="gender" class="field-label required">Gender</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🚻</span>
+                  <select id="gender" name="gender" class="field-input field-select" required>
+                    <option value="" disabled selected hidden>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="input-glow"></div>
+                </div>
               </div>
             </div>
 
