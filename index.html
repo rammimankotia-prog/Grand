@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RailYatra – Book Train Tickets Across India</title>
+  <meta name="description" content="Book train tickets across India instantly. Any train, any class, any route. Fast, secure, and hassle-free booking with RailYatra."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">🚄</span>
+        <span class="logo-text">Rail<span class="logo-accent">Yatra</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#booking-form">Book Ticket</a></li>
+        <li><a href="#">PNR Status</a></li>
+        <li><a href="#">Train Schedule</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#booking-form" class="nav-cta">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🇮🇳 All India Train Network</div>
+      <h1 class="hero-title">
+        Travel Across India<br/>
+        <span class="hero-title-accent">With Every Train</span>
+      </h1>
+      <p class="hero-subtitle">Book tickets for any train, any class, any route — from the Himalayas to Kanyakumari. Fast, secure, and hassle-free.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">13,000+</span>
+          <span class="stat-label">Trains</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">8,000+</span>
+          <span class="stat-label">Stations</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">24 x 7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+      <a href="#booking-form" class="hero-btn">
+        Start Booking <span class="btn-arrow">→</span>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM SECTION -->
+  <section class="form-section" id="booking-form">
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-tag">🎫 Ticket Booking</div>
+        <h2 class="form-title">Book Your Train Journey</h2>
+        <p class="form-subtitle">Fill in the details below and we'll find the best trains for your route across India.</p>
+      </div>
+
+      <form class="booking-form" id="mainBookingForm" novalidate>
+
+        <!-- ── JOURNEY DETAILS ── -->
+        <div class="form-card" id="journey-card">
+          <div class="card-header">
+            <div class="card-icon">🗺️</div>
+            <div>
+              <h3 class="card-title">Journey Details</h3>
+              <p class="card-desc">Where are you heading?</p>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <!-- Route Row -->
+            <div class="route-row">
+              <div class="field-group">
+                <label for="fromStation" class="field-label required">Journey Starts From</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🏁</span>
+                  <input type="text" id="fromStation" name="fromStation" class="field-input" placeholder="Enter departure station or city" list="stations-list" required autocomplete="off"/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+
+              <button type="button" class="swap-btn" id="swapBtn" title="Swap stations">
+                <span class="swap-icon">⇄</span>
+              </button>
+
+              <div class="field-group">
+                <label for="toStation" class="field-label required">Journey Ends At</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">📍</span>
+                  <input type="text" id="toStation" name="toStation" class="field-input" placeholder="Enter destination station or city" list="stations-list" required autocomplete="off"/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Date & Passengers -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="journeyDate" class="field-label required">Journey Date</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">📅</span>
+                  <input type="date" id="journeyDate" name="journeyDate" class="field-input" required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="passengers" class="field-label required">Number of Passengers</label>
+                <div class="passenger-counter">
+                  <button type="button" class="counter-btn" id="decreaseBtn">−</button>
+                  <span class="counter-value" id="passengerCount">1</span>
+                  <input type="hidden" id="passengers" name="passengers" value="1"/>
+                  <button type="button" class="counter-btn" id="increaseBtn">+</button>
+                  <span class="counter-label">Person(s)</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── PREFERENCES ── -->
+        <div class="form-card" id="preferences-card">
+          <div class="card-header">
+            <div class="card-icon">⚙️</div>
+            <div>
+              <h3 class="card-title">Travel Preferences</h3>
+              <p class="card-desc">Customize your journey experience</p>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <!-- Train Preference + Journey Time -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="trainPreference" class="field-label">Train Preference</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🚆</span>
+                  <select id="trainPreference" name="trainPreference" class="field-input field-select">
+                    <option value="">Any Train</option>
+                    <optgroup label="Premium">
+                      <option value="vande_bharat">Vande Bharat Express</option>
+                      <option value="rajdhani">Rajdhani Express</option>
+                      <option value="shatabdi">Shatabdi Express</option>
+                      <option value="tejas">Tejas Express</option>
+                      <option value="gatiman">Gatimaan Express</option>
+                    </optgroup>
+                    <optgroup label="Express / Mail">
+                      <option value="duronto">Duronto Express</option>
+                      <option value="superfast">Superfast Express</option>
+                      <option value="mail_express">Mail / Express</option>
+                      <option value="intercity">Intercity Express</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                      <option value="jan_shatabdi">Jan Shatabdi</option>
+                      <option value="humsafar">Humsafar Express</option>
+                      <option value="antyodaya">Antyodaya Express</option>
+                      <option value="passenger">Passenger Train</option>
+                    </optgroup>
+                  </select>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="journeyTime" class="field-label">Preferred Journey Time</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🕐</span>
+                  <select id="journeyTime" name="journeyTime" class="field-input field-select">
+                    <option value="">Any Time</option>
+                    <option value="early_morning">Early Morning (00:00 – 06:00)</option>
+                    <option value="morning">Morning (06:00 – 12:00)</option>
+                    <option value="afternoon">Afternoon (12:00 – 18:00)</option>
+                    <option value="evening">Evening (18:00 – 21:00)</option>
+                    <option value="night">Night (21:00 – 00:00)</option>
+                  </select>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Class & Food Preference -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label class="field-label">Class Preference</label>
+                <div class="class-grid" id="classGrid">
+                  <button type="button" class="class-chip active" data-value="any" id="class-any">Any</button>
+                  <button type="button" class="class-chip" data-value="1A" id="class-1A">1A</button>
+                  <button type="button" class="class-chip" data-value="2A" id="class-2A">2A</button>
+                  <button type="button" class="class-chip" data-value="3A" id="class-3A">3A</button>
+                  <button type="button" class="class-chip" data-value="3E" id="class-3E">3E</button>
+                  <button type="button" class="class-chip" data-value="SL" id="class-SL">SL</button>
+                  <button type="button" class="class-chip" data-value="CC" id="class-CC">CC</button>
+                  <button type="button" class="class-chip" data-value="2S" id="class-2S">2S</button>
+                  <button type="button" class="class-chip" data-value="GN" id="class-GN">GN</button>
+                </div>
+                <input type="hidden" id="classPreference" name="classPreference" value="any"/>
+              </div>
+
+              <div class="field-group">
+                <label for="foodPreference" class="field-label">Food Preference</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🍽️</span>
+                  <select id="foodPreference" name="foodPreference" class="field-input field-select">
+                    <option value="no_preference">No Preference</option>
+                    <option value="veg">Vegetarian</option>
+                    <option value="non_veg">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="jain">Jain Food</option>
+                    <option value="no_food">No Meal Required</option>
+                  </select>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Nationality -->
+            <div class="form-row">
+              <div class="field-group half">
+                <label for="nationality" class="field-label">Nationality</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🌍</span>
+                  <select id="nationality" name="nationality" class="field-input field-select">
+                    <option value="indian">Indian</option>
+                    <option value="foreign">Foreign National</option>
+                    <option value="nri">NRI (Non-Resident Indian)</option>
+                    <option value="pio">PIO / OCI Card Holder</option>
+                  </select>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── CONTACT DETAILS ── -->
+        <div class="form-card" id="contact-card">
+          <div class="card-header">
+            <div class="card-icon">👤</div>
+            <div>
+              <h3 class="card-title">Contact Information</h3>
+              <p class="card-desc">Required for booking confirmation & communication</p>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="fullName" class="field-label required">Full Name</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🧑</span>
+                  <input type="text" id="fullName" name="fullName" class="field-input" placeholder="Enter your full name" required/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-error" id="nameError"></span>
+              </div>
+              <div class="field-group">
+                <label for="mobileNumber" class="field-label required">Mobile Number</label>
+                <div class="input-wrap icon-left phone-input-wrap">
+                  <span class="input-icon phone-flag">🇮🇳</span>
+                  <span class="phone-code">+91</span>
+                  <input type="tel" id="mobileNumber" name="mobileNumber" class="field-input phone-field" placeholder="10-digit mobile number" maxlength="10" required pattern="[6-9][0-9]{9}"/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-error" id="mobileError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field-group">
+                <label for="emailId" class="field-label required">Email Address</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">✉️</span>
+                  <input type="email" id="emailId" name="emailId" class="field-input" placeholder="your@email.com" required/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-help">Booking confirmation & e-ticket will be sent here</span>
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TERMS & SUBMIT -->
+        <div class="form-footer">
+          <label class="terms-label" for="termsCheck">
+            <input type="checkbox" id="termsCheck" name="terms" required/>
+            <span class="custom-check"></span>
+            <span>I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a></span>
+          </label>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-text">🔍 Search &amp; Book Trains</span>
+            <span class="btn-spinner" id="btnSpinner"></span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h2 class="modal-title">Request Submitted!</h2>
+      <p class="modal-msg">Thank you! We've received your train booking request. Our team will contact you at your email and mobile number with the available train options and booking details shortly.</p>
+      <div class="modal-ref" id="modalRef"></div>
+      <button class="modal-close-btn" id="modalCloseBtn">Back to Home</button>
+    </div>
+  </div>
+
+  <!-- DATALIST for stations -->
+  <datalist id="stations-list">
+    <option value="New Delhi (NDLS)"></option>
+    <option value="Mumbai Central (MMCT)"></option>
+    <option value="Chhatrapati Shivaji Terminus (CSMT)"></option>
+    <option value="Howrah Junction (HWH)"></option>
+    <option value="Chennai Central (MAS)"></option>
+    <option value="Bengaluru City (SBC)"></option>
+    <option value="Hyderabad Deccan (HYB)"></option>
+    <option value="Ahmedabad Junction (ADI)"></option>
+    <option value="Pune Junction (PUNE)"></option>
+    <option value="Jaipur Junction (JP)"></option>
+    <option value="Lucknow Charbagh (LKO)"></option>
+    <option value="Kanpur Central (CNB)"></option>
+    <option value="Patna Junction (PNBE)"></option>
+    <option value="Bhopal Junction (BPL)"></option>
+    <option value="Nagpur Junction (NGP)"></option>
+    <option value="Indore Junction (INDB)"></option>
+    <option value="Varanasi Junction (BSB)"></option>
+    <option value="Agra Cantt (AGC)"></option>
+    <option value="Amritsar Junction (ASR)"></option>
+    <option value="Chandigarh (CDG)"></option>
+    <option value="Kochi (ERN)"></option>
+    <option value="Thiruvananthapuram (TVC)"></option>
+    <option value="Coimbatore Junction (CBE)"></option>
+    <option value="Mysuru Junction (MYS)"></option>
+    <option value="Vijayawada Junction (BZA)"></option>
+    <option value="Visakhapatnam (VSKP)"></option>
+    <option value="Bhubaneswar (BBS)"></option>
+    <option value="Guwahati (GHY)"></option>
+    <option value="Ranchi Junction (RNC)"></option>
+    <option value="Surat (ST)"></option>
+    <option value="Vadodara Junction (BRC)"></option>
+    <option value="Haridwar Junction (HW)"></option>
+    <option value="Dehradun (DDN)"></option>
+    <option value="Jammu Tawi (JAT)"></option>
+    <option value="Jodhpur Junction (JU)"></option>
+    <option value="Udaipur City (UDZ)"></option>
+    <option value="Kota Junction (KOTA)"></option>
+    <option value="Raipur Junction (R)"></option>
+    <option value="Bilaspur Junction (BSP)"></option>
+    <option value="Gwalior Junction (GWL)"></option>
+  </datalist>
+
+  <script src="script.js"></script>
+</body>
+</html>
