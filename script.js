@@ -101,9 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Validate Mobile
     const mobileInput = document.getElementById('mobileNumber');
     const mobileError = document.getElementById('mobileError');
-    const mobileRegex = /^[6-9]\d{9}$/;
-    if (!mobileRegex.test(mobileInput.value)) {
-      mobileError.textContent = 'Enter a valid 10-digit Indian mobile number';
+    const mobileRegex = /^\+?[0-9\s\-]{6,20}$/;
+    if (!mobileRegex.test(mobileInput.value.trim())) {
+      mobileError.textContent = 'Enter a valid mobile number with country code';
       isValid = false;
     } else {
       mobileError.textContent = '';

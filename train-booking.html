@@ -152,31 +152,10 @@
             <!-- Train Preference + Journey Time -->
             <div class="form-row two-col">
               <div class="field-group">
-                <label for="trainPreference" class="field-label">Train Preference</label>
+                <label for="trainPreference" class="field-label">Train Preference / Number</label>
                 <div class="input-wrap icon-left">
                   <span class="input-icon">🚆</span>
-                  <select id="trainPreference" name="trainPreference" class="field-input field-select">
-                    <option value="">Any Train</option>
-                    <optgroup label="Premium">
-                      <option value="vande_bharat">Vande Bharat Express</option>
-                      <option value="rajdhani">Rajdhani Express</option>
-                      <option value="shatabdi">Shatabdi Express</option>
-                      <option value="tejas">Tejas Express</option>
-                      <option value="gatiman">Gatimaan Express</option>
-                    </optgroup>
-                    <optgroup label="Express / Mail">
-                      <option value="duronto">Duronto Express</option>
-                      <option value="superfast">Superfast Express</option>
-                      <option value="mail_express">Mail / Express</option>
-                      <option value="intercity">Intercity Express</option>
-                    </optgroup>
-                    <optgroup label="Other">
-                      <option value="jan_shatabdi">Jan Shatabdi</option>
-                      <option value="humsafar">Humsafar Express</option>
-                      <option value="antyodaya">Antyodaya Express</option>
-                      <option value="passenger">Passenger Train</option>
-                    </optgroup>
-                  </select>
+                  <input type="text" id="trainPreference" name="trainPreference" class="field-input" placeholder="e.g. Vande Bharat, Rajdhani, or 12951"/>
                   <div class="input-glow"></div>
                 </div>
               </div>
@@ -275,10 +254,9 @@
               </div>
               <div class="field-group">
                 <label for="mobileNumber" class="field-label required">Mobile Number</label>
-                <div class="input-wrap icon-left phone-input-wrap">
-                  <span class="input-icon phone-flag">🇮🇳</span>
-                  <span class="phone-code">+91</span>
-                  <input type="tel" id="mobileNumber" name="mobileNumber" class="field-input phone-field" placeholder="10-digit mobile number" maxlength="10" required pattern="[6-9][0-9]{9}"/>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">📱</span>
+                  <input type="tel" id="mobileNumber" name="mobileNumber" class="field-input" placeholder="Include country code (e.g. +1...)" required/>
                   <div class="input-glow"></div>
                 </div>
                 <span class="field-error" id="mobileError"></span>
@@ -303,6 +281,12 @@
 
         <!-- TERMS & SUBMIT -->
         <div class="form-footer">
+          <label class="terms-label" for="whatsappConsent">
+            <input type="checkbox" id="whatsappConsent" name="whatsappConsent" checked/>
+            <span class="custom-check"></span>
+            <span>I consent to receive booking updates and communication via WhatsApp</span>
+          </label>
+
           <label class="terms-label" for="termsCheck">
             <input type="checkbox" id="termsCheck" name="terms" required/>
             <span class="custom-check"></span>
