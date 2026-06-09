@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Delhi &bull; Agra Sunrise Bicycle Tour | Grand Holidays</title>
-    <meta name="description" content="Cycle through the majestic avenues of Lutyens' Delhi at sunrise. An active, guided heritage bicycle tour ending with a hearty breakfast.">
-    <meta name="keywords" content="Delhi bicycle tour, sunrise cycle tour Delhi, Lutyens Delhi cycling, active Delhi tours">
+    <title>2-Day Taj Mahal & Delhi | Guided Heritage Walk</title>
+    <meta name="description" content="Embark on a soul-stirring journey through Delhi's most sacred sites. Visit historic temples, mosques, and gurudwaras with an expert local guide.">
+    <meta name="keywords" content="Delhi spiritual tour, Delhi temple tour, religious sites Delhi, heritage walk Delhi">
     <link rel="canonical" href="https://grandholidaytours.com/delhi-agra-2-day-tour.html">
 
     <meta charset="UTF-8">
@@ -21,10 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="index.css?v=15">
-    <link rel="stylesheet" href="delhi-bicycle-tour.css?v=1">
+    <link rel="stylesheet" href="index.css?v=14">
+    <link rel="stylesheet" href="delhi-spiritual-tour.css?v=1">
     
-    <!-- Dropdown Navigation Styles -->
+    <!-- Dropdown Navigation Styles to bypass caching -->
     <style>
         .nav-dropdown {
             position: relative;
@@ -136,31 +136,15 @@
     </style>
 
     <style>
-        .inc-exc-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 3rem auto;
-        }
-        .inc-card {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 2.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            border: 1px solid rgba(0,0,0,0.03);
-        }
-        @media (max-width: 768px) { .inc-exc-container { grid-template-columns: 1fr; } }
-        .inc-title { font-size: 1.1rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem; display: flex; align-items: center; text-transform: uppercase; }
-        .inc-title.included { color: #1a8e5b; }
-        .inc-title.excluded { color: #d63c3c; }
-        .inc-title span { margin-right: 12px; font-size: 1.3rem; font-weight: 900; }
-        .inc-divider { height: 1px; margin-bottom: 2rem; }
-        .inc-divider.included { background: rgba(26, 142, 91, 0.3); }
-        .inc-divider.excluded { background: rgba(214, 60, 60, 0.3); }
-        .inc-list { list-style: none; padding: 0; margin: 0; }
-        .inc-list li { position: relative; padding-left: 2rem; margin-bottom: 1.5rem; color: #444; line-height: 1.6; font-size: 1.05rem; }
-        .inc-list li::before { content: '4'; position: absolute; left: 0; color: #999; }
+        .timeline-step { position: relative; padding-left: 60px; margin-bottom: 3.5rem; }
+        .timeline-step:last-child { margin-bottom: 0; }
+        .step-number { position: absolute; left: -3px; top: -5px; width: 48px; height: 48px; background: linear-gradient(135deg, #c59b3f, #9b7222); border-radius: 50%; color: white; font-size: 1.1rem; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(197, 155, 63, 0.4); border: 4px solid #fdfcf9; font-family: var(--font-heading); }
+        .step-header { display: flex; align-items: center; margin-bottom: 1.2rem; flex-wrap: wrap; }
+        .step-title { font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: #1a1a1a; margin: 0; margin-right: 1rem; letter-spacing: -0.5px; }
+        .step-badge { border: 1px solid #c59b3f; border-radius: 20px; padding: 0.3rem 1rem; font-size: 0.75rem; color: #c59b3f; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+        .step-content ul { list-style: none; padding: 0; }
+        .step-content li { margin-bottom: 1rem; color: #555; line-height: 1.8; font-size: 1.05rem; padding-left: 1rem; border-left: 2px solid rgba(197, 155, 63, 0.2); }
+        .step-content li strong { color: #333; }
     </style>
 
 </head>
@@ -187,11 +171,12 @@
                         <a href="golden-triangle.html" class="dropdown-item">Golden Triangle Tour</a>
                         <a href="delhi-sightseeing.html" class="dropdown-item">Delhi Sightseeing Tour</a>
                         <a href="delhi-food-tour.html" class="dropdown-item">Delhi Food & Spice Tour</a>
-                        <a href="delhi-spiritual-tour.html" class="dropdown-item">Delhi Spiritual & Temple Tour</a>
                         <a href="delhi-agra-2-day-tour.html" class="dropdown-item active">2-Day Taj Mahal & Delhi</a>
+                        <a href="delhi-bicycle-tour.html" class="dropdown-item">Delhi &bull; Agra Bicycle Tour</a>
                         <a href="agra-day-tour.html" class="dropdown-item">Same Day Agra Tour</a>
                         <a href="himalayan-sanctuary.html" class="dropdown-item">Himalayan Sanctuary</a>
                         <a href="imperial-rajasthan.html" class="dropdown-item">Imperial Rajasthan Tour</a>
+                          <a href="delhi-agra-2-day-tour.html" class="dropdown-item">2-Day Taj Mahal & Delhi</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-link">Contact Us</a>
@@ -209,7 +194,7 @@
     <!-- Tour Banner Header -->
     <section class="tour-hero">
         <div class="tour-hero-bg">
-            <img src="assets/agra_delhi_hero_v2.png" alt="Delhi Bicycle Tour Banner" class="tour-hero-img">
+            <img src="assets/agra_delhi_hero_v2.png" alt="Delhi Spiritual Tour Banner" class="tour-hero-img">
             <div class="hero-overlay"></div>
         </div>
         
@@ -227,15 +212,68 @@
     <!-- Tour Main Layout -->
     <section class="tour-detail-section">
         <div class="container">
-            
+            <!-- Mode Switcher Widget -->
+            <div class="mode-switcher-container glass-card">
+                <h3>Select Vehicle & Group Configuration</h3>
+                <p>Choose your preferred private vehicle. All modes include English-speaking driver, guide, and hotel pickup/drop-off.</p>
+                <div class="mode-tabs">
+                    <button class="mode-tab-btn active" data-mode="sedan">
+                        <span class="tab-icon">🚗</span> Sedan (1-2 Pax)
+                    </button>
+                    <button class="mode-tab-btn" data-mode="suv">
+                        <span class="tab-icon">🚙</span> SUV (3-4 Pax)
+                    </button>
+                    <button class="mode-tab-btn" data-mode="minivan">
+                        <span class="tab-icon">🚐</span> Minivan (5-6 Pax)
+                    </button>
+                </div>
+            </div>
+
+            <div class="tour-layout-grid">
+                <!-- Left: Tour Details & Itinerary -->
+                <div class="tour-left-col">
+                    <!-- Description Block -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Tour Description</h2>
+                        <p id="tour-short-desc" class="block-text">
+                            Experience the timeless wonder of the Taj Mahal and the grandeur of Agra Fort, followed by a comprehensive heritage sightseeing tour of India's vibrant capital, New Delhi.
+                        </p>
+                        <div class="mode-highlights" id="mode-highlight-box">
+                            <!-- Injected dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Key Info Strip -->
+                    <div class="detail-block glass-card" style="padding: 1.4rem 2rem;">
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1.2rem;">
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🏨</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Pick-Up &amp; Stay</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Hotel Grand Godwin</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🍳</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Breakfast Location</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">The Indian Grill Restaurant</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚗</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Private Transfer</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Neat &amp; Clean Car</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🤵</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Expertise</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Driver &amp; Guide</div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Day by Day Itinerary -->
                     <div class="detail-block glass-card">
-                        <h2 class="block-title">Cycling Itinerary</h2>
+                        <h2 class="block-title">Delhi to Agra Itinerary</h2>
                         
-                        
-                          <div class="itinerary-timeline" id="itinerary-timeline-box">
+                        <div class="itinerary-timeline" id="itinerary-timeline-box">
                               <!-- Day 1 -->
                               <div class="timeline-step">
                                   <div class="step-number">1</div>
@@ -245,13 +283,13 @@
                                   </div>
                                   <div class="step-content">
                                       <ul>
-                                          <li><strong>08:00 AM:</strong> Start your morning with a delicious breakfast at <strong>The Indian Grill Restaurant</strong>. Afterward, you will be picked up directly from <strong>Hotel Grand Godwin</strong> by a Grand Holidays representative.</li>
-                                          <li><strong>08:30 AM:</strong> Transfer to the first location on the charts: Agra, via a comfortable private drive.</li>
-                                          <li><strong>12:00 PM:</strong> Arrive in Agra, the city of the magnificent Taj Mahal. Check-in to your pre-booked luxury hotel and freshen up.</li>
-                                          <li><strong>02:00 PM:</strong> Visit the Taj Mahal, one of the greatest ensembles of Mughal times built by Shah Jahan for his beloved wife, Mumtaz Mahal. It is a UNESCO World Heritage site and one of the Seven Wonders of the World.</li>
-                                          <li><strong>04:30 PM:</strong> Explore the historic Agra Fort.</li>
-                                          <li><strong>06:00 PM:</strong> Visit the exquisite Itmad-Ud-Daulah (Baby Taj).</li>
-                                          <li><strong>08:00 PM:</strong> Enjoy dinner and stay overnight in Agra.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>08:00 AM:</strong> Start your morning with a delicious breakfast at <strong>The Indian Grill Restaurant</strong>. Afterward, you will be picked up directly from <strong>Hotel Grand Godwin</strong> by a Grand Holidays representative.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>08:30 AM:</strong> Transfer to Agra via a comfortable private drive.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>12:00 PM:</strong> Arrive in Agra. Check-in to your pre-booked luxury hotel and freshen up.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>02:00 PM:</strong> Visit the Taj Mahal, one of the greatest ensembles of Mughal times.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>04:30 PM:</strong> Explore the historic Agra Fort.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>06:00 PM:</strong> Visit the exquisite Itmad-Ud-Daulah (Baby Taj).</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>08:00 PM:</strong> Enjoy dinner and stay overnight in Agra.</li>
                                       </ul>
                                   </div>
                               </div>
@@ -265,30 +303,56 @@
                                   </div>
                                   <div class="step-content">
                                       <ul>
-                                          <li><strong>08:00 AM:</strong> Wake up to a morning breakfast at your hotel in Agra.</li>
-                                          <li><strong>09:30 AM:</strong> Check-out and start your drive back to Delhi for sightseeing and your departure.</li>
-                                          <li><strong>01:00 PM:</strong> On arrival in Delhi, explore major tourist attractions like the Red Fort and visit Raj Ghat.</li>
-                                          <li><strong>03:30 PM:</strong> Explore the architectural marvels of Qutub Minar and Humayun's Tomb.</li>
-                                          <li><strong>05:30 PM:</strong> Drive past India Gate and visit some of Delhi's famous shopping centers.</li>
-                                          <li><strong>07:00 PM:</strong> Conclude the Taj Mahal &amp; Delhi Tour with a drop-off and relaxing overnight stay at <strong>Hotel Grand Godwin</strong> in Delhi.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>08:00 AM:</strong> Wake up to a morning breakfast at your hotel in Agra.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>09:30 AM:</strong> Check-out and start your drive back to Delhi for sightseeing.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>01:00 PM:</strong> On arrival in Delhi, explore the Red Fort and visit Raj Ghat.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>03:30 PM:</strong> Explore Qutub Minar and Humayun's Tomb.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>05:30 PM:</strong> Drive past India Gate and visit famous shopping centers.</li>
+                                          <li style="margin-bottom: 0.8rem;"><strong>07:00 PM:</strong> Conclude the tour with a drop-off and relaxing overnight stay at <strong>Hotel Grand Godwin</strong>.</li>
                                       </ul>
                                   </div>
                               </div>
                           </div>
+                    </div>
 
+                    <!-- Inclusions & Exclusions -->
+                    <div class="inclusions-exclusions-grid">
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon green">✓</span> What's Included</h3>
+                            <ul class="ie-list" id="inclusions-list">
+                                  <li>Private luxury AC vehicle for transfers & sightseeing</li>
+                                  <li>Overnight stay at Hotel Grand Godwin (Delhi) & premium hotel (Agra)</li>
+                                  <li>Breakfast at The Indian Grill Restaurant</li>
+                                  <li>Professional English-speaking tour guide</li>
+                                  <li>All toll taxes, parking fees, and driver allowances</li>
+                                  <li>Complimentary bottled water during the journey</li>
+                              </ul>
+                        </div>
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon red">✗</span> What's Excluded</h3>
+                            <ul class="ie-list" id="exclusions-list">
+                                  <li>Monument entrance fees</li>
+                                  <li>Lunches and dinners (unless specified)</li>
+                                  <li>Personal expenses and tips</li>
+                                  <li>Camera fees at monuments</li>
+                                  <li>Flight or train tickets</li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Right: Booking Form & Sticky Sidebar -->
                 <div class="tour-right-col">
                     <div class="sticky-booking-card glass-card" id="booking-section">
                         <div class="price-summary-box price-summary-top">
-                            <span class="summary-label">Estimated Price per Person</span>
-                            <span class="summary-value" id="summary-price-display">$45</span>
+                            <span class="summary-label">Estimated Package Price</span>
+                            <span class="summary-value" id="summary-price-display">$65 Total</span>
                         </div>
                         <h3 class="sidebar-title">Book This Experience</h3>
-                        <p class="sidebar-desc">Reserve your bicycles for an unforgettable sunrise ride. A coordinator will email you shortly.</p>
+                        <p class="sidebar-desc">Request your customized spiritual journey configuration. Our lead curator will contact you to refine details.</p>
                         
                         <form id="tourBookingForm" class="sidebar-form">
-                            <input type="hidden" id="selected-tour-mode" value="standard">
+                            <input type="hidden" id="selected-tour-mode" value="sedan">
                             
                             <div class="sidebar-form-group">
                                 <input type="text" id="b-name" required placeholder=" " class="sidebar-input">
@@ -302,29 +366,29 @@
 
                             <div class="sidebar-form-group">
                                 <input type="text" id="b-date" required placeholder=" " class="sidebar-input">
-                                <label for="b-date" class="sidebar-label">Preferred Date of Ride</label>
+                                <label for="b-date" class="sidebar-label">Preferred Date of Travel</label>
                             </div>
 
                             <div class="sidebar-form-group">
                                 <select id="b-travelers" class="sidebar-input select-input" required>
                                     <option value="" disabled selected hidden></option>
-                                    <option value="1">1 Cyclist</option>
-                                    <option value="2">2 Cyclists</option>
-                                    <option value="3">3 Cyclists</option>
-                                    <option value="4">4 Cyclists</option>
-                                    <option value="5+">5+ Cyclists</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 Persons</option>
+                                    <option value="3">3 Persons</option>
+                                    <option value="4">4 Persons</option>
+                                    <option value="5+">5+ Persons</option>
                                 </select>
-                                <label for="b-travelers" class="sidebar-label">Number of Cyclists</label>
+                                <label for="b-travelers" class="sidebar-label">Number of Guests</label>
                             </div>
 
                             <div class="sidebar-form-group">
-                                <input type="text" id="b-hotel" value="Hotel Godwin Deluxe, Paharganj" class="sidebar-input" readonly>
-                                <label for="b-hotel" class="sidebar-label">Start & End Point</label>
+                                <input type="text" id="b-hotel" value="Hotel Grand Godwin, Paharganj" class="sidebar-input" readonly>
+                                <label for="b-hotel" class="sidebar-label">Pick-Up & Stay Hotel</label>
                             </div>
 
                             <div class="sidebar-form-group">
                                 <textarea id="b-notes" rows="3" placeholder=" " class="sidebar-input text-area-input"></textarea>
-                                <label for="b-notes" class="sidebar-label">Any special requirements (heights for bike fitting, etc.)...</label>
+                                <label for="b-notes" class="sidebar-label">Special requests, mobility needs...</label>
                             </div>
 
                             <button type="submit" class="btn btn-solid btn-sidebar-submit">Submit Reservation Request</button>
@@ -340,13 +404,13 @@
         </div>
     </section>
 
-    <!-- NEW DELHI CYCLING MAP SECTION -->
+    <!-- DELHI SPIRITUAL MAP SECTION -->
     <section class="gt-map-section">
         <div class="container">
             <div class="gt-map-header">
                 <span class="eyebrow">Route Overview</span>
-                <h2 class="gt-map-title">Delhi &bull; Agra Cycling Circuit</h2>
-                <p class="gt-map-subtitle">A stunning 15km loop experiencing the architectural grandeur of Lutyens' Delhi at the break of dawn.</p>
+                <h2 class="gt-map-title">Delhi Temple Circuit</h2>
+                <p class="gt-map-subtitle">A seamless journey connecting the most serene and majestic spiritual landmarks in the capital.</p>
             </div>
             <div class="gt-map-wrapper">
                 <div class="gt-map-canvas">
@@ -355,96 +419,96 @@
                             <filter id="pinShadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.28)"/></filter>
                             <filter id="labelShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.1)"/></filter>
                             <radialGradient id="bgG" cx="50%" cy="50%" r="60%">
-                                <stop offset="0%" stop-color="#f5f9f6"/>
-                                <stop offset="100%" stop-color="#e0ebd9"/>
+                                <stop offset="0%" stop-color="#fdf8f1"/>
+                                <stop offset="100%" stop-color="#ede4d5"/>
                             </radialGradient>
                         </defs>
                         <rect x="0" y="0" width="680" height="480" rx="20" fill="url(#bgG)"/>
                         
                         <!-- Map Grid Lines -->
-                        <line x1="340" y1="20" x2="340" y2="460" stroke="#a0b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
-                        <line x1="20" y1="240" x2="660" y2="240" stroke="#a0b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                         
-                        <!-- Route Line Paths Connecting Sights (Loop) -->
-                        <path id="route-path" d="M150,150 Q240,110 320,160 Q400,210 460,180 Q520,250 480,320 Q380,380 300,340 Q220,300 180,240 Q130,180 150,150" fill="none" stroke="#2b9348" stroke-width="3.5" stroke-dasharray="8,6" stroke-linecap="round" opacity="0.85">
+                        <!-- Route Line Paths Connecting Sights -->
+                        <path id="route-path" d="M180,180 Q240,140 280,170 Q360,240 400,320 Q480,280 540,240" fill="none" stroke="#2563eb" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="8s" repeatCount="indefinite"/>
                         </path>
 
-                         <!-- Moving BICYCLE along route -->
+                         <!-- Moving Car along route -->
                           <g>
-                              <animateMotion dur="20s" repeatCount="indefinite" rotate="auto">
+                              <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
                                   <mpath href="#route-path"/>
                               </animateMotion>
-                              <g transform="translate(-10, -10) scale(0.8)">
-                                  <!-- Bike Wheels -->
-                                  <circle cx="5" cy="15" r="5" fill="none" stroke="#111" stroke-width="1.5"/>
-                                  <circle cx="23" cy="15" r="5" fill="none" stroke="#111" stroke-width="1.5"/>
-                                  <!-- Bike Frame -->
-                                  <path d="M5,15 L12,7 L20,7 L23,15 M12,7 L15,15 M20,7 L18,3 M11,7 L9,3" fill="none" stroke="#e06236" stroke-width="1.5" stroke-linejoin="round"/>
-                                  <!-- Handlebars & Seat -->
-                                  <line x1="17" y1="3" x2="21" y2="3" stroke="#111" stroke-width="1.5"/>
-                                  <line x1="8" y1="3" x2="11" y2="3" stroke="#111" stroke-width="1.5"/>
+                              <g transform="translate(-10, -5)">
+                                  <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
+                                  <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
+                                  <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                  <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
                               </g>
                           </g>
 
                         <!-- SIGHT MARKERS -->
-                        <!-- 1. Hotel Godwin Deluxe -->
+                        <!-- 1. Hotel Grand Godwin -->
                         <g>
-                            <circle cx="150" cy="150" r="18" fill="rgba(43,147,72,0.15)">
+                            <circle cx="180" cy="180" r="18" fill="rgba(37,99,235,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
                             </circle>
-                            <circle cx="150" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="100" y="120" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="150" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+                            <circle cx="180" cy="180" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="130" y="150" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="180" y="163" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
                         </g>
 
-                        <!-- 2. India Gate -->
+                        <!-- 2. Gurudwara Bangla Sahib -->
                         <g>
-                            <circle cx="320" cy="160" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="275" y="128" width="90" height="20" rx="10" fill="#fff" stroke="#2b9348" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="320" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">INDIA GATE</text>
+                            <circle cx="280" cy="170" r="11" fill="#2563eb" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="220" y="138" width="120" height="20" rx="10" fill="#fff" stroke="#2563eb" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="280" y="151" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1e3a8a" letter-spacing="1">BANGLA SAHIB</text>
                         </g>
 
-                        <!-- 3. Rashtrapati Bhavan (Lutyens) -->
+                        <!-- 3. ISKCON Temple -->
                         <g>
-                            <circle cx="480" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="420" y="340" width="120" height="20" rx="10" fill="#fff" stroke="#2b9348" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="480" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">PRESIDENT's ESTATE</text>
+                            <circle cx="400" cy="320" r="11" fill="#2563eb" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="355" y="340" width="90" height="20" rx="10" fill="#fff" stroke="#2563eb" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="400" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1e3a8a" letter-spacing="1">ISKCON TEMPLE</text>
                         </g>
 
-                        <!-- 4. Lodhi Gardens -->
+                        <!-- 4. Akshardham -->
                         <g>
-                            <circle cx="250" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="205" y="340" width="90" height="20" rx="10" fill="#fff" stroke="#2b9348" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="250" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">LODHI GARDENS</text>
+                            <circle cx="540" cy="240" r="11" fill="#2563eb" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="495" y="208" width="90" height="20" rx="10" fill="#fff" stroke="#2563eb" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="540" y="221" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1e3a8a" letter-spacing="1">AKSHARDHAM</text>
                         </g>
 
-                        <text x="340" y="450" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9.5" font-weight="600" fill="#b0a090" letter-spacing="2.5">NEW DELHI CYCLING LOOP</text>
+                        <text x="340" y="450" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9.5" font-weight="600" fill="#b0a090" letter-spacing="2.5">DELHI TEMPLE CIRCUIT</text>
                     </svg>
                 </div>
                 
                 <div class="gt-city-cards">
                     <div class="gt-city-card">
                         <div class="city-card-num">01</div>
-                        <div class="city-card-icon">🏛️</div>
-                        <h3 class="city-card-name">India Gate & Rajpath</h3>
-                        <p class="city-card-desc">Ride down the massive Kartavya Path boulevard as the sun comes up, taking in the magnificent India Gate war memorial without the daytime crowds.</p>
-                        <div class="city-card-tags"><span>Sunrise Views</span><span>Monuments</span></div>
+                        <div class="city-card-icon">🕌</div>
+                        <h3 class="city-card-name">Gurudwara Bangla Sahib</h3>
+                        <p class="city-card-desc">Experience profound tranquility at this prominent Sikh house of worship. Witness the monumental community kitchen (Langar) that feeds thousands daily, and listen to the soothing continuous prayers.</p>
+                        <div class="city-card-tags"><span>Sikhism</span><span>Langar</span><span>Peace</span></div>
                     </div>
                     <div class="gt-city-card">
                         <div class="city-card-num">02</div>
-                        <div class="city-card-icon">🏛️</div>
-                        <h3 class="city-card-name">Lutyens' Delhi</h3>
-                        <p class="city-card-desc">Cycle through the wide, tree-lined streets of the government district, catching glimpses of the majestic Parliament House and the vast Rashtrapati Bhavan.</p>
-                        <div class="city-card-tags"><span>Architecture</span><span>Avenues</span></div>
+                        <div class="city-card-icon">🛕</div>
+                        <h3 class="city-card-name">ISKCON Temple</h3>
+                        <p class="city-card-desc">Dedicated to Lord Krishna, this beautifully crafted temple is a center for Vedic learning and culture. Enjoy its stunning architecture and spiritually uplifting atmosphere.</p>
+                        <div class="city-card-tags"><span>Krishna</span><span>Vedic Culture</span></div>
                     </div>
                     <div class="gt-city-card">
                         <div class="city-card-num">03</div>
-                        <div class="city-card-icon">🌳</div>
-                        <h3 class="city-card-name">Lodhi Gardens</h3>
-                        <p class="city-card-desc">A peaceful oasis perfect for a mid-ride breather. Explore the lush 90-acre park dotted with beautiful 15th-century Afghan tombs.</p>
-                        <div class="city-card-tags"><span>Nature</span><span>Heritage</span></div>
+                        <div class="city-card-icon">🪷</div>
+                        <h3 class="city-card-name">Swaminarayan Akshardham</h3>
+                        <p class="city-card-desc">A masterpiece of traditional Indian architecture, this massive complex showcases 10,000 years of Indian culture, spirituality, and breathtaking artistry without the use of structural steel.</p>
+                        <div class="city-card-tags"><span>Architecture</span><span>Exhibitions</span><span>Gardens</span></div>
                     </div>
                 </div>
             </div>
@@ -459,15 +523,48 @@
             <h2 style="margin-bottom: 2rem; font-family: var(--f-display); font-size: 2.2rem; color: var(--ink);">More Delhi Experiences</h2>
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="delhi-sightseeing.html" class="btn btn-outline" style="border-radius: 30px;">Delhi Sightseeing</a>
-                <a href="delhi-agra-2-day-tour.html" class="btn btn-outline" style="border-radius: 30px;">Bicycle Tour</a>
+                <a href="delhi-bicycle-tour.html" class="btn btn-outline" style="border-radius: 30px;">Bicycle Tour</a>
                 <a href="delhi-tuk-tuk-tour.html" class="btn btn-outline" style="border-radius: 30px;">Tuk Tuk Tour</a>
                 <a href="delhi-food-tour.html" class="btn btn-outline" style="border-radius: 30px;">Food & Spice Tour</a>
-                <a href="delhi-spiritual-tour.html" class="btn btn-outline" style="border-radius: 30px;">Spiritual Tour</a>
+                <a href="delhi-agra-2-day-tour.html" class="btn btn-outline" style="border-radius: 30px;">Spiritual Tour</a>
             </div>
         </div>
     </section>
 
-    
+    <!-- FAQ Section -->
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="eyebrow">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the 2-Day Taj Mahal & Delhi.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is there a dress code for the temples?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes. Visitors must wear modest clothing. Shoulders and knees must be covered for both men and women. At Gurudwara Bangla Sahib, you will also be required to cover your head (scarves are provided at the entrance) and remove your shoes before entering all places of worship.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Are cameras allowed inside the temples?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Photography is generally allowed in the outer courtyards of most temples, but strictly prohibited inside the main shrines. At Akshardham Temple, electronics, including mobile phones and cameras, are entirely prohibited inside the complex. Secure cloakrooms are available.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Do I have to pay for the Akshardham exhibitions?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Entry to the main Akshardham Temple complex is free. However, if you choose to view the special exhibitions (Robotics, Boat Ride, Film), tickets must be purchased on-site. Your guide will assist you with this if desired.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="luxury-footer">
