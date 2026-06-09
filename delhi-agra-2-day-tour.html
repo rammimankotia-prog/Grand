@@ -66,6 +66,75 @@
             .dropdown-item { font-size: 0.85rem; padding: 0.5rem 0; color: #6B5F54; }
             .dropdown-item:hover { padding-left: 0.3rem; }
         }
+    
+        .inc-exc-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+        .inc-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        }
+        @media (max-width: 768px) {
+            .inc-exc-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .inc-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+        }
+        .inc-title.included {
+            color: #1a8e5b;
+        }
+        .inc-title.excluded {
+            color: #d63c3c;
+        }
+        .inc-title span {
+            margin-right: 12px;
+            font-size: 1.3rem;
+            font-weight: 900;
+        }
+        .inc-divider {
+            height: 1px;
+            margin-bottom: 2rem;
+        }
+        .inc-divider.included {
+            background: rgba(26, 142, 91, 0.3);
+        }
+        .inc-divider.excluded {
+            background: rgba(214, 60, 60, 0.3);
+        }
+        .inc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .inc-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: #444;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+        .inc-list li::before {
+            content: '4'; /* em dash */
+            position: absolute;
+            left: 0;
+            color: #999;
+        }
+
     </style>
 </head>
 <body>
@@ -194,23 +263,50 @@
                         <h2 class="block-title">Day Itinerary</h2>
                         
                           
-                          <div class="itinerary-timeline" id="itinerary-timeline-box">
-                              <!-- Day 1 -->
-                              <div class="itinerary-item">
-                                  <div class="day-marker">Day 01</div>
-                                  <div class="day-content">
-                                      <h3>Delhi to Agra</h3>
-                                      <ul style="list-style-type: none; padding: 0; margin-top: 1rem;">
-                                          <li style="margin-bottom: 0.8rem;"><strong>08:00 AM:</strong> After you arrive at the Delhi International Airport or railway station, you will be picked up by a Grand Holidays representative.</li>
-                                          <li style="margin-bottom: 0.8rem;"><strong>08:30 AM:</strong> Transfer to the first location on the charts: Agra, via a comfortable private drive.</li>
-                                          <li style="margin-bottom: 0.8rem;"><strong>12:00 PM:</strong> Arrive in Agra, the city of the magnificent Taj Mahal. Check-in to your pre-booked luxury hotel and freshen up.</li>
-                                          <li style="margin-bottom: 0.8rem;"><strong>02:00 PM:</strong> Visit the Taj Mahal, one of the greatest ensembles of Mughal times built by Shah Jahan for his beloved wife, Mumtaz Mahal. It is a UNESCO World Heritage site and one of the Seven Wonders of the World.</li>
-                                          <li style="margin-bottom: 0.8rem;"><strong>04:30 PM:</strong> Explore the historic Agra Fort.</li>
-                                          <li style="margin-bottom: 0.8rem;"><strong>06:00 PM:</strong> Visit the exquisite Itmad-Ud-Daulah (Baby Taj).</li>
-                                          <li style="margin-bottom: 0.8rem;"><strong>08:00 PM:</strong> Enjoy dinner and stay overnight in Agra.</li>
-                                      </ul>
+                          
+                          <div class="luxury-timeline-container">
+                              <div class="luxury-timeline">
+                                  <!-- Day 1 -->
+                                  <div class="timeline-step">
+                                      <div class="step-number">1</div>
+                                      <div class="step-header">
+                                          <h3 class="step-title">Delhi to Agra</h3>
+                                          <span class="step-badge">DAY 1</span>
+                                      </div>
+                                      <div class="step-content">
+                                          <ul>
+                                              <li><strong>08:00 AM:</strong> After you arrive at the Delhi International Airport or railway station, you will be picked up by a Grand Holidays representative.</li>
+                                              <li><strong>08:30 AM:</strong> Transfer to the first location on the charts: Agra, via a comfortable private drive.</li>
+                                              <li><strong>12:00 PM:</strong> Arrive in Agra, the city of the magnificent Taj Mahal. Check-in to your pre-booked luxury hotel and freshen up.</li>
+                                              <li><strong>02:00 PM:</strong> Visit the Taj Mahal, one of the greatest ensembles of Mughal times built by Shah Jahan for his beloved wife, Mumtaz Mahal. It is a UNESCO World Heritage site and one of the Seven Wonders of the World.</li>
+                                              <li><strong>04:30 PM:</strong> Explore the historic Agra Fort.</li>
+                                              <li><strong>06:00 PM:</strong> Visit the exquisite Itmad-Ud-Daulah (Baby Taj).</li>
+                                              <li><strong>08:00 PM:</strong> Enjoy dinner and stay overnight in Agra.</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+
+                                  <!-- Day 2 -->
+                                  <div class="timeline-step">
+                                      <div class="step-number">2</div>
+                                      <div class="step-header">
+                                          <h3 class="step-title">Agra to New Delhi</h3>
+                                          <span class="step-badge">DAY 2</span>
+                                      </div>
+                                      <div class="step-content">
+                                          <ul>
+                                              <li><strong>08:00 AM:</strong> Wake up to a morning breakfast at your hotel.</li>
+                                              <li><strong>09:30 AM:</strong> Check-out and start your drive to Delhi for sightseeing and your departure.</li>
+                                              <li><strong>01:00 PM:</strong> On arrival in Delhi, explore major tourist attractions like the Red Fort and visit Raj Ghat.</li>
+                                              <li><strong>03:30 PM:</strong> Explore the architectural marvels of Qutub Minar and Humayun's Tomb.</li>
+                                              <li><strong>05:30 PM:</strong> Drive past India Gate and visit some of Delhi's famous shopping centers.</li>
+                                              <li><strong>07:00 PM:</strong> Get assisted with a transfer to the airport or railway station for your journey home, concluding the Taj Mahal &amp; Delhi Tour.</li>
+                                          </ul>
+                                      </div>
                                   </div>
                               </div>
+                          </div>
+
 
                               <!-- Day 2 -->
                               <div class="itinerary-item" style="margin-top: 2rem;">
