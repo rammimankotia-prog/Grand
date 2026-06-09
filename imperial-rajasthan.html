@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Rajasthan Retold | Grand Holidays</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Witness the grandeur of Jodhpur, Udaipur, and Jaisalmer. Stay at heritage palaces, enjoy stargazing in Sam dunes, and cruise Lake Pichola on a private yacht.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css?v=14">
+    <link rel="stylesheet" href="imperial-rajasthan.css?v=5">
+    
+    <!-- Dropdown Navigation Styles to bypass caching -->
+    <style>
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+        .dropdown-toggle .arrow {
+            font-size: 0.55rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: #FFFEFB;
+            border: 1px solid rgba(24,19,14,0.07);
+            border-top: 3px solid #A67C31;
+            border-radius: 8px;
+            min-width: 230px;
+            opacity: 0;
+            visibility: hidden;
+            padding: 0.7rem 0;
+            box-shadow: 0 8px 30px rgba(24,19,14,0.10);
+            transition: opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1), transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.22s;
+            z-index: 1000;
+            margin-top: 0.6rem;
+            display: block;
+        }
+        @media (min-width: 769px) {
+            .nav-dropdown:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(0);
+            }
+            .nav-dropdown:hover .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+        }
+        .dropdown-item {
+            display: block;
+            padding: 0.6rem 1.4rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #6B5F54;
+            white-space: nowrap;
+            transition: all 0.18s ease;
+            text-align: left;
+        }
+        .dropdown-item:hover {
+            background: rgba(166,124,49,0.07);
+            color: #A67C31;
+            padding-left: 1.7rem;
+        }
+        .dropdown-item.active {
+            color: #A67C31;
+            background: rgba(166,124,49,0.07);
+        }
+        @media (max-width: 768px) {
+            .nav-dropdown {
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown-toggle {
+                justify-content: center;
+                font-size: 1rem !important;
+            }
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                border-left: 2px solid rgba(166,124,49,0.28);
+                border-radius: 0;
+                background: transparent;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                padding: 0.5rem 0 0 1.5rem;
+                min-width: unset;
+                text-align: left;
+                margin-top: 0.5rem;
+            }
+            .nav-dropdown.active .dropdown-menu {
+                display: block;
+            }
+            .nav-dropdown.active .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+            .dropdown-item {
+                font-size: 0.85rem;
+                padding: 0.5rem 0;
+                color: #6B5F54;
+            }
+            .dropdown-item:hover {
+                padding-left: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Glow Accent -->
+    <div class="top-glow"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="main-header scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">THE</span>
+                <span class="logo-main">GRAND HOLIDAYS</span>
+                <span class="logo-sub">LUXURY TOUR CO.</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle">Our Tours <span class="arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="golden-triangle.html" class="dropdown-item">Golden Triangle Tour</a>
+                        <a href="delhi-sightseeing.html" class="dropdown-item">Delhi Sightseeing Tour</a>
+                        <a href="delhi-food-tour.html" class="dropdown-item">Delhi Food & Spice Tour</a>
+                        <a href="delhi-spiritual-tour.html" class="dropdown-item">Delhi Spiritual & Temple Tour</a>
+                        <a href="delhi-bicycle-tour.html" class="dropdown-item">New Delhi Bicycle Tour</a>
+                        <a href="agra-day-tour.html" class="dropdown-item">Same Day Agra Tour</a>
+                        <a href="himalayan-sanctuary.html" class="dropdown-item">Himalayan Sanctuary</a>
+                        <a href="imperial-rajasthan.html" class="dropdown-item active">Imperial Rajasthan Tour</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="header-contact-info">
+                    <a href="tel:+918860081995" class="header-contact-link">📞 +91 8860081995</a>
+                </div>
+                <a href="#booking-section" class="btn btn-outline btn-nav">Book Tour</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tour Banner Header -->
+    <section class="tour-hero">
+        <div class="tour-hero-bg">
+            <img src="assets/rajasthan.png" alt="Rajasthan Palace Tour Banner" class="tour-hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="tour-hero-content">
+            <span class="tour-badge">ROYAL HOSPITALITY</span>
+            <h1 class="tour-main-title">Imperial Rajasthan Retold</h1>
+            <div class="tour-meta-strip">
+                <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">9 Days / 8 Nights</span></span>
+                <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">Jodhpur · Udaipur · Jaisalmer</span></span>
+                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $14,200 (For 2 Adults)</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Main Layout -->
+    <section class="tour-detail-section">
+        <div class="container">
+            <!-- Mode Switcher Widget -->
+            <div class="mode-switcher-container glass-card">
+                <h3>Select Mode of Travel</h3>
+                <p>Tailor your royal journey across Rajasthan. Select between private road curators, premium SUV transfers, or heritage express transits.</p>
+                <div class="mode-tabs">
+                    <button class="mode-tab-btn active" data-mode="suv">
+                        <span class="tab-icon">🚗</span> Palace Chauffeur SUV
+                    </button>
+                    <button class="mode-tab-btn" data-mode="charter">
+                        <span class="tab-icon">🚘</span> Royal Palace Suite &amp; SUV
+                    </button>
+                    <button class="mode-tab-btn" data-mode="express">
+                        <span class="tab-icon">🏠</span> Heritage Haveli &amp; Sedan
+                    </button>
+                </div>
+            </div>
+
+            <div class="tour-layout-grid">
+                <!-- Left: Tour Details & Itinerary -->
+                <div class="tour-left-col">
+                    <!-- Description Block -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Tour Description</h2>
+                        <p id="tour-short-desc" class="block-text">
+                            Live like royalty. Lake cruises in Udaipur, champagne sundowners on the Thar dunes, and heritage tours of Rajasthan's majestic hill forts.
+                        </p>
+                        <div class="mode-highlights" id="mode-highlight-box">
+                            <!-- Injected dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Day by Day Itinerary -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Daily Itinerary</h2>
+                        
+                        <div class="itinerary-timeline" id="itinerary-timeline-box">
+                            <!-- Timeline items will be injected by JS depending on mode -->
+                        </div>
+                    </div>
+
+                    <!-- Inclusions & Exclusions -->
+                    <div class="inclusions-exclusions-grid">
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon green">✓</span> What's Included</h3>
+                            <ul class="ie-list" id="inclusions-list">
+                                <!-- Injected by JS -->
+                            </ul>
+                        </div>
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon red">✗</span> What's Excluded</h3>
+                            <ul class="ie-list" id="exclusions-list">
+                                <!-- Injected by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Booking Form & Sticky Sidebar -->
+                <div class="tour-right-col">
+                    <div class="sticky-booking-card glass-card" id="booking-section">
+                        <div class="price-summary-box price-summary-top">
+                            <span class="summary-label">Estimated Price</span>
+                            <span class="summary-value" id="summary-price-display">$14,200 (For 2 Adults)</span>
+                        </div>
+                        <h3 class="sidebar-title">Book This Experience</h3>
+                        <p class="sidebar-desc">Request your customized itinerary configuration. Our lead curator will contact you to refine details.</p>
+                        
+                        <form id="tourBookingForm" class="sidebar-form">
+                            <input type="hidden" id="selected-tour-mode" value="suv">
+                            
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-name" required placeholder=" " class="sidebar-input">
+                                <label for="b-name" class="sidebar-label">Full Name</label>
+                            </div>
+                            
+                            <div class="sidebar-form-group">
+                                <input type="email" id="b-email" required placeholder=" " class="sidebar-input">
+                                <label for="b-email" class="sidebar-label">Email Address</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-date" required placeholder=" " class="sidebar-input">
+                                <label for="b-date" class="sidebar-label">Preferred Travel Date</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-travelers" value="2 Adults" class="sidebar-input" readonly>
+                                <label for="b-travelers" class="sidebar-label">Number of Guests</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <textarea id="b-notes" rows="3" placeholder=" " class="sidebar-input text-area-input"></textarea>
+                                <label for="b-notes" class="sidebar-label">Palace stay preferences, dietary requirements...</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-solid btn-sidebar-submit">Send Reservation Request</button>
+                        </form>
+
+                        <div id="bookingSuccessMessage" class="success-message">
+                            <h3>Curating Your Itinerary</h3>
+                            <p>Your dedicated travel designer has received your configuration requests and will contact you via email shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RAJASTHAN MAP SECTION -->
+    <section class="gt-map-section">
+        <div class="container">
+            <div class="gt-map-header">
+                <span class="eyebrow">Route Overview</span>
+                <h2 class="gt-map-title">Imperial Rajasthan Circuit</h2>
+                <p class="gt-map-subtitle">A heritage loop traversing through the Blue City, the Golden Sands of Thar, and the romantic Lake Palace of Udaipur.</p>
+            </div>
+            <div class="gt-map-wrapper">
+                <div class="gt-map-canvas">
+                    <svg viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" class="gt-svg">
+                        <defs>
+                            <radialGradient id="bgG" cx="50%" cy="50%" r="60%">
+                                <stop offset="0%" stop-color="#fdf8f1"/>
+                                <stop offset="100%" stop-color="#ede4d5"/>
+                            </radialGradient>
+                        </defs>
+                        <rect x="0" y="0" width="680" height="480" rx="20" fill="url(#bgG)"/>
+                        
+                        <!-- Decorative Desert Lines (Thar Dunes) -->
+                        <path d="M50,220 C150,200 200,280 300,260 C400,240 450,320 550,300" fill="none" stroke="#e4dac6" stroke-width="5" opacity="0.6"/>
+                        <path d="M100,140 C200,120 250,200 350,180 C450,160 500,240 600,220" fill="none" stroke="#e4dac6" stroke-width="3" opacity="0.4"/>
+                        
+                        <!-- Route Line Paths Connecting Sights -->
+                        <!-- Jodhpur (320,220) -> Jaisalmer (160,180) -> Udaipur (440,360) -->
+                        <path id="route-path" d="M320,220 Q240,200 160,180 Q300,270 440,360" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                            <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
+                        </path>
+
+                         <!-- Moving Taxi Sedan along route -->
+                         <g>
+                             <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+                                 <mpath href="#route-path"/>
+                             </animateMotion>
+                             <g transform="translate(-10, -5)">
+                                 <!-- Wheels -->
+                                 <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                 <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                 <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                 <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                 <!-- Car body -->
+                                 <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
+                                 <!-- Front Grill -->
+                                 <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
+                                 <!-- Headlights (Front, facing right) -->
+                                 <rect x="18.5" y="0.8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
+                                 <rect x="18.5" y="8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
+                                 <!-- Taillights (Rear, facing left) -->
+                                 <rect x="-0.3" y="0.8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
+                                 <rect x="-0.3" y="8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
+                                 <!-- Windshield (Front, facing right) -->
+                                 <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                 <!-- Rear Window (Back, facing left) -->
+                                 <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                 <!-- Side windows (Split for Sedan) -->
+                                 <!-- Top side windows -->
+                                 <rect x="5.5" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                 <rect x="8.8" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                 <!-- Bottom side windows -->
+                                 <rect x="5.5" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                 <rect x="8.8" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                 <!-- Bumpers -->
+                                 <rect x="-0.8" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
+                                 <rect x="20" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
+                                 <!-- Taxi Light on Roof -->
+                                 <rect x="7.5" y="3.5" width="5" height="3" rx="0.6" fill="#fff" stroke="#b45309" stroke-width="0.8"/>
+                                 <text x="10" y="5.7" font-family="Outfit, sans-serif" font-size="2.2" font-weight="900" fill="#000" text-anchor="middle" letter-spacing="0.1">TAXI</text>
+                             </g>
+                         </g>
+
+                        <!-- Distance Labels & Travel Times -->
+                        <g transform="translate(240,180)">
+                            <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">~280 km / 5h</text>
+                        </g>
+                        <g transform="translate(395,280)">
+                            <rect x="-35" y="-12" width="70" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">~260 km / 4.5h</text>
+                        </g>
+
+                        <!-- Pins & Locations -->
+                        <!-- Jaisalmer (160,180) -->
+                        <g transform="translate(160,180)">
+                            <circle r="22" fill="#a67c31" opacity="0.22"/>
+                            <circle r="8" fill="#a67c31" stroke="#fff" stroke-width="2"/>
+                            <rect x="-38" y="-38" width="76" height="20" rx="4" fill="#fff" stroke="rgba(24,19,14,0.07)"/>
+                            <text x="0" y="-25" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" font-weight="700" fill="#1a1208">JAISALMER</text>
+                        </g>
+
+                        <!-- Jodhpur (320,220) -->
+                        <g transform="translate(320,220)">
+                            <circle r="22" fill="#a67c31" opacity="0.22"/>
+                            <circle r="8" fill="#a67c31" stroke="#fff" stroke-width="2"/>
+                            <rect x="-35" y="-38" width="70" height="20" rx="4" fill="#fff" stroke="rgba(24,19,14,0.07)"/>
+                            <text x="0" y="-25" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" font-weight="700" fill="#1a1208">JODHPUR</text>
+                        </g>
+
+                        <!-- Udaipur (440,360) -->
+                        <g transform="translate(440,360)">
+                            <circle r="22" fill="#a67c31" opacity="0.22"/>
+                            <circle r="8" fill="#a67c31" stroke="#fff" stroke-width="2"/>
+                            <rect x="-35" y="-38" width="70" height="20" rx="4" fill="#fff" stroke="rgba(24,19,14,0.07)"/>
+                            <text x="0" y="-25" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" font-weight="700" fill="#1a1208">UDAIPUR</text>
+                        </g>
+                    </svg>
+                </div>
+                
+                <!-- Detail Info Cards -->
+                <div class="gt-city-cards">
+                    <div class="gt-city-card">
+                        <div class="city-card-icon">🕌</div>
+                        <h3 class="city-card-name">Jodhpur (Blue City)</h3>
+                        <p class="city-card-desc">The grand Mehrangarh Fort towering over indigo-blue houses, private spice curation walks, and stays at Umaid Bhawan Palace.</p>
+                        <div class="city-card-tags">
+                            <span>Mehrangarh Fort</span>
+                            <span>Umaid Bhawan</span>
+                        </div>
+                    </div>
+                    
+                    <div class="gt-city-card">
+                        <div class="city-card-icon">🏜️</div>
+                        <h3 class="city-card-name">Jaisalmer (Golden City)</h3>
+                        <p class="city-card-desc">The living Jaisalmer Fort rising from the Thar Desert, starry sky champagne dinners, and ultra-lux tented safaris.</p>
+                        <div class="city-card-tags">
+                            <span>Thar Desert</span>
+                            <span>Luxury Camp</span>
+                        </div>
+                    </div>
+
+                    <div class="gt-city-card">
+                        <div class="city-card-icon">⛵</div>
+                        <h3 class="city-card-name">Udaipur (City of Lakes)</h3>
+                        <p class="city-card-desc">The shimmering Taj Lake Palace floating on Lake Pichola, private yacht sunset cruises, and historical Mewar heritage walks.</p>
+                        <div class="city-card-tags">
+                            <span>Lake Pichola</span>
+                            <span>Taj Lake Palace</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="eyebrow">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the Imperial Rajasthan Tour — answered by our Rajasthan heritage travel specialists.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Which cities and destinations are covered in this tour?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The Imperial Rajasthan Tour covers three of India's most iconic royal cities — Jodhpur (the Blue City), Jaisalmer (the Golden City), and Udaipur (the City of Lakes). Each destination offers a completely distinct character: Jodhpur's towering Mehrangarh Fort, Jaisalmer's golden sandstone living fort, and Udaipur's serene lake palaces and City Palace museum.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">How do we travel between cities in Rajasthan?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>All inter-city travel is by private luxury road transfer — either a dedicated Toyota Innova Crysta/Fortuner (Palace Chauffeur SUV tier) or an Audi Q7/Mercedes GLE (Royal Palace Suite tier). The scenic drives across the Thar Desert are a spectacular part of the experience, with golden sand dunes, ancient temples, and remote villages along the way.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is the desert camp experience in Jaisalmer included?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — the Thar Desert experience at Sujan The Serai luxury camp is a centrepiece of this tour. It includes a private camel safari into the Sam Sand Dunes, a champagne sunset on the dunes, traditional Rajasthani folk music and dance around the bonfire, and world-class astronomer-guided stargazing with high-end telescopes under a perfectly dark desert sky.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Which palace hotels will we stay at?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Our flagship accommodation includes Umaid Bhawan Palace in Jodhpur (still a royal residence, rated among the world's finest hotels), Sujan The Serai desert camp in Jaisalmer, and the legendary Taj Lake Palace in Udaipur — a white marble island palace floating on Lake Pichola. Each is a once-in-a-lifetime stay in its own right.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is the camel safari safe and comfortable?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes, absolutely. Our camels are well-trained, calm, and handled by experienced mahouts. The safari is conducted in the late afternoon (5–7 pm) when temperatures are comfortable and the light is golden. For those preferring not to ride, a private jeep can follow the route alongside the camel caravan. The safari lasts approximately 45–60 minutes into the dunes.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">What is the best time of year to visit Rajasthan?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>October to February is the prime season — days are warm and pleasant (18–28°C), nights are cool, and the forts and palaces shine in clear winter light. The Pushkar Camel Fair (November) and Jaisalmer Desert Festival (February) fall in this window. March–April is also lovely with spring colour. Summers (May–June) are very hot in the Thar Desert, so we recommend avoiding them.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Are meals and entry tickets included in the package?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Daily gourmet breakfasts are included across all tiers. Premium tiers include three curated palace dinners — including a private rooftop dinner overlooking Mehrangarh Fort and a sunset dinner on the lake barge in Udaipur. VIP fast-track entry tickets to Mehrangarh Fort, Jaisalmer Fort, Udaipur City Palace, and all major monuments are pre-booked and included.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Can we extend the tour to include Jaipur or Ranthambore?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely — popular extensions include Jaipur (Amber Fort, Rambagh Palace, City Palace), Ranthambore National Park (Bengal tiger safari), Bikaner (Junagarh Fort), or the Pushkar sacred lake and Brahma Temple. All extensions are fully curated, seamlessly appended to the itinerary, and quoted separately. Speak to your travel designer at booking.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-accent">THE</span>
+                        <span class="logo-main">GRAND HOLIDAYS</span>
+                    </a>
+                    <p class="footer-desc">
+                        A bespoke luxury travel operator creating timeless, surreal journeys across the Indian subcontinent.
+                    </p>
+                    <p class="footer-desc" style="margin-top: 1.2rem; opacity: 0.8; font-size: 0.8rem; line-height: 1.5;">
+                        <strong>Grand Holidays Office</strong><br>
+                        Plot No. 8502/41, Ground Floor, Arakashan Rd,<br>
+                        behind Sheela Cinema Street, Ram Nagar,<br>
+                        Paharganj, New Delhi, Delhi 110055
+                    </p>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Discover</h4>
+                    <a href="index.html#heritage-story">Heritage Story</a>
+                    <a href="index.html#curated-journeys">Curated Itineraries</a>
+                    <a href="index.html#bespoke-concierge">Travel Designer</a>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Bespoke Desks</h4>
+                    <span>New York Private Desk</span>
+                    <span>London Private Desk</span>
+                    <span>New Delhi Concierge</span>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>WhatsApp Concierge</h4>
+                    <a href="https://wa.me/918860081995" target="_blank" rel="noopener noreferrer" style="color:var(--gold-light);">+91 8860081995</a>
+                    <a href="mailto:tours@godwinhotels.com" style="color:var(--gold-light); display:block; margin-top:0.8rem;">tours@godwinhotels.com</a>
+                    <a href="tel:+918860081995" style="color:var(--gold-light); display:block; margin-top:0.3rem;">+91 8860081995</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grand Holidays Tour Company. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span class="bullet">•</span>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/918860081995?text=Hello%20Grand%20Holidays,%20I%20would%20like%20to%20plan%20a%20luxury%20journey." target="_blank" rel="noopener noreferrer" class="whatsapp-float-widget" aria-label="Chat on WhatsApp">
+        <span class="whatsapp-widget-text">Chat with Curator</span>
+        <span class="whatsapp-widget-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="display:block;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.62.963 3.41 1.47 5.258 1.471h.005c5.579 0 10.121-4.542 10.125-10.125.002-2.707-1.052-5.253-2.968-7.17C17.153 1.413 14.604.36 11.895.36c-5.58 0-10.12 4.542-10.124 10.125-.001 1.884.49 3.73 1.42 5.352l-.992 3.626 3.712-.973zm11.367-7.36c-.327-.164-1.93-.953-2.229-1.062-.298-.11-.515-.164-.73.164-.216.328-.835 1.063-1.025 1.28-.19.219-.381.247-.708.082-.327-.164-1.38-.508-2.63-1.622-.972-.867-1.628-1.939-1.819-2.266-.19-.328-.02-.505.144-.668.148-.146.327-.382.49-.573.163-.19.217-.328.327-.546.11-.218.055-.41-.027-.573-.082-.164-.73-1.76-.997-2.416-.26-.626-.527-.541-.73-.551-.188-.008-.403-.01-.618-.01-.215 0-.565.081-.861.41-.296.327-1.13 1.106-1.13 2.7 0 1.594 1.159 3.13 1.319 3.348.16.218 2.28 3.483 5.523 4.882.772.332 1.373.53 1.843.68.775.246 1.48.212 2.037.129.62-.093 1.93-.79 2.2-1.513.27-.723.27-1.343.19-1.474-.082-.132-.297-.215-.624-.379z"/></svg>
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="imperial-rajasthan.js?v=6"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Food & Spice Tour (Same Day) | Grand Holidays</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience Delhi's culinary heritage. Same day local food & spice tour with private vehicle, expert guide, and complimentary breakfast.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css?v=14">
+    <link rel="stylesheet" href="delhi-food-tour.css?v=1">
+    
+    <!-- Dropdown Navigation Styles to bypass caching -->
+    <style>
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+        .dropdown-toggle .arrow {
+            font-size: 0.55rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: #FFFEFB;
+            border: 1px solid rgba(24,19,14,0.07);
+            border-top: 3px solid #A67C31;
+            border-radius: 8px;
+            min-width: 230px;
+            opacity: 0;
+            visibility: hidden;
+            padding: 0.7rem 0;
+            box-shadow: 0 8px 30px rgba(24,19,14,0.10);
+            transition: opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1), transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.22s;
+            z-index: 1000;
+            margin-top: 0.6rem;
+            display: block;
+        }
+        @media (min-width: 769px) {
+            .nav-dropdown:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(0);
+            }
+            .nav-dropdown:hover .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+        }
+        .dropdown-item {
+            display: block;
+            padding: 0.6rem 1.4rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #6B5F54;
+            white-space: nowrap;
+            transition: all 0.18s ease;
+            text-align: left;
+        }
+        .dropdown-item:hover {
+            background: rgba(166,124,49,0.07);
+            color: #A67C31;
+            padding-left: 1.7rem;
+        }
+        .dropdown-item.active {
+            color: #A67C31;
+            background: rgba(166,124,49,0.07);
+        }
+        @media (max-width: 768px) {
+            .nav-dropdown {
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown-toggle {
+                justify-content: center;
+                font-size: 1rem !important;
+            }
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                border-left: 2px solid rgba(166,124,49,0.28);
+                border-radius: 0;
+                background: transparent;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                padding: 0.5rem 0 0 1.5rem;
+                min-width: unset;
+                text-align: left;
+                margin-top: 0.5rem;
+            }
+            .nav-dropdown.active .dropdown-menu {
+                display: block;
+            }
+            .nav-dropdown.active .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+            .dropdown-item {
+                font-size: 0.85rem;
+                padding: 0.5rem 0;
+                color: #6B5F54;
+            }
+            .dropdown-item:hover {
+                padding-left: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Glow Accent -->
+    <div class="top-glow"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="main-header scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">THE</span>
+                <span class="logo-main">GRAND HOLIDAYS</span>
+                <span class="logo-sub">LUXURY TOUR CO.</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle">Our Tours <span class="arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="golden-triangle.html" class="dropdown-item">Golden Triangle Tour</a>
+                        <a href="delhi-sightseeing.html" class="dropdown-item">Delhi Sightseeing Tour</a>
+                        <a href="delhi-food-tour.html" class="dropdown-item active">Delhi Food & Spice Tour</a>
+                        <a href="delhi-spiritual-tour.html" class="dropdown-item">Delhi Spiritual & Temple Tour</a>
+                        <a href="delhi-bicycle-tour.html" class="dropdown-item">New Delhi Bicycle Tour</a>
+                        <a href="agra-day-tour.html" class="dropdown-item">Same Day Agra Tour</a>
+                        <a href="himalayan-sanctuary.html" class="dropdown-item">Himalayan Sanctuary</a>
+                        <a href="imperial-rajasthan.html" class="dropdown-item">Imperial Rajasthan Tour</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="header-contact-info">
+                    <a href="tel:+918860081995" class="header-contact-link">📞 +91 8860081995</a>
+                </div>
+                <a href="#booking-section" class="btn btn-outline btn-nav">Book Tour</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tour Banner Header -->
+    <section class="tour-hero">
+        <div class="tour-hero-bg">
+            <img src="assets/delhi-food-hero.png" alt="Delhi Food Tour Banner" class="tour-hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="tour-hero-content">
+            <span class="tour-badge">CULINARY JOURNEY</span>
+            <h1 class="tour-main-title">Delhi Food & Spice Tour</h1>
+            <div class="tour-meta-strip">
+                <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">8 Hours</span></span>
+                <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">Old &amp; New Delhi</span></span>
+                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $65 p.p.</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Main Layout -->
+    <section class="tour-detail-section">
+        <div class="container">
+            <!-- Mode Switcher Widget -->
+            <div class="mode-switcher-container glass-card">
+                <h3>Select Vehicle & Group Configuration</h3>
+                <p>Choose your preferred private vehicle. All modes include English-speaking driver, guide, and hotel pickup/drop-off.</p>
+                <div class="mode-tabs">
+                    <button class="mode-tab-btn active" data-mode="sedan">
+                        <span class="tab-icon">🚗</span> Sedan (1-2 Pax)
+                    </button>
+                    <button class="mode-tab-btn" data-mode="suv">
+                        <span class="tab-icon">🚙</span> SUV (3-4 Pax)
+                    </button>
+                    <button class="mode-tab-btn" data-mode="minivan">
+                        <span class="tab-icon">🚐</span> Minivan (5-6 Pax)
+                    </button>
+                </div>
+            </div>
+
+            <div class="tour-layout-grid">
+                <!-- Left: Tour Details & Itinerary -->
+                <div class="tour-left-col">
+                    <!-- Description Block -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Tour Description</h2>
+                        <p id="tour-short-desc" class="block-text">
+                            Experience the vibrant culinary heritage of Delhi. Travel in a comfortable private vehicle with pick-up, drop-off, and breakfast at Hotel Godwin Deluxe.
+                        </p>
+                        <div class="mode-highlights" id="mode-highlight-box">
+                            <!-- Injected dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Key Info Strip -->
+                    <div class="detail-block glass-card" style="padding: 1.4rem 2rem;">
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1.2rem;">
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🏨</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Pick-Up &amp; Stay</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Hotel Godwin Deluxe</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🍳</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Breakfast Location</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Indian Grill Restaurant</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚗</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Private Transfer</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Neat &amp; Clean Car</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🤵</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Expertise</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Driver &amp; Guide</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day by Day Itinerary -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Culinary Itinerary</h2>
+                        
+                        <div class="itinerary-timeline" id="itinerary-timeline-box">
+                            <!-- Timeline items will be injected by JS depending on mode -->
+                        </div>
+                    </div>
+
+                    <!-- Inclusions & Exclusions -->
+                    <div class="inclusions-exclusions-grid">
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon green">✓</span> What's Included</h3>
+                            <ul class="ie-list" id="inclusions-list">
+                                <!-- Injected by JS -->
+                            </ul>
+                        </div>
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon red">✗</span> What's Excluded</h3>
+                            <ul class="ie-list" id="exclusions-list">
+                                <!-- Injected by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Booking Form & Sticky Sidebar -->
+                <div class="tour-right-col">
+                    <div class="sticky-booking-card glass-card" id="booking-section">
+                        <div class="price-summary-box price-summary-top">
+                            <span class="summary-label">Estimated Package Price</span>
+                            <span class="summary-value" id="summary-price-display">$65 Total</span>
+                        </div>
+                        <h3 class="sidebar-title">Book This Experience</h3>
+                        <p class="sidebar-desc">Request your customized culinary journey configuration. Our lead curator will contact you to refine details.</p>
+                        
+                        <form id="tourBookingForm" class="sidebar-form">
+                            <input type="hidden" id="selected-tour-mode" value="sedan">
+                            
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-name" required placeholder=" " class="sidebar-input">
+                                <label for="b-name" class="sidebar-label">Full Name</label>
+                            </div>
+                            
+                            <div class="sidebar-form-group">
+                                <input type="email" id="b-email" required placeholder=" " class="sidebar-input">
+                                <label for="b-email" class="sidebar-label">Email Address</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-date" required placeholder=" " class="sidebar-input">
+                                <label for="b-date" class="sidebar-label">Preferred Date of Travel</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <select id="b-travelers" class="sidebar-input select-input" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 Persons</option>
+                                    <option value="3">3 Persons</option>
+                                    <option value="4">4 Persons</option>
+                                    <option value="5+">5+ Persons</option>
+                                </select>
+                                <label for="b-travelers" class="sidebar-label">Number of Guests</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-hotel" value="Hotel Godwin Deluxe, Paharganj" class="sidebar-input" readonly>
+                                <label for="b-hotel" class="sidebar-label">Pick-Up & Stay Hotel</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <textarea id="b-notes" rows="3" placeholder=" " class="sidebar-input text-area-input"></textarea>
+                                <label for="b-notes" class="sidebar-label">Dietary restrictions, allergies...</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-solid btn-sidebar-submit">Submit Reservation Request</button>
+                        </form>
+
+                        <div id="bookingSuccessMessage" class="success-message">
+                            <h3>Reservation Scheduled</h3>
+                            <p>Your dedicated travel designer has received your configuration requests and will contact you via email shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DELHI CULINARY MAP SECTION -->
+    <section class="gt-map-section">
+        <div class="container">
+            <div class="gt-map-header">
+                <span class="eyebrow">Route Overview</span>
+                <h2 class="gt-map-title">Old Delhi Culinary Circuit</h2>
+                <p class="gt-map-subtitle">A sensory journey navigating the legendary spice markets and historic street food alleys of Old Delhi.</p>
+            </div>
+            <div class="gt-map-wrapper">
+                <div class="gt-map-canvas">
+                    <svg viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" class="gt-svg">
+                        <defs>
+                            <filter id="pinShadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.28)"/></filter>
+                            <filter id="labelShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.1)"/></filter>
+                            <radialGradient id="bgG" cx="50%" cy="50%" r="60%">
+                                <stop offset="0%" stop-color="#fdf8f1"/>
+                                <stop offset="100%" stop-color="#ede4d5"/>
+                            </radialGradient>
+                        </defs>
+                        <rect x="0" y="0" width="680" height="480" rx="20" fill="url(#bgG)"/>
+                        
+                        <!-- Map Grid Lines -->
+                        <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        
+                        <!-- Route Line Paths Connecting Sights -->
+                        <path id="route-path" d="M220,150 Q280,140 340,160 Q400,180 430,230 Q450,280 400,320 Q350,360 280,340" fill="none" stroke="#e06236" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                            <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="8s" repeatCount="indefinite"/>
+                        </path>
+
+                         <!-- Moving Car along route -->
+                          <g>
+                              <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+                                  <mpath href="#route-path"/>
+                              </animateMotion>
+                              <g transform="translate(-10, -5)">
+                                  <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
+                                  <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
+                                  <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                  <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                              </g>
+                          </g>
+
+                        <!-- SIGHT MARKERS -->
+                        <!-- 1. Hotel Godwin Deluxe -->
+                        <g>
+                            <circle cx="220" cy="150" r="18" fill="rgba(166,124,49,0.15)">
+                                <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="220" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="170" y="120" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="220" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+                        </g>
+
+                        <!-- 2. Khari Baoli -->
+                        <g>
+                            <circle cx="340" cy="160" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="295" y="128" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="340" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">KHARI BAOLI</text>
+                        </g>
+
+                        <!-- 3. Chandni Chowk -->
+                        <g>
+                            <circle cx="430" cy="230" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="385" y="198" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="430" y="211" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">CHANDNI CHOWK</text>
+                        </g>
+
+                        <!-- 4. Jama Masjid & Environs -->
+                        <g>
+                            <circle cx="400" cy="320" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="355" y="340" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="400" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">JAMA MASJID</text>
+                        </g>
+
+                        <!-- 5. Paranthe Wali Gali -->
+                        <g>
+                            <circle cx="280" cy="340" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="235" y="360" width="110" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="290" y="373" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">PARANTHE WALI GALI</text>
+                        </g>
+
+                        <text x="340" y="450" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9.5" font-weight="600" fill="#b0a090" letter-spacing="2.5">DELHI CULINARY CIRCUIT</text>
+                    </svg>
+                </div>
+                
+                <div class="gt-city-cards">
+                    <div class="gt-city-card">
+                        <div class="city-card-num">01</div>
+                        <div class="city-card-icon">🌶️</div>
+                        <h3 class="city-card-name">Khari Baoli</h3>
+                        <p class="city-card-desc">Navigate through Asia's largest wholesale spice market. The vibrant colors and intoxicating aromas of cardamom, saffron, and chilies offer an unforgettable sensory experience.</p>
+                        <div class="city-card-tags"><span>Spices</span><span>Photography</span><span>Heritage</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">02</div>
+                        <div class="city-card-icon">🍲</div>
+                        <h3 class="city-card-name">Chandni Chowk</h3>
+                        <p class="city-card-desc">The beating heart of Old Delhi. We guide you to the safest, most legendary stalls to sample authentic Chole Bhature, crispy Jalebis, and savory Aloo Tikki.</p>
+                        <div class="city-card-tags"><span>Street Food</span><span>Sweets</span><span>Bazaars</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">03</div>
+                        <div class="city-card-icon">🫓</div>
+                        <h3 class="city-card-name">Paranthe Wali Gali</h3>
+                        <p class="city-card-desc">Step into the historic alley famous for its deep-fried stuffed bread. A quintessential Delhi lunch experience dating back to the 1870s.</p>
+                        <div class="city-card-tags"><span>Paranthas</span><span>Historic Eateries</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="eyebrow">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the Delhi Food & Spice Tour.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is the street food safe to eat?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes! We exclusively take you to deeply vetted, historic food vendors renowned for their hygiene and quality. Your guide is an expert at navigating these alleys safely.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Are food costs included in the package?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Your breakfast at Hotel Godwin Deluxe is included. The food during the tour in Old Delhi is "pay as you go", giving you complete flexibility over what you choose to sample and eat.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">What about allergies or dietary restrictions?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Please let us know in the booking form. We accommodate all dietary requirements (vegetarian, vegan, nut allergies) and will strictly guide your food choices accordingly.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-accent">THE</span>
+                        <span class="logo-main">GRAND HOLIDAYS</span>
+                    </a>
+                    <p class="footer-desc">
+                        A bespoke luxury travel operator creating timeless, surreal journeys across the Indian subcontinent.
+                    </p>
+                    <p class="footer-desc" style="margin-top: 1.2rem; opacity: 0.8; font-size: 0.8rem; line-height: 1.5;">
+                        <strong>Grand Holidays Office</strong><br>
+                        Plot No. 8502/41, Ground Floor, Arakashan Rd,<br>
+                        behind Sheela Cinema Street, Ram Nagar,<br>
+                        Paharganj, New Delhi, Delhi 110055
+                    </p>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Discover</h4>
+                    <a href="index.html#heritage-story">Heritage Story</a>
+                    <a href="index.html#curated-journeys">Curated Itineraries</a>
+                    <a href="index.html#bespoke-concierge">Travel Designer</a>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Bespoke Desks</h4>
+                    <span>New York Private Desk</span>
+                    <span>London Private Desk</span>
+                    <span>New Delhi Concierge</span>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>WhatsApp Concierge</h4>
+                    <a href="https://wa.me/918860081995" target="_blank" rel="noopener noreferrer" style="color:var(--gold-light);">+91 8860081995</a>
+                    <a href="mailto:tours@godwinhotels.com" style="color:var(--gold-light); display:block; margin-top:0.8rem;">tours@godwinhotels.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Grand Holidays Luxury Tour Company. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span class="bullet">•</span>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="delhi-food-tour.js?v=1"></script>
+</body>
+</html>

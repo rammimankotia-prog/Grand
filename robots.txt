@@ -1,0 +1,13 @@
+# robots.txt — Grand Holiday Tours
+# https://grandholidaytours.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (add more as needed)
+Disallow: /assets/
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Sitemap location
+Sitemap: https://grandholidaytours.com/sitemap.xml

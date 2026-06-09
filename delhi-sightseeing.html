@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Day Delhi Sightseeing Tour (8 Hours / 80 Km) | Grand Holidays</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience Delhi's heritage in absolute luxury. Same day local tour of Old & New Delhi (8 Hours / 80 Km) with private vehicle, expert guide, and dynamic pricing for 2, 4, 6, and 10+ guests.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css?v=14">
+    <link rel="stylesheet" href="delhi-sightseeing.css?v=6">
+    
+    <!-- Dropdown Navigation Styles to bypass caching -->
+    <style>
+        .nav-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            cursor: pointer;
+        }
+        .dropdown-toggle .arrow {
+            font-size: 0.55rem;
+            transition: transform 0.2s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: #FFFEFB;
+            border: 1px solid rgba(24,19,14,0.07);
+            border-top: 3px solid #A67C31;
+            border-radius: 8px;
+            min-width: 230px;
+            opacity: 0;
+            visibility: hidden;
+            padding: 0.7rem 0;
+            box-shadow: 0 8px 30px rgba(24,19,14,0.10);
+            transition: opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1), transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.22s;
+            z-index: 1000;
+            margin-top: 0.6rem;
+            display: block;
+        }
+        @media (min-width: 769px) {
+            .nav-dropdown:hover .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(0);
+            }
+            .nav-dropdown:hover .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+        }
+        .dropdown-item {
+            display: block;
+            padding: 0.6rem 1.4rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #6B5F54;
+            white-space: nowrap;
+            transition: all 0.18s ease;
+            text-align: left;
+        }
+        .dropdown-item:hover {
+            background: rgba(166,124,49,0.07);
+            color: #A67C31;
+            padding-left: 1.7rem;
+        }
+        .dropdown-item.active {
+            color: #A67C31;
+            background: rgba(166,124,49,0.07);
+        }
+        @media (max-width: 768px) {
+            .nav-dropdown {
+                width: 100%;
+                text-align: center;
+            }
+            .dropdown-toggle {
+                justify-content: center;
+                font-size: 1rem !important;
+            }
+            .dropdown-menu {
+                position: static;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                border-left: 2px solid rgba(166,124,49,0.28);
+                border-radius: 0;
+                background: transparent;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                padding: 0.5rem 0 0 1.5rem;
+                min-width: unset;
+                text-align: left;
+                margin-top: 0.5rem;
+            }
+            .nav-dropdown.active .dropdown-menu {
+                display: block;
+            }
+            .nav-dropdown.active .dropdown-toggle .arrow {
+                transform: rotate(180deg);
+            }
+            .dropdown-item {
+                font-size: 0.85rem;
+                padding: 0.5rem 0;
+                color: #6B5F54;
+            }
+            .dropdown-item:hover {
+                padding-left: 0.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Glow Accent -->
+    <div class="top-glow"></div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="main-header scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">THE</span>
+                <span class="logo-main">GRAND HOLIDAYS</span>
+                <span class="logo-sub">LUXURY TOUR CO.</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link active dropdown-toggle">Our Tours <span class="arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="golden-triangle.html" class="dropdown-item">Golden Triangle Tour</a>
+                        <a href="delhi-sightseeing.html" class="dropdown-item active">Delhi Sightseeing Tour</a>
+                        <a href="delhi-food-tour.html" class="dropdown-item">Delhi Food & Spice Tour</a>
+                        <a href="delhi-spiritual-tour.html" class="dropdown-item">Delhi Spiritual & Temple Tour</a>
+                        <a href="delhi-bicycle-tour.html" class="dropdown-item">New Delhi Bicycle Tour</a>
+                        <a href="agra-day-tour.html" class="dropdown-item">Same Day Agra Tour</a>
+                        <a href="himalayan-sanctuary.html" class="dropdown-item">Himalayan Sanctuary</a>
+                        <a href="imperial-rajasthan.html" class="dropdown-item">Imperial Rajasthan Tour</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="header-contact-info">
+                    <a href="tel:+918860081995" class="header-contact-link">📞 +91 8860081995</a>
+                </div>
+                <a href="#booking-section" class="btn btn-outline btn-nav">Book Tour</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tour Banner Header -->
+    <section class="tour-hero">
+        <div class="tour-hero-bg">
+            <img src="assets/delhi_sightseeing.png" alt="Humayun's Tomb Delhi Tour Banner" class="tour-hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="tour-hero-content">
+            <span class="tour-badge">SAME-DAY CURATION</span>
+            <h1 class="tour-main-title">Same Day Delhi Sightseeing</h1>
+            <div class="tour-meta-strip">
+                <span class="meta-item"><span class="meta-icon">⏱️</span> <span id="display-duration">8 Hours / 80 Km</span></span>
+                <span class="meta-item"><span class="meta-icon">📍</span> <span id="display-cities">Old &amp; New Delhi</span></span>
+                <span class="meta-item"><span class="meta-icon">💰</span> <span id="display-price">From $55 p.p.</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Main Layout -->
+    <section class="tour-detail-section">
+        <div class="container">
+            <!-- Mode Switcher Widget -->
+            <div class="mode-switcher-container glass-card">
+                <h3>Select Guest Configuration</h3>
+                <p>Dynamically adjust package pricing, vehicle models, and custom tour configurations based on your group size.</p>
+                <div class="mode-tabs">
+                    <button class="mode-tab-btn active" data-mode="pax2">
+                        <span class="tab-icon">👥</span> 2 Persons
+                    </button>
+                    <button class="mode-tab-btn" data-mode="pax4">
+                        <span class="tab-icon">👨‍👩‍👧‍👦</span> 4 Persons
+                    </button>
+                    <button class="mode-tab-btn" data-mode="pax6">
+                        <span class="tab-icon">🚐</span> 6 Persons
+                    </button>
+                    <button class="mode-tab-btn" data-mode="pax10">
+                        <span class="tab-icon">🚌</span> 10 Pax / Group
+                    </button>
+                </div>
+            </div>
+
+            <div class="tour-layout-grid">
+                <!-- Left: Tour Details & Itinerary -->
+                <div class="tour-left-col">
+                    <!-- Description Block -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Tour Description</h2>
+                        <p id="tour-short-desc" class="block-text">
+                            Immerse yourself in the historic heart of India. From the chaotic charm of Old Delhi's Mughal-era bazaars to the grand layout of Lutyens' imperial New Delhi, this private curated sightseeing tour offers a timeless glimpse of the capital.
+                        </p>
+                        <div class="mode-highlights" id="mode-highlight-box">
+                            <!-- Injected dynamically by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Key Info Strip -->
+                    <div class="detail-block glass-card" style="padding: 1.4rem 2rem;">
+                        <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1.2rem;">
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🏨</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Pick-Up &amp; Stay</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Hotel Godwin Deluxe</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🍳</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Breakfast Location</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Indian Grill Restaurant</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚗</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Private Transfer</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Pickup &amp; Drop-off</div>
+                            </div>
+                            <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
+                                <div style="font-size:1.6rem; margin-bottom:0.3rem;">🎟️</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Monument Tickets</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:#ef4444; margin-top:0.3rem;">Not Included</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day by Day Itinerary -->
+                    <div class="detail-block glass-card">
+                        <h2 class="block-title">Sightseeing Itinerary</h2>
+                        
+                        <div class="itinerary-timeline" id="itinerary-timeline-box">
+                            <!-- Timeline items will be injected by JS depending on mode -->
+                        </div>
+                    </div>
+
+                    <!-- Inclusions & Exclusions -->
+                    <div class="inclusions-exclusions-grid">
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon green">✓</span> What's Included</h3>
+                            <ul class="ie-list" id="inclusions-list">
+                                <!-- Injected by JS -->
+                            </ul>
+                        </div>
+                        <div class="ie-block glass-card">
+                            <h3 class="ie-title"><span class="ie-icon red">✗</span> What's Excluded</h3>
+                            <ul class="ie-list" id="exclusions-list">
+                                <!-- Injected by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Booking Form & Sticky Sidebar -->
+                <div class="tour-right-col">
+                    <div class="sticky-booking-card glass-card" id="booking-section">
+                        <div class="price-summary-box price-summary-top">
+                            <span class="summary-label">Estimated Package Price</span>
+                            <span class="summary-value" id="summary-price-display">$180 Total</span>
+                        </div>
+                        <h3 class="sidebar-title">Book This Experience</h3>
+                        <p class="sidebar-desc">Request your customized itinerary configuration. Our lead curator will contact you to refine details.</p>
+                        
+                        <form id="tourBookingForm" class="sidebar-form">
+                            <input type="hidden" id="selected-tour-mode" value="pax2">
+                            
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-name" required placeholder=" " class="sidebar-input">
+                                <label for="b-name" class="sidebar-label">Full Name</label>
+                            </div>
+                            
+                            <div class="sidebar-form-group">
+                                <input type="email" id="b-email" required placeholder=" " class="sidebar-input">
+                                <label for="b-email" class="sidebar-label">Email Address</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-date" required placeholder=" " class="sidebar-input">
+                                <label for="b-date" class="sidebar-label">Preferred Date of Travel</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <select id="b-travelers" class="sidebar-input select-input" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="2">2 Persons (Sedan)</option>
+                                    <option value="4">4 Persons (SUV)</option>
+                                    <option value="6">6 Persons (Minivan)</option>
+                                    <option value="10">10 Pax / Group (Coach)</option>
+                                </select>
+                                <label for="b-travelers" class="sidebar-label">Selected Configuration</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <input type="text" id="b-hotel" value="Hotel Godwin Deluxe, Paharganj" class="sidebar-input" readonly>
+                                <label for="b-hotel" class="sidebar-label">Pick-Up & Stay Hotel</label>
+                            </div>
+
+                            <div class="sidebar-form-group">
+                                <textarea id="b-notes" rows="3" placeholder=" " class="sidebar-input text-area-input"></textarea>
+                                <label for="b-notes" class="sidebar-label">Add custom requirements...</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-solid btn-sidebar-submit">Submit Reservation Request</button>
+                        </form>
+
+                        <div id="bookingSuccessMessage" class="success-message">
+                            <h3>Reservation Scheduled</h3>
+                            <p>Your dedicated travel designer has received your configuration requests and will contact you via email shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DELHI MAP SECTION -->
+    <section class="gt-map-section">
+        <div class="container">
+            <div class="gt-map-header">
+                <span class="eyebrow">Route Overview</span>
+                <h2 class="gt-map-title">Delhi Heritage Circuit</h2>
+                <p class="gt-map-subtitle">A seamless journey connecting the ancient Mughal capital with the grand imperial avenues of New Delhi.</p>
+            </div>
+            <div class="gt-map-wrapper">
+                <div class="gt-map-canvas">
+                    <svg viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg" class="gt-svg">
+                        <defs>
+                            <filter id="pinShadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="rgba(0,0,0,0.28)"/></filter>
+                            <filter id="labelShadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.1)"/></filter>
+                            <radialGradient id="bgG" cx="50%" cy="50%" r="60%">
+                                <stop offset="0%" stop-color="#fdf8f1"/>
+                                <stop offset="100%" stop-color="#ede4d5"/>
+                            </radialGradient>
+                        </defs>
+                        <rect x="0" y="0" width="680" height="480" rx="20" fill="url(#bgG)"/>
+                        
+                        <!-- Decorative Map Shape of Delhi Area -->
+                        <path d="M120,60 C180,45 280,35 380,45 C480,55 560,40 600,80 C630,120 625,180 610,240 C590,300 580,360 540,410 C500,450 420,445 340,430 C260,415 180,430 130,380 C90,330 85,250 90,180 C95,120 80,75 120,60 Z" fill="#e0d3bd" opacity="0.38"/>
+                        
+                        <!-- Map Grid Lines -->
+                        <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
+                        
+                        <!-- Route Line Paths Connecting Sights -->
+                        <!-- Old Delhi (340,90) -> Red Fort (395,80) -> Raj Ghat (430,120) -> India Gate (340,210) -> Humayun's Tomb (415,270) -> Lotus Temple (460,355) -> Qutub Minar (280,400) -->
+                        <path id="route-path" d="M340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                            <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
+                        </path>
+
+                         <!-- Moving Taxi Sedan along route -->
+                          <g>
+                              <animateMotion dur="15s" repeatCount="indefinite" rotate="auto">
+                                  <mpath href="#route-path"/>
+                              </animateMotion>
+                              <g transform="translate(-10, -5)">
+                                  <!-- Wheels -->
+                                  <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                  <!-- Car body -->
+                                  <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
+                                  <!-- Front Grill -->
+                                  <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
+                                  <!-- Headlights (Front, facing right) -->
+                                  <rect x="18.5" y="0.8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
+                                  <rect x="18.5" y="8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
+                                  <!-- Taillights (Rear, facing left) -->
+                                  <rect x="-0.3" y="0.8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
+                                  <rect x="-0.3" y="8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
+                                  <!-- Windshield (Front, facing right) -->
+                                  <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                  <!-- Rear Window (Back, facing left) -->
+                                  <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                  <!-- Side windows (Split for Sedan) -->
+                                  <!-- Top side windows -->
+                                  <rect x="5.5" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                  <rect x="8.8" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                  <!-- Bottom side windows -->
+                                  <rect x="5.5" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                  <rect x="8.8" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                  <!-- Bumpers -->
+                                  <rect x="-0.8" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
+                                  <rect x="20" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
+                                  <!-- Taxi Light on Roof -->
+                                  <rect x="7.5" y="3.5" width="5" height="3" rx="0.6" fill="#fff" stroke="#b45309" stroke-width="0.8"/>
+                                  <text x="10" y="5.7" font-family="Outfit, sans-serif" font-size="2.2" font-weight="900" fill="#000" text-anchor="middle" letter-spacing="0.1">TAXI</text>
+                              </g>
+                          </g>
+
+                        <!-- Distance Labels & Travel Times -->
+                        <g transform="translate(390,155)">
+                            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">~6 km / 20m</text>
+                        </g>
+                        <g transform="translate(420,225)">
+                            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">~5 km / 15m</text>
+                        </g>
+                        <g transform="translate(470,305)">
+                            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">~7 km / 20m</text>
+                        </g>
+                        <g transform="translate(380,395)">
+                            <rect x="-38" y="-12" width="76" height="24" rx="12" fill="#1a1208" opacity="0.85"/>
+                            <text x="0" y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="700" fill="#f0c060">~9 km / 25m</text>
+                        </g>
+
+                        <!-- SIGHT MARKERS -->
+                        <!-- 1. Jama Masjid / Old Delhi -->
+                        <g>
+                            <circle cx="340" cy="90" r="18" fill="rgba(166,124,49,0.15)">
+                                <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="340" cy="90" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="290" y="60" width="100" height="20" rx="10" fill="#fff" stroke="#a67c31" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="340" y="73" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">JAMA MASJID</text>
+                        </g>
+
+                        <!-- 2. Red Fort -->
+                        <g>
+                            <circle cx="395" cy="80" r="8" fill="#a67c31" stroke="#fff" stroke-width="2" filter="url(#pinShadow)"/>
+                            <rect x="375" y="93" width="70" height="18" rx="9" fill="#fff" stroke="#a67c31" stroke-width="1" filter="url(#labelShadow)"/>
+                            <text x="410" y="105" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" font-weight="700" fill="#6b4c12">RED FORT</text>
+                        </g>
+
+                        <!-- 3. Raj Ghat -->
+                        <g>
+                            <circle cx="430" cy="120" r="8" fill="#a67c31" stroke="#fff" stroke-width="2" filter="url(#pinShadow)"/>
+                            <rect x="420" y="133" width="70" height="18" rx="9" fill="#fff" stroke="#a67c31" stroke-width="1" filter="url(#labelShadow)"/>
+                            <text x="455" y="145" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" font-weight="700" fill="#6b4c12">RAJ GHAT</text>
+                        </g>
+
+                        <!-- 4. India Gate -->
+                        <g>
+                            <circle cx="340" cy="210" r="22" fill="rgba(166,124,49,0.15)">
+                                <animate attributeName="r" values="14;28;14" dur="2.8s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="340" cy="210" r="11" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="295" y="178" width="90" height="20" rx="10" fill="#fff" stroke="#a67c31" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="340" y="191" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">INDIA GATE</text>
+                        </g>
+
+                        <!-- 5. Humayun's Tomb -->
+                        <g>
+                            <circle cx="415" cy="270" r="18" fill="rgba(166,124,49,0.15)">
+                                <animate attributeName="r" values="10;24;10" dur="3.2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="3.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="415" cy="270" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="365" y="238" width="100" height="20" rx="10" fill="#fff" stroke="#a67c31" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="415" y="251" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">HUMAYUN'S TOMB</text>
+                        </g>
+
+                        <!-- 6. Lotus Temple -->
+                        <g>
+                            <circle cx="460" cy="355" r="8" fill="#a67c31" stroke="#fff" stroke-width="2" filter="url(#pinShadow)"/>
+                            <rect x="425" y="368" width="80" height="18" rx="9" fill="#fff" stroke="#a67c31" stroke-width="1" filter="url(#labelShadow)"/>
+                            <text x="465" y="380" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" font-weight="700" fill="#6b4c12">LOTUS TEMPLE</text>
+                        </g>
+
+                        <!-- 7. Qutub Minar -->
+                        <g>
+                            <circle cx="280" cy="400" r="18" fill="rgba(166,124,49,0.15)">
+                                <animate attributeName="r" values="10;24;10" dur="3.4s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="3.4s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="280" cy="400" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="230" y="368" width="100" height="20" rx="10" fill="#fff" stroke="#a67c31" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="280" y="381" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">QUTUB MINAR</text>
+                        </g>
+
+                        <!-- Map Compass & Scale -->
+                        <g transform="translate(618,58)">
+                            <circle cx="0" cy="0" r="26" fill="rgba(255,255,255,0.92)" stroke="#d5c9b0" stroke-width="1.5"/>
+                            <polygon points="0,-20 -5,-8 5,-8" fill="#a67c31"/>
+                            <polygon points="0,20 -5,8 5,8" fill="#c8bfa8"/>
+                            <text x="0" y="-23" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="800" fill="#a67c31">N</text>
+                            <text x="20" y="4" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">E</text>
+                            <text x="-20" y="4" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">W</text>
+                            <text x="0" y="31" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">S</text>
+                        </g>
+                        <g transform="translate(52,444)">
+                            <rect x="0" y="0" width="80" height="7" rx="3.5" fill="#d5c9b0"/>
+                            <rect x="0" y="0" width="40" height="7" rx="3.5" fill="#a67c31"/>
+                            <text x="0" y="21" font-family="Outfit,sans-serif" font-size="9" fill="#999">0</text>
+                            <text x="36" y="21" font-family="Outfit,sans-serif" font-size="9" fill="#999">5</text>
+                            <text x="70" y="21" font-family="Outfit,sans-serif" font-size="9" fill="#999">10 km</text>
+                        </g>
+                        <text x="340" y="468" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9.5" font-weight="600" fill="#b0a090" letter-spacing="2.5">DELHI LOCAL SIGHTSEEING CIRCUIT</text>
+                    </svg>
+                </div>
+                
+                <div class="gt-city-cards">
+                    <div class="gt-city-card">
+                        <div class="city-card-num">01</div>
+                        <div class="city-card-icon">🕌</div>
+                        <h3 class="city-card-name">Old Delhi Heritage</h3>
+                        <p class="city-card-desc">Step into the 17th-century Mughal capital of Shahjahanabad. Witness the colossal Jama Masjid, ride a rickshaw through bustling Chandni Chowk, explore Khari Baoli spice market, and see the red sandstone ramparts of Red Fort.</p>
+                        <div class="city-card-tags"><span>Jama Masjid</span><span>Rickshaw Ride</span><span>Spice Market</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">02</div>
+                        <div class="city-card-icon">🏛️</div>
+                        <h3 class="city-card-name">Lutyens' Imperial Center</h3>
+                        <p class="city-card-desc">Drive through the monumental heart of modern India. Admire the solemn arch of India Gate, pay respects at Raj Ghat, and view the stately facades of Rashtrapati Bhavan (Presidential Palace) and Parliament House.</p>
+                        <div class="city-card-tags"><span>India Gate</span><span>Rashtrapati Bhavan</span><span>Raj Ghat</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">03</div>
+                        <div class="city-card-icon">🏰</div>
+                        <h3 class="city-card-name">South Delhi Monuments</h3>
+                        <p class="city-card-desc">Trace the remnants of Delhi's medieval empires. Tour the pristine garden-tomb of Emperor Humayun, marvel at the towering 12th-century Qutub Minar complex, and gaze at the modern lotus-shaped temple of the Baha'i faith.</p>
+                        <div class="city-card-tags"><span>Humayun's Tomb</span><span>Qutub Minar</span><span>Lotus Temple</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="eyebrow">Common Questions</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the Same Day Delhi Sightseeing Tour — answered by our Delhi heritage experts.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Which sights are covered in the Delhi tour?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Our standard itinerary covers the best of both Old and New Delhi: Qutub Minar (UNESCO World Heritage), Humayun's Tomb (UNESCO), India Gate, President's Estate (Rashtrapati Bhavan drive-by), Lodi Garden, the Lotus Temple, Jama Masjid, Red Fort (exterior), and a private rickshaw ride through the spice markets of Chandni Chowk. The route is flexible and can be customised on request.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">What type of private vehicle is provided?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>We offer a range of vehicles to suit your group size: a luxury Sedan (Toyota Etios or similar) for 1–2 guests, a Toyota Innova Crysta SUV for 2–4 guests, a premium Innova or Maruti Ertiga for 5–7, and a Toyota Tempo Traveller for groups of 8–12. All vehicles are air-conditioned, freshly cleaned, and driven by licensed, background-verified chauffeurs.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">How long does the tour take?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The standard tour runs for approximately 8 hours covering around 80 km. We typically begin at 9:00 AM and return by 5:00–6:00 PM depending on traffic and the number of sites selected. For airport transit sightseeing tours, we offer shorter 4–5 hour express versions. All timings are fully flexible around your schedule and hotel location.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is a professional guide included in the tour?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — all packages include a private English-speaking historian guide who accompanies you throughout the day. Our guides are Ministry of Tourism certified, with deep expertise in Mughal architecture, Rajput history, and Delhi's evolution from Shahjahanabad to the Imperial capital. Language guides in French, Spanish, German, and Japanese can be arranged on request.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Can we choose which sites to visit?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely — the itinerary is fully customisable. If you have a particular interest in Mughal architecture, we can focus on Red Fort, Jama Masjid, Humayun's Tomb, and Purana Qila. For those interested in modern India, we can include Akshardham Temple, the Gandhi Smriti museum, and the National Museum. Simply mention your preferences when booking and we will design accordingly.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is lunch included in the day tour?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Lunch is optional and can be added at booking. We partner with a curated selection of restaurants covering all preferences — a heritage Mughlai feast at Karim's in Old Delhi (established 1913), contemporary Indian cuisine at Indian Accent, or a comfortable rooftop restaurant near Humayun's Tomb. Dietary preferences (vegetarian, vegan, halal, Jain) are all accommodated.</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Where does the tour pick us up from?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Your private vehicle and guide pick you up directly from your hotel lobby, serviced apartment, or Delhi airport arrival hall (T1 or T3). We cover all areas of Delhi — Connaught Place, Aerocity, Paharganj, Defence Colony, and all major hotel zones. Drop-off is to the same location or a different point of your choice (e.g., another hotel, a railway station, or the airport for onward travel).</p></div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-q-text">Is the tour suitable for elderly or mobility-limited guests?</span>
+                        <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — we design specifically for comfort. For guests with mobility limitations, we select sites with minimal stair climbing, arrange wheelchair-accessible vehicle configurations, and can pre-book golf cart transfers inside larger monument complexes (available at Qutub Minar and Humayun's Tomb). Please inform us at booking so we can configure the ideal route and vehicle.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-accent">THE</span>
+                        <span class="logo-main">GRAND HOLIDAYS</span>
+                    </a>
+                    <p class="footer-desc">
+                        A bespoke luxury travel operator creating timeless, surreal journeys across the Indian subcontinent.
+                    </p>
+                    <p class="footer-desc" style="margin-top: 1.2rem; opacity: 0.8; font-size: 0.8rem; line-height: 1.5;">
+                        <strong>Grand Holidays Office</strong><br>
+                        Plot No. 8502/41, Ground Floor, Arakashan Rd,<br>
+                        behind Sheela Cinema Street, Ram Nagar,<br>
+                        Paharganj, New Delhi, Delhi 110055
+                    </p>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Discover</h4>
+                    <a href="index.html#heritage-story">Heritage Story</a>
+                    <a href="index.html#curated-journeys">Curated Itineraries</a>
+                    <a href="index.html#bespoke-concierge">Travel Designer</a>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>Bespoke Desks</h4>
+                    <span>New York Private Desk</span>
+                    <span>London Private Desk</span>
+                    <span>New Delhi Concierge</span>
+                </div>
+                
+                <div class="footer-links-col">
+                    <h4>WhatsApp Concierge</h4>
+                    <a href="https://wa.me/918860081995" target="_blank" rel="noopener noreferrer" style="color:var(--gold-light);">+91 8860081995</a>
+                    <a href="mailto:tours@godwinhotels.com" style="color:var(--gold-light); display:block; margin-top:0.8rem;">tours@godwinhotels.com</a>
+                    <a href="tel:+918860081995" style="color:var(--gold-light); display:block; margin-top:0.3rem;">+91 8860081995</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grand Holidays Tour Company. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span class="bullet">•</span>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/918860081995?text=Hello%20Grand%20Holidays,%20I%20would%20like%20to%20plan%20a%20luxury%20journey." target="_blank" rel="noopener noreferrer" class="whatsapp-float-widget" aria-label="Chat on WhatsApp">
+        <span class="whatsapp-widget-text">Chat with Curator</span>
+        <span class="whatsapp-widget-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" style="display:block;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.62.963 3.41 1.47 5.258 1.471h.005c5.579 0 10.121-4.542 10.125-10.125.002-2.707-1.052-5.253-2.968-7.17C17.153 1.413 14.604.36 11.895.36c-5.58 0-10.12 4.542-10.124 10.125-.001 1.884.49 3.73 1.42 5.352l-.992 3.626 3.712-.973zm11.367-7.36c-.327-.164-1.93-.953-2.229-1.062-.298-.11-.515-.164-.73.164-.216.328-.835 1.063-1.025 1.28-.19.219-.381.247-.708.082-.327-.164-1.38-.508-2.63-1.622-.972-.867-1.628-1.939-1.819-2.266-.19-.328-.02-.505.144-.668.148-.146.327-.382.49-.573.163-.19.217-.328.327-.546.11-.218.055-.41-.027-.573-.082-.164-.73-1.76-.997-2.416-.26-.626-.527-.541-.73-.551-.188-.008-.403-.01-.618-.01-.215 0-.565.081-.861.41-.296.327-1.13 1.106-1.13 2.7 0 1.594 1.159 3.13 1.319 3.348.16.218 2.28 3.483 5.523 4.882.772.332 1.373.53 1.843.68.775.246 1.48.212 2.037.129.62-.093 1.93-.79 2.2-1.513.27-.723.27-1.343.19-1.474-.082-.132-.297-.215-.624-.379z"/></svg>
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="delhi-sightseeing.js?v=7"></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+/* ================================================================
+   CONTACT PAGE — Editorial White Theme v4.0
+   Playfair Display · Warm Cream · Antique Gold
+   ================================================================ */
+
+/* ── CONTACT HERO ─────────────────────────────────────────── */
+.contact-hero {
+    position: relative;
+    min-height: 50vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center;
+    padding: 9rem 2rem 6rem;
+    background: var(--cream-alt);
+    border-bottom: 1px solid var(--b-soft);
+    overflow: hidden;
+}
+.contact-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url('assets/hero_banner.png') center/cover no-repeat;
+    opacity: 0.055; filter: saturate(0.3) blur(2px);
+}
+.contact-hero::after {
+    content: '';
+    position: absolute; bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 55%; height: 2px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+.contact-hero-content {
+    position: relative; z-index: 2;
+    max-width: 780px;
+    display: flex; flex-direction: column; align-items: center; gap: 1.2rem;
+}
+.contact-badge {
+    font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
+    letter-spacing: 5px; text-transform: uppercase;
+    color: var(--gold); background: var(--gold-bg);
+    border: 1px solid var(--gold-border);
+    padding: 0.45rem 1.4rem; border-radius: var(--rp);
+    display: inline-block;
+}
+.contact-main-title {
+    font-family: var(--f-display);
+    font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+    font-weight: 700; color: var(--ink); letter-spacing: -0.02em;
+}
+.contact-hero-subtitle {
+    font-family: var(--f-serif); font-style: italic; font-weight: 300;
+    font-size: 1.15rem; color: var(--ink-soft); line-height: 1.7; max-width: 560px;
+}
+
+/* ── MAIN CONTACT SECTION ─────────────────────────────────── */
+.contact-main-section {
+    padding: 7rem 0;
+    background: var(--cream);
+}
+.contact-layout-box {
+    background: var(--cream);
+    border: 1px solid var(--b-soft);
+    border-top: 4px solid var(--gold);
+    border-radius: var(--r3);
+    padding: clamp(3rem, 5vw, 5.5rem) clamp(2rem, 5vw, 5rem);
+    box-shadow: var(--sh-lg);
+}
+.contact-layout-grid {
+    display: grid; grid-template-columns: 1fr 1.1fr;
+    gap: 6rem;
+}
+.contact-left-col { display: flex; flex-direction: column; }
+.contact-right-col { display: flex; flex-direction: column; }
+
+/* Section Labels inside contact */
+.contact-left-col .section-subtitle,
+.contact-right-col .section-subtitle {
+    display: block; font-family: var(--f-body); font-size: 0.65rem;
+    font-weight: 700; letter-spacing: 5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.7rem;
+}
+.block-title {
+    font-family: var(--f-display);
+    font-size: 1.8rem; font-weight: 700; color: var(--ink);
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 0.6rem; display: inline-block;
+}
+.block-desc {
+    font-size: 0.95rem; color: var(--ink-soft); font-weight: 300;
+    line-height: 1.75; margin-bottom: 2.5rem;
+}
+
+/* Office Items */
+.offices-details-list { display: flex; flex-direction: column; gap: 2rem; }
+.office-item { display: flex; gap: 1.4rem; align-items: flex-start; }
+.office-icon {
+    font-size: 1.5rem;
+    background: var(--gold-bg); border: 1px solid var(--gold-border);
+    width: 52px; height: 52px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transition: var(--t1);
+}
+.office-item:hover .office-icon { background: var(--gold); border-color: var(--gold); }
+.office-info h4 {
+    font-family: var(--f-body); font-size: 0.95rem;
+    font-weight: 700; color: var(--ink); margin-bottom: 0.25rem;
+}
+.office-info p { font-size: 0.84rem; color: var(--ink-soft); font-weight: 300; line-height: 1.55; }
+.office-detail-link { color: var(--ink-soft); margin-top: 0.2rem; }
+.office-wa-link {
+    color: #16a34a; font-weight: 600; display: inline-block;
+    margin-top: 0.4rem; transition: color 0.2s;
+}
+.office-wa-link:hover { color: #15803d; text-decoration: underline; }
+
+/* Contact page form (light style) */
+.contact-page-form { display: flex; flex-direction: column; gap: 1.8rem; }
+.contact-page-form .form-input {
+    background: var(--cream-alt);
+    border: 1.5px solid var(--b-mid);
+    color: var(--ink);
+}
+.contact-page-form .form-input:focus {
+    border-color: var(--gold); background: #fff; box-shadow: 0 0 0 3px var(--gold-glow);
+}
+.contact-page-form .form-label { color: var(--ink-soft); }
+.contact-page-form .form-input:focus ~ .form-label,
+.contact-page-form .form-input:not(:placeholder-shown) ~ .form-label {
+    color: var(--gold); background: var(--cream);
+}
+.contact-page-form .form-input::placeholder { color: transparent; }
+.contact-page-form .select-input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23a67c31' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: calc(100% - 1.2rem) center;
+}
+.contact-page-form .select-input option { background: #fff; color: var(--ink); }
+.contact-page-form .text-area-input { resize: none; }
+
+#contactSuccessMessage {
+    display: none; flex-direction: column; align-items: center;
+    justify-content: center; text-align: center; padding: 4rem 1rem;
+    animation: fadein 0.5s ease forwards;
+}
+#contactSuccessMessage h3 { font-family: var(--f-display); font-size: 2rem; color: var(--gold); margin-bottom: 1rem; }
+#contactSuccessMessage p { color: var(--ink-soft); font-weight: 300; max-width: 360px; }
+
+/* ── FAQ SECTION ──────────────────────────────────────────── */
+.contact-faq-section {
+    padding: 7rem 0 9rem;
+    background: var(--cream-alt);
+    border-top: 1px solid var(--b-soft);
+}
+.contact-faq-section .section-header { margin-bottom: 1rem; }
+.contact-faq-section .section-subtitle {
+    display: block; font-family: var(--f-body); font-size: 0.65rem;
+    font-weight: 700; letter-spacing: 5px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.8rem;
+}
+.contact-faq-section .section-title {
+    font-family: var(--f-display); font-size: clamp(1.9rem, 4vw, 3rem);
+    font-weight: 700; color: var(--ink);
+}
+
+.faq-container {
+    max-width: 840px; margin: 3.5rem auto 0;
+    display: flex; flex-direction: column; gap: 0.8rem;
+}
+.faq-item {
+    border: 1px solid var(--b-soft);
+    border-radius: var(--r2); background: var(--cream);
+    overflow: hidden; transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.faq-item:hover { border-color: var(--gold-border); }
+.faq-item.active { border-color: var(--gold); box-shadow: var(--sh-sm); }
+
+.faq-question {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.7rem 2rem; cursor: pointer;
+    font-family: var(--f-body); font-size: 0.97rem; font-weight: 600;
+    color: var(--ink); user-select: none; transition: color 0.2s ease;
+}
+.faq-question:hover { color: var(--gold); }
+.faq-item.active .faq-question { color: var(--gold); }
+
+.faq-icon {
+    font-size: 1.4rem; color: var(--gold); transition: transform 0.4s ease;
+    flex-shrink: 0; margin-left: 1.5rem; line-height: 1; font-weight: 300;
+}
+.faq-item.active .faq-icon { transform: rotate(45deg); color: var(--ink-faint); }
+
+.faq-answer {
+    max-height: 0; overflow: hidden; padding: 0 2rem;
+    transition: max-height 0.45s var(--ease);
+}
+.faq-item.active .faq-answer { max-height: 280px; }
+.faq-answer p {
+    font-size: 0.92rem; color: var(--ink-soft);
+    font-weight: 300; line-height: 1.8; padding-bottom: 1.8rem;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+    .contact-layout-grid { grid-template-columns: 1fr; gap: 5rem; }
+}
+@media (max-width: 768px) {
+    .contact-hero { padding: 8rem 2rem 5rem; }
+    .contact-layout-box { padding: 3rem 1.8rem; }
+    .faq-question { padding: 1.4rem 1.5rem; font-size: 0.9rem; }
+    .faq-answer { padding: 0 1.5rem; }
+}
+
+/* ══════════════════════════════════════════════
+   FORCE WHITE THEME — contact page form inputs
+   (override any dark styles from old cached CSS)
+══════════════════════════════════════════════ */
+
+/* Contact main section */
+.contact-main-section {
+    background: #fff !important;
+}
+.contact-layout-box {
+    background: #fff !important;
+}
+
+/* All form inputs — force white/cream */
+.contact-page-form input,
+.contact-page-form select,
+.contact-page-form textarea,
+.form-input,
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+    background: #f8f3ec !important;
+    background-color: #f8f3ec !important;
+    color: #1a1208 !important;
+    border: 1.5px solid #d9cdb8 !important;
+    border-radius: 8px !important;
+    padding: 1rem 1.1rem !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 0.9rem !important;
+    width: 100% !important;
+    outline: none !important;
+    transition: border-color 0.22s ease, box-shadow 0.22s ease !important;
+}
+.contact-page-form input:focus,
+.contact-page-form select:focus,
+.contact-page-form textarea:focus,
+.form-input:focus {
+    border-color: #a67c31 !important;
+    background: #fff !important;
+    box-shadow: 0 0 0 3px rgba(166,124,49,0.12) !important;
+}
+.contact-page-form select option,
+#contactForm select option {
+    background: #fff !important;
+    color: #1a1208 !important;
+}
+/* Labels */
+.form-label,
+.contact-page-form label {
+    color: #7a6a52 !important;
+    background: transparent !important;
+}
+.contact-page-form input:focus ~ .form-label,
+.contact-page-form input:not(:placeholder-shown) ~ .form-label,
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+    color: #a67c31 !important;
+    background: #f8f3ec !important;
+    font-size: 0.63rem !important;
+    font-weight: 700 !important;
+}
+
+/* Office icons — force cream background */
+.office-icon {
+    background: #faf5ec !important;
+    border: 1px solid #e0d5bf !important;
+}
+.office-info h4 {
+    color: #1a1208 !important;
+}
+.office-info p,
+.office-detail-link {
+    color: #7a6a52 !important;
+}
+
+/* FAQ section */
+.faq-item {
+    background: #fff !important;
+    border-color: #e8dece !important;
+}
+.faq-question {
+    color: #1a1208 !important;
+}
+.faq-answer p {
+    color: #7a6a52 !important;
+}
