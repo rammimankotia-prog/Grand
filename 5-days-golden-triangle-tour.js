@@ -146,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 _subject: `New Grand Holidays Booking: 5 Days Golden Triangle`,
                 name: document.getElementById('b-name').value,
                 email: document.getElementById('b-email').value,
+                mobile: document.getElementById('b-mobile').value,
                 preferredDate: document.getElementById('b-date').value,
                 guestsCount: document.getElementById('b-travelers').value,
                 message: document.getElementById('b-notes').value,
