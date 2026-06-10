@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Private Car & Driver | DriveIndia by Grand Holidays</title>
+    <meta name="description" content="Instantly book your private car and driver with RailYatra by Grand Holidays. Fast, secure, and hassle-free booking for all routes and classes.">
+    <meta name="keywords" content="India private car booking, train tickets India, IRCTC booking agent, book train India">
+    <link rel="canonical" href="https://grandholidaytours.com/car-booking.html">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">🚘</span>
+        <span class="logo-text">Drive<span class="logo-accent">India</span> <span style="font-size: 0.6em; font-weight: 400; opacity: 0.8; margin-left: 4px;">by Grand Holidays</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#booking-form">Book Ticket</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Fleet Options</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Rental Rates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#booking-form" class="nav-cta">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🇮🇳 All India Car Rental Network</div>
+      <h1 class="hero-title">
+        Travel Across India<br/>
+        <span class="hero-title-accent">With A Private Driver</span>
+      </h1>
+      <p class="hero-subtitle">Book private vehicles for any route across India — from the Himalayas to Kanyakumari. Fast, secure, and hassle-free.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Vehicles</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">All</span>
+          <span class="stat-label">India Destinations</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">24 x 7</span>
+          <span class="stat-label">Support</span>
+        </div>
+      </div>
+      <a href="#booking-form" class="hero-btn">
+        Start Booking <span class="btn-arrow">→</span>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM SECTION -->
+  <section class="form-section" id="booking-form">
+    <div class="form-container">
+      <div class="form-header">
+        <div class="form-tag">🎫 Car Booking</div>
+        <h2 class="form-title">Book Your Private Car</h2>
+        <p class="form-subtitle">Fill in the details below and we'll arrange the perfect vehicle and driver for you across India.</p>
+      </div>
+
+      
+      <form class="booking-form" id="mainBookingForm" novalidate>
+
+        <!-- ── JOURNEY DETAILS ── -->
+        <div class="form-card" id="journey-card">
+          <div class="card-header">
+            <div class="card-icon">🗺️</div>
+            <div>
+              <h3 class="card-title">Journey Details</h3>
+              <p class="card-desc">Where would you like to travel?</p>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <!-- Route Row -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="pickupPoint" class="field-label required">Pickup Point</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🏁</span>
+                  <input type="text" id="pickupPoint" name="pickupPoint" class="field-input" placeholder="Enter pickup city or hotel" required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="droppingPoint" class="field-label required">Dropping Point</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">📍</span>
+                  <input type="text" id="droppingPoint" name="droppingPoint" class="field-input" placeholder="Enter drop-off city or hotel" required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Destination -->
+            <div class="form-row">
+              <div class="field-group">
+                <label for="destinations" class="field-label required">Destination(s) to be Visited</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🛣️</span>
+                  <input type="text" id="destinations" name="destinations" class="field-input" placeholder="e.g. Delhi, Jaipur, Agra, Udaipur..." required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Date & Passengers -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="journeyDate" class="field-label required">Date of Journey</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">📅</span>
+                  <input type="date" id="journeyDate" name="journeyDate" class="field-input" required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="passengers" class="field-label required">Number of Pax (Guests)</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">👥</span>
+                  <input type="number" id="passengers" name="passengers" min="1" max="16" value="2" class="field-input" required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── CONTACT DETAILS ── -->
+        <div class="form-card" id="contact-card">
+          <div class="card-header">
+            <div class="card-icon">👤</div>
+            <div>
+              <h3 class="card-title">Passenger &amp; Contact Information</h3>
+              <p class="card-desc">Required for booking confirmation</p>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <!-- Name -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="firstName" class="field-label required">First Name</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🧑</span>
+                  <input type="text" id="firstName" name="firstName" class="field-input" placeholder="First Name" required/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-error" id="firstNameError"></span>
+              </div>
+              <div class="field-group">
+                <label for="lastName" class="field-label required">Last Name</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🧑</span>
+                  <input type="text" id="lastName" name="lastName" class="field-input" placeholder="Last Name" required/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-error" id="lastNameError"></span>
+              </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="form-row two-col">
+              <div class="field-group">
+                <label for="mobileNumber" class="field-label required">Mobile Number</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">📱</span>
+                  <input type="tel" id="mobileNumber" name="mobileNumber" class="field-input" placeholder="Include country code" required/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-error" id="mobileError"></span>
+              </div>
+              <div class="field-group">
+                <label for="emailId" class="field-label required">Email Address</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">✉️</span>
+                  <input type="email" id="emailId" name="emailId" class="field-input" placeholder="your@email.com" required/>
+                  <div class="input-glow"></div>
+                </div>
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <!-- Nationality -->
+            <div class="form-row">
+              <div class="field-group">
+                <label for="nationality" class="field-label required">Nationality</label>
+                <div class="input-wrap icon-left">
+                  <span class="input-icon">🌍</span>
+                  <input type="text" id="nationality" name="nationality" class="field-input" placeholder="Enter your nationality" required/>
+                  <div class="input-glow"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TERMS & SUBMIT -->
+        <div class="form-footer">
+          <label class="terms-label" for="whatsappConsent">
+            <input type="checkbox" id="whatsappConsent" name="whatsappConsent" checked/>
+            <span class="custom-check"></span>
+            <span>I consent to receive booking updates via WhatsApp</span>
+          </label>
+
+          <label class="terms-label" for="termsCheck">
+            <input type="checkbox" id="termsCheck" name="terms" required/>
+            <span class="custom-check"></span>
+            <span>I agree to the <a href="#" class="terms-link">Terms & Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a></span>
+          </label>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-text">🔍 Search &amp; Book Vehicle</span>
+            <span class="btn-spinner" id="btnSpinner"></span>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h2 class="modal-title">Request Submitted!</h2>
+      <p class="modal-msg">Thank you! We've received your train booking request. Our team will contact you at your email and mobile number with the available train options and booking details shortly.</p>
+      <div class="modal-ref" id="modalRef"></div>
+      <button class="modal-close-btn" id="modalCloseBtn">Back to Home</button>
+    </div>
+  </div>
+
+
+
+  <script src="car-booking.js"></script>
+<footer class="luxury-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-accent">THE</span>
+                        <span class="logo-main">GRAND HOLIDAYS</span>
+                        <span class="logo-sub">LUXURY TOUR CO.</span>
+                    </a>
+                    <p class="footer-desc">A bespoke luxury travel operator creating timeless, deeply personal journeys across the Indian subcontinent since 2011.</p>
+                    <p class="footer-desc" style="margin-top: 1.2rem; opacity: 0.8; font-size: 0.8rem; line-height: 1.5;">
+                        <strong>Grand Holidays Office</strong><br>
+                        Plot No. 8502/41, Ground Floor, Arakashan Rd,<br>
+                        behind Sheela Cinema Street, Ram Nagar,<br>
+                        Paharganj, New Delhi, Delhi 110055
+                    </p>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Explore</h4>
+                    <a href="#tours">Signature Tours</a>
+                    <a href="car-booking.html">Book Train Tickets</a>
+                    <a href="#heritage-story">Our Philosophy</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Private Desks</h4>
+                    <span>New Delhi Concierge</span>
+                    <span>London Private Desk</span>
+                    <span>New York Private Desk</span>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for curated itineraries and rare travel discoveries.</p>
+                    <form class="footer-newsletter" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required id="newsletterEmail">
+                        <button type="submit" class="btn-newsletter-submit">→</button>
+                    </form>
+                    <span id="newsletterSuccess" class="newsletter-success">Subscribed successfully. ✓</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Grand Holidays Luxury Tour Company. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span class="bullet">•</span>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
