@@ -109,6 +109,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize display with default 'car' mode
     updateTourDisplay('car');
 
+
+    // Guest Counter Logic
+    const guestMinus = document.querySelector('.btn-guest-minus');
+    const guestPlus = document.querySelector('.btn-guest-plus');
+    const guestInput = document.getElementById('b-travelers');
+
+    if (guestMinus && guestPlus && guestInput) {
+        guestMinus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val > 1) {
+                guestInput.value = val - 1;
+            }
+        });
+        guestPlus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val < 16) {
+                guestInput.value = val + 1;
+            }
+        });
+    }
+
     // Sidebar Booking Form Handler
     const bookingForm = document.getElementById('tourBookingForm');
     const bookingSuccess = document.getElementById('bookingSuccessMessage');
