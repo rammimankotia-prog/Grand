@@ -322,7 +322,7 @@
                         <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                         <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                          <!-- Route Line Paths Connecting Sights -->
-                         <path id="route-path" d="M340,148 L190,318 L438,318 L340,148" fill="rgba(166,124,49,0.07)" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9">
+                         <path id="route-path" d="M340,148 L190,318 L438,318 L230,180" fill="rgba(166,124,49,0.07)" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9">
                              <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
                          </path>
 
@@ -387,11 +387,24 @@
                             <rect x="293" y="104" width="94" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/>
                             <text x="340" y="124" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">DELHI</text>
                             
-                            <rect x="250" y="170" width="180" height="20" rx="10" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="340" y="183" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR ENDS (IGI AIRPORT)</text>
 
-                            <rect x="320" y="193" width="40" height="14" rx="4" fill="#1a1208"/>
-                            <text x="340" y="203" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">Day 5</text>
+                        </g>
+                        <g>
+                            <circle cx="230" cy="180" r="25" fill="rgba(166,124,49,0.1)">
+                                <animate attributeName="r" values="12;22;12" dur="2.8s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.5;0;0.5" dur="2.8s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="230" cy="180" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <text x="230" y="184" text-anchor="middle" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#fff">✈</text>
+                            
+                            <rect x="185" y="148" width="90" height="24" rx="12" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/>
+                            <text x="230" y="164" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">IGI AIRPORT</text>
+                            
+                            <rect x="180" y="195" width="100" height="18" rx="9" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="230" y="207" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR ENDS</text>
+
+                            <rect x="210" y="216" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="230" y="226" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">Day 5</text>
                         </g>
                         <g>
                             
