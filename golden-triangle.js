@@ -185,7 +185,28 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTourDisplay('car');
 
     // Sidebar Booking Form Handler
-    const bookingForm = document.getElementById('tourBookingForm');
+    
+    // Guest Counter Logic
+    const guestMinus = document.querySelector('.btn-guest-minus');
+    const guestPlus = document.querySelector('.btn-guest-plus');
+    const guestInput = document.getElementById('b-travelers');
+
+    if (guestMinus && guestPlus && guestInput) {
+        guestMinus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val > 1) {
+                guestInput.value = val - 1;
+            }
+        });
+        guestPlus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val < 16) {
+                guestInput.value = val + 1;
+            }
+        });
+    }
+
+const bookingForm = document.getElementById('tourBookingForm');
     const bookingSuccess = document.getElementById('bookingSuccessMessage');
 
     bookingForm.addEventListener('submit', (e) => {
@@ -199,6 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
             _subject: `New Grand Holidays Booking: Golden Triangle (${document.getElementById('selected-tour-mode').value.toUpperCase()})`,
             name: document.getElementById('b-name').value,
             email: document.getElementById('b-email').value,
+                mobile: document.getElementById('b-mobile').value,
             preferredDate: document.getElementById('b-date').value,
             guestsCount: document.getElementById('b-travelers').value,
             message: document.getElementById('b-notes').value,

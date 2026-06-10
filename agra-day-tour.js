@@ -161,7 +161,28 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTourDisplay('sedan');
 
     // ── BOOKING FORM ───────────────────────────────────────────────
-    const bookingForm       = document.getElementById('tourBookingForm');
+    
+    // Guest Counter Logic
+    const guestMinus = document.querySelector('.btn-guest-minus');
+    const guestPlus = document.querySelector('.btn-guest-plus');
+    const guestInput = document.getElementById('b-travelers');
+
+    if (guestMinus && guestPlus && guestInput) {
+        guestMinus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val > 1) {
+                guestInput.value = val - 1;
+            }
+        });
+        guestPlus.addEventListener('click', () => {
+            let val = parseInt(guestInput.value) || 1;
+            if (val < 16) {
+                guestInput.value = val + 1;
+            }
+        });
+    }
+
+const bookingForm       = document.getElementById('tourBookingForm');
     const successMessage    = document.getElementById('bookingSuccessMessage');
 
     if (bookingForm) {
@@ -170,13 +191,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const mode     = document.getElementById('selected-tour-mode').value;
             const name     = document.getElementById('b-name').value.trim();
             const email    = document.getElementById('b-email').value.trim();
+            const mobile = document.getElementById('b-mobile').value;
             const date     = document.getElementById('b-date').value.trim();
             const travelers= document.getElementById('b-travelers').value;
             const notes    = document.getElementById('b-notes').value.trim();
 
             const subject  = encodeURIComponent(`Same Day Agra Tour Enquiry — ${tourModes[mode].price}`);
             const body     = encodeURIComponent(
-                `Tour: Same Day Agra Tour from Delhi\nMode: ${mode.charAt(0).toUpperCase()+mode.slice(1)}\nPrice: ${tourModes[mode].price}\n\nName: ${name}\nEmail: ${email}\nTravel Date: ${date}\nGuests: ${travelers}\n\nSpecial Notes:\n${notes}`
+                `Tour: Same Day Agra Tour from Delhi\nMode: ${mode.charAt(0).toUpperCase()+mode.slice(1)}\nPrice: ${tourModes[mode].price}\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nTravel Date: ${date}\nGuests: ${travelers}\n\nSpecial Notes:\n${notes}`
             );
 
             const mailtoLink = `mailto:info@grandholidaytours.com?subject=${subject}&body=${body}`;

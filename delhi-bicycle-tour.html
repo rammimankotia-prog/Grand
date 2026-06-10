@@ -300,26 +300,28 @@
                                 <label for="b-name" class="sidebar-label">Full Name</label>
                             </div>
                             
-                            <div class="sidebar-form-group">
+                                                        <div class="sidebar-form-group">
                                 <input type="email" id="b-email" required placeholder=" " class="sidebar-input">
                                 <label for="b-email" class="sidebar-label">Email Address</label>
                             </div>
 
                             <div class="sidebar-form-group">
-                                <input type="text" id="b-date" required placeholder=" " class="sidebar-input">
-                                <label for="b-date" class="sidebar-label">Preferred Date of Ride</label>
+                                <input type="tel" id="b-mobile" required placeholder=" " class="sidebar-input">
+                                <label for="b-mobile" class="sidebar-label">Mobile Number</label>
                             </div>
 
-                            <div class="sidebar-form-group">
-                                <select id="b-travelers" class="sidebar-input select-input" required>
-                                    <option value="" disabled selected hidden></option>
-                                    <option value="1">1 Cyclist</option>
-                                    <option value="2">2 Cyclists</option>
-                                    <option value="3">3 Cyclists</option>
-                                    <option value="4">4 Cyclists</option>
-                                    <option value="5+">5+ Cyclists</option>
-                                </select>
-                                <label for="b-travelers" class="sidebar-label">Number of Cyclists</label>
+                                                        <div class="sidebar-form-group">
+                                <input type="date" id="b-date" required class="sidebar-input date-input" style="padding-top: 1rem; cursor: pointer;">
+                                <label for="b-date" class="sidebar-label" style="top: -0.4rem; font-size: 0.7rem; background: #FFFEFB; padding: 0 0.4rem; color: #6B5F54; font-weight: 700; letter-spacing: 1px;">Preferred Date</label>
+                            </div>
+
+                                                        <div class="sidebar-form-group guest-counter-group" style="margin-top: 1.5rem; position: relative;">
+                                <label class="sidebar-label" style="top: -0.8rem; font-size: 0.7rem; background: #FFFEFB; padding: 0 0.4rem; color: #6B5F54; font-weight: 700; letter-spacing: 1px;">Number of Guests</label>
+                                <div class="guest-counter" style="display: flex; align-items: center; border: 1px solid rgba(24,19,14,0.1); border-radius: 8px; overflow: hidden; background: #FFFEFB;">
+                                    <button type="button" class="btn-guest-minus" style="background: rgba(166,124,49,0.05); border: none; color: #A67C31; width: 45px; height: 48px; font-size: 1.4rem; font-weight: 300; cursor: pointer; transition: background 0.2s;">-</button>
+                                    <input type="number" id="b-travelers" value="2" min="1" max="16" class="sidebar-input guest-input" readonly style="border: none !important; text-align: center; flex-grow: 1; padding: 0 !important; font-size: 1.1rem !important; font-weight: 600; color: #18130E; -moz-appearance: textfield; pointer-events: none;">
+                                    <button type="button" class="btn-guest-plus" style="background: rgba(166,124,49,0.05); border: none; color: #A67C31; width: 45px; height: 48px; font-size: 1.4rem; font-weight: 300; cursor: pointer; transition: background 0.2s;">+</button>
+                                </div>
                             </div>
 
                             <div class="sidebar-form-group">
