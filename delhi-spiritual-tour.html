@@ -371,7 +371,7 @@
                         <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                         
                         <!-- Route Line Paths Connecting Sights -->
-                        <path id="route-path" d="M180,180 Q240,140 280,170 Q360,240 400,320 Q480,280 540,240" fill="none" stroke="#2563eb" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <path id="route-path" d="M180,180 Q240,140 280,170 Q360,240 400,320 Q480,280 540,240 Q360,150 180,180" fill="none" stroke="#2563eb" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="8s" repeatCount="indefinite"/>
                         </path>
 
@@ -395,6 +395,10 @@
                         <!-- SIGHT MARKERS -->
                         <!-- 1. Hotel Godwin Deluxe -->
                         <g>
+                            <!-- Tour Starts Label -->
+                            <rect x="110" y="120" width="140" height="20" rx="10" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="180" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR STARTS HERE</text>
+
                             <circle cx="180" cy="180" r="18" fill="rgba(37,99,235,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
@@ -402,6 +406,10 @@
                             <circle cx="180" cy="180" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
                             <rect x="130" y="150" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
                             <text x="180" y="163" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+
+                            <!-- Tour Ends Label -->
+                            <rect x="130" y="200" width="100" height="20" rx="10" fill="#2d3748" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="180" y="213" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR ENDS</text>
                         </g>
 
                         <!-- 2. Gurudwara Bangla Sahib -->
