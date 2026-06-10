@@ -92,6 +92,15 @@ a {
   color: var(--primary);
 }
 
+.nav-logo .logo-accent {
+  font-size: inherit;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+
 .nav-links {
   display: flex;
   list-style: none;
