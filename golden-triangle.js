@@ -88,34 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 "International airfare and visa fees",
                 "Meals not specified in the itinerary",
                 "Personal shopping and gratuities"
-            ]
-        },
-        sameday: {
-            duration: "1 Day (14 Hours)",
-            cities: "Delhi - Agra - Delhi",
-            price: "$3,200 p.p.",
-            shortDesc: "Short on time? This same-day car journey whisks you from Delhi to Agra and back in a private air-conditioned car. Visit the Taj Mahal, Agra Fort, and enjoy a memorable royal lunch — all in one unforgettable day.",
-            highlight: "🚗 Private A/C car on the Yamuna Expressway, personal guide at Taj Mahal and Agra Fort, and a curated lunch — back in Delhi by evening.",
-            itinerary: [
-                { day: 1, time: "06:00 AM", title: "Luxury Chauffeur Pickup", desc: "Your chauffeur collects you from your Delhi hotel or airport in a Toyota Innova. Travel in comfort along the Yamuna Expressway." },
-                { day: 1, time: "09:30 AM", title: "Taj Mahal Private Walk", desc: "Arrive in Agra. Meet your private historian guide and skip the queues to tour the Taj Mahal, learning about its history and architectural secrets." },
-                { day: 1, time: "01:00 PM", title: "Royal Lunch at Oberoi", desc: "Enjoy a multi-course Indian culinary lunch at the Bellevue restaurant in the Oberoi Amarvilas, facing views of the Taj." },
-                { day: 1, time: "02:30 PM", title: "Agra Fort Exploration", desc: "Discover Agra Fort, the spectacular red sandstone walled city of the Mughal Emperors, exploring its marble palaces and chambers." },
-                { day: 1, time: "05:00 PM", title: "Sunset Taj View & Return", desc: "Catch the sunset reflections of the Taj Mahal across the Yamuna River from Mehtab Bagh. Begin your comfortable return drive to Delhi." },
-                { day: 1, time: "08:30 PM", title: "Delhi Drop-off", desc: "Arrive back in Delhi. Your chauffeur drops you off directly at your hotel or the international airport terminal." }
-            ],
-            inclusions: [
-                "Yamuna Expressway return transfers in a private Toyota Innova",
-                "Private historian guide in Agra",
-                "Skip-the-line VIP entry tickets to Taj Mahal and Agra Fort",
-                "Multi-course royal lunch at the Oberoi Amarvilas",
-                "Cold towels, snacks, and mineral water during transit"
-            ],
-            exclusions: [
-                "Hotel lodging (None)",
-                "Dinner in Delhi",
-                "Tipping and camera tickets"
-            ]
         }
     };
 
