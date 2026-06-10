@@ -220,13 +220,13 @@
                         <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap: 1.2rem;">
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
                                 <div style="font-size:1.6rem; margin-bottom:0.3rem;">🏨</div>
-                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Pick-Up &amp; Stay</div>
-                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Hotel Grand Godwin</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">STAY</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Premium hotel</div>
                             </div>
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
                                 <div style="font-size:1.6rem; margin-bottom:0.3rem;">🍳</div>
-                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">Breakfast Location</div>
-                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Indian Grill Restaurant</div>
+                                <div style="font-family:var(--f-body); font-size:0.7rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-soft);">BREAKFAST</div>
+                                <div style="font-family:var(--f-body); font-size:0.88rem; font-weight:600; color:var(--ink); margin-top:0.3rem;">Daily Breakfast</div>
                             </div>
                             <div style="text-align:center; padding: 0.8rem; background:var(--gold-bg); border:1px solid var(--gold-border); border-radius:var(--r2);">
                                 <div style="font-size:1.6rem; margin-bottom:0.3rem;">🚗</div>
@@ -324,13 +324,13 @@
     </section>
 
 
-    <!-- GT MAP SECTION -->
+        <!-- RAJASTHAN MAP SECTION -->
     <section class="gt-map-section">
         <div class="container">
             <div class="gt-map-header">
                 <span class="eyebrow">Route Overview</span>
-                <h2 class="gt-map-title">5 Days Golden Triangle Route</h2>
-                <p class="gt-map-subtitle">Three iconic cities. One legendary journey across heritage, royalty and wonder.</p>
+                <h2 class="gt-map-title">Rajasthan Heritage Route</h2>
+                <p class="gt-map-subtitle">A heritage loop traversing through the Pink City, the Blue City, the Golden Sands of Thar, and the romantic Lake Palace.</p>
             </div>
             <div class="gt-map-wrapper">
                 <div class="gt-map-canvas">
@@ -344,147 +344,107 @@
                             </radialGradient>
                         </defs>
                         <rect x="0" y="0" width="680" height="480" rx="20" fill="url(#bgG)"/>
-                        <path d="M80,40 C130,25 220,20 300,30 C390,42 470,28 540,48 C600,65 640,95 645,140 C650,185 638,225 645,268 C652,315 638,360 610,395 C580,432 545,455 505,465 C460,478 410,480 365,475 C315,470 265,465 220,455 C170,443 125,422 90,390 C55,355 38,305 32,260 C24,205 30,145 45,100 C58,65 60,52 80,40 Z" fill="#e0d3bd" opacity="0.45"/>
-                        <line x1="340" y1="20" x2="340" y2="460" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
-                        <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
-                         <!-- Route Line Paths Connecting Sights -->
-                         <path id="route-path" d="M340,148 L190,318 L438,318 L440,148" fill="rgba(166,124,49,0.07)" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9">
+                        
+                        <!-- Route Line Paths Connecting Sights -->
+                        <path id="route-path" d="M480,160 Q400,190 320,220 Q240,200 160,180 Q240,200 320,220 Q380,290 440,360" fill="none" stroke="#a67c31" stroke-width="3" stroke-dasharray="10,8" stroke-linecap="round" opacity="0.9">
                              <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
-                         </path>
+                        </path>
 
-                          <!-- Moving Taxi Sedan along route -->
-                          <g>
-                              <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
-                                  <mpath href="#route-path"/>
-                              </animateMotion>
-                              <g transform="translate(-10, -5)">
-                                  <!-- Wheels -->
-                                  <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
-                                  <!-- Car body -->
-                                  <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
-                                  <!-- Front Grill -->
-                                  <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
-                                  <!-- Headlights (Front, facing right) -->
-                                  <rect x="18.5" y="0.8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
-                                  <rect x="18.5" y="8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
-                                  <!-- Taillights (Rear, facing left) -->
-                                  <rect x="-0.3" y="0.8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
-                                  <rect x="-0.3" y="8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
-                                  <!-- Windshield (Front, facing right) -->
-                                  <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
-                                  <!-- Rear Window (Back, facing left) -->
-                                  <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
-                                  <!-- Side windows (Split for Sedan) -->
-                                  <!-- Top side windows -->
-                                  <rect x="5.5" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
-                                  <rect x="8.8" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
-                                  <!-- Bottom side windows -->
-                                  <rect x="5.5" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
-                                  <rect x="8.8" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
-                                  <!-- Bumpers -->
-                                  <rect x="-0.8" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
-                                  <rect x="20" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
-                                  <!-- Taxi Light on Roof -->
-                                  <rect x="7.5" y="3.5" width="5" height="3" rx="0.6" fill="#fff" stroke="#b45309" stroke-width="0.8"/>
-                                  <text x="10" y="5.7" font-family="Outfit, sans-serif" font-size="2.2" font-weight="900" fill="#000" text-anchor="middle" letter-spacing="0.1">TAXI</text>
-                              </g>
-                          </g>
-                        <g transform="translate(412,228)"><rect x="-44" y="-16" width="88" height="32" rx="16" fill="#1a1208" opacity="0.88"/><text x="0" y="-2" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#f0c060">203 km</text><text x="0" y="11" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="rgba(255,220,120,0.75)">~3 hrs drive</text></g>
-                        <g transform="translate(242,228)"><rect x="-44" y="-16" width="88" height="32" rx="16" fill="#1a1208" opacity="0.88"/><text x="0" y="-2" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#f0c060">281 km</text><text x="0" y="11" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="rgba(255,220,120,0.75)">~5 hrs drive</text></g>
-                        <g transform="translate(315,300)"><rect x="-44" y="-16" width="88" height="32" rx="16" fill="#1a1208" opacity="0.88"/><text x="0" y="-2" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="700" fill="#f0c060">240 km</text><text x="0" y="11" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="rgba(255,220,120,0.75)">~4 hrs drive</text></g>
+                        <!-- Moving Taxi Sedan along route -->
                         <g>
-                            <rect x="270" y="88" width="140" height="20" rx="10" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="340" y="101" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR STARTS</text>
-
-                            <rect x="280" y="111" width="40" height="14" rx="4" fill="#1a1208"/>
-                            <text x="300" y="121" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">Day 1 & 2</text>
-
-                            
-
-                            <circle cx="340" cy="148" r="30" fill="rgba(166,124,49,0.1)">
-                                <animate attributeName="r" values="18;32;18" dur="2.6s" repeatCount="indefinite"/>
-                                <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/>
-                            </circle>
-                            <circle cx="340" cy="148" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/>
-                            <text x="340" y="153" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">D</text>
-                            <rect x="293" y="104" width="94" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/>
-                            <text x="340" y="124" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">DELHI</text>
-                            
-
+                            <animateMotion dur="16s" repeatCount="indefinite" rotate="auto">
+                                <mpath href="#route-path"/>
+                            </animateMotion>
+                            <g transform="translate(-10, -5)">
+                                <!-- Wheels -->
+                                <rect x="3" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                <rect x="13" y="-1.2" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                <rect x="3" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                <rect x="13" y="10" width="4" height="1.2" fill="#111" rx="0.5"/>
+                                <!-- Car body -->
+                                <rect x="0" y="0" width="20" height="10" rx="3" fill="#f59e0b" stroke="#78350f" stroke-width="1.2"/>
+                                <!-- Front Grill -->
+                                <rect x="19.5" y="3.5" width="0.7" height="3" fill="#1e293b" rx="0.2"/>
+                                <!-- Headlights (Front, facing right) -->
+                                <rect x="18.5" y="0.8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
+                                <rect x="18.5" y="8" width="1.2" height="1.2" rx="0.3" fill="#fef08a" stroke="#ca8a04" stroke-width="0.4"/>
+                                <!-- Taillights (Rear, facing left) -->
+                                <rect x="-0.3" y="0.8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
+                                <rect x="-0.3" y="8" width="0.8" height="1.2" rx="0.3" fill="#ef4444"/>
+                                <!-- Windshield (Front, facing right) -->
+                                <path d="M12,1.5 L15,3 L15,7 L12,8.5 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                <!-- Rear Window (Back, facing left) -->
+                                <path d="M5,1.8 L3.5,3 L3.5,7 L5,8.2 Z" fill="#e0f2fe" stroke="#0369a1" stroke-width="0.5"/>
+                                <!-- Side windows (Split for Sedan) -->
+                                <!-- Top side windows -->
+                                <rect x="5.5" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                <rect x="8.8" y="0.8" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                <!-- Bottom side windows -->
+                                <rect x="5.5" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                <rect x="8.8" y="8.4" width="2.8" height="0.8" fill="#e0f2fe"/>
+                                <!-- Bumpers -->
+                                <rect x="-0.8" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
+                                <rect x="20" y="2" width="0.8" height="6" fill="#1e293b" rx="0.3"/>
+                                <!-- Taxi Light on Roof -->
+                                <rect x="7.5" y="3.5" width="5" height="3" rx="0.6" fill="#fff" stroke="#b45309" stroke-width="0.8"/>
+                                <text x="10" y="5.7" font-family="Outfit, sans-serif" font-size="2.2" font-weight="900" fill="#000" text-anchor="middle" letter-spacing="0.1">TAXI</text>
+                            </g>
                         </g>
+
+                        <!-- Jaipur (480, 160) -->
                         <g>
-                            <circle cx="440" cy="148" r="25" fill="rgba(166,124,49,0.1)">
-                                <animate attributeName="r" values="12;22;12" dur="2.8s" repeatCount="indefinite"/>
-                                <animate attributeName="opacity" values="0.5;0;0.5" dur="2.8s" repeatCount="indefinite"/>
-                            </circle>
-                            <circle cx="440" cy="148" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <text x="440" y="152" text-anchor="middle" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#fff">✈</text>
-                            
-                            <rect x="395" y="116" width="90" height="24" rx="12" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/>
-                            <text x="440" y="132" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">IGI AIRPORT</text>
-                            
-                            <rect x="390" y="163" width="100" height="18" rx="9" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
-                            <text x="440" y="175" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR ENDS</text>
-
-                            <rect x="420" y="184" width="40" height="14" rx="4" fill="#1a1208"/>
-                            <text x="440" y="194" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">Day 5</text>
+                            <circle cx="480" cy="160" r="12" fill="#a67c31" stroke="#fff" stroke-width="3" filter="url(#pinShadow)"/>
+                            <text x="480" y="140" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="800" fill="#6b4c12" letter-spacing="1">JAIPUR</text>
                         </g>
+
+                        <!-- Jodhpur (320, 220) -->
                         <g>
-                            
-                            <rect x="418" y="280" width="40" height="14" rx="4" fill="#1a1208"/>
-                            <text x="438" y="290" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">Day 4</text>
-
-                            <circle cx="438" cy="318" r="30" fill="rgba(166,124,49,0.1)">
-                                <animate attributeName="r" values="18;32;18" dur="3.1s" repeatCount="indefinite"/>
-                                <animate attributeName="opacity" values="0.5;0;0.5" dur="3.1s" repeatCount="indefinite"/>
-                            </circle>
-                            <circle cx="438" cy="318" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/>
-                            <text x="438" y="323" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">A</text>
-                            <rect x="393" y="337" width="90" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/>
-                            <text x="438" y="357" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">AGRA</text>
+                            <circle cx="320" cy="220" r="12" fill="#a67c31" stroke="#fff" stroke-width="3" filter="url(#pinShadow)"/>
+                            <text x="320" y="200" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="800" fill="#6b4c12" letter-spacing="1">JODHPUR</text>
                         </g>
+
+                        <!-- Jaisalmer (160, 180) -->
                         <g>
-                            <rect x="170" y="280" width="40" height="14" rx="4" fill="#1a1208"/>
-                            <text x="190" y="290" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">Day 3 & 4</text>
-
-                            <circle cx="190" cy="318" r="30" fill="rgba(166,124,49,0.1)">
-                                <animate attributeName="r" values="18;32;18" dur="3.6s" repeatCount="indefinite"/>
-                                <animate attributeName="opacity" values="0.5;0;0.5" dur="3.6s" repeatCount="indefinite"/>
-                            </circle>
-                            <circle cx="190" cy="318" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/>
-                            <text x="190" y="323" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">J</text>
-                            <rect x="146" y="337" width="88" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/>
-                            <text x="190" y="357" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">JAIPUR</text>
+                            <circle cx="160" cy="180" r="12" fill="#a67c31" stroke="#fff" stroke-width="3" filter="url(#pinShadow)"/>
+                            <text x="160" y="160" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="800" fill="#6b4c12" letter-spacing="1">JAISALMER</text>
                         </g>
-                        <g transform="translate(618,58)"><circle cx="0" cy="0" r="26" fill="rgba(255,255,255,0.92)" stroke="#d5c9b0" stroke-width="1.5"/><polygon points="0,-20 -5,-8 5,-8" fill="#a67c31"/><polygon points="0,20 -5,8 5,8" fill="#c8bfa8"/><text x="0" y="-23" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="800" fill="#a67c31">N</text><text x="20" y="4" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">E</text><text x="-20" y="4" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">W</text><text x="0" y="31" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">S</text></g>
-                        <g transform="translate(52,444)"><rect x="0" y="0" width="90" height="7" rx="3.5" fill="#d5c9b0"/><rect x="0" y="0" width="45" height="7" rx="3.5" fill="#a67c31"/><text x="0" y="21" font-family="Outfit,sans-serif" font-size="9" fill="#999">0</text><text x="41" y="21" font-family="Outfit,sans-serif" font-size="9" fill="#999">100</text><text x="80" y="21" font-family="Outfit,sans-serif" font-size="9" fill="#999">200 km</text></g>
-                        <text x="340" y="470" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" fill="#b0a090" letter-spacing="2.5">NORTH INDIA — THE GOLDEN TRIANGLE</text>
+
+                        <!-- Udaipur (440, 360) -->
+                        <g>
+                            <circle cx="440" cy="360" r="12" fill="#a67c31" stroke="#fff" stroke-width="3" filter="url(#pinShadow)"/>
+                            <text x="440" y="385" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11" font-weight="800" fill="#6b4c12" letter-spacing="1">UDAIPUR</text>
+                        </g>
+
                     </svg>
                 </div>
                 <div class="gt-city-cards">
                     <div class="gt-city-card">
                         <div class="city-card-num">01</div>
                         <div class="city-card-icon">&#127963;</div>
-                        <h3 class="city-card-name">Delhi</h3>
-                        <p class="city-card-desc">India's imperial capital &mdash; Red Fort, Qutub Minar, Humayun's Tomb. Where Mughal grandeur meets modern India.</p>
-                        <div class="city-card-tags"><span>Red Fort</span><span>Qutub Minar</span><span>Chandni Chowk</span></div>
-                    </div>
-                    <div class="gt-city-card">
-                        <div class="city-card-num">02</div>
-                        <div class="city-card-icon">&#128332;</div>
-                        <h3 class="city-card-name">Agra</h3>
-                        <p class="city-card-desc">Home of the Taj Mahal &mdash; the world's most magnificent monument. Private sunrise access through Grand Holidays.</p>
-                        <div class="city-card-tags"><span>Taj Mahal</span><span>Agra Fort</span><span>Fatehpur Sikri</span></div>
-                    </div>
-                    <div class="gt-city-card">
-                        <div class="city-card-num">03</div>
-                        <div class="city-card-icon">&#127963;</div>
                         <h3 class="city-card-name">Jaipur</h3>
                         <p class="city-card-desc">The Pink City &mdash; Rajasthan's royal capital. Amber Fort, Hawa Mahal and palace hotels define this heritage jewel.</p>
                         <div class="city-card-tags"><span>Amber Fort</span><span>Hawa Mahal</span><span>City Palace</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">02</div>
+                        <div class="city-card-icon">&#127984;</div>
+                        <h3 class="city-card-name">Jodhpur</h3>
+                        <p class="city-card-desc">The Blue City &mdash; guarded by the majestic Mehrangarh Fort. A mesmerizing sea of blue houses in the Thar.</p>
+                        <div class="city-card-tags"><span>Mehrangarh Fort</span><span>Jaswant Thada</span><span>Mandore</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">03</div>
+                        <div class="city-card-icon">&#127964;</div>
+                        <h3 class="city-card-name">Jaisalmer</h3>
+                        <p class="city-card-desc">The Golden City &mdash; rising from the desert sands. Famous for its living fort and intricate havelis.</p>
+                        <div class="city-card-tags"><span>Jaisalmer Fort</span><span>Patwon ki Haveli</span><span>Sand Dunes</span></div>
+                    </div>
+                    <div class="gt-city-card">
+                        <div class="city-card-num">04</div>
+                        <div class="city-card-icon">&#127961;</div>
+                        <h3 class="city-card-name">Udaipur</h3>
+                        <p class="city-card-desc">The Lake City &mdash; the most romantic city in India. Grand palaces overlooking the tranquil Lake Pichola.</p>
+                        <div class="city-card-tags"><span>City Palace</span><span>Lake Pichola</span><span>Jagdish Temple</span></div>
                     </div>
                 </div>
             </div>
