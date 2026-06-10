@@ -1,0 +1,90 @@
+=== agra-day-tour.html ===
+LABEL: <text x="0" y="-29" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="800" fill="#1a1208">DELHI</text>
+LABEL: <text x="0" y="-29" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="800" fill="#1a1208">AGRA</text>
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== delhi-bicycle-tour.html ===
+PATH: <path id="route-path" d="M150,150 Q240,110 320,160 Q400,210 460,180 Q520,250 480,320 Q380,380 300,340 Q220,300 180,240 Q130,180 150,150" fill="none" stroke="#2b9348" stroke-width="3.5" stroke-dasharray="8,6" stroke-linecap="round" opacity="0.85">
+ROUTE: <path id="route-path" d="M150,150 Q240,110 320,160 Q400,210 460,180 Q520,250 480,320 Q380,380 300,340 Q220,300 180,240 Q130,180 150,150" fill="none" stroke="#2b9348" stroke-width="3.5" stroke-dasharray="8,6" stroke-linecap="round" opacity="0.85">
+MARKER: <circle cx="150" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="150" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+MARKER: <circle cx="320" cy="160" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="320" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">INDIA GATE</text>
+MARKER: <circle cx="480" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="480" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">PRESIDENT's ESTATE</text>
+MARKER: <circle cx="250" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="250" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">LODHI GARDENS</text>
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== delhi-food-tour.html ===
+PATH: <path id="route-path" d="M220,150 Q280,140 340,160 Q400,180 430,230 Q450,280 400,320 Q350,360 280,340" fill="none" stroke="#e06236" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+ROUTE: <path id="route-path" d="M220,150 Q280,140 340,160 Q400,180 430,230 Q450,280 400,320 Q350,360 280,340" fill="none" stroke="#e06236" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+MARKER: <circle cx="220" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="220" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+MARKER: <circle cx="340" cy="160" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="340" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">KHARI BAOLI</text>
+MARKER: <circle cx="430" cy="230" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="430" y="211" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">CHANDNI CHOWK</text>
+MARKER: <circle cx="400" cy="320" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="400" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">JAMA MASJID</text>
+MARKER: <circle cx="280" cy="340" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="290" y="373" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">PARANTHE WALI GALI</text>
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== delhi-sightseeing.html ===
+PATH: <path id="route-path" d="M340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+ROUTE: <path id="route-path" d="M340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+MARKER: <circle cx="340" cy="90" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="340" y="73" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">JAMA MASJID</text>
+MARKER: <circle cx="340" cy="210" r="11" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="340" y="191" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">INDIA GATE</text>
+MARKER: <circle cx="415" cy="270" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="415" y="251" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">HUMAYUN'S TOMB</text>
+MARKER: <circle cx="280" cy="400" r="10" fill="#a67c31" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="280" y="381" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#6b4c12" letter-spacing="1">QUTUB MINAR</text>
+LABEL: <text x="0" y="-23" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="800" fill="#a67c31">N</text>
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== delhi-tuk-tuk-tour.html ===
+PATH: <path id="route-path" d="M150,150 Q240,110 320,160 Q400,210 460,180 Q520,250 480,320 Q380,380 300,340 Q220,300 180,240 Q130,180 150,150" fill="none" stroke="#2b9348" stroke-width="3.5" stroke-dasharray="8,6" stroke-linecap="round" opacity="0.85">
+ROUTE: <path id="route-path" d="M150,150 Q240,110 320,160 Q400,210 460,180 Q520,250 480,320 Q380,380 300,340 Q220,300 180,240 Q130,180 150,150" fill="none" stroke="#2b9348" stroke-width="3.5" stroke-dasharray="8,6" stroke-linecap="round" opacity="0.85">
+MARKER: <circle cx="150" cy="150" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="150" y="133" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+MARKER: <circle cx="320" cy="160" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="320" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">JAMA MASJID</text>
+MARKER: <circle cx="480" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="480" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">RED FORT</text>
+MARKER: <circle cx="250" cy="320" r="11" fill="#2b9348" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+LABEL: <text x="250" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#1b5a2c" letter-spacing="1">RAJ GHAT</text>
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== golden-triangle.html ===
+PATH: <path id="route-path" d="M340,148 L438,318 L190,318 Z" fill="rgba(166,124,49,0.07)" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9">
+ROUTE: <path id="route-path" d="M340,148 L438,318 L190,318 Z" fill="rgba(166,124,49,0.07)" stroke="#a67c31" stroke-width="3" stroke-dasharray="12,8" stroke-linecap="round" opacity="0.9">
+MARKER: <g><circle cx="340" cy="148" r="30" fill="rgba(166,124,49,0.1)"><animate attributeName="r" values="18;32;18" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/></circle><circle cx="340" cy="148" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/><text x="340" y="153" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">D</text><rect x="293" y="104" width="94" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/><text x="340" y="124" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">DELHI</text></g>
+LABEL: <g><circle cx="340" cy="148" r="30" fill="rgba(166,124,49,0.1)"><animate attributeName="r" values="18;32;18" dur="2.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/></circle><circle cx="340" cy="148" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/><text x="340" y="153" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">D</text><rect x="293" y="104" width="94" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/><text x="340" y="124" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">DELHI</text></g>
+MARKER: <g><circle cx="438" cy="318" r="30" fill="rgba(166,124,49,0.1)"><animate attributeName="r" values="18;32;18" dur="3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3.1s" repeatCount="indefinite"/></circle><circle cx="438" cy="318" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/><text x="438" y="323" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">A</text><rect x="393" y="337" width="90" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/><text x="438" y="357" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">AGRA</text></g>
+LABEL: <g><circle cx="438" cy="318" r="30" fill="rgba(166,124,49,0.1)"><animate attributeName="r" values="18;32;18" dur="3.1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3.1s" repeatCount="indefinite"/></circle><circle cx="438" cy="318" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/><text x="438" y="323" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">A</text><rect x="393" y="337" width="90" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/><text x="438" y="357" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">AGRA</text></g>
+MARKER: <g><circle cx="190" cy="318" r="30" fill="rgba(166,124,49,0.1)"><animate attributeName="r" values="18;32;18" dur="3.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3.6s" repeatCount="indefinite"/></circle><circle cx="190" cy="318" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/><text x="190" y="323" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">J</text><rect x="146" y="337" width="88" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/><text x="190" y="357" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">JAIPUR</text></g>
+LABEL: <g><circle cx="190" cy="318" r="30" fill="rgba(166,124,49,0.1)"><animate attributeName="r" values="18;32;18" dur="3.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3.6s" repeatCount="indefinite"/></circle><circle cx="190" cy="318" r="15" fill="#a67c31" stroke="#fff" stroke-width="3.5" filter="url(#pinShadow)"/><text x="190" y="323" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#fff">J</text><rect x="146" y="337" width="88" height="30" rx="15" fill="#fff" stroke="#a67c31" stroke-width="2" filter="url(#labelShadow)"/><text x="190" y="357" text-anchor="middle" font-family="Outfit,sans-serif" font-size="11.5" font-weight="800" fill="#6b4c12" letter-spacing="2">JAIPUR</text></g>
+LABEL: <g transform="translate(618,58)"><circle cx="0" cy="0" r="26" fill="rgba(255,255,255,0.92)" stroke="#d5c9b0" stroke-width="1.5"/><polygon points="0,-20 -5,-8 5,-8" fill="#a67c31"/><polygon points="0,20 -5,8 5,8" fill="#c8bfa8"/><text x="0" y="-23" text-anchor="middle" font-family="Outfit,sans-serif" font-size="10" font-weight="800" fill="#a67c31">N</text><text x="20" y="4" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">E</text><text x="-20" y="4" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">W</text><text x="0" y="31" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8" fill="#999">S</text></g>
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== himalayan-sanctuary.html ===
+PATH: <path id="route-path" d="M280,100 Q230,110 180,140 Q280,150 380,160 Q450,230 480,340" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+ROUTE: <path id="route-path" d="M280,100 Q230,110 180,140 Q280,150 380,160 Q450,230 480,340" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+
+=== imperial-rajasthan.html ===
+PATH: <path id="route-path" d="M320,220 Q240,200 160,180 Q300,270 440,360" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+ROUTE: <path id="route-path" d="M320,220 Q240,200 160,180 Q300,270 440,360" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+ITINERARY DAYS: []
+ITINERARY TIMES: []
+

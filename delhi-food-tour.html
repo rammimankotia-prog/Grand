@@ -371,7 +371,7 @@
                         <line x1="20" y1="240" x2="660" y2="240" stroke="#c5b89a" stroke-width="0.6" stroke-dasharray="5,8" opacity="0.3"/>
                         
                         <!-- Route Line Paths Connecting Sights -->
-                        <path id="route-path" d="M220,150 Q280,140 340,160 Q400,180 430,230 Q450,280 400,320 Q350,360 280,340" fill="none" stroke="#e06236" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <path id="route-path" d="M220,150 Q280,140 340,160 Q400,180 430,230 Q450,280 400,320 Q350,360 280,340 Q200,250 220,150" fill="none" stroke="#e06236" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="8s" repeatCount="indefinite"/>
                         </path>
 
@@ -395,7 +395,16 @@
                         <!-- SIGHT MARKERS -->
                         <!-- 1. Hotel Godwin Deluxe -->
                         <g>
-                            <circle cx="220" cy="150" r="18" fill="rgba(166,124,49,0.15)">
+                            <rect x="150" y="90" width="140" height="20" rx="10" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="220" y="103" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR STARTS & ENDS</text>
+
+                            <rect x="160" y="113" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="180" y="123" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">10:00 AM</text>
+
+                            <rect x="240" y="113" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="260" y="123" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">05:00 PM</text>
+
+                            <circle cx="220" cy="150" r="18" fill="rgba(224,98,54,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
                             </circle>
@@ -406,6 +415,9 @@
 
                         <!-- 2. Khari Baoli -->
                         <g>
+                            <rect x="320" y="115" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="340" y="125" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">10:30 AM</text>
+
                             <circle cx="340" cy="160" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
                             <rect x="295" y="128" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
                             <text x="340" y="141" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">KHARI BAOLI</text>
@@ -413,13 +425,19 @@
 
                         <!-- 3. Chandni Chowk -->
                         <g>
+                            <rect x="410" y="185" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="430" y="195" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">12:00 PM</text>
+
                             <circle cx="430" cy="230" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
-                            <rect x="385" y="198" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <rect x="375" y="198" width="110" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
                             <text x="430" y="211" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">CHANDNI CHOWK</text>
                         </g>
 
-                        <!-- 4. Jama Masjid & Environs -->
+                        <!-- 4. Jama Masjid -->
                         <g>
+                            <rect x="380" y="327" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="400" y="337" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">03:30 PM</text>
+
                             <circle cx="400" cy="320" r="11" fill="#e06236" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
                             <rect x="355" y="340" width="90" height="20" rx="10" fill="#fff" stroke="#e06236" stroke-width="1.5" filter="url(#labelShadow)"/>
                             <text x="400" y="353" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#a03b15" letter-spacing="1">JAMA MASJID</text>

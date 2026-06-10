@@ -377,7 +377,7 @@
                         
                         <!-- Route Line Paths Connecting Sights -->
                         <!-- Old Delhi (340,90) -> Red Fort (395,80) -> Raj Ghat (430,120) -> India Gate (340,210) -> Humayun's Tomb (415,270) -> Lotus Temple (460,355) -> Qutub Minar (280,400) -->
-                        <path id="route-path" d="M340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
+                        <path id="route-path" d="M250,90 Q290,90 340,90 Q370,75 395,80 T430,120 Q390,165 340,210 Q390,245 415,270 Q455,310 460,355 Q380,380 280,400 Q180,300 250,90" fill="none" stroke="#a67c31" stroke-width="3.5" stroke-dasharray="10,6" stroke-linecap="round" opacity="0.85">
                             <animate attributeName="stroke-dashoffset" from="0" to="-200" dur="5s" repeatCount="indefinite"/>
                         </path>
 
@@ -441,8 +441,31 @@
                         </g>
 
                         <!-- SIGHT MARKERS -->
+                        <!-- 0. Hotel Godwin Deluxe -->
+                        <g>
+                            <rect x="180" y="30" width="140" height="20" rx="10" fill="#c59b3f" stroke="#fff" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="250" y="43" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR STARTS & ENDS</text>
+
+                            <rect x="190" y="53" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="210" y="63" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">09:00 AM</text>
+
+                            <rect x="270" y="53" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="290" y="63" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">05:30 PM</text>
+
+                            <circle cx="250" cy="90" r="18" fill="rgba(166,124,49,0.15)">
+                                <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="250" cy="90" r="10" fill="#2d3748" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
+                            <rect x="200" y="60" width="100" height="20" rx="10" fill="#fff" stroke="#2d3748" stroke-width="1.5" filter="url(#labelShadow)"/>
+                            <text x="250" y="73" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#2d3748" letter-spacing="1">GODWIN DELUXE</text>
+                        </g>
+
                         <!-- 1. Jama Masjid / Old Delhi -->
                         <g>
+                            <rect x="320" y="45" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="340" y="55" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">09:30 AM</text>
+
                             <circle cx="340" cy="90" r="18" fill="rgba(166,124,49,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
@@ -468,6 +491,9 @@
 
                         <!-- 4. India Gate -->
                         <g>
+                            <rect x="320" y="163" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="340" y="173" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">02:30 PM</text>
+
                             <circle cx="340" cy="210" r="22" fill="rgba(166,124,49,0.15)">
                                 <animate attributeName="r" values="14;28;14" dur="2.8s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite"/>
@@ -479,6 +505,9 @@
 
                         <!-- 5. Humayun's Tomb -->
                         <g>
+                            <rect x="395" y="223" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="415" y="233" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">03:45 PM</text>
+
                             <circle cx="415" cy="270" r="18" fill="rgba(166,124,49,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3.2s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3.2s" repeatCount="indefinite"/>
@@ -497,6 +526,9 @@
 
                         <!-- 7. Qutub Minar -->
                         <g>
+                            <rect x="260" y="353" width="40" height="14" rx="4" fill="#1a1208"/>
+                            <text x="280" y="363" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="700" fill="#f0c060">04:45 PM</text>
+
                             <circle cx="280" cy="400" r="18" fill="rgba(166,124,49,0.15)">
                                 <animate attributeName="r" values="10;24;10" dur="3.4s" repeatCount="indefinite"/>
                                 <animate attributeName="opacity" values="0.6;0;0.6" dur="3.4s" repeatCount="indefinite"/>
