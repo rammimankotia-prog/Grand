@@ -192,25 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle Form Booking Request
     
-    // Guest Counter Logic
-    const guestMinus = document.querySelector('.btn-guest-minus');
-    const guestPlus = document.querySelector('.btn-guest-plus');
-    const guestInput = document.getElementById('b-travelers');
-
-    if (guestMinus && guestPlus && guestInput) {
-        guestMinus.addEventListener('click', () => {
-            let val = parseInt(guestInput.value) || 1;
-            if (val > 1) {
-                guestInput.value = val - 1;
-            }
-        });
-        guestPlus.addEventListener('click', () => {
-            let val = parseInt(guestInput.value) || 1;
-            if (val < 16) {
-                guestInput.value = val + 1;
-            }
-        });
-    }
+    
 
 const bookingForm = document.getElementById('tourBookingForm');
     const successMessage = document.getElementById('bookingSuccessMessage');
@@ -224,8 +206,7 @@ const bookingForm = document.getElementById('tourBookingForm');
             const mobile = document.getElementById('b-mobile').value;
             const date = document.getElementById('b-date').value;
             const guests = document.getElementById('b-travelers').value;
-            const hotel = document.getElementById('b-hotel').value;
-            const notes = document.getElementById('b-notes').value;
+                        const notes = document.getElementById('b-notes').value;
             const mode = selectedModeInput.value;
 
             const submitUrl = "https://formsubmit.co/ajax/mail@godwinhotels.com";
