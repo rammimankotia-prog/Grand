@@ -183,15 +183,36 @@ const bookingForm       = document.getElementById('tourBookingForm');
                 `Tour: Same Day Agra Tour from Delhi\nMode: ${mode.charAt(0).toUpperCase()+mode.slice(1)}\nPrice: ${tourModes[mode].price}\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\nTravel Date: ${date}\nGuests: ${travelers}\n\nSpecial Notes:\n${notes}`
             );
 
-            const mailtoLink = `mailto:info@grandholidaytours.com?subject=${subject}&body=${body}`;
+            const data = {
+                tourName: subject,
+                name: document.getElementById('b-name').value,
+                email: document.getElementById('b-email').value,
+                phone: document.getElementById('b-mobile').value,
+                date: document.getElementById('b-date').value,
+                travelers: document.getElementById('b-travelers').value,
+                notes: document.getElementById('b-notes').value
+            };
 
-            fetch(mailtoLink).catch(() => {});
-            window.location.href = mailtoLink;
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'Sending...';
 
-            setTimeout(() => {
+            fetch("submit-booking.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
                 bookingForm.style.display = 'none';
                 successMessage.style.display = 'flex';
-            }, 600);
+            })
+            .catch(() => {
+                alert('There was a problem sending your request. Please try again or contact us directly.');
+                submitBtn.innerText = originalBtnText;
+                submitBtn.disabled = false;
+            });
         });
     }
 

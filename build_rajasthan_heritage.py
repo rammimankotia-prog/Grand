@@ -1,4 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
+import json
+
+html_content = ""
+with open('5-days-golden-triangle-tour.html', 'r', encoding='utf-8') as f:
+    html_content = f.read()
+
+# Replace HTML specific fields
+html_content = html_content.replace('5 Days Golden Triangle Tour', 'Rajasthan Heritage Tour')
+html_content = html_content.replace('5 Days Golden Triangle tour covering Delhi, Jaipur, and Agra', 'Rajasthan Heritage Tour covering Jaipur, Jodhpur, Jaisalmer, and Udaipur')
+html_content = html_content.replace('5-days-golden-triangle-tour.html', 'rajasthan-heritage-tour.html')
+html_content = html_content.replace('5-days-golden-triangle-tour.js', 'rajasthan-heritage-tour.js')
+html_content = html_content.replace('assets/taj_mahal.png', 'assets/rajasthan.png')
+html_content = html_content.replace('Taj Mahal Golden Triangle Banner', 'Rajasthan Heritage Tour Banner')
+html_content = html_content.replace('The Golden Triangle Reimagined', 'Rajasthan Heritage Tour')
+html_content = html_content.replace('8 Days / 7 Nights', '8 Days / 7 Nights') # Keep this but maybe it was previously 5 Days
+html_content = html_content.replace('Delhi - Agra - Jaipur', 'Jaipur - Jodhpur - Jaisalmer - Udaipur')
+html_content = html_content.replace('New Grand Holidays Booking: 5 Days Golden Triangle', 'New Grand Holidays Booking: Rajasthan Heritage Tour')
+
+# Need to fix the title if it was replaced incorrectly
+html_content = html_content.replace('<title>Rajasthan Heritage Tour | Grand Holidays</title>', '<title>Rajasthan Heritage Tour (07 Nights 08 Days) | Grand Holidays</title>')
+
+with open('rajasthan-heritage-tour.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+# Now generate the JS file
+js_content = """document.addEventListener('DOMContentLoaded', () => {
     const tourModes = {
         car: {
             duration: "8 Days / 7 Nights",
@@ -126,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 estimatedPrice: document.getElementById('summary-price-display').innerText
             };
 
-            fetch("submit-booking.php", {
+            fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",
@@ -145,4 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-});
+});"""
+
+with open('rajasthan-heritage-tour.js', 'w', encoding='utf-8') as f:
+    f.write(js_content)

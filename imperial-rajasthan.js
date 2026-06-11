@@ -212,7 +212,7 @@ const bookingForm = document.getElementById('tourBookingForm');
             const notes = document.getElementById('b-notes').value;
             const mode = selectedModeInput.value;
 
-            const submitUrl = "https://formsubmit.co/ajax/mail@godwinhotels.com";
+            const submitUrl = "submit-booking.php";
 
             fetch(submitUrl, {
                 method: "POST",
