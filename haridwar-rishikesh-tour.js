@@ -65,15 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const timelineBox = document.getElementById('itinerary-timeline-box');
     if(timelineBox) {
-        timelineBox.innerHTML = tourData.itinerary.map(day => `
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <span class="day-badge">${day.day} / (${day.location})</span>
-                    <h3 class="day-title">${day.title} <span class="stay-tag">${day.stay}</span></h3>
-                    <p class="day-desc">${day.desc}</p>
-                    <div class="day-meta">
-                        <span>🍲 ${day.meta}</span>
+        timelineBox.innerHTML = tourData.itinerary.map((day, idx) => `
+            <div class="timeline-day-block">
+                <div class="timeline-day-number">${idx + 1}</div>
+                <div class="timeline-day-title-wrapper">
+                    <div class="timeline-day-title">
+                        <h4>${day.title}</h4>
+                        <span class="day-tag time-tag">${day.stay}</span>
+                    </div>
+                    <p class="timeline-day-desc">${day.desc}</p>
+                    <div style="font-size:0.8rem; color:#8b6120; font-weight:600; margin-top:0.4rem;">
+                        🍲 ${day.meta}
                     </div>
                 </div>
             </div>
