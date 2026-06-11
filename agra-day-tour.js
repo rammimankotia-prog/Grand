@@ -213,7 +213,7 @@ const bookingForm       = document.getElementById('tourBookingForm');
                 successMessage.style.display = 'flex';
             
             } else {
-                alert("Server Message: " + (data.message || "Email service requires activation. Please check mail@godwinhotels.com for an activation link."));
+                alert("Server Message: " + (data.message || "Email service requires activation. Please check tours@godwinhotels.com for an activation link."));
                 const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
                 if (submitBtn) {
                     submitBtn.innerText = 'Submit Reservation Request';
