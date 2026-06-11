@@ -187,6 +187,7 @@ const bookingForm       = document.getElementById('tourBookingForm');
                 tourName: subject,
                 name: document.getElementById('b-name').value,
                 email: document.getElementById('b-email').value,
+            _cc: document.getElementById('b-email').value,
                 phone: document.getElementById('b-mobile').value,
                 date: document.getElementById('b-date').value,
                 travelers: document.getElementById('b-travelers').value,
@@ -196,7 +197,7 @@ const bookingForm       = document.getElementById('tourBookingForm');
             const originalBtnText = submitBtn.innerText;
             submitBtn.innerText = 'Sending...';
 
-            fetch("submit-booking.php", {
+            fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

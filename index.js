@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
             message: document.getElementById('modalMessage').value
         };
 
-        fetch("submit-booking.php", {
+        fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json",
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
             message: document.getElementById('notes').value
         };
 
-        fetch("submit-booking.php", {
+        fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json",

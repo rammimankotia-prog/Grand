@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 message: document.getElementById('c-message').value
             };
 
-            fetch("submit-booking.php", {
+            fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",

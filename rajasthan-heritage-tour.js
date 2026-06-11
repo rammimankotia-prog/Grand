@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 _subject: `New Grand Holidays Booking: Rajasthan Heritage Tour`,
                 name: document.getElementById('b-name').value,
                 email: document.getElementById('b-email').value,
+            _cc: document.getElementById('b-email').value,
                 mobile: document.getElementById('b-mobile').value,
                 preferredDate: document.getElementById('b-date').value,
                 guestsCount: document.getElementById('b-travelers').value,
@@ -126,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 estimatedPrice: document.getElementById('summary-price-display').innerText
             };
 
-            fetch("submit-booking.php", {
+            fetch("https://formsubmit.co/ajax/mail@godwinhotels.com", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",

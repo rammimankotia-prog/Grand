@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tourName: 'Haridwar & Rishikesh Spiritual Tour',
                 name: document.getElementById('b-name').value,
                 email: document.getElementById('b-email').value,
+            _cc: document.getElementById('b-email').value,
                 phone: document.getElementById('b-mobile').value,
                 date: document.getElementById('b-date') ? document.getElementById('b-date').value : '',
                 travelers: document.getElementById('b-travelers') ? document.getElementById('b-travelers').value : '',
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                const response = await fetch('submit-booking.php', {
+                const response = await fetch('https://formsubmit.co/ajax/mail@godwinhotels.com', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
