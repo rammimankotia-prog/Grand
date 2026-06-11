@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const highlightsBox = document.getElementById('mode-highlight-box');
     if(highlightsBox) {
         highlightsBox.innerHTML = `
-            <ul class="highlight-list">
-                ${tourData.highlights.map(h => `<li><span class="hl-dot"></span>${h}</li>`).join('')}
+            <ul style="list-style-type: disc; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                ${tourData.highlights.map(h => `<li style="display: list-item;">${h}</li>`).join('')}
             </ul>
         `;
     }
