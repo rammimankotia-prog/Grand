@@ -94,10 +94,47 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMsg = document.getElementById('bookingSuccessMessage');
     
     if (form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            form.style.display = 'none';
-            if (successMsg) successMsg.style.display = 'block';
+            
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Sending...';
+            submitBtn.disabled = true;
+
+            const formData = {
+                tourName: 'Haridwar & Rishikesh Spiritual Tour',
+                name: document.getElementById('b-name').value,
+                email: document.getElementById('b-email').value,
+                phone: document.getElementById('b-mobile').value,
+                date: document.getElementById('b-date') ? document.getElementById('b-date').value : '',
+                travelers: document.getElementById('b-travelers') ? document.getElementById('b-travelers').value : '',
+                notes: document.getElementById('b-notes') ? document.getElementById('b-notes').value : ''
+            };
+
+            try {
+                const response = await fetch('submit-booking.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+                
+                if (response.ok) {
+                    form.style.display = 'none';
+                    if (successMsg) {
+                        successMsg.style.display = 'block';
+                        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                } else {
+                    alert('There was a problem sending your request. Please check your details and try again.');
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                alert('Network error. Please try again or contact us directly via email.');
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
         });
     }
 
