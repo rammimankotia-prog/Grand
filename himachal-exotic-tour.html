@@ -26,6 +26,29 @@
     
     <!-- Dropdown Navigation Styles to bypass caching -->
     <style>
+        /* Deposit Info Box */
+        .deposit-info-box {
+            background: #eef6fd;
+            border: 1.5px solid #4a90c4;
+            border-radius: 8px;
+            padding: 0.9rem 1.2rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .deposit-info-box p {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            color: #1a3550;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .deposit-info-box p + p {
+            margin-top: 0.3rem;
+        }
+        .deposit-info-box strong {
+            font-weight: 700;
+            color: #1a3550;
+        }
         .nav-dropdown {
             position: relative;
             display: inline-block;
@@ -276,6 +299,10 @@
                         <div class="price-summary-box price-summary-top">
                             <span class="summary-label">Estimated Package Price</span>
                             <span class="summary-value" id="summary-price-display">$12,500 p.p.</span>
+                        </div>
+                        <div class="deposit-info-box">
+                            <p><strong>Deposit Required:</strong> 25%</p>
+                            <p><strong>Remaining Balance:</strong> Payable at the time of Arrival.</p>
                         </div>
                         <h3 class="sidebar-title">Book This Experience</h3>
                         <p class="sidebar-desc">Request your customized itinerary configuration. Our lead curator will contact you to refine details.</p>
