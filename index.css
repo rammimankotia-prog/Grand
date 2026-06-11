@@ -214,10 +214,10 @@ h1, h2, h3, h4, h5 {
 }
 .main-header.scrolled .logo-main { color: var(--ink); }
 .logo-sub {
-  font-family: var(--f-body); font-size: 0.42rem; letter-spacing: 5px;
-  color: rgba(255,255,255,0.45); text-transform: uppercase; transition: color 0.3s ease;
+  font-family: var(--f-body); font-size: 0.55rem; letter-spacing: 3.5px; font-weight: 600;
+  color: rgba(255,255,255,0.85); text-transform: uppercase; transition: color 0.3s ease;
 }
-.main-header.scrolled .logo-sub { color: var(--ink-faint); }
+.main-header.scrolled .logo-sub { color: var(--ink-mid); }
 
 /* Nav Links */
 .nav-menu { display: flex; align-items: center; gap: 3rem; }
@@ -700,7 +700,7 @@ h1, h2, h3, h4, h5 {
 .footer-brand .logo { margin-bottom: 1.5rem; }
 .footer-brand .logo-accent { color: var(--gold); }
 .footer-brand .logo-main { color: #fff; }
-.footer-brand .logo-sub { color: rgba(255,255,255,0.25); }
+.footer-brand .logo-sub { color: rgba(255,255,255,0.65); }
 .footer-desc { font-size: 0.85rem; color: rgba(255,255,255,0.38); font-weight: 300; line-height: 1.75; }
 
 .footer-links-col { display: flex; flex-direction: column; gap: 0.9rem; }
