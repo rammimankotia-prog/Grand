@@ -67,16 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if(timelineBox) {
         timelineBox.innerHTML = tourData.itinerary.map((day, idx) => `
             <div class="timeline-day-block">
-                <div class="timeline-day-number">${idx + 1}</div>
-                <div class="timeline-day-title-wrapper">
-                    <div class="timeline-day-title">
-                        <h4>${day.title}</h4>
+                <div class="tl-circle">${idx + 1}</div>
+                <div class="tl-body">
+                    <div class="tl-head">
+                        <h4 class="tl-title">${day.title}</h4>
                         <span class="day-tag time-tag">${day.stay}</span>
                     </div>
-                    <p class="timeline-day-desc">${day.desc}</p>
-                    <div style="font-size:0.8rem; color:#8b6120; font-weight:600; margin-top:0.4rem;">
-                        🍲 ${day.meta}
-                    </div>
+                    <p class="tl-desc">${day.desc}</p>
+                    <p class="tl-desc" style="margin-top: 0.5rem; font-weight: 500; color: #8b6120;">🍲 ${day.meta}</p>
                 </div>
             </div>
         `).join('');
