@@ -162,20 +162,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // FAQ Accordion Logic
     document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
-            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
-            // Close all
+            const answer = btn.nextElementSibling;
+            const isOpen = btn.classList.contains('open');
+            // Close all others
             document.querySelectorAll('.faq-question.open').forEach(other => {
-                other.classList.remove('open');
-                other.setAttribute('aria-expanded', 'false');
-                other.nextElementSibling.style.maxHeight = null;
+                if (other !== btn) {
+                    other.classList.remove('open');
+                    other.setAttribute('aria-expanded', 'false');
+                    other.nextElementSibling.classList.remove('open');
+                }
             });
-            // Open this if it wasn't
-            if (!isExpanded) {
-                btn.classList.add('open');
-                btn.setAttribute('aria-expanded', 'true');
-                const answer = btn.nextElementSibling;
-                answer.style.maxHeight = answer.scrollHeight + "px";
-            }
+            // Toggle current
+            btn.classList.toggle('open', !isOpen);
+            btn.setAttribute('aria-expanded', String(!isOpen));
+            answer.classList.toggle('open', !isOpen);
         });
     });
 });
