@@ -205,10 +205,22 @@ const bookingForm       = document.getElementById('tourBookingForm');
                 },
                 body: JSON.stringify(data)
             })
-            .then(() => {
+            .then(response => response.json())
+        .then(data => {
+            if (data.success || data.success === "true") {
+
                 bookingForm.style.display = 'none';
                 successMessage.style.display = 'flex';
-            })
+            
+            } else {
+                alert("Server Message: " + (data.message || "Email service requires activation. Please check mail@godwinhotels.com for an activation link."));
+                const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
+                if (submitBtn) {
+                    submitBtn.innerText = 'Submit Reservation Request';
+                    submitBtn.disabled = false;
+                }
+            }
+        })
             .catch(() => {
                 alert('There was a problem sending your request. Please try again or contact us directly.');
                 submitBtn.innerText = originalBtnText;

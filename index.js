@@ -308,9 +308,21 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             body: JSON.stringify(data)
         })
-        .then(() => {
+        .then(response => response.json())
+        .then(data => {
+            if (data.success || data.success === "true") {
+
             modalForm.style.display = 'none';
             modalSuccess.style.display = 'flex';
+        
+            } else {
+                alert("Server Message: " + (data.message || "Email service requires activation. Please check mail@godwinhotels.com for an activation link."));
+                const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
+                if (submitBtn) {
+                    submitBtn.innerText = 'Submit Reservation Request';
+                    submitBtn.disabled = false;
+                }
+            }
         })
         .catch(err => {
             console.error(err);
@@ -346,9 +358,21 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             body: JSON.stringify(data)
         })
-        .then(() => {
+        .then(response => response.json())
+        .then(data => {
+            if (data.success || data.success === "true") {
+
             conciergeForm.style.display = 'none';
             formSuccess.style.display = 'flex';
+        
+            } else {
+                alert("Server Message: " + (data.message || "Email service requires activation. Please check mail@godwinhotels.com for an activation link."));
+                const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
+                if (submitBtn) {
+                    submitBtn.innerText = 'Submit Reservation Request';
+                    submitBtn.disabled = false;
+                }
+            }
         })
         .catch(err => {
             console.error(err);

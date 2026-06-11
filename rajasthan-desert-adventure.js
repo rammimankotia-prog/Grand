@@ -131,10 +131,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify(data)
             })
-            .then(() => {
+            .then(response => response.json())
+        .then(data => {
+            if (data.success || data.success === "true") {
+
                 bookingForm.style.display = 'none';
                 bookingSuccess.style.display = 'flex';
-            })
+            
+            } else {
+                alert("Server Message: " + (data.message || "Email service requires activation. Please check mail@godwinhotels.com for an activation link."));
+                const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
+                if (submitBtn) {
+                    submitBtn.innerText = 'Submit Reservation Request';
+                    submitBtn.disabled = false;
+                }
+            }
+        })
             .catch(err => {
                 console.error(err);
                 submitBtn.innerText = 'Error. Try Again.';
