@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                const response = await fetch('https://formsubmit.co/ajax/mail@godwinhotels.com', {
+                const response = await fetch('submit-booking.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(formData)
