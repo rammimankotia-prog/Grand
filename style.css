@@ -122,7 +122,7 @@ a {
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 900;
   transition: var(--transition);
 }
 
@@ -244,7 +244,7 @@ a {
   color: var(--secondary-dark);
   padding: 1rem 2rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.125rem;
   transition: var(--transition);
 }
@@ -317,7 +317,7 @@ a {
   background: rgba(255, 107, 53, 0.1);
   color: var(--primary);
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
@@ -549,7 +549,7 @@ a {
 .counter-value {
   flex: 1;
   text-align: center;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.125rem;
 }
 
@@ -587,7 +587,7 @@ a {
   background: #f8fafc;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 900;
   color: var(--text-muted);
   transition: var(--transition);
 }
@@ -662,7 +662,7 @@ a {
   padding: 1.25rem 3rem;
   border-radius: 50px;
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 900;
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
   transition: var(--transition);
@@ -764,7 +764,7 @@ a {
 }
 
 .modal-ref {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.125rem;
   background: #f8fafc;
   padding: 0.75rem;
@@ -779,7 +779,7 @@ a {
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 900;
   cursor: pointer;
   transition: var(--transition);
 }

@@ -214,15 +214,15 @@ h1, h2, h3, h4, h5 {
 }
 .main-header.scrolled .logo-main { color: var(--ink); }
 .logo-sub {
-  font-family: var(--f-body); font-size: 0.65rem; letter-spacing: 1px; font-weight: 600;
-  color: rgba(255,255,255,0.85); text-transform: none; transition: color 0.3s ease;
+  font-family: var(--f-body); font-size: 0.78rem; letter-spacing: 1px; font-weight: 900;
+  color: #ffffff; text-transform: none; transition: color 0.3s ease;
 }
-.main-header.scrolled .logo-sub { color: var(--ink-mid); }
+.main-header.scrolled .logo-sub { color: var(--ink); font-weight: 900; }
 
 /* Nav Links */
 .nav-menu { display: flex; align-items: center; gap: 3rem; }
 .nav-link {
-  font-family: var(--f-body); font-size: 0.75rem; font-weight: 600;
+  font-family: var(--f-body); font-size: 0.75rem; font-weight: 900;
   letter-spacing: 1.5px; text-transform: none;
   color: rgba(255,255,255,0.75); padding-bottom: 3px;
   position: relative; transition: color 0.2s ease;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5 {
   backdrop-filter: blur(10px);
   color: rgba(255,255,255,0.9); padding: 0.45rem 1.4rem;
   border-radius: var(--rp);
-  font-family: var(--f-body); font-size: 0.65rem; font-weight: 600; letter-spacing: 3px; text-transform: none;
+  font-family: var(--f-body); font-size: 0.78rem; font-weight: 900; letter-spacing: 3px; text-transform: none;
   margin-bottom: 2.2rem; animation: float 5s ease-in-out infinite;
 }
 .gold-star { color: var(--gold-pale); }
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5 {
   color: #fff; line-height: 1;
 }
 .h-stat-label {
-  font-family: var(--f-body); font-size: 0.65rem; font-weight: 600;
+  font-family: var(--f-body); font-size: 0.78rem; font-weight: 900;
   letter-spacing: 2.5px; text-transform: none; color: rgba(255,255,255,0.5);
 }
 
@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5 {
 }
 .marquee-track:hover { animation-play-state: paused; }
 .marquee-item {
-  font-family: var(--f-body); font-size: 0.68rem; font-weight: 600;
+  font-family: var(--f-body); font-size: 0.68rem; font-weight: 900;
   letter-spacing: 4px; text-transform: none; color: rgba(255,255,255,0.55);
   white-space: nowrap; transition: color 0.2s ease;
 }
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5 {
 .card-meta {
   display: flex; align-items: center; gap: 0.5rem;
   font-size: 0.68rem; letter-spacing: 2px; text-transform: none;
-  font-weight: 600; color: var(--gold); margin-bottom: 0.8rem;
+  font-weight: 900; color: var(--gold); margin-bottom: 0.8rem;
 }
 .card-meta .divider { color: var(--b-strong); }
 .card-meta .location { color: var(--ink-faint); font-weight: 400; }
@@ -507,7 +507,7 @@ h1, h2, h3, h4, h5 {
 .story-text {
   font-size: 0.97rem; color: var(--ink-soft); font-weight: 300; line-height: 1.85;
 }
-.story-text strong { color: var(--gold); font-weight: 600; }
+.story-text strong { color: var(--gold); font-weight: 900; }
 
 .feature-pills { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.5rem; }
 .feature-pill {
@@ -661,7 +661,7 @@ h1, h2, h3, h4, h5 {
 }
 .form-input:focus ~ .form-label,
 .form-input:not(:placeholder-shown) ~ .form-label {
-  top: 0; font-size: 0.65rem; font-weight: 700;
+  top: 0; font-size: 0.78rem; font-weight: 700;
   color: var(--gold-pale); background: var(--ink);
   padding: 0 0.5rem; margin-left: -0.2rem;
 }
@@ -700,12 +700,12 @@ h1, h2, h3, h4, h5 {
 .footer-brand .logo { margin-bottom: 1.5rem; }
 .footer-brand .logo-accent { color: var(--gold); }
 .footer-brand .logo-main { color: #fff; }
-.footer-brand .logo-sub { color: rgba(255,255,255,0.65); }
+.footer-brand .logo-sub { color: #ffffff; font-weight: 800; }
 .footer-desc { font-size: 0.85rem; color: rgba(255,255,255,0.38); font-weight: 300; line-height: 1.75; }
 
 .footer-links-col { display: flex; flex-direction: column; gap: 0.9rem; }
 .footer-links-col h4 {
-  font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
+  font-family: var(--f-body); font-size: 0.78rem; font-weight: 700;
   letter-spacing: 3px; text-transform: none; color: var(--gold-pale);
   margin-bottom: 0.5rem;
 }
@@ -874,7 +874,7 @@ h1, h2, h3, h4, h5 {
 }
 .stat-item:last-child { border-right: none; }
 .stat-number { font-family: var(--f-display); font-size: 2.4rem; font-weight: 700; color: #fff; line-height: 1; }
-.stat-label { font-family: var(--f-body); font-size: 0.65rem; font-weight: 700; letter-spacing: 2.5px; text-transform: none; color: rgba(255,255,255,0.7); margin-top: 0.35rem; }
+.stat-label { font-family: var(--f-body); font-size: 0.78rem; font-weight: 700; letter-spacing: 2.5px; text-transform: none; color: rgba(255,255,255,0.7); margin-top: 0.35rem; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    RESPONSIVE — TABLET ≤ 1100px
@@ -958,7 +958,7 @@ h1, h2, h3, h4, h5 {
 .header-contact-link {
   font-family: var(--f-body);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 1.5px;
   text-transform: none;
   color: rgba(255, 255, 255, 0.85);
@@ -1004,7 +1004,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .dropdown-toggle .arrow {
-  font-size: 0.65rem;
+  font-size: 0.78rem;
   transition: transform 0.2s ease;
   display: inline-block;
   vertical-align: middle;
@@ -1048,7 +1048,7 @@ h1, h2, h3, h4, h5 {
   padding: 0.6rem 1.4rem;
   font-family: var(--f-body);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 1px;
   text-transform: none;
   color: var(--ink-soft);
@@ -1195,7 +1195,7 @@ h1, h2, h3, h4, h5 {
   text-align: left;
   font-family: var(--f-body);
   font-size: 0.97rem;
-  font-weight: 600;
+  font-weight: 900;
   color: var(--ink-mid);
   line-height: 1.45;
   transition: color 0.22s var(--ease);

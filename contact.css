@@ -33,7 +33,7 @@
     display: flex; flex-direction: column; align-items: center; gap: 1.2rem;
 }
 .contact-badge {
-    font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
+    font-family: var(--f-body); font-size: 0.78rem; font-weight: 700;
     letter-spacing: 5px; text-transform: none;
     color: var(--gold); background: var(--gold-bg);
     border: 1px solid var(--gold-border);
@@ -73,7 +73,7 @@
 /* Section Labels inside contact */
 .contact-left-col .section-subtitle,
 .contact-right-col .section-subtitle {
-    display: block; font-family: var(--f-body); font-size: 0.65rem;
+    display: block; font-family: var(--f-body); font-size: 0.78rem;
     font-weight: 700; letter-spacing: 5px; text-transform: none;
     color: var(--gold); margin-bottom: 0.7rem;
 }
@@ -107,7 +107,7 @@
 .office-info p { font-size: 0.84rem; color: var(--ink-soft); font-weight: 300; line-height: 1.55; }
 .office-detail-link { color: var(--ink-soft); margin-top: 0.2rem; }
 .office-wa-link {
-    color: #16a34a; font-weight: 600; display: inline-block;
+    color: #16a34a; font-weight: 900; display: inline-block;
     margin-top: 0.4rem; transition: color 0.2s;
 }
 .office-wa-link:hover { color: #15803d; text-decoration: underline; }
@@ -151,7 +151,7 @@
 }
 .contact-faq-section .section-header { margin-bottom: 1rem; }
 .contact-faq-section .section-subtitle {
-    display: block; font-family: var(--f-body); font-size: 0.65rem;
+    display: block; font-family: var(--f-body); font-size: 0.78rem;
     font-weight: 700; letter-spacing: 5px; text-transform: none;
     color: var(--gold); margin-bottom: 0.8rem;
 }
@@ -175,7 +175,7 @@
 .faq-question {
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.7rem 2rem; cursor: pointer;
-    font-family: var(--f-body); font-size: 0.97rem; font-weight: 600;
+    font-family: var(--f-body); font-size: 0.97rem; font-weight: 900;
     color: var(--ink); user-select: none; transition: color 0.2s ease;
 }
 .faq-question:hover { color: var(--gold); }
