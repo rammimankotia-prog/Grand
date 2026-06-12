@@ -95,7 +95,7 @@ a {
 .nav-logo .logo-accent {
   font-size: inherit;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: inherit;
   font-weight: inherit;
 }

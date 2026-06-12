@@ -34,7 +34,7 @@
 .tour-badge {
     display: inline-block;
     font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
-    letter-spacing: 3.5px; text-transform: uppercase;
+    letter-spacing: 1px; text-transform: none;
     color: rgba(255,255,255,0.92);
     border: 1px solid rgba(255,215,100,0.5);
     background: rgba(166,124,49,0.2);
@@ -213,7 +213,7 @@
     display: inline-block;
     font-family: var(--f-body);
     font-size: 0.65rem; font-weight: 700;
-    letter-spacing: 2px; text-transform: uppercase;
+    letter-spacing: 2px; text-transform: none;
     color: var(--gold);
     background: var(--gold-bg);
     border: 1px solid var(--gold-border);
@@ -243,7 +243,7 @@
 }
 .ie-title {
     font-family: var(--f-body); font-size: 0.78rem; font-weight: 700;
-    letter-spacing: 1.5px; text-transform: uppercase;
+    letter-spacing: 1.5px; text-transform: none;
     margin-bottom: 1.2rem; padding-bottom: 0.6rem;
     border-bottom: 2px solid; display: flex; align-items: center; gap: 0.5rem;
 }
@@ -361,7 +361,7 @@
     background: var(--gold); color: #fff;
     border: none; border-radius: var(--r1);
     font-family: var(--f-body); font-size: 0.78rem; font-weight: 700;
-    letter-spacing: 2.5px; text-transform: uppercase;
+    letter-spacing: 2.5px; text-transform: none;
     cursor: pointer; transition: all 0.25s ease;
     box-shadow: 0 4px 16px rgba(166,124,49,0.25);
 }
@@ -472,7 +472,7 @@
 }
 .city-card-tags span {
     font-family: var(--f-body); font-size: 0.68rem; font-weight: 700;
-    letter-spacing: 0.5px; text-transform: uppercase;
+    letter-spacing: 0.5px; text-transform: none;
     color: var(--gold); background: var(--gold-bg);
     border: 1px solid var(--gold-border);
     padding: 0.22rem 0.7rem; border-radius: var(--rp);

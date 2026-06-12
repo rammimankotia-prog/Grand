@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.67rem;
   font-weight: 700;
   letter-spacing: 5px;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--gold);
   margin-bottom: 1rem;
 }
@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.67rem;
   font-weight: 700;
   letter-spacing: 5px;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--gold);
 }
 .text-center { text-align: center; }
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5 {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
   padding: 0.9rem 2.4rem;
   font-family: var(--f-body); font-size: 0.75rem; font-weight: 700;
-  letter-spacing: 2.5px; text-transform: uppercase;
+  letter-spacing: 2.5px; text-transform: none;
   border-radius: var(--r1); border: 1.5px solid transparent;
   cursor: pointer; transition: var(--t2); white-space: nowrap;
 }
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5 {
 .logo { display: flex; flex-direction: column; line-height: 1; gap: 1px; }
 .logo-accent {
   font-family: var(--f-body); font-size: 0.5rem; font-weight: 700;
-  letter-spacing: 6px; color: var(--gold); text-transform: uppercase;
+  letter-spacing: 6px; color: var(--gold); text-transform: none;
 }
 .logo-main {
   font-family: var(--f-logo); font-size: 1.38rem; font-weight: 700;
@@ -214,8 +214,8 @@ h1, h2, h3, h4, h5 {
 }
 .main-header.scrolled .logo-main { color: var(--ink); }
 .logo-sub {
-  font-family: var(--f-body); font-size: 0.55rem; letter-spacing: 3.5px; font-weight: 600;
-  color: rgba(255,255,255,0.85); text-transform: uppercase; transition: color 0.3s ease;
+  font-family: var(--f-body); font-size: 0.65rem; letter-spacing: 1px; font-weight: 600;
+  color: rgba(255,255,255,0.85); text-transform: none; transition: color 0.3s ease;
 }
 .main-header.scrolled .logo-sub { color: var(--ink-mid); }
 
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5 {
 .nav-menu { display: flex; align-items: center; gap: 3rem; }
 .nav-link {
   font-family: var(--f-body); font-size: 0.75rem; font-weight: 600;
-  letter-spacing: 1.5px; text-transform: uppercase;
+  letter-spacing: 1.5px; text-transform: none;
   color: rgba(255,255,255,0.75); padding-bottom: 3px;
   position: relative; transition: color 0.2s ease;
 }
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5 {
   backdrop-filter: blur(10px);
   color: rgba(255,255,255,0.9); padding: 0.45rem 1.4rem;
   border-radius: var(--rp);
-  font-family: var(--f-body); font-size: 0.65rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase;
+  font-family: var(--f-body); font-size: 0.65rem; font-weight: 600; letter-spacing: 3px; text-transform: none;
   margin-bottom: 2.2rem; animation: float 5s ease-in-out infinite;
 }
 .gold-star { color: var(--gold-pale); }
@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5 {
 }
 .h-stat-label {
   font-family: var(--f-body); font-size: 0.65rem; font-weight: 600;
-  letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.5);
+  letter-spacing: 2.5px; text-transform: none; color: rgba(255,255,255,0.5);
 }
 
 /* Scroll Indicator */
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5 {
   color: rgba(255,255,255,0.45); cursor: pointer; transition: color 0.2s ease;
 }
 .scroll-down:hover { color: var(--gold-pale); }
-.scroll-text { font-size: 0.62rem; letter-spacing: 3px; text-transform: uppercase; }
+.scroll-text { font-size: 0.62rem; letter-spacing: 3px; text-transform: none; }
 .scroll-arrow { animation: bounce-y 2.5s infinite; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5 {
 .marquee-track:hover { animation-play-state: paused; }
 .marquee-item {
   font-family: var(--f-body); font-size: 0.68rem; font-weight: 600;
-  letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.55);
+  letter-spacing: 4px; text-transform: none; color: rgba(255,255,255,0.55);
   white-space: nowrap; transition: color 0.2s ease;
 }
 .marquee-item:hover { color: var(--gold-pale); }
@@ -420,14 +420,14 @@ h1, h2, h3, h4, h5 {
   background: var(--gold); color: #fff;
   padding: 0.28rem 0.9rem; border-radius: var(--rp);
   font-family: var(--f-body); font-size: 0.6rem; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase; z-index: 2;
+  letter-spacing: 2px; text-transform: none; z-index: 2;
   box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 .card-content { padding: 2rem 2rem 1.8rem; display: flex; flex-direction: column; flex-grow: 1; }
 .card-meta {
   display: flex; align-items: center; gap: 0.5rem;
-  font-size: 0.68rem; letter-spacing: 2px; text-transform: uppercase;
+  font-size: 0.68rem; letter-spacing: 2px; text-transform: none;
   font-weight: 600; color: var(--gold); margin-bottom: 0.8rem;
 }
 .card-meta .divider { color: var(--b-strong); }
@@ -580,7 +580,7 @@ h1, h2, h3, h4, h5 {
   display: flex; flex-direction: column; gap: 0.2rem;
 }
 .author-name { font-family: var(--f-body); font-size: 0.9rem; font-weight: 700; color: var(--ink); }
-.author-loc { font-family: var(--f-body); font-size: 0.75rem; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 1.5px; }
+.author-loc { font-family: var(--f-body); font-size: 0.75rem; color: var(--ink-faint); text-transform: none; letter-spacing: 1.5px; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    BESPOKE CTA SECTION
@@ -706,7 +706,7 @@ h1, h2, h3, h4, h5 {
 .footer-links-col { display: flex; flex-direction: column; gap: 0.9rem; }
 .footer-links-col h4 {
   font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
-  letter-spacing: 3px; text-transform: uppercase; color: var(--gold-pale);
+  letter-spacing: 3px; text-transform: none; color: var(--gold-pale);
   margin-bottom: 0.5rem;
 }
 .footer-links-col a, .footer-links-col span {
@@ -874,7 +874,7 @@ h1, h2, h3, h4, h5 {
 }
 .stat-item:last-child { border-right: none; }
 .stat-number { font-family: var(--f-display); font-size: 2.4rem; font-weight: 700; color: #fff; line-height: 1; }
-.stat-label { font-family: var(--f-body); font-size: 0.65rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 0.35rem; }
+.stat-label { font-family: var(--f-body); font-size: 0.65rem; font-weight: 700; letter-spacing: 2.5px; text-transform: none; color: rgba(255,255,255,0.7); margin-top: 0.35rem; }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
    RESPONSIVE — TABLET ≤ 1100px
@@ -960,7 +960,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
+  text-transform: none;
   color: rgba(255, 255, 255, 0.85);
   transition: var(--t1);
   display: flex;
@@ -1004,7 +1004,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .dropdown-toggle .arrow {
-  font-size: 0.55rem;
+  font-size: 0.65rem;
   transition: transform 0.2s ease;
   display: inline-block;
   vertical-align: middle;
@@ -1050,7 +1050,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--ink-soft);
   white-space: nowrap;
   transition: all 0.18s ease;
@@ -1141,7 +1141,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--gold);
   margin-bottom: 0.85rem;
 }

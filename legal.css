@@ -32,7 +32,7 @@
 }
 .legal-badge {
     font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
-    letter-spacing: 5px; text-transform: uppercase;
+    letter-spacing: 5px; text-transform: none;
     color: var(--gold); background: var(--gold-bg);
     border: 1px solid var(--gold-border);
     padding: 0.45rem 1.4rem; border-radius: var(--rp);
@@ -62,7 +62,7 @@
     font-family: var(--f-body); font-size: 1.05rem; font-weight: 700;
     color: var(--ink); margin-bottom: 1rem;
     border-bottom: 1px solid var(--b-soft); padding-bottom: 0.65rem;
-    text-transform: uppercase; letter-spacing: 1.5px;
+    text-transform: none; letter-spacing: 1.5px;
     display: flex; align-items: center; gap: 0.7rem;
 }
 .legal-block h3::before {

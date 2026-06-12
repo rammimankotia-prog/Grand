@@ -34,7 +34,7 @@
 }
 .contact-badge {
     font-family: var(--f-body); font-size: 0.65rem; font-weight: 700;
-    letter-spacing: 5px; text-transform: uppercase;
+    letter-spacing: 5px; text-transform: none;
     color: var(--gold); background: var(--gold-bg);
     border: 1px solid var(--gold-border);
     padding: 0.45rem 1.4rem; border-radius: var(--rp);
@@ -74,7 +74,7 @@
 .contact-left-col .section-subtitle,
 .contact-right-col .section-subtitle {
     display: block; font-family: var(--f-body); font-size: 0.65rem;
-    font-weight: 700; letter-spacing: 5px; text-transform: uppercase;
+    font-weight: 700; letter-spacing: 5px; text-transform: none;
     color: var(--gold); margin-bottom: 0.7rem;
 }
 .block-title {
@@ -152,7 +152,7 @@
 .contact-faq-section .section-header { margin-bottom: 1rem; }
 .contact-faq-section .section-subtitle {
     display: block; font-family: var(--f-body); font-size: 0.65rem;
-    font-weight: 700; letter-spacing: 5px; text-transform: uppercase;
+    font-weight: 700; letter-spacing: 5px; text-transform: none;
     color: var(--gold); margin-bottom: 0.8rem;
 }
 .contact-faq-section .section-title {
