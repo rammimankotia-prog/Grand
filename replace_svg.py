@@ -1,0 +1,83 @@
+from bs4 import BeautifulSoup
+
+file_path = 'C:/Users/raman/.gemini/antigravity/scratch/grand_repo/delhi-museum-tour.html'
+with open(file_path, 'r', encoding='utf-8') as f:
+    soup = BeautifulSoup(f.read(), 'html.parser')
+
+svg = soup.find('svg', class_='gt-svg')
+if svg:
+    new_svg = BeautifulSoup('''
+    <svg class="gt-svg" viewBox="0 0 680 480" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="pinShadow"><feDropShadow dx="0" dy="3" flood-color="rgba(0,0,0,0.28)" stdDeviation="5"/></filter>
+        <filter id="labelShadow"><feDropShadow dx="0" dy="2" flood-color="rgba(0,0,0,0.1)" stdDeviation="3"/></filter>
+        <radialGradient cx="50%" cy="50%" id="bgG" r="60%">
+            <stop offset="0%" stop-color="#fdf8f1"/>
+            <stop offset="100%" stop-color="#ede4d5"/>
+        </radialGradient>
+        <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#b0a090"/>
+            <stop offset="50%" stop-color="#A67C31"/>
+            <stop offset="100%" stop-color="#b0a090"/>
+        </linearGradient>
+    </defs>
+    
+    <rect fill="url(#bgG)" height="100%" rx="16" width="100%"/>
+    
+    <!-- Compass -->
+    <g transform="translate(40,40) scale(0.8)">
+        <circle cx="0" cy="0" fill="none" r="16" stroke="#b0a090" stroke-width="1"/>
+        <path d="M0 -22 L4 -6 L22 0 L4 6 L0 22 L-4 6 L-22 0 L-4 -6 Z" fill="#d4c4b4"/>
+        <path d="M0 -22 L4 -6 L0 0 L-4 -6 Z" fill="#A67C31"/>
+        <text fill="#a67c31" font-family="Outfit,sans-serif" font-size="10" font-weight="800" text-anchor="middle" x="0" y="-27">N</text>
+    </g>
+
+    <!-- Map Title -->
+    <text fill="#b0a090" font-family="Outfit,sans-serif" font-size="14" font-weight="600" letter-spacing="3" text-anchor="middle" x="340" y="60">DELHI MUSEUM CIRCUIT</text>
+
+    <!-- Circuit Path -->
+    <path d="M 120 280 Q 230 140 340 180 T 560 280" fill="none" stroke="url(#lineGrad)" stroke-dasharray="6 6" stroke-width="3"/>
+    
+    <!-- Distance Markers -->
+    <g transform="translate(210, 200)">
+        <rect fill="#fff" rx="8" width="60" height="20" x="-30" y="-10" stroke="#d4c4b4" stroke-width="1"/>
+        <text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">6 KM</text>
+    </g>
+    
+    <g transform="translate(470, 200)">
+        <rect fill="#fff" rx="8" width="60" height="20" x="-30" y="-10" stroke="#d4c4b4" stroke-width="1"/>
+        <text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">9 KM</text>
+    </g>
+
+    <!-- Point 1: National Museum -->
+    <g transform="translate(120, 280)">
+        <circle cx="0" cy="0" r="8" fill="#fff" stroke="#A67C31" stroke-width="4" filter="url(#pinShadow)"/>
+        <circle cx="0" cy="0" r="3" fill="#A67C31"/>
+        <rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="130" x="-65" y="15"/>
+        <text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="32">National Museum</text>
+    </g>
+
+    <!-- Point 2: Rail Museum -->
+    <g transform="translate(340, 180)">
+        <circle cx="0" cy="0" r="8" fill="#fff" stroke="#A67C31" stroke-width="4" filter="url(#pinShadow)"/>
+        <circle cx="0" cy="0" r="3" fill="#A67C31"/>
+        <rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="160" x="-80" y="-35"/>
+        <text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="-18">National Rail Museum</text>
+    </g>
+
+    <!-- Point 3: Dolls Museum -->
+    <g transform="translate(560, 280)">
+        <circle cx="0" cy="0" r="8" fill="#fff" stroke="#A67C31" stroke-width="4" filter="url(#pinShadow)"/>
+        <circle cx="0" cy="0" r="3" fill="#A67C31"/>
+        <rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="130" x="-65" y="15"/>
+        <text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="32">Dolls Museum</text>
+    </g>
+    
+    </svg>
+    ''', 'html.parser').svg
+    
+    svg.replace_with(new_svg)
+    
+    with open(file_path, 'w', encoding='utf-8') as fw:
+        fw.write(str(soup))
+    print('SVG Replaced!')
