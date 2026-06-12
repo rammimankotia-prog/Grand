@@ -365,37 +365,89 @@
 </g>
 <!-- Map Title -->
 <text fill="#b0a090" font-family="Outfit,sans-serif" font-size="14" font-weight="600" letter-spacing="3" text-anchor="middle" x="340" y="60">DELHI MUSEUM CIRCUIT</text>
-<!-- Circuit Path -->
-<path d="M 120 280 Q 230 140 340 180 T 560 280" fill="none" stroke="url(#lineGrad)" stroke-dasharray="6 6" stroke-width="3"></path>
-<!-- Distance Markers -->
-<g transform="translate(210, 200)">
-<rect fill="#fff" height="20" rx="8" stroke="#d4c4b4" stroke-width="1" width="60" x="-30" y="-10"></rect>
-<text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">6 KM</text>
+<!-- Circuit Path (Closed loop from Godwin Deluxe) -->
+<path d="M 160 140 Q 180 240 260 320 T 420 360 T 560 220 Q 400 80 160 140" fill="none" id="route-path" stroke="url(#lineGrad)" stroke-dasharray="8 6" stroke-linecap="round" stroke-width="3">
+<animate attributename="stroke-dashoffset" dur="4s" from="0" repeatcount="indefinite" to="-140"></animate>
+</path>
+<!-- Moving Taxi Sedan along route -->
+<g>
+<animatemotion dur="12s" repeatcount="indefinite" rotate="auto">
+<mpath href="#route-path"></mpath>
+</animatemotion>
+<g transform="translate(-10, -5)">
+<!-- Wheels -->
+<rect fill="#111" height="1.2" rx="0.5" width="4" x="3" y="-1.2"></rect>
+<rect fill="#111" height="1.2" rx="0.5" width="4" x="13" y="-1.2"></rect>
+<rect fill="#111" height="1.2" rx="0.5" width="4" x="3" y="10"></rect>
+<rect fill="#111" height="1.2" rx="0.5" width="4" x="13" y="10"></rect>
+<!-- Car body -->
+<rect fill="#f59e0b" height="10" rx="3" stroke="#78350f" stroke-width="1.2" width="20" x="0" y="0"></rect>
+<!-- Front Grill -->
+<rect fill="#1e293b" height="3" rx="0.2" width="0.7" x="19.5" y="3.5"></rect>
+<!-- Headlights (Front, facing right) -->
+<rect fill="#fef08a" height="1.5" width="1.5" x="19" y="1.5"></rect>
+<rect fill="#fef08a" height="1.5" width="1.5" x="19" y="7"></rect>
+<!-- Tail lights -->
+<rect fill="#ef4444" height="1.5" width="1" x="0" y="1.5"></rect>
+<rect fill="#ef4444" height="1.5" width="1" x="0" y="7"></rect>
+<!-- Windshields -->
+<path d="M12 1.5 L15 2.5 L15 7.5 L12 8.5 Z" fill="#38bdf8"></path>
+<path d="M6 1.5 L3 2.5 L3 7.5 L6 8.5 Z" fill="#38bdf8"></path>
+<rect fill="#38bdf8" height="7" width="4" x="7.5" y="1.5"></rect>
+<!-- TAXI text on roof -->
+<rect fill="#fff" height="3" rx="0.5" width="8" x="6" y="3.5"></rect>
+<text fill="#000" font-family="Outfit, sans-serif" font-size="2.2" font-weight="900" letter-spacing="0.1" text-anchor="middle" x="10" y="5.7">TAXI</text>
 </g>
-<g transform="translate(470, 200)">
-<rect fill="#fff" height="20" rx="8" stroke="#d4c4b4" stroke-width="1" width="60" x="-30" y="-10"></rect>
-<text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">9 KM</text>
+</g>
+<!-- Distance Markers -->
+<!-- Godwin to National -->
+<g transform="translate(180, 230)">
+<rect fill="#fff" height="18" rx="8" stroke="#d4c4b4" stroke-width="1" width="50" x="-25" y="-9"></rect>
+<text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="9" font-weight="700" text-anchor="middle" x="0" y="3">5 KM</text>
+</g>
+<!-- National to Rail -->
+<g transform="translate(340, 365)">
+<rect fill="#fff" height="18" rx="8" stroke="#d4c4b4" stroke-width="1" width="50" x="-25" y="-9"></rect>
+<text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="9" font-weight="700" text-anchor="middle" x="0" y="3">6 KM</text>
+</g>
+<!-- Rail to Dolls -->
+<g transform="translate(490, 305)">
+<rect fill="#fff" height="18" rx="8" stroke="#d4c4b4" stroke-width="1" width="50" x="-25" y="-9"></rect>
+<text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="9" font-weight="700" text-anchor="middle" x="0" y="3">9 KM</text>
+</g>
+<!-- Dolls to Godwin -->
+<g transform="translate(360, 150)">
+<rect fill="#fff" height="18" rx="8" stroke="#d4c4b4" stroke-width="1" width="50" x="-25" y="-9"></rect>
+<text fill="#6b4c12" font-family="Outfit,sans-serif" font-size="9" font-weight="700" text-anchor="middle" x="0" y="3">4 KM</text>
+</g>
+<!-- Point 0: Godwin Deluxe -->
+<g transform="translate(160, 140)">
+<circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="10" stroke="#4a90e2" stroke-width="3"></circle>
+<circle cx="0" cy="0" fill="#4a90e2" r="4"></circle>
+<rect fill="#fff" filter="url(#labelShadow)" height="40" rx="4" width="160" x="-80" y="-55"></rect>
+<text fill="#1a1208" font-family="Outfit,sans-serif" font-size="9" font-weight="800" letter-spacing="1" text-anchor="middle" x="0" y="-35">TOUR STARTS &amp; ENDS</text>
+<text fill="#4a90e2" font-family="Outfit,sans-serif" font-size="11" font-weight="800" letter-spacing="1" text-anchor="middle" x="0" y="-20">GODWIN DELUXE</text>
 </g>
 <!-- Point 1: National Museum -->
-<g transform="translate(120, 280)">
+<g transform="translate(260, 320)">
 <circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="8" stroke="#A67C31" stroke-width="4"></circle>
 <circle cx="0" cy="0" fill="#A67C31" r="3"></circle>
-<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="130" x="-65" y="15"></rect>
+<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="140" x="-70" y="15"></rect>
 <text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="32">National Museum</text>
 </g>
 <!-- Point 2: Rail Museum -->
-<g transform="translate(340, 180)">
+<g transform="translate(420, 360)">
 <circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="8" stroke="#A67C31" stroke-width="4"></circle>
 <circle cx="0" cy="0" fill="#A67C31" r="3"></circle>
-<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="160" x="-80" y="-35"></rect>
-<text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="-18">National Rail Museum</text>
+<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="160" x="-80" y="15"></rect>
+<text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="32">National Rail Museum</text>
 </g>
 <!-- Point 3: Dolls Museum -->
-<g transform="translate(560, 280)">
+<g transform="translate(560, 220)">
 <circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="8" stroke="#A67C31" stroke-width="4"></circle>
 <circle cx="0" cy="0" fill="#A67C31" r="3"></circle>
-<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="130" x="-65" y="15"></rect>
-<text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="32">Dolls Museum</text>
+<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="130" x="-65" y="-35"></rect>
+<text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="-18">Dolls Museum</text>
 </g>
 </svg>
 </div>
