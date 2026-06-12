@@ -191,7 +191,7 @@
     max-height: 0; overflow: hidden; padding: 0 2rem;
     transition: max-height 0.45s var(--ease);
 }
-.faq-item.active .faq-answer { max-height: 280px; }
+.faq-item.active .faq-answer { max-height: 280px; opacity: 1; }
 .faq-answer p {
     font-size: 0.92rem; color: var(--ink-soft);
     font-weight: 300; line-height: 1.8; padding-bottom: 1.8rem;
