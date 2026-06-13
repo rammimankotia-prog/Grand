@@ -343,14 +343,34 @@
 <stop offset="50%" stop-color="#A67C31"></stop>
 <stop offset="100%" stop-color="#b0a090"></stop>
 </lineargradient>
+<!-- Start/End Marker Gradient -->
+<lineargradient id="startEndGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#4a90e2"></stop>
+<stop offset="100%" stop-color="#2a5298"></stop>
+</lineargradient>
 </defs>
 <rect fill="url(#bgG)" height="100%" rx="16" width="100%"></rect>
-<!-- Map Title -->
-<text fill="#b0a090" font-family="Outfit,sans-serif" font-size="14" font-weight="600" letter-spacing="3" text-anchor="middle" x="340" y="60">GOLDEN TRIANGLE CIRCUIT</text>
 <!-- Route Path -->
-<path d="M 180 140 Q 280 200 450 200 Q 500 280 450 360 Q 280 340 160 300 Q 140 200 180 140" fill="none" id="route-path" stroke="url(#lineGrad)" stroke-dasharray="8 6" stroke-linecap="round" stroke-width="3">
+<!-- Delhi(180, 140) -> Agra(480, 220) -> Jaipur(220, 360) -> Delhi(180,140) -->
+<path d="M 180 140 Q 330 140 480 220 Q 380 340 220 360 Q 140 250 180 140" fill="none" id="route-path" stroke="url(#lineGrad)" stroke-dasharray="8 6" stroke-linecap="round" stroke-width="3">
 <animate attributename="stroke-dashoffset" dur="6s" from="0" repeatcount="indefinite" to="-200"></animate>
 </path>
+<!-- Distance Markers -->
+<!-- Delhi to Agra: 240 KM -->
+<g transform="translate(330, 160)">
+<rect fill="#fff" filter="url(#labelShadow)" height="20" rx="10" width="56" x="-28" y="-10"></rect>
+<text fill="#b0a090" font-family="Outfit, sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">240 KM</text>
+</g>
+<!-- Agra to Jaipur: 240 KM -->
+<g transform="translate(360, 305)">
+<rect fill="#fff" filter="url(#labelShadow)" height="20" rx="10" width="56" x="-28" y="-10"></rect>
+<text fill="#b0a090" font-family="Outfit, sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">240 KM</text>
+</g>
+<!-- Jaipur to Delhi: 280 KM -->
+<g transform="translate(145, 250)">
+<rect fill="#fff" filter="url(#labelShadow)" height="20" rx="10" width="56" x="-28" y="-10"></rect>
+<text fill="#b0a090" font-family="Outfit, sans-serif" font-size="10" font-weight="700" text-anchor="middle" x="0" y="3">280 KM</text>
+</g>
 <!-- Moving Taxi -->
 <g>
 <animatemotion dur="15s" repeatcount="indefinite" rotate="auto">
@@ -372,22 +392,27 @@
 </g>
 </g>
 <!-- Points -->
-<!-- Delhi -->
+<!-- Delhi (Start/End) -->
 <g transform="translate(180, 140)">
-<circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="10" stroke="#4a90e2" stroke-width="3"></circle>
-<circle cx="0" cy="0" fill="#4a90e2" r="4"></circle>
-<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="80" x="-40" y="-35"></rect>
-<text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="-18">New Delhi</text>
+<circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="12" stroke="url(#startEndGrad)" stroke-width="3"></circle>
+<circle cx="0" cy="0" fill="url(#startEndGrad)" r="5">
+<animate attributename="r" dur="2s" repeatcount="indefinite" values="5;7;5"></animate>
+</circle>
+<!-- Start / End Label above the city label -->
+<rect fill="#1a1208" filter="url(#labelShadow)" height="20" rx="4" width="90" x="-45" y="-55"></rect>
+<text fill="#fff" font-family="Outfit,sans-serif" font-size="10" font-weight="600" letter-spacing="1" text-anchor="middle" x="0" y="-41">START / END</text>
+<rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="80" x="-40" y="-30"></rect>
+<text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="-13">New Delhi</text>
 </g>
 <!-- Agra -->
-<g transform="translate(450, 200)">
+<g transform="translate(480, 220)">
 <circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="8" stroke="#A67C31" stroke-width="4"></circle>
 <circle cx="0" cy="0" fill="#A67C31" r="3"></circle>
 <rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="60" x="-30" y="-35"></rect>
 <text fill="#1a1208" font-family="Cinzel,serif" font-size="12" font-weight="700" text-anchor="middle" x="0" y="-18">Agra</text>
 </g>
 <!-- Jaipur -->
-<g transform="translate(160, 300)">
+<g transform="translate(220, 360)">
 <circle cx="0" cy="0" fill="#fff" filter="url(#pinShadow)" r="8" stroke="#A67C31" stroke-width="4"></circle>
 <circle cx="0" cy="0" fill="#A67C31" r="3"></circle>
 <rect fill="#fff" filter="url(#labelShadow)" height="26" rx="4" width="70" x="-35" y="15"></rect>
