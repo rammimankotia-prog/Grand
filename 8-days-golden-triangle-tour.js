@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
             shortDesc: "Witness the crown jewels of North Indian heritage in a private chauffeur-driven car. This itinerary offers a relaxed, customizable pace with scenic highway drives and palace stopovers, allowing you to absorb India's beauty at your own leisure.",
             highlight: "🚗 Includes a dedicated private car with personal driver, mobile Wi-Fi, refreshments, and fast-track highway toll clearances throughout your trip.",
             itinerary: [
-                { day: 1, title: "Welcome to Delhi", desc: "Arrive in Delhi where a private chauffeur greets you. Transfer in a Toyota Innova to your luxury hotel (The Leela Palace/The Lodhi) for a welcome dinner." },
-                { day: 2, title: "Imperial Delhi Curation", desc: "Explore Delhi's contrast. Discover Humayun's Tomb, Qutub Minar, and embark on a private rickshaw ride through the ancient spice markets of Chandni Chowk." },
-                { day: 3, title: "Scenic Drive to Agra", desc: "Drive along the Yamuna Expressway in your Toyota Innova. Check-in to the Oberoi Amarvilas, where every room features an uninterrupted view of the Taj Mahal." },
-                { day: 4, title: "Agra Sunrise & Artisan Heritage", desc: "Beat the crowds with a sunrise visit to the Taj Mahal. Explore the red sandstone ramparts of Agra Fort, followed by a private workshop with direct descendants of the Taj's original marble inlay artisans." },
-                { day: 5, title: " फतेहपुर सीकरी to Jaipur", desc: "Drive to Jaipur. Stop en route at the ancient Mughal capital of Fatehpur Sikri and the deep stepwells of Abhaneri. Check-in to the royal Rambagh Palace." },
-                { day: 6, title: "The Royal Jaipur Experience", desc: "Ascend Amber Fort in luxury. Visit the wind-kissed screen of Hawa Mahal, and explore the City Palace, including access to the Maharaja's private chambers." },
-                { day: 7, title: "Hidden Artisans of Rajasthan", desc: "Participate in a private block-printing workshop, learn Rajasthan blue pottery, and enjoy sunset champagne drinks overlooking the city at Nahargarh Fort." },
-                { day: 8, title: "Chauffeur Drive Return to Delhi", desc: "Relax in your SUV as you drive back to Delhi. A private transfer takes you straight to the Delhi Airport for your departure." }
+                { day: 1, title: "Arrival & Welcome to Delhi", desc: "Arrive at New Delhi International Airport where our representative will warmly welcome you. Transfer via private luxury car to Hotel Godwin Deluxe, your premium stay in the heart of the city. Spend the evening relaxing and acclimatizing to the vibrant energy of India." },
+                { day: 2, title: "Delhi Sightseeing: Old & New", desc: "After a hearty breakfast at Hotel Godwin Deluxe, dive into Delhi's rich history. Explore the grand Jama Masjid, enjoy a thrilling rickshaw ride through Chandni Chowk, and visit the serene Rajghat. Later, marvel at the towering Qutub Minar and the magnificent Humayun's Tomb, before driving past the grand India Gate and Parliament House." },
+                { day: 3, title: "Delhi to Agra: The City of Love", desc: "Enjoy a morning drive to Agra via the Yamuna Expressway. Upon arrival, check-in to your luxury hotel. In the afternoon, visit the imposing Agra Fort, a UNESCO World Heritage site showcasing spectacular Mughal architecture, followed by a sunset view of the Taj Mahal from Mehtab Bagh." },
+                { day: 4, title: "Sunrise at Taj Mahal & Artisan Tour", desc: "Experience the ethereal beauty of the Taj Mahal at dawn. Return for breakfast, then explore the exquisite Tomb of I'timad-ud-Daulah, often called the 'Baby Taj'. Spend the evening visiting local marble inlay artisans whose ancestors built the Taj Mahal." },
+                { day: 5, title: "Agra to Jaipur via Fatehpur Sikri", desc: "Depart for Jaipur, the famed Pink City. En route, explore the abandoned red sandstone city of Fatehpur Sikri, built by Emperor Akbar, and marvel at the stunning stepwell, Chand Baori, in Abhaneri village. Arrive in Jaipur and check into your royal heritage hotel." },
+                { day: 6, title: "Jaipur Sightseeing & Royal Forts", desc: "Ascend the majestic Amber Fort via a royal elephant or jeep ride. Stop to photograph the breathtaking Jal Mahal sitting in Man Sagar Lake. Later, explore the intricate Hawa Mahal (Palace of Winds), the grand City Palace, and the astronomical wonders of Jantar Mantar." },
+                { day: 7, title: "Cultural Immersion in the Pink City", desc: "Spend the morning visiting the historic Nahargarh Fort, offering panoramic views of Jaipur. Later, enjoy a guided heritage walk through the vibrant local bazaars famous for block printing, blue pottery, and exquisite jewelry. Enjoy a traditional Rajasthani dinner in the evening." },
+                { day: 8, title: "Jaipur to Delhi & Departure", desc: "After breakfast, enjoy a scenic drive back to New Delhi. Upon arrival, depending on your flight schedule, you can do some last-minute shopping at Connaught Place or be transferred directly to the airport for your onward journey, bringing your Golden Triangle tour to a memorable close." }
             ],
             inclusions: [
                 "Dedicated Toyota Innova throughout the tour",
@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "International airfare and visa fees",
                 "Meals not specified in the itinerary",
                 "Personal shopping and gratuities"
+            ]
         }
     };
 
