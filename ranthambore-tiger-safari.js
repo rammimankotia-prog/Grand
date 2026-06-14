@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         car: {
             duration: "3 Days / 2 Nights",
             cities: "Delhi → Ranthambore → Delhi",
-            price: "On Request",
+            price: "₹14,000 per person",
             shortDesc: "A thrilling 3-day wildlife adventure from Delhi to Ranthambore National Park. Experience two exhilarating jeep safaris in search of the majestic Bengal Tiger.",
             highlight: "🐅 Two thrilling jeep safaris in Ranthambore National Park with expert naturalist guides.",
             itinerary: [
