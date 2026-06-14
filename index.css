@@ -1473,3 +1473,7 @@ h1, h2, h3, h4, h5 {
     color: #b89047;
     font-weight: bold;
 }
+
+/* Dropdown Header Grouping */
+.dropdown-header { padding: 0.8rem 1.4rem 0.3rem; font-family: var(--f-body, 'Outfit'); font-size: 0.75rem; font-weight: 700; color: var(--gold, #A67C31); text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.85; }
+@media (max-width: 768px) { .dropdown-header { padding: 1rem 0 0.3rem 1.5rem; font-size: 0.8rem; } }
