@@ -1,31 +1,26 @@
 import os
-import glob
 import re
 
 repo_path = 'C:/Users/raman/.gemini/antigravity/scratch/grand_repo'
+html_file = os.path.join(repo_path, '8-days-golden-triangle-varanasi-tour.html')
 
-for filepath in glob.glob(os.path.join(repo_path, '*.html')):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
+with open(html_file, 'r', encoding='utf-8') as f:
+    content = f.read()
 
-    # We need to find the related-carousel section and strip out the seo-internal-link <a> tags inside it.
-    if '<div class="related-carousel">' in content:
-        parts = content.split('<div class="related-carousel">')
-        before = parts[0]
-        
-        # We need to split the second part by the end of the section so we don't mess up 
-        # other valid SEO links outside the carousel.
-        # The carousel ends roughly at the end of the section.
-        subparts = parts[1].split('</section>')
-        carousel_content = subparts[0]
-        after = '</section>' + '</section>'.join(subparts[1:])
+# Replace the specific broken paragraphs in the related tours section
+bad_p1 = '<p>Experience the vibrant contrasts of Old and New Delhi, and witness the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> at sunrise.</p>'
+good_p1 = '<p>Experience the vibrant contrasts of Old and New Delhi, and witness the Taj Mahal at sunrise.</p>'
 
-        # Remove the nested <a> tags but keep their inner text
-        fixed_carousel = re.sub(r'<a href="[^"]*" class="seo-internal-link">(.*?)</a>', r'\1', carousel_content)
-        
-        new_content = before + '<div class="related-carousel">' + fixed_carousel + after
+bad_p2 = '<p>Combine the architectural brilliance of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> with an exhilarating <a href="tiger-tour-jaipur.html" class="seo-internal-link">Tiger Safari</a> in <a href="tiger-tour-jaipur.html" class="seo-internal-link">Ranthambore</a>.</p>'
+good_p2 = '<p>Combine the architectural brilliance of the Taj Mahal with an exhilarating Tiger Safari in Ranthambore.</p>'
 
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(new_content)
+if bad_p1 in content:
+    content = content.replace(bad_p1, good_p1)
+    
+if bad_p2 in content:
+    content = content.replace(bad_p2, good_p2)
 
-print('Fixed nested anchor tags in carousels.')
+with open(html_file, 'w', encoding='utf-8') as f:
+    f.write(content)
+
+print("Fixed nested anchor tags in related tours.")
