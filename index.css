@@ -1370,3 +1370,106 @@ h1, h2, h3, h4, h5 {
 .seo-internal-link:hover {
     color: var(--primary);
 }
+
+
+/* Modern Card Style based on reference */
+.modern-card {
+    background: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+.modern-card:hover {
+    transform: translateY(-5px);
+}
+.modern-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+.modern-card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modern-card-badge {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    background: #b89047;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.modern-card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.modern-card-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.modern-card-meta .meta-days {
+    color: #b89047;
+    font-weight: 700;
+}
+.modern-card-meta .meta-sep {
+    color: #ccc;
+    margin: 0 0.5rem;
+}
+.modern-card-meta .meta-locs {
+    color: #999;
+    font-weight: 500;
+}
+.modern-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #111;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+.modern-card-desc {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+}
+.modern-card-divider {
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    margin: 0 0 1.5rem 0;
+}
+.modern-card-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.modern-card-highlights li {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+.modern-card-highlights li::before {
+    content: '—';
+    color: #b89047;
+    font-weight: bold;
+}
