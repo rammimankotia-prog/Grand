@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         car: {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur",
-            price: "$12,500 p.p.",
+            price: "83,000 INR per person",
             shortDesc: "Witness the crown jewels of North Indian heritage in a private chauffeur-driven car. This itinerary offers a relaxed, customizable pace with scenic highway drives and palace stopovers, allowing you to absorb India's beauty at your own leisure.",
             highlight: "🚗 Includes a dedicated private car with personal driver, mobile Wi-Fi, refreshments, and fast-track highway toll clearances throughout your trip.",
             itinerary: [
