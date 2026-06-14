@@ -89,11 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render timeline
         timelineBox.innerHTML = modeData.itinerary.map(item => `
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <h3 class="day-title">Day ${item.day}: ${item.title}</h3>
-                    <p class="day-desc">${item.desc}</p>
+            <div class="timeline-day-block">
+                <div class="timeline-day-number">${item.day}</div>
+                <div class="timeline-day-title-wrapper">
+                    <div class="timeline-day-title">
+                        <span class="day-tag">Day ${item.day}</span>
+                        <h4>${item.title}</h4>
+                    </div>
+                    <p class="timeline-day-desc">${item.desc}</p>
                 </div>
             </div>
         `).join('');
