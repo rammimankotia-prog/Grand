@@ -71,14 +71,21 @@ document.addEventListener('DOMContentLoaded', () => {
         modeHighlightBox.innerHTML = `
             <div class="highlight-card">
                 <p>${modeData.highlight}</p>
-                <div style="margin-top: 15px; border-top: 1px dashed rgba(255,255,255,0.3); padding-top: 15px;">
-                    <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 10px;">Highlights</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; color: rgba(255,255,255,0.95); font-size: 0.95rem;">
-                        ${modeData.highlightsList.map(h => `<li style="margin-bottom: 6px; display: flex; align-items: flex-start;"><svg style="min-width: 16px; margin-right: 8px; margin-top: 4px;" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>${h}</li>`).join('')}
-                    </ul>
-                </div>
+
             </div>
         `;
+
+        
+        // Render split highlights
+        const highlightsSplitBox = document.getElementById('tour-highlights-list-split');
+        if (highlightsSplitBox && modeData.highlightsList) {
+            highlightsSplitBox.innerHTML = modeData.highlightsList.map(h => `
+                <li>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                    ${h}
+                </li>
+            `).join('');
+        }
 
         // Render timeline
         timelineBox.innerHTML = modeData.itinerary.map(item => `
