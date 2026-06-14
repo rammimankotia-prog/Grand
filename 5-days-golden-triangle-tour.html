@@ -166,6 +166,61 @@
             }
         }
     </style>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Grand Holidays",
+    "image": "https://www.grandholidaytours.com/assets/logo.png",
+    "@id": "",
+    "url": "https://www.grandholidaytours.com",
+    "telephone": "+91 8860081995",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No. 8502/41, Ground Floor, Arakashan Rd, behind Sheela Cinema Street, Ram Nagar, Paharganj",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110055",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.grandholidaytours.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tours",
+        "item": "https://www.grandholidaytours.com/all-tours.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "5 Days Golden Triangle Tour"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "5 Days Golden Triangle Tour",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Grand Holidays"
+    }
+  }
+]
+</script>
 </head>
 <body>
 
@@ -233,14 +288,25 @@
     <section class="tour-detail-section">
         <div class="container">
             <!-- Mode Switcher Widget -->
-            <div class="tour-layout-grid">
+            
+        <nav aria-label="breadcrumb" class="tour-breadcrumbs" style="margin-bottom: 1rem;">
+            <ol style="list-style: none; padding: 0; margin: 0; display: flex; gap: 0.5rem; font-size: 0.85rem; opacity: 0.8;">
+                <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                <li><span style="opacity: 0.5;">/</span></li>
+                <li><a href="all-tours.html" style="color: inherit; text-decoration: none;">Tours</a></li>
+                <li><span style="opacity: 0.5;">/</span></li>
+                <li aria-current="page" style="font-weight: 500;">5 Days Golden Triangle Tour</li>
+            </ol>
+        </nav>
+        
+<div class="tour-layout-grid">
                 <!-- Left: Tour Details & Itinerary -->
                 <div class="tour-left-col">
                     <!-- Description Block -->
                     <div class="detail-block glass-card">
                         <h2 class="block-title">Tour Description</h2>
                         <p id="tour-short-desc" class="block-text">
-                            Witness the crown jewels of North Indian heritage with private curators, personal royal guides, and exclusive dinners facing the Taj Mahal after hours. This tour represents the peak of bespoke travel, curated for those who demand absolute luxury.
+                            Witness the crown jewels of North Indian heritage with private curators, personal royal guides, and exclusive dinners facing the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> after hours. This tour represents the peak of bespoke travel, curated for those who demand absolute luxury.
                         </p>
                         <div class="mode-highlights" id="mode-highlight-box">
                             <!-- Injected dynamically by JS -->
@@ -513,7 +579,7 @@
                         <div class="city-card-num">02</div>
                         <div class="city-card-icon">&#128332;</div>
                         <h3 class="city-card-name">Agra</h3>
-                        <p class="city-card-desc">Home of the Taj Mahal &mdash; the world's most magnificent monument. Private sunrise access through Grand Holidays.</p>
+                        <p class="city-card-desc">Home of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> &mdash; the world's most magnificent monument. Private sunrise access through Grand Holidays.</p>
                         <div class="city-card-tags"><span>Taj Mahal</span><span>Agra Fort</span><span>Fatehpur Sikri</span></div>
                     </div>
                     <div class="gt-city-card">
@@ -534,7 +600,7 @@
             <div class="faq-header">
                 <span class="eyebrow">Common Questions</span>
                 <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about the Golden Triangle Tour — answered by our expert travel curators.</p>
+                <p>Everything you need to know about the <a href="8-days-golden-triangle-tour.html" class="seo-internal-link">Golden Triangle</a> Tour — answered by our expert travel curators.</p>
             </div>
             <div class="faq-grid" id="faq-grid-gt">
                 <div class="faq-item">
@@ -542,7 +608,7 @@
                         <span class="faq-q-text">Which cities are covered in the Golden Triangle Tour?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>The Golden Triangle Tour covers three iconic cities — Delhi (the historic capital), Agra (home of the Taj Mahal), and Jaipur (the Pink City). Together they form a natural triangle across North India and represent the finest blend of Mughal, Rajput, and colonial heritage.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The <a href="8-days-golden-triangle-tour.html" class="seo-internal-link">Golden Triangle</a> Tour covers three iconic cities — Delhi (the historic capital), Agra (home of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>), and Jaipur (the Pink City). Together they form a natural triangle across North India and represent the finest blend of Mughal, Rajput, and colonial heritage.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
@@ -556,14 +622,14 @@
                         <span class="faq-q-text">Can we get private sunrise access to the Taj Mahal?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — all our packages include a private early-morning visit to the Taj Mahal before general tourist crowds arrive. Your personal historian guide provides exclusive context while you experience the monument in near-total tranquillity. VIP gate entry is pre-arranged so there is zero queuing.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — all our packages include a private early-morning visit to the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> before general tourist crowds arrive. Your personal historian guide provides exclusive context while you experience the monument in near-total tranquillity. VIP gate entry is pre-arranged so there is zero queuing.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">What type of accommodation is included?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Accommodation varies by package tier. Our signature options include the Rambagh Palace in Jaipur (former royal residence of the Maharaja), The Oberoi Amarvilas in Agra (with direct Taj Mahal views from every room), and The Oberoi New Delhi. All are handpicked five-star heritage properties.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Accommodation varies by package tier. Our signature options include the Rambagh Palace in Jaipur (former royal residence of the Maharaja), The Oberoi Amarvilas in Agra (with direct <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> views from every room), and The Oberoi New Delhi. All are handpicked five-star heritage properties.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
@@ -577,21 +643,21 @@
                         <span class="faq-q-text">What is the best time of year to take this tour?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>The ideal window is October through March, when North India experiences pleasant weather (15–25°C), clear blue skies over the Taj Mahal, and vibrant cultural festivals. April–June can be hot (up to 45°C), and July–September brings the monsoon. We recommend November and February for the most pleasant experience.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The ideal window is October through March, when North India experiences pleasant weather (15–25°C), clear blue skies over the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>, and vibrant cultural festivals. April–June can be hot (up to 45°C), and July–September brings the monsoon. We recommend November and February for the most pleasant experience.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">Are all meals and entry tickets included?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Daily gourmet breakfasts are included in all packages. Curated dinners and select lunches are included in premium tiers, featuring rooftop dining at Taj-view restaurants and palace dining experiences. VIP entry tickets to all major monuments — Taj Mahal, Amber Fort, Qutub Minar, Red Fort — are pre-booked and included.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Daily gourmet breakfasts are included in all packages. Curated dinners and select lunches are included in premium tiers, featuring rooftop dining at Taj-view restaurants and palace dining experiences. VIP entry tickets to all major monuments — <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>, Amber Fort, Qutub Minar, Red Fort — are pre-booked and included.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">Can we customise the itinerary or extend the tour?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Every itinerary is entirely bespoke. Popular extensions include Ranthambore National Park (tiger safari), Pushkar (camel fair & Brahma Temple), Udaipur (Lake Palace), or a royal village excursion from Jaipur. Simply mention your preferences when submitting your reservation request and our curator will design accordingly.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Every itinerary is entirely bespoke. Popular extensions include <a href="tiger-tour-jaipur.html" class="seo-internal-link">Ranthambore</a> National Park (tiger safari), Pushkar (camel fair & Brahma Temple), Udaipur (Lake Palace), or a royal village excursion from Jaipur. Simply mention your preferences when submitting your reservation request and our curator will design accordingly.</p></div></div>
                 </div>
             </div>
         </div>
@@ -616,7 +682,7 @@
                 <img src="assets/hawa_mahal_hero.png" alt="4 Days Golden Triangle" class="related-img">
                 <div class="related-info">
                     <h4>4 Days Golden Triangle Tour</h4>
-                    <p>Experience the vibrant contrasts of Old and New Delhi, and witness the Taj Mahal at sunrise.</p>
+                    <p>Experience the vibrant contrasts of Old and New Delhi, and witness the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> at sunrise.</p>
                 </div>
             </a>
             <!-- Card 3 -->
@@ -624,7 +690,7 @@
                 <img src="assets/tiger_tour.png" alt="Tiger Tour" class="related-img">
                 <div class="related-info">
                     <h4>Taj Mahal & Wildlife Tiger Tour</h4>
-                    <p>Combine the architectural brilliance of the Taj Mahal with an exhilarating Tiger Safari in Ranthambore.</p>
+                    <p>Combine the architectural brilliance of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> with an exhilarating <a href="tiger-tour-jaipur.html" class="seo-internal-link">Tiger Safari</a> in <a href="tiger-tour-jaipur.html" class="seo-internal-link">Ranthambore</a>.</p>
                 </div>
             </a>
             <!-- Card 4 -->

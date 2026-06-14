@@ -99,6 +99,61 @@
             .dropdown-item:hover { padding-left: 0.3rem; }
         }
     </style>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Grand Holidays",
+    "image": "https://www.grandholidaytours.com/assets/logo.png",
+    "@id": "",
+    "url": "https://www.grandholidaytours.com",
+    "telephone": "+91 8860081995",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No. 8502/41, Ground Floor, Arakashan Rd, behind Sheela Cinema Street, Ram Nagar, Paharganj",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110055",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.grandholidaytours.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tours",
+        "item": "https://www.grandholidaytours.com/all-tours.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Same Day Taj Mahal Tour from Delhi"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Same Day Taj Mahal Tour from Delhi",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Grand Holidays"
+    }
+  }
+]
+</script>
 </head>
 <body>
 
@@ -183,7 +238,18 @@
                 </div>
             </div>
 
-            <div class="tour-layout-grid">
+            
+        <nav aria-label="breadcrumb" class="tour-breadcrumbs" style="margin-bottom: 1rem;">
+            <ol style="list-style: none; padding: 0; margin: 0; display: flex; gap: 0.5rem; font-size: 0.85rem; opacity: 0.8;">
+                <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                <li><span style="opacity: 0.5;">/</span></li>
+                <li><a href="all-tours.html" style="color: inherit; text-decoration: none;">Tours</a></li>
+                <li><span style="opacity: 0.5;">/</span></li>
+                <li aria-current="page" style="font-weight: 500;">Same Day Taj Mahal Tour from Delhi</li>
+            </ol>
+        </nav>
+        
+<div class="tour-layout-grid">
                 <!-- LEFT COLUMN -->
                 <div class="tour-left-col">
 
@@ -191,7 +257,7 @@
                     <div class="detail-block glass-card">
                         <h2 class="block-title">Tour Description</h2>
                         <p id="tour-short-desc" class="block-text">
-                            Experience the timeless wonder of the Taj Mahal and the grandeur of Agra Fort on a fully private same-day drive from Delhi.
+                            Experience the timeless wonder of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> and the grandeur of Agra Fort on a fully private same-day drive from Delhi.
                         </p>
                         <div class="mode-highlights" id="mode-highlight-box"></div>
                     </div>
@@ -328,7 +394,7 @@
             <div class="gt-map-header">
                 <span class="eyebrow">Route Overview</span>
                 <h2 class="gt-map-title">Delhi ↔ Agra Route Map</h2>
-                <p class="gt-map-subtitle">A private door-to-door same-day journey of approximately 230 km each way, via the Yamuna Expressway — India's finest highway connecting the capital to the Taj Mahal.</p>
+                <p class="gt-map-subtitle">A private door-to-door same-day journey of approximately 230 km each way, via the Yamuna Expressway — India's finest highway connecting the capital to the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>.</p>
             </div>
             <div class="gt-map-wrapper">
                 <div class="gt-map-canvas">
@@ -438,7 +504,7 @@
                             <text y="3" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="800" fill="#fff">A</text>
                             <rect x="-42" y="-46" width="84" height="26" rx="6" fill="#fff" stroke="rgba(24,19,14,0.10)" filter="url(#shadow)"/>
                             <text x="0" y="-29" text-anchor="middle" font-family="Outfit,sans-serif" font-size="9" font-weight="800" fill="#1a1208">AGRA</text>
-                            <text x="0" y="-21" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="500" fill="#6B5F54">Taj Mahal · Agra Fort</text>
+                            <text x="0" y="-21" text-anchor="middle" font-family="Outfit,sans-serif" font-size="7" font-weight="500" fill="#6B5F54"><a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> · Agra Fort</text>
                         </g>
 
                         <!-- Mehtab Bagh PIN (540, 268) -->
@@ -467,7 +533,7 @@
                     <div class="gt-city-card">
                         <span class="city-card-icon">🌿</span>
                         <h3 class="city-card-name">Mehtab Bagh</h3>
-                        <p class="city-card-desc">The 'Moonlit Garden' across the Yamuna — the only spot in Agra offering a perfect reverse panoramic view of the Taj Mahal, as Shah Jahan originally intended.</p>
+                        <p class="city-card-desc">The 'Moonlit Garden' across the Yamuna — the only spot in Agra offering a perfect reverse panoramic view of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>, as Shah Jahan originally intended.</p>
                         <div class="city-card-tags"><span>Taj Mahal View</span><span>Mughal Garden</span></div>
                     </div>
                 </div>
@@ -489,28 +555,28 @@
                         <span class="faq-q-text">Can we really visit the Taj Mahal and return to Delhi in one day?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — absolutely. The Yamuna Expressway connects Delhi and Agra in just 3 to 3.5 hours each way, making a same-day round trip very comfortable. We depart at 04:30 AM to beat traffic and arrive in Agra by 07:30–08:00 AM. After visiting the Taj Mahal, Agra Fort, and optionally Mehtab Bagh, we return to Hotel Godwin Deluxe by 05:30–06:30 PM. It is an early and full day, but immensely rewarding.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Yes — absolutely. The Yamuna Expressway connects Delhi and Agra in just 3 to 3.5 hours each way, making a same-day round trip very comfortable. We depart at 04:30 AM to beat traffic and arrive in Agra by 07:30–08:00 AM. After visiting the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>, Agra Fort, and optionally Mehtab Bagh, we return to Hotel Godwin Deluxe by 05:30–06:30 PM. It is an early and full day, but immensely rewarding.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">Why are monument entry tickets not included in the package?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>The Archaeological Survey of India (ASI) requires monument tickets to be purchased in person at the gate by each visitor with valid ID. Tickets cannot be legally procured in advance by a third party on behalf of guests. Taj Mahal tickets for foreign nationals are approximately ₹1,300/person, Agra Fort is ₹650/person, and Mehtab Bagh is ₹200/person. Our team will guide you through the ticket process on arrival.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The Archaeological Survey of India (ASI) requires monument tickets to be purchased in person at the gate by each visitor with valid ID. Tickets cannot be legally procured in advance by a third party on behalf of guests. <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> tickets for foreign nationals are approximately ₹1,300/person, Agra Fort is ₹650/person, and Mehtab Bagh is ₹200/person. Our team will guide you through the ticket process on arrival.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">What time exactly is the pick-up from Hotel Godwin Deluxe?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Standard departure is at 04:30 AM from Hotel Godwin Deluxe, Paharganj, New Delhi. This early start is essential to reach the Taj Mahal by sunrise (approximately 07:30–08:00 AM) — the most magical, uncrowded, and photographically stunning time to visit. If you would prefer a later departure (e.g., 06:00 AM), please mention it in your booking notes and we will adjust accordingly, though a sunrise arrival is strongly recommended.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Standard departure is at 04:30 AM from Hotel Godwin Deluxe, Paharganj, New Delhi. This early start is essential to reach the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> by sunrise (approximately 07:30–08:00 AM) — the most magical, uncrowded, and photographically stunning time to visit. If you would prefer a later departure (e.g., 06:00 AM), please mention it in your booking notes and we will adjust accordingly, though a sunrise arrival is strongly recommended.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">What does the complimentary breakfast include?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>The complimentary breakfast is served at a curated restaurant in Agra after your Taj Mahal visit (approximately 09:30–10:30 AM). It includes a full North Indian and continental spread: fresh fruit, yoghurt, bread, eggs, paratha or poha, chai or coffee, and fresh juice. Vegetarian, vegan, and Jain options are available — please specify any dietary requirements in your booking notes.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The complimentary breakfast is served at a curated restaurant in Agra after your <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> visit (approximately 09:30–10:30 AM). It includes a full North Indian and continental spread: fresh fruit, yoghurt, bread, eggs, paratha or poha, chai or coffee, and fresh juice. Vegetarian, vegan, and Jain options are available — please specify any dietary requirements in your booking notes.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
@@ -531,14 +597,14 @@
                         <span class="faq-q-text">Do we need to book Taj Mahal tickets in advance?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>The Taj Mahal limits the number of visitors allowed in at any one time. For peak season visits (October–March), we strongly recommend purchasing tickets in advance via the official ASI online portal (asi.payumoney.com). Our team will send you the exact link and walkthrough with your booking confirmation. For the SUV and Luxury tiers, your guide handles the ticketing logistics on your arrival so you proceed without confusion.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>The <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> limits the number of visitors allowed in at any one time. For peak season visits (October–March), we strongly recommend purchasing tickets in advance via the official ASI online portal (asi.payumoney.com). Our team will send you the exact link and walkthrough with your booking confirmation. For the SUV and Luxury tiers, your guide handles the ticketing logistics on your arrival so you proceed without confusion.</p></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
                         <span class="faq-q-text">Can we extend this into a 2-day overnight Agra trip?</span>
                         <span class="faq-icon"><svg viewBox="0 0 14 14"><line x1="7" y1="1" x2="7" y2="13"/><line x1="1" y1="7" x2="13" y2="7"/></svg></span>
                     </button>
-                    <div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely. A 2-day Agra extension allows you to stay overnight at the Oberoi Amarvilas (with direct Taj Mahal views from every room), visit Fatehpur Sikri — the abandoned Mughal capital — on Day 2, and take a sunrise and sunset viewing of the Taj from different angles. We can also extend to the full Golden Triangle Tour adding Jaipur. Simply mention your interest in your booking notes and our curator will design a bespoke extension.</p></div></div>
+                    <div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely. A 2-day Agra extension allows you to stay overnight at the Oberoi Amarvilas (with direct <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> views from every room), visit Fatehpur Sikri — the abandoned Mughal capital — on Day 2, and take a sunrise and sunset viewing of the Taj from different angles. We can also extend to the full <a href="8-days-golden-triangle-tour.html" class="seo-internal-link">Golden Triangle</a> Tour adding Jaipur. Simply mention your interest in your booking notes and our curator will design a bespoke extension.</p></div></div>
                 </div>
             </div>
         </div>

@@ -179,6 +179,61 @@
         .step-content li strong { color: #333; }
     </style>
 
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Grand Holidays",
+    "image": "https://www.grandholidaytours.com/assets/logo.png",
+    "@id": "",
+    "url": "https://www.grandholidaytours.com",
+    "telephone": "+91 8860081995",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Plot No. 8502/41, Ground Floor, Arakashan Rd, behind Sheela Cinema Street, Ram Nagar, Paharganj",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110055",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.grandholidaytours.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tours",
+        "item": "https://www.grandholidaytours.com/all-tours.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "2-Day Taj Mahal & Delhi"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "2-Day Taj Mahal & Delhi",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Grand Holidays"
+    }
+  }
+]
+</script>
 </head>
 <body>
 
@@ -262,14 +317,25 @@
                 </div>
             </div>
 
-            <div class="tour-layout-grid">
+            
+        <nav aria-label="breadcrumb" class="tour-breadcrumbs" style="margin-bottom: 1rem;">
+            <ol style="list-style: none; padding: 0; margin: 0; display: flex; gap: 0.5rem; font-size: 0.85rem; opacity: 0.8;">
+                <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                <li><span style="opacity: 0.5;">/</span></li>
+                <li><a href="all-tours.html" style="color: inherit; text-decoration: none;">Tours</a></li>
+                <li><span style="opacity: 0.5;">/</span></li>
+                <li aria-current="page" style="font-weight: 500;">2-Day Taj Mahal & Delhi</li>
+            </ol>
+        </nav>
+        
+<div class="tour-layout-grid">
                 <!-- Left: Tour Details & Itinerary -->
                 <div class="tour-left-col">
                     <!-- Description Block -->
                     <div class="detail-block glass-card">
                         <h2 class="block-title">Tour Description</h2>
                         <p id="tour-short-desc" class="block-text">
-                            Experience the timeless wonder of the Taj Mahal and the grandeur of Agra Fort, followed by a comprehensive heritage sightseeing tour of India's vibrant capital, New Delhi.
+                            Experience the timeless wonder of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> and the grandeur of Agra Fort, followed by a comprehensive heritage sightseeing tour of India's vibrant capital, New Delhi.
                         </p>
                         <div class="mode-highlights" id="mode-highlight-box">
                             <!-- Injected dynamically by JS -->
@@ -442,7 +508,7 @@
             <div class="gt-map-header">
                 <span class="eyebrow">Route Overview</span>
                 <h2 class="gt-map-title">Delhi & Agra 2-Day Circuit</h2>
-                <p class="gt-map-subtitle">A seamless journey connecting the most iconic monuments of India's capital and the city of the Taj Mahal.</p>
+                <p class="gt-map-subtitle">A seamless journey connecting the most iconic monuments of India's capital and the city of the <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a>.</p>
             </div>
             <div class="gt-map-wrapper">
                 <div class="gt-map-canvas">
@@ -504,7 +570,7 @@
                             <text x="160" y="213" text-anchor="middle" font-family="Outfit,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">TOUR ENDS</text>
                         </g>
 
-                        <!-- 2. Taj Mahal (Agra) -->
+                        <!-- 2. <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> (Agra) -->
                         <g>
                             <circle cx="240" cy="360" r="11" fill="#2563eb" stroke="#fff" stroke-width="2.5" filter="url(#pinShadow)"/>
                             <rect x="195" y="380" width="90" height="20" rx="10" fill="#fff" stroke="#2563eb" stroke-width="1.5" filter="url(#labelShadow)"/>
@@ -604,7 +670,7 @@
             <div class="faq-header">
                 <span class="eyebrow">Common Questions</span>
                 <h2>Frequently Asked Questions</h2>
-                <p>Everything you need to know about the 2-Day Taj Mahal & Delhi.</p>
+                <p>Everything you need to know about the 2-Day <a href="agra-day-tour.html" class="seo-internal-link">Taj Mahal</a> & Delhi.</p>
             </div>
             <div class="faq-grid">
                 <div class="faq-item">

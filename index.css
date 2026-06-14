@@ -1359,3 +1359,14 @@ h1, h2, h3, h4, h5 {
         flex: 0 0 85%;
     }
 }
+
+/* SEO Internal Links */
+.seo-internal-link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: inherit;
+    font-weight: 500;
+}
+.seo-internal-link:hover {
+    color: var(--primary);
+}
