@@ -104,16 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
         // Render inclusions
         inclusionsBox.innerHTML = modeData.inclusions.map(inc => `
             <li>
-                <svg class="inc-icon check" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                ${inc}
+                <svg class="inc-icon check" width="20" height="20" style="flex-shrink: 0; margin-top: 1px;" fill="none" stroke="#16a34a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                <span>${inc}</span>
             </li>
         `).join('');
 
         // Render exclusions
         exclusionsBox.innerHTML = modeData.exclusions.map(exc => `
             <li>
-                <svg class="inc-icon cross" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                ${exc}
+                <svg class="inc-icon cross" width="20" height="20" style="flex-shrink: 0; margin-top: 1px;" fill="none" stroke="#dc2626" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                <span>${exc}</span>
             </li>
         `).join('');
     }

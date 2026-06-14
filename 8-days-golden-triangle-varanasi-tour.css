@@ -274,9 +274,6 @@
     font-size: 0.87rem; color: var(--ink-mid); font-weight: 300; line-height: 1.5;
     list-style: none; padding-left: 0;
 }
-.ie-list li::before {
-    content: '—'; color: var(--gold); font-weight: 700; flex-shrink: 0;
-}
 
 /* ── STICKY BOOKING SIDEBAR ─────────────────────────────────── */
 .tour-right-col { }
