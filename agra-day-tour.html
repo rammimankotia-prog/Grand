@@ -174,6 +174,18 @@
   }
 ]
 </script>
+<link href="mega-menu.css?v=1" rel="stylesheet"/>
+<style>
+/* Mega-menu override patch */
+@media (min-width: 769px) {
+    .mega-menu { min-width: 860px !important; opacity: 0; visibility: hidden; display: block; }
+    .nav-dropdown:hover .mega-menu { opacity: 1; visibility: visible; }
+}
+@media (max-width: 768px) {
+    .mega-menu { display: none; opacity: 1 !important; visibility: visible !important; }
+    .nav-dropdown.active .mega-menu { display: block !important; }
+}
+</style>
 </head>
 <body>
 
@@ -194,33 +206,166 @@
                 <a href="about.html" class="nav-link">About Us</a>
                 <div class="nav-dropdown">
                     <a href="#" class="nav-link active dropdown-toggle">Our Tours <span class="arrow">▼</span></a>
-                    <div class="dropdown-menu">
-                            <div class="dropdown-header">Golden Triangle</div>
-                            <a class="dropdown-item" href="4-days-golden-triangle-tour.html">4 Days Golden Triangle</a>
-                            <a class="dropdown-item" href="5-days-golden-triangle-tour.html">5 Days Golden Triangle</a>
-                            <a class="dropdown-item" href="8-days-golden-triangle-tour.html">8 Days Golden Triangle</a>
-                            <a class="dropdown-item" href="8-days-golden-triangle-varanasi-tour.html">8 Days Golden Triangle & Varanasi</a>
-                            
-                            <div class="dropdown-header">Delhi & Agra</div>
-                            <a class="dropdown-item" href="delhi-sightseeing.html">Delhi Sightseeing Tour</a>
-                            <a class="dropdown-item" href="delhi-food-tour.html">Delhi Food & Spice Tour</a>
-                            <a class="dropdown-item" href="delhi-spiritual-tour.html">Delhi Spiritual & Temple Tour</a>
-                            <a class="dropdown-item" href="delhi-bicycle-tour.html">New Delhi Bicycle Tour</a>
-                            <a class="dropdown-item" href="delhi-tuk-tuk-tour.html">Delhi Tuk Tuk Tour</a>
-                            <a class="dropdown-item" href="delhi-museum-tour.html">Delhi Museum Tour</a>
-                            <a class="dropdown-item" href="agra-day-tour.html">Same Day Agra Tour</a>
-                            <a class="dropdown-item" href="delhi-agra-2-day-tour.html">2-Day Taj Mahal & Delhi</a>
-                            
-                            <div class="dropdown-header">Rajasthan</div>
-                            <a class="dropdown-item" href="imperial-rajasthan.html">Imperial Rajasthan Tour</a>
-                            <a class="dropdown-item" href="rajasthan-heritage-tour.html">Rajasthan Heritage Tour</a>
-                            <a class="dropdown-item" href="marvellous-marwar-tour.html">Marvellous Marwar Tour</a>
-                            <a class="dropdown-item" href="rajasthan-desert-adventure.html">Rajasthan Desert Adventure</a>
-                            <a class="dropdown-item" href="tiger-tour-jaipur.html">Tiger Tour With Jaipur</a>
-                            
-                            <div class="dropdown-header">Himalayas</div>
-                            <a class="dropdown-item" href="himachal-exotic-tour.html">Himachal Exotic Tour</a>
-                            <a class="dropdown-item" href="himalayan-sanctuary.html">Himalayan Sanctuary</a>
+                    <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-inner">
+                                <div class="mega-col">
+                                    <div class="mega-col-header">
+                                        <span class="mega-col-icon">◆</span>
+                                        Golden Triangle
+                                    </div>
+                                    <a class="dropdown-item" href="4-days-golden-triangle-tour.html">
+                                        <span class="item-icon">🏛️</span>
+                                        <span class="item-text">
+                                            <span class="item-name">4 Days Golden Triangle</span>
+                                            <span class="item-sub">Delhi · Agra · Jaipur</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="5-days-golden-triangle-tour.html">
+                                        <span class="item-icon">🕌</span>
+                                        <span class="item-text">
+                                            <span class="item-name">5 Days Golden Triangle</span>
+                                            <span class="item-sub">Delhi · Agra · Jaipur</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="8-days-golden-triangle-tour.html">
+                                        <span class="item-icon">⭐</span>
+                                        <span class="item-text">
+                                            <span class="item-name">8 Days Golden Triangle</span>
+                                            <span class="item-sub">Delhi · Agra · Jaipur</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="8-days-golden-triangle-varanasi-tour.html">
+                                        <span class="item-icon">🛕</span>
+                                        <span class="item-text">
+                                            <span class="item-name">8 Days with Varanasi</span>
+                                            <span class="item-sub">Golden Triangle + Varanasi</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="mega-col-divider"></div>
+                                <div class="mega-col">
+                                    <div class="mega-col-header">
+                                        <span class="mega-col-icon">◆</span>
+                                        Delhi &amp; Agra
+                                    </div>
+                                    <a class="dropdown-item" href="delhi-sightseeing.html">
+                                        <span class="item-icon">🏯</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Delhi Sightseeing</span>
+                                            <span class="item-sub">Red Fort · Qutub · India Gate</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="delhi-food-tour.html">
+                                        <span class="item-icon">🍛</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Delhi Food &amp; Spice Tour</span>
+                                            <span class="item-sub">Chandni Chowk · Street Food</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="delhi-spiritual-tour.html">
+                                        <span class="item-icon">🙏</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Delhi Spiritual Tour</span>
+                                            <span class="item-sub">Temples · Gurudwaras · Shrines</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="delhi-bicycle-tour.html">
+                                        <span class="item-icon">🚴</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Delhi Bicycle Tour</span>
+                                            <span class="item-sub">Old Delhi · Heritage Lanes</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="delhi-tuk-tuk-tour.html">
+                                        <span class="item-icon">🛺</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Delhi Tuk Tuk Tour</span>
+                                            <span class="item-sub">Iconic Delhi Experience</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="delhi-museum-tour.html">
+                                        <span class="item-icon">🎨</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Delhi Museum Tour</span>
+                                            <span class="item-sub">National Museum · Crafts</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="agra-day-tour.html">
+                                        <span class="item-icon">🕍</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Same Day Agra Tour</span>
+                                            <span class="item-sub">Taj Mahal · Agra Fort</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="delhi-agra-2-day-tour.html">
+                                        <span class="item-icon">🌅</span>
+                                        <span class="item-text">
+                                            <span class="item-name">2-Day Taj Mahal &amp; Delhi</span>
+                                            <span class="item-sub">Overnight · Sunrise Taj Mahal</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="mega-col-divider"></div>
+                                <div class="mega-col">
+                                    <div class="mega-col-header">
+                                        <span class="mega-col-icon">◆</span>
+                                        Rajasthan
+                                    </div>
+                                    <a class="dropdown-item" href="imperial-rajasthan.html">
+                                        <span class="item-icon">👑</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Imperial Rajasthan</span>
+                                            <span class="item-sub">Jaipur · Jodhpur · Udaipur</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="rajasthan-heritage-tour.html">
+                                        <span class="item-icon">🏰</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Rajasthan Heritage Tour</span>
+                                            <span class="item-sub">Forts · Palaces · Stepwells</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="marvellous-marwar-tour.html">
+                                        <span class="item-icon">🌄</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Marvellous Marwar Tour</span>
+                                            <span class="item-sub">Jodhpur · Jaisalmer · Bikaner</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="rajasthan-desert-adventure.html">
+                                        <span class="item-icon">🐪</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Desert Adventure</span>
+                                            <span class="item-sub">Camel Safari · Desert Camps</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="tiger-tour-jaipur.html">
+                                        <span class="item-icon">🐯</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Tiger Tour With Jaipur</span>
+                                            <span class="item-sub">Ranthambore Safari · Jaipur</span>
+                                        </span>
+                                    </a>
+                                    <div class="mega-col-header" style="margin-top:1rem;">
+                                        <span class="mega-col-icon">◆</span>
+                                        Himalayas
+                                    </div>
+                                    <a class="dropdown-item" href="himachal-exotic-tour.html">
+                                        <span class="item-icon">🏔️</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Himachal Exotic Tour</span>
+                                            <span class="item-sub">Shimla · Manali · Spiti</span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="himalayan-sanctuary.html">
+                                        <span class="item-icon">🌿</span>
+                                        <span class="item-text">
+                                            <span class="item-name">Himalayan Sanctuary</span>
+                                            <span class="item-sub">Rishikesh · Haridwar · Yoga</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                 </div>
                 <a href="contact.html" class="nav-link">Contact Us</a>

@@ -69,6 +69,18 @@
 .seo-internal-link:hover { color: var(--primary); }
 
 </style>
+<link href="mega-menu.css?v=1" rel="stylesheet"/>
+<style>
+/* Mega-menu override patch */
+@media (min-width: 769px) {
+    .mega-menu { min-width: 860px !important; opacity: 0; visibility: hidden; display: block; }
+    .nav-dropdown:hover .mega-menu { opacity: 1; visibility: visible; }
+}
+@media (max-width: 768px) {
+    .mega-menu { display: none; opacity: 1 !important; visibility: visible !important; }
+    .nav-dropdown.active .mega-menu { display: block !important; }
+}
+</style>
 </head>
 <body>
 
