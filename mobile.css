@@ -1,0 +1,474 @@
+/* ================================================================
+   GRAND HOLIDAYS — GLOBAL MOBILE & TABLET RESPONSIVE STYLESHEET
+   Supplements all page-specific CSS without overriding core design
+   ================================================================ */
+
+/* ── VIEWPORT META SAFETY ─────────────────────────────────────── */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* ── GLOBAL TOUCH TARGETS ─────────────────────────────────────── */
+a, button, [role="button"], input, select, textarea {
+  touch-action: manipulation;
+}
+button, a.btn, .btn {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* ── IMAGES ───────────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── BACK BUTTON ──────────────────────────────────────────────── */
+.gh-back-btn {
+  position: fixed;
+  bottom: 5.5rem;
+  left: 1.2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  background: rgba(255,254,251,0.92);
+  border: 1px solid rgba(166,124,49,0.35);
+  border-radius: 9999px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #A67C31;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(24,19,14,0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.gh-back-btn:hover {
+  background: #A67C31;
+  color: #FFFEFB;
+  border-color: #A67C31;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(166,124,49,0.3);
+}
+.gh-back-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.gh-back-btn.hidden { display: none; }
+
+/* ── SCROLL TO TOP ────────────────────────────────────────────── */
+.gh-scroll-top {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.2rem;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255,254,251,0.92);
+  border: 1px solid rgba(166,124,49,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(24,19,14,0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+.gh-scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.gh-scroll-top:hover {
+  background: #A67C31;
+  color: #FFFEFB;
+  border-color: #A67C31;
+  transform: translateY(-2px);
+}
+.gh-scroll-top svg {
+  width: 18px;
+  height: 18px;
+  color: #A67C31;
+  transition: color 0.25s;
+}
+.gh-scroll-top:hover svg { color: #FFFEFB; }
+
+/* ── DARK MODE TOGGLE BUTTON ──────────────────────────────────── */
+.gh-theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 1rem;
+  line-height: 1;
+  color: #fff;
+  flex-shrink: 0;
+  min-height: 36px;
+  min-width: 36px;
+}
+.main-header.scrolled .gh-theme-toggle {
+  border-color: rgba(166,124,49,0.4);
+  background: rgba(166,124,49,0.08);
+  color: #A67C31;
+}
+.gh-theme-toggle:hover {
+  background: rgba(255,255,255,0.22);
+  transform: scale(1.1);
+}
+.main-header.scrolled .gh-theme-toggle:hover {
+  background: #A67C31;
+  color: #fff;
+  border-color: #A67C31;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   TABLET — ≤ 1024px
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 1024px) {
+  html { font-size: 16px; }
+
+  .container {
+    padding: 0 clamp(1.2rem, 4vw, 2.5rem);
+  }
+
+  /* Nav */
+  .nav-menu { gap: 1.8rem; }
+
+  /* Tour Hero */
+  .tour-hero { min-height: 60vh; }
+  .tour-hero-content { padding: 0 1.5rem; }
+
+  /* Grids - 2 col on tablet */
+  .values-grid,
+  .hotels-grid,
+  .why-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Story / Split Layouts */
+  .story-grid,
+  .founder-grid,
+  .gt-map-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem;
+  }
+
+  .gt-map-wrapper .gt-map-embed {
+    min-height: 300px;
+  }
+
+  /* Italian food tour city cards */
+  .gt-city-cards {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5rem;
+  }
+
+  /* About page */
+  .about-story-section .story-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about-story-img { height: 320px; }
+
+  /* Related tours */
+  .related-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   MOBILE — ≤ 768px
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+
+  /* Body scroll lock when mobile menu open */
+  body.menu-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  /* ── Nav Mobile Drawer ─── */
+  .mobile-nav-toggle { display: flex !important; }
+
+  .nav-menu {
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important;
+    width: 85% !important;
+    max-width: 320px !important;
+    height: 100vh !important;
+    background: var(--cream, #FFFEFB) !important;
+    border-left: 1px solid rgba(24,19,14,0.08) !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    padding: 6rem 2rem 3rem !important;
+    transition: right 0.4s cubic-bezier(0.22, 1, 0.36, 1) !important;
+    box-shadow: -12px 0 60px rgba(24,19,14,0.18) !important;
+    overflow-y: auto !important;
+    z-index: 1000 !important;
+  }
+  .nav-menu.active { right: 0 !important; }
+
+  /* Nav overlay */
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(24,19,14,0.5);
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+  .nav-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    font-size: 1.05rem !important;
+    color: var(--ink-soft, #6B5F54) !important;
+    padding: 0.9rem 0 !important;
+    width: 100% !important;
+    border-bottom: 1px solid rgba(24,19,14,0.07) !important;
+  }
+  .nav-link:hover, .nav-link.active {
+    color: #A67C31 !important;
+  }
+
+  /* Close button inside nav */
+  .nav-close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(24,19,14,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--ink-soft, #6B5F54);
+    background: var(--cream-alt, #F8F4EE);
+    transition: all 0.2s;
+  }
+  .nav-close-btn:hover {
+    background: #A67C31;
+    color: #fff;
+    border-color: #A67C31;
+  }
+
+  /* Hamburger animation */
+  .mobile-nav-toggle.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .mobile-nav-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .mobile-nav-toggle.open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .btn-nav { display: none !important; }
+  .header-contact-info { display: none !important; }
+
+  /* ── Typography ─── */
+  body { font-size: 1rem; line-height: 1.7; }
+  h1, .hero-title { font-size: clamp(2rem, 10vw, 3.2rem) !important; }
+  h2, .section-title { font-size: clamp(1.6rem, 7vw, 2.4rem) !important; }
+  h3 { font-size: clamp(1.2rem, 5vw, 1.7rem) !important; }
+  p, .story-p, .hotel-desc, .founder-bio, .value-text, .about-hero-subtitle {
+    font-size: 0.95rem !important;
+    line-height: 1.75 !important;
+  }
+
+  /* ── Hero ─── */
+  .hero-section { min-height: 100svh; }
+  .tour-hero { min-height: 50vh; padding: 7rem 1.2rem 3rem; }
+  .tour-hero-content { text-align: center; }
+  .tour-hero .tour-hero-title { font-size: clamp(1.8rem, 8vw, 2.8rem) !important; }
+  .hero-ctas {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+  .hero-ctas .btn { width: 100% !important; justify-content: center !important; }
+
+  /* ── Grids → Single Column ─── */
+  .values-grid,
+  .hotels-grid,
+  .why-grid,
+  .testimonials-grid,
+  .journeys-grid,
+  .related-carousel,
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* ── Story & Split ─── */
+  .story-grid,
+  .founder-grid,
+  .gt-map-wrapper,
+  .about-story-section .story-grid,
+  .concierge-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* ── Tour Page Specific ─── */
+  .tour-meta-bar {
+    flex-wrap: wrap !important;
+    gap: 0.8rem !important;
+    padding: 1.2rem !important;
+  }
+  .tour-meta-item { font-size: 0.8rem !important; }
+  
+  .gt-city-cards { flex-direction: column !important; gap: 1rem !important; }
+  .gt-city-card { min-width: unset !important; width: 100% !important; }
+
+  .timeline-item { flex-direction: column !important; gap: 1rem !important; }
+  .timeline-day-marker { min-width: unset !important; width: 100% !important; }
+
+  .incl-excl-grid,
+  .inclusions-grid { grid-template-columns: 1fr !important; }
+
+  /* Booking form */
+  .booking-card,
+  .concierge-form-wrapper {
+    padding: 1.8rem 1.2rem !important;
+  }
+  .form-row { flex-direction: column !important; gap: 1rem !important; }
+  .form-group { width: 100% !important; }
+
+  /* ── About Page ─── */
+  .about-hero { padding: 8rem 1.5rem 4rem !important; }
+  .founder-card { padding: 2rem 1.5rem !important; }
+  .about-story-img { height: 260px !important; }
+
+  /* ── Map ─── */
+  .gt-map-embed { min-height: 280px !important; }
+  .gt-map-wrapper { flex-direction: column !important; }
+
+  /* ── Section Padding ─── */
+  section, .about-hotels-section, .about-values-section,
+  .about-team-section, .about-story-section, .about-tours-section {
+    padding: 4rem 0 !important;
+  }
+
+  /* ── Footer ─── */
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    text-align: center !important;
+  }
+  .footer-legal { flex-wrap: wrap !important; justify-content: center !important; }
+
+  /* ── WhatsApp Float ─── */
+  .whatsapp-float-widget {
+    bottom: 1.2rem !important;
+    right: 1.2rem !important;
+  }
+  .whatsapp-widget-text { display: none !important; }
+
+  /* Push back btn left of scroll-top */
+  .gh-back-btn { bottom: 1.2rem; left: 1.2rem; }
+  .gh-scroll-top { bottom: 1.2rem; right: 4.5rem; }
+
+  /* ── Modal ─── */
+  .modal-card, .concept-modal-content {
+    padding: 2rem 1.2rem !important;
+    margin: 1rem !important;
+  }
+
+  /* ── Dropdown on mobile ─── */
+  .nav-dropdown {
+    position: static !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: var(--cream-alt, #F8F4EE) !important;
+    padding: 0 0 0 1rem !important;
+    display: none !important;
+    width: 100% !important;
+  }
+  .nav-item.open .nav-dropdown { display: block !important; }
+  .nav-item.has-dropdown > .nav-link::after {
+    content: ' ▾';
+    font-size: 0.65rem;
+  }
+
+  /* all-tours cards */
+  .tours-grid,
+  .gt-tours-grid { grid-template-columns: 1fr !important; }
+
+  /* contact page */
+  .contact-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SMALL MOBILE — ≤ 480px
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media (max-width: 480px) {
+  html { font-size: 14.5px; }
+
+  .container { padding: 0 1rem !important; }
+
+  .gh-back-btn { font-size: 0.7rem; padding: 0.5rem 0.9rem; }
+
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .stat-item { border-right: none !important; border-top: 1px solid rgba(166,124,49,0.15) !important; }
+
+  .tour-hero { min-height: 45vh; }
+  .tour-hero .tour-hero-title { font-size: clamp(1.6rem, 9vw, 2.4rem) !important; }
+
+  .btn { padding: 0.85rem 1.6rem !important; font-size: 0.75rem !important; }
+
+  .timeline-content { padding: 1.2rem !important; }
+
+  .section-intro-text { font-size: 0.9rem !important; }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PRINT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+@media print {
+  .main-header, .whatsapp-float-widget, .gh-back-btn,
+  .gh-scroll-top, .gh-theme-toggle { display: none !important; }
+  body { font-size: 12pt; color: #000; background: #fff; }
+}

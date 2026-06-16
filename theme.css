@@ -1,0 +1,209 @@
+/* ================================================================
+   GRAND HOLIDAYS — THEME SYSTEM (Light / Dark Mode)
+   ================================================================ */
+
+/* ── LIGHT MODE (default) ─────────────────────────────────────── */
+:root {
+  --theme-bg:           #FFFEFB;
+  --theme-bg-alt:       #F8F4EE;
+  --theme-bg-deep:      #F0EAE0;
+  --theme-ink:          #18130E;
+  --theme-ink-mid:      #3B3228;
+  --theme-ink-soft:     #6B5F54;
+  --theme-ink-faint:    #A89E94;
+  --theme-border:       rgba(24,19,14,0.07);
+  --theme-border-mid:   rgba(24,19,14,0.13);
+  --theme-card-bg:      #FFFFFF;
+  --theme-card-shadow:  0 8px 30px rgba(24,19,14,0.10);
+  --theme-nav-bg:       rgba(255,254,251,0.96);
+  --theme-input-bg:     #FFFFFF;
+  --theme-input-border: rgba(24,19,14,0.15);
+  --theme-modal-bg:     #FFFFFF;
+  --theme-gold-text:    #A67C31;
+  --theme-transition:   background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+}
+
+/* ── DARK MODE ────────────────────────────────────────────────── */
+body.dark-mode {
+  --theme-bg:           #1A1410;
+  --theme-bg-alt:       #221C16;
+  --theme-bg-deep:      #2A221A;
+  --theme-ink:          #F5EED8;
+  --theme-ink-mid:      #D4C5A9;
+  --theme-ink-soft:     #A89878;
+  --theme-ink-faint:    #7A6A54;
+  --theme-border:       rgba(245,238,216,0.08);
+  --theme-border-mid:   rgba(245,238,216,0.14);
+  --theme-card-bg:      #251E17;
+  --theme-card-shadow:  0 8px 30px rgba(0,0,0,0.35);
+  --theme-nav-bg:       rgba(26,20,16,0.97);
+  --theme-input-bg:     #2A221A;
+  --theme-input-border: rgba(245,238,216,0.18);
+  --theme-modal-bg:     #251E17;
+  --theme-gold-text:    #C4922A;
+}
+
+/* ── APPLY THEME VARIABLES GLOBALLY ──────────────────────────── */
+body {
+  background-color: var(--theme-bg);
+  color: var(--theme-ink-mid);
+  transition: var(--theme-transition);
+}
+
+/* ── DARK MODE ELEMENT OVERRIDES ──────────────────────────────── */
+body.dark-mode {
+  --cream:        var(--theme-bg);
+  --cream-alt:    var(--theme-bg-alt);
+  --cream-deep:   var(--theme-bg-deep);
+  --linen:        #2A221A;
+  --ink:          var(--theme-ink);
+  --ink-mid:      var(--theme-ink-mid);
+  --ink-soft:     var(--theme-ink-soft);
+  --ink-faint:    var(--theme-ink-faint);
+  --b-soft:       var(--theme-border);
+  --b-mid:        var(--theme-border-mid);
+  --b-strong:     rgba(245,238,216,0.22);
+  --sh-xs:  0 1px 4px rgba(0,0,0,0.25);
+  --sh-sm:  0 3px 12px rgba(0,0,0,0.3);
+  --sh-md:  0 8px 30px rgba(0,0,0,0.38);
+  --sh-lg:  0 20px 60px rgba(0,0,0,0.45);
+}
+
+/* Navigation */
+body.dark-mode .main-header.scrolled {
+  background: var(--theme-nav-bg);
+  border-bottom-color: var(--theme-border);
+}
+body.dark-mode .main-header.scrolled .logo-main,
+body.dark-mode .main-header.scrolled .logo-sub {
+  color: var(--theme-ink);
+}
+body.dark-mode .main-header.scrolled .nav-link { color: var(--theme-ink-soft); }
+body.dark-mode .main-header.scrolled .mobile-nav-toggle .bar { background: var(--theme-ink); }
+
+/* Mobile Nav Drawer */
+body.dark-mode .nav-menu {
+  background: var(--theme-bg-alt) !important;
+  border-left-color: var(--theme-border) !important;
+}
+body.dark-mode .nav-link {
+  border-bottom-color: var(--theme-border) !important;
+  color: var(--theme-ink-soft) !important;
+}
+
+/* Cards */
+body.dark-mode .glass-card,
+body.dark-mode .value-card,
+body.dark-mode .hotel-card,
+body.dark-mode .founder-card,
+body.dark-mode .testimony-card,
+body.dark-mode .journey-card,
+body.dark-mode .tour-card,
+body.dark-mode .gt-city-card,
+body.dark-mode .related-card,
+body.dark-mode .booking-card,
+body.dark-mode .timeline-content,
+body.dark-mode .inclusion-item,
+body.dark-mode .exclusion-item,
+body.dark-mode .modern-card {
+  background: var(--theme-card-bg) !important;
+  border-color: var(--theme-border-mid) !important;
+  box-shadow: var(--theme-card-shadow) !important;
+}
+
+/* Sections */
+body.dark-mode .about-hotels-section,
+body.dark-mode .about-team-section,
+body.dark-mode section.has-bg-alt {
+  background: var(--theme-bg-alt) !important;
+}
+
+/* Inputs and Forms */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background: var(--theme-input-bg) !important;
+  border-color: var(--theme-input-border) !important;
+  color: var(--theme-ink) !important;
+}
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder { color: var(--theme-ink-faint) !important; }
+
+/* Modal */
+body.dark-mode .modal-overlay,
+body.dark-mode .concept-modal-overlay {
+  background: rgba(0,0,0,0.75) !important;
+}
+body.dark-mode .modal-card,
+body.dark-mode .concept-modal-content {
+  background: var(--theme-modal-bg) !important;
+  border-color: var(--theme-border-mid) !important;
+}
+
+/* Footer */
+body.dark-mode .luxury-footer {
+  background: #0D0A07 !important;
+  border-top-color: var(--theme-border) !important;
+}
+body.dark-mode .footer-bottom {
+  border-top-color: var(--theme-border) !important;
+}
+
+/* Dividers / Borders */
+body.dark-mode .title-divider {
+  background: linear-gradient(to right, transparent, #C4922A, transparent) !important;
+}
+body.dark-mode .stat-item,
+body.dark-mode .why-item {
+  border-color: var(--theme-border) !important;
+}
+
+/* Gold tag in dark mode */
+body.dark-mode .hotel-tag,
+body.dark-mode .badge,
+body.dark-mode .tour-badge,
+body.dark-mode .about-badge {
+  background: rgba(196,146,42,0.12) !important;
+  border-color: rgba(196,146,42,0.3) !important;
+  color: #C4922A !important;
+}
+
+/* Back button in dark mode */
+body.dark-mode .gh-back-btn {
+  background: rgba(26,20,16,0.95);
+  border-color: rgba(196,146,42,0.35);
+  color: #C4922A;
+}
+body.dark-mode .gh-back-btn:hover {
+  background: #C4922A;
+  color: #1A1410;
+}
+body.dark-mode .gh-scroll-top {
+  background: rgba(26,20,16,0.95);
+  border-color: rgba(196,146,42,0.35);
+}
+body.dark-mode .gh-scroll-top svg { color: #C4922A; }
+body.dark-mode .gh-scroll-top:hover {
+  background: #C4922A;
+}
+body.dark-mode .gh-scroll-top:hover svg { color: #1A1410; }
+
+/* Theme toggle in dark mode */
+body.dark-mode .main-header.scrolled .gh-theme-toggle {
+  border-color: rgba(196,146,42,0.4);
+  background: rgba(196,146,42,0.1);
+  color: #C4922A;
+}
+body.dark-mode .main-header.scrolled .gh-theme-toggle:hover {
+  background: #C4922A;
+  color: #1A1410;
+}
+
+/* Smooth transition for all themed elements */
+body, .main-header, .nav-menu, .hotel-card, .value-card, .founder-card,
+.glass-card, .journey-card, .tour-card, .gt-city-card, .related-card,
+.booking-card, .luxury-footer, .modal-card, input, select, textarea,
+.gh-back-btn, .gh-scroll-top, .gh-theme-toggle {
+  transition: background-color 0.35s ease, color 0.35s ease,
+              border-color 0.35s ease, box-shadow 0.35s ease;
+}
