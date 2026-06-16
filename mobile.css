@@ -208,6 +208,13 @@ img {
 @media (max-width: 768px) {
   html { font-size: 15px; }
 
+  /* ── Hide Hero Banners on Mobile ─── */
+  .hero-section,
+  .tour-hero,
+  .about-hero {
+    display: none !important;
+  }
+
   /* Body scroll lock when mobile menu open */
   body.menu-open {
     overflow: hidden;
