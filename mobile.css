@@ -208,10 +208,12 @@ img {
 @media (max-width: 768px) {
   html { font-size: 15px; }
 
-  /* ── Hide Hero Banners on Mobile ─── */
+  /* ── Hide Hero Banners & Stats Strip on Mobile ─── */
   .hero-section,
   .tour-hero,
-  .about-hero {
+  .about-hero,
+  .stats-strip,
+  .stats-grid {
     display: none !important;
   }
 
