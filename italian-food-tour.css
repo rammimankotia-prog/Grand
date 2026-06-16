@@ -769,23 +769,7 @@
     margin-top: 0.3rem;
 }
 
-/* ─────────────────────────────────────────────
-   MAP SECTION — city stop cards (4-col for this tour)
-───────────────────────────────────────────── */
-.gt-city-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.2rem;
-    margin-top: 2rem;
-}
 
-@media (max-width: 992px) {
-    .gt-city-cards { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 576px) {
-    .gt-city-cards { grid-template-columns: 1fr; }
-}
 
 /* ─────────────────────────────────────────────
    MOBILE RESPONSIVE — timeline
