@@ -28,18 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => revealObserver.observe(el));
 
 
-    // Mobile Navigation Toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-
-    menuToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        // Simple hamburger to X transformation
-        const bars = menuToggle.querySelectorAll('.bar');
-        bars[0].style.transform = navMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 6px)' : 'none';
-        bars[1].style.opacity = navMenu.classList.contains('active') ? '0' : '1';
-        bars[2].style.transform = navMenu.classList.contains('active') ? 'rotate(-45deg) translate(5px, -6px)' : 'none';
-    });
+    // Mobile Navigation Toggle is handled by global-ux.js (initMobileMenu)
+    // which provides overlay, close button, keyboard support and dropdown toggling.
 
     // 2. Parallax Effect on Hero Background Image
     const heroBgImg = document.getElementById('heroBgImg');

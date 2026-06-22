@@ -172,13 +172,13 @@
     });
 
     // Handle nav items with dropdowns on mobile
-    $$('.nav-item.has-dropdown', navMenu).forEach(item => {
-      const link = item.querySelector('.nav-link');
-      if (!link) return;
-      link.addEventListener('click', e => {
+    $$('.nav-dropdown', navMenu).forEach(item => {
+      const toggle = item.querySelector('.dropdown-toggle');
+      if (!toggle) return;
+      toggle.addEventListener('click', e => {
         if (window.innerWidth <= 768) {
           e.preventDefault();
-          item.classList.toggle('open');
+          item.classList.toggle('active');
         }
       });
     });
