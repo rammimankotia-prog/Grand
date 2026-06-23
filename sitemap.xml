@@ -5,218 +5,206 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- ── HOMEPAGE ─────────────────────────────────────────── -->
+    <!-- ✅ HOMEPAGE -->
     <url>
         <loc>https://grandholidaytours.com/</loc>
-        <lastmod>2026-06-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://grandholidaytours.com/index.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- ── CORE PAGES ────────────────────────────────────────── -->
+    <!-- ✅ CORE PAGES -->
     <url>
         <loc>https://grandholidaytours.com/about.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/all-tours.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/contact.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-travel-guide.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- ── BOOKINGS ──────────────────────────────────────────── -->
+    <!-- ✅ BOOKINGS -->
     <url>
         <loc>https://grandholidaytours.com/car-booking.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/train-booking.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
-    <!-- ── GOLDEN TRIANGLE TOURS ─────────────────────────────── -->
+    <!-- ✅ GOLDEN TRIANGLE TOURS -->
     <url>
         <loc>https://grandholidaytours.com/4-days-golden-triangle-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/5-days-golden-triangle-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/8-days-golden-triangle-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/8-days-golden-triangle-varanasi-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- ── DELHI TOURS ───────────────────────────────────────── -->
+    <!-- ✅ DELHI TOURS -->
     <url>
         <loc>https://grandholidaytours.com/delhi-sightseeing.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-food-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-bicycle-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-tuk-tuk-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-spiritual-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-museum-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
-    <url>
-        <loc>https://grandholidaytours.com/italian-food-tour-new-delhi.html</loc>
-        <lastmod>2026-06-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
 
-    <!-- ── AGRA & TAJ TOURS ──────────────────────────────────── -->
+    <!-- ✅ AGRA & TAJ TOURS -->
     <url>
         <loc>https://grandholidaytours.com/agra-day-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/delhi-agra-2-day-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/taj-mahal-sunrise-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- ── RAJASTHAN TOURS ───────────────────────────────────── -->
+    <!-- ✅ RAJASTHAN TOURS -->
     <url>
         <loc>https://grandholidaytours.com/imperial-rajasthan.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/rajasthan-heritage-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/rajasthan-desert-adventure.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/marvellous-marwar-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/ranthambore-tiger-safari.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/tiger-tour-jaipur.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
-    <!-- ── NORTH INDIA / HILLS TOURS ─────────────────────────── -->
+    <!-- ✅ NORTH INDIA / HILLS TOURS -->
     <url>
         <loc>https://grandholidaytours.com/himalayan-sanctuary.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/himachal-exotic-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/haridwar-rishikesh-tour.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
 
-    <!-- ── LEGAL ─────────────────────────────────────────────── -->
+    <!-- ✅ LEGAL -->
     <url>
         <loc>https://grandholidaytours.com/privacy.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
         <loc>https://grandholidaytours.com/terms.html</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
