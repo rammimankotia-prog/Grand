@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         car: {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur",
-            price: "83,000 INR per person",
+            price: "₹83,000 per person",
             shortDesc: "Witness the crown jewels of North Indian heritage in a private chauffeur-driven car. This itinerary offers a relaxed, customizable pace with scenic highway drives and palace stopovers, allowing you to absorb India's beauty at your own leisure.",
             highlight: "🚗 Includes a dedicated private car with personal driver, mobile Wi-Fi, refreshments, and fast-track highway toll clearances throughout your trip.",
             itinerary: [
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         train: {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur",
-            price: "$8,500 p.p.",
+            price: "₹85,000 per person",
             shortDesc: "Explore the Golden Triangle via executive class express trains combined with private local taxis at each destination. A comfortable, seamless rail option that skips highway traffic and lets you enjoy scenic views between Delhi, Agra, and Jaipur.",
             highlight: "🚆 Includes Executive Class tickets on high-speed Gatimaan & Shatabdi trains, private taxi transfers at destinations, dedicated porters, and guided sightseeing.",
             itinerary: [
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         flight: {
             duration: "7 Days / 6 Nights",
             cities: "Delhi - Agra - Jaipur",
-            price: "$15,800 p.p.",
+            price: "₹158,000 per person",
             shortDesc: "The best of both worlds — private car transfers for scenic highway stretches combined with domestic flight segments to save time between key cities. Enjoy the flexibility of road travel and the speed of air for maximum comfort.",
             highlight: "🚘✈️ Includes private car transfers Delhi-Agra + domestic IndiGo/Vistara flight Agra-Jaipur, airport lounge access, and a personal travel coordinator throughout.",
             itinerary: [

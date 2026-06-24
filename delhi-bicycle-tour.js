@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         standard: {
             duration: "4 Hours",
             cities: "New Delhi",
-            price: "$45 p.p.",
+            price: "₹3,700 p.p.",
             shortDesc: "Experience the magic of New Delhi at sunrise. Cycle through historic streets and grand avenues on a comfortable city bike, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "🚲 High-quality city bike, helmet, English-speaking cycling guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ebike: {
             duration: "4 Hours",
             cities: "New Delhi",
-            price: "$65 p.p.",
+            price: "₹5,400 p.p.",
             shortDesc: "Experience the magic of New Delhi at sunrise effortlessly. Glide through historic streets on a premium E-Bike, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "⚡ Premium Electric Bike, helmet, English-speaking cycling guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         group: {
             duration: "4 Hours",
             cities: "New Delhi",
-            price: "$35 p.p.",
+            price: "₹2,900 p.p.",
             shortDesc: "Join a fun, private group cycling tour (min 4 people) through New Delhi at sunrise, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "👨‍👩‍👧‍👦 Private Group Tour (Min 4), high-quality bikes, English-speaking guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [

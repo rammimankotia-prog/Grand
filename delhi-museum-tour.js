@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax2: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "$180 Total",
+            price: "₹15,000 Total",
             shortDesc: "Immerse yourself in Delhi's historical heritage at a relaxed, customized pace. Perfect for couples or solo travelers who desire a tailored private tour of Delhi staying at Hotel Godwin Deluxe, with a premium AC Sedan, a dedicated guide, and flexible itinerary pacing.",
             highlight: "🚗 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, private AC Sedan (Maruti Dzire or Toyota Etios), dedicated licensed English-speaking historian guide, traditional rickshaw ride in Chandni Chowk, mineral water, and all toll/parking fees.",
             itinerary: [
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax4: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "$280 Total",
+            price: "₹23,000 Total",
             shortDesc: "Tailored for families or small groups of friends seeking spacious comfort. Stay at Hotel Godwin Deluxe, enjoy a gourmet breakfast in the Indian Grill Restaurant, and travel together in a premium SUV (Toyota Innova Crysta) with your personal guide.",
             highlight: "🚘 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, premium Toyota Innova Crysta SUV, dedicated licensed guide, rickshaw ride, and all toll/parking fees.",
             itinerary: [
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax6: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "$390 Total",
+            price: "₹32,000 Total",
             shortDesc: "Ideal for medium-sized families or corporate groups wishing to explore Delhi together in luxury. Includes hotel lodging, breakfast, private hotel pickup and drop-off, and a premium AC Minivan (Tempo Traveller).",
             highlight: "🚐 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, luxury AC Minivan, dedicated licensed guide, rickshaw ride, and all toll/parking fees.",
             itinerary: [
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax10: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "$550 Total",
+            price: "₹45,000 Total",
             shortDesc: "Our signature package for larger groups or corporate delegations. Includes lodging at Hotel Godwin Deluxe, breakfast at the Indian Grill Restaurant, private pickup and drop-off, a premium AC Mini-Coach, and dedicated coordinators.",
             highlight: "🚌 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, luxury AC Mini-Coach, licensed guide, and tour coordinator.",
             itinerary: [

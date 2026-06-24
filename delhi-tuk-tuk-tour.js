@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         standard: {
             duration: "8 Hours / 80 Km",
             cities: "New Delhi",
-            price: "$45 p.p.",
+            price: "₹3,700 p.p.",
             shortDesc: "Experience the magic of New Delhi at sunrise. Ride through historic streets and grand avenues on a comfortable tuk tuk, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "🛺 High-quality tuk tuk, complimentary bottled water, English-speaking local expert guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ebike: {
             duration: "8 Hours / 80 Km",
             cities: "New Delhi",
-            price: "$65 p.p.",
+            price: "₹5,400 p.p.",
             shortDesc: "Experience the magic of New Delhi at sunrise effortlessly. Glide through historic streets on a premium Premium EV Tuk Tuk, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "⚡ Premium Electric Tuk Tuk, complimentary bottled water, English-speaking local expert guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         group: {
             duration: "8 Hours / 80 Km",
             cities: "New Delhi",
-            price: "$35 p.p.",
+            price: "₹2,900 p.p.",
             shortDesc: "Join a fun, private group cycling tour (min 4 people) through New Delhi at sunrise, culminating with a hearty breakfast at Hotel Godwin Deluxe.",
             highlight: "👨‍👩‍👧‍👦 Private Group Tour (Min 4), high-quality tuk tuks, English-speaking guide, and complimentary breakfast at Hotel Godwin Deluxe.",
             itinerary: [

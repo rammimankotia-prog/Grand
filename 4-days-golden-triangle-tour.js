@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tourData = {
         duration: "4 Days / 3 Nights",
         cities: "Delhi - Agra - Jaipur",
-        price: "$190 p.p.",
+        price: "₹12,500 p.p.",
         shortDesc: "Embark on an unforgettable 4-day private journey through India's famed Golden Triangle. Travel comfortably in a private, air-conditioned vehicle with expert local guides bringing history to life at every stop.",
         highlight: "✨ Includes a dedicated private car with personal driver, hotel pickups, and scenic highway drives between the major cities.",
         itinerary: [

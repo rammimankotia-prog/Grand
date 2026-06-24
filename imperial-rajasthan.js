@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         suv: {
             duration: "9 Days / 8 Nights",
             cities: "Jodhpur · Jaisalmer · Udaipur",
-            price: "$14,200 (For 2 Adults)",
+            price: "₹142,000 (For 2 Adults)",
             shortDesc: "Explore the royal forts and glistening lakes of Rajasthan in a private luxury SUV (Toyota Innova Crysta or Fortuner) with a dedicated chauffeur-guide.",
             highlight: "🚗 Private luxury chauffeur SUV throughout, stays at Umaid Bhawan Palace & Taj Lake Palace, lake cruises, and historic city guides.",
             itinerary: [
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         charter: {
             duration: "9 Days / 8 Nights",
             cities: "Jodhpur · Jaisalmer · Udaipur",
-            price: "$19,500 (For 2 Adults)",
+            price: "₹195,000 (For 2 Adults)",
             shortDesc: "Unrivaled heritage style. Drive between heritage palace destinations in a private luxury SUV (Audi Q7 or Mercedes GLE) and stay in historical grand suites.",
             highlight: "🚗 Premium luxury SUV (Audi Q7 / Mercedes GLE) throughout, stay in historical Grand Palace Suites, vintage car transfers, and private curator guides.",
             itinerary: [
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         express: {
             duration: "9 Days / 8 Nights",
             cities: "Jodhpur · Jaisalmer · Udaipur",
-            price: "$11,500 (For 2 Adults)",
+            price: "₹115,000 (For 2 Adults)",
             shortDesc: "Experience the timeless cultural heritage of Rajasthan with stays in handpicked boutique Havelis and private Sedan transport.",
             highlight: "🏠 Stays in boutique heritage Havelis, private Sedan transport (Toyota Etios/Dzire), guided sightseeing, and local cultural tours.",
             itinerary: [

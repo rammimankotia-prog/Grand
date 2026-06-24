@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sedan: {
             duration: "Same Day (≈14 Hours)",
             cities: "Delhi · Agra · Delhi",
-            price: "$145 (For 2 Adults)",
+            price: "₹12,000 (For 2 Adults)",
             shortDesc: "Experience the timeless wonder of the Taj Mahal and the grandeur of Agra Fort on a fully private same-day drive from Delhi. Your dedicated chauffeur picks you up before dawn from Hotel Godwin Deluxe for a smooth Yamuna Expressway journey — returning you safely the same evening.",
             highlight: "🚗 Private AC sedan with professional chauffeur · Complimentary full breakfast in Agra · Pick-up & drop from Hotel Godwin Deluxe, Delhi",
             itinerary: [
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         suv: {
             duration: "Same Day (≈14 Hours)",
             cities: "Delhi · Agra · Delhi",
-            price: "$230 (For 2 Adults)",
+            price: "₹19,000 (For 2 Adults)",
             shortDesc: "Elevate your Agra day trip with a spacious Toyota Innova Crysta and a Ministry of Tourism-certified private historian guide. Your guide transforms every monument into a living story — the political intrigue, the architectural genius, and the eternal love behind the world's greatest mausoleum.",
             highlight: "🚙 Premium Innova Crysta SUV · Ministry of Tourism certified historian guide · Complimentary breakfast · Mehtab Bagh visit included",
             itinerary: [
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         luxury: {
             duration: "Same Day (≈15 Hours)",
             cities: "Delhi · Agra · Delhi",
-            price: "$390 (For 2 Adults)",
+            price: "₹32,000 (For 2 Adults)",
             shortDesc: "The ultimate same-day Agra experience — a chauffeur-driven Mercedes E-Class or Audi A6, a senior art historian guide, complimentary gourmet breakfast and a three-course Taj-view lunch, and full-day VIP curation. Reserved for guests who demand nothing less than perfection.",
             highlight: "🏆 Mercedes E-Class / Audi A6 · Senior art historian · Gourmet breakfast & Taj-view 3-course lunch · Full-day private curation",
             itinerary: [

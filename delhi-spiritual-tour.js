@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sedan: {
             duration: "8 Hours",
             cities: "New Delhi",
-            price: "$65 (For 2 Adults)",
+            price: "₹5,400 (For 2 Adults)",
             shortDesc: "Experience the profound spiritual roots of Delhi. Travel in a comfortable private Sedan with pick-up, drop-off, and breakfast at Hotel Godwin Deluxe.",
             highlight: "🚗 Private Sedan, English-speaking guide, comprehensive spiritual temple tour, starting with breakfast at Hotel Godwin Deluxe.",
             itinerary: [
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         suv: {
             duration: "8 Hours",
             cities: "New Delhi",
-            price: "$85 (For 2 Adults)",
+            price: "₹7,000 (For 2 Adults)",
             shortDesc: "Experience the profound spiritual roots of Delhi. Travel in a spacious private SUV with pick-up, drop-off, and breakfast at Hotel Godwin Deluxe.",
             highlight: "🚙 Private spacious SUV, English-speaking guide, comprehensive spiritual temple tour, starting with breakfast at Hotel Godwin Deluxe.",
             itinerary: [
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         minivan: {
             duration: "8 Hours",
             cities: "New Delhi",
-            price: "$110 (For 2 Adults)",
+            price: "₹9,100 (For 2 Adults)",
             shortDesc: "Experience the profound spiritual roots of Delhi. Travel in a premium private Minivan with pick-up, drop-off, and breakfast at Hotel Godwin Deluxe.",
             highlight: "🚐 Private premium Minivan, English-speaking guide, comprehensive spiritual temple tour, starting with breakfast at Hotel Godwin Deluxe.",
             itinerary: [

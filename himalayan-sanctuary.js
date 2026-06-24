@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         royal: {
             duration: "10 Days / 9 Nights",
             cities: "Srinagar · Gulmarg · Pahalgam · Shimla",
-            price: "$15,800 (For 2 Adults)",
+            price: "₹158,000 (For 2 Adults)",
             shortDesc: "Witness the magnificent Himalayas. Travel in a luxury private SUV (Toyota Fortuner) with stays in royal suites at Khyber Gulmarg & Wildflower Hall Shimla.",
             highlight: "🚗 Dedicated private luxury SUV throughout, Grand Royal Suites at Oberoi Wildflower Hall & Khyber Resort, sunset sitar recitals, and personal historian guides.",
             itinerary: [
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         suv: {
             duration: "10 Days / 9 Nights",
             cities: "Srinagar · Gulmarg · Pahalgam · Shimla",
-            price: "$12,200 (For 2 Adults)",
+            price: "₹122,000 (For 2 Adults)",
             shortDesc: "Explore the scenic paths and local cultures in a private SUV with premium 5-star hotel accommodations.",
             highlight: "🚗 Private SUV, premium rooms at Khyber Resort & Oberoi Wildflower Hall, local guided tours, and Shikara rides.",
             itinerary: [
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         heritage: {
             duration: "10 Days / 9 Nights",
             cities: "Srinagar · Gulmarg · Pahalgam · Shimla",
-            price: "$9,600 (For 2 Adults)",
+            price: "₹96,000 (For 2 Adults)",
             shortDesc: "Experience the timeless cultural heritage of the Himalayas with premium boutique accommodations and private Sedan transport.",
             highlight: "🏠 Stays in heritage boutique hotels, private Sedan transport, traditional city sightseeing, and local culinary walks.",
             itinerary: [
