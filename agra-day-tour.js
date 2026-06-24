@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sedan: {
             duration: "Same Day (≈14 Hours)",
             cities: "Delhi · Agra · Delhi",
-            price: "₹12,000 (For 2 Adults)",
+            price: "₹7,500 per person",
             shortDesc: "Experience the timeless wonder of the Taj Mahal and the grandeur of Agra Fort on a fully private same-day drive from Delhi. Your dedicated chauffeur picks you up before dawn from Hotel Godwin Deluxe for a smooth Yamuna Expressway journey — returning you safely the same evening.",
             highlight: "🚗 Private AC sedan with professional chauffeur · Complimentary full breakfast in Agra · Pick-up & drop from Hotel Godwin Deluxe, Delhi",
             itinerary: [

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sunrise: {
             duration: '~2.5 Hours',
             cities: 'Agra · Taj Mahal',
-            price: '₹6,500 per person (Min. 2 Pax)',
+            price: '₹7,500 per person (Min. 2 Pax)',
             shortDesc: 'A short, guided sunrise experience at the Taj Mahal with express skip-the-line entry. Includes private hotel pickup and drop-off from Agra (or Delhi pickup available).',
             highlight: 'Skip the line at sunrise — the Taj Mahal at its most magical, with an expert local guide and private transfers.',
             itinerary: [
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Fuel, tolls, and driver allowances'
             ],
             exclusions: [
-                'Official Taj Mahal monument entry ticket (add-on option available)',
                 'Camera / tripod fees inside the complex',
                 'Meals and beverages',
                 'Personal expenses (tips, laundry, phone calls)',
