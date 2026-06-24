@@ -31,21 +31,21 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="index.css?v=16">
-    <link rel="stylesheet" href="golden-triangle.css?v=5">
+    <link rel="stylesheet" href="rajasthan-heritage-tour.css?v=1">
     
     <!-- Dropdown Navigation Styles to bypass caching -->
     <style>
 
 /* Related Tours Carousel */
 .related-tours-section { padding: 4rem 0; background: #fdfaf6; border-top: 1px solid rgba(0,0,0,0.05); }
-.related-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 1.5rem; padding-bottom: 2rem; scrollbar-width: thin; scrollbar-color: var(--primary) #eee; }
+.related-carousel { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 1.5rem; padding-bottom: 2rem; scrollbar-width: thin; scrollbar-color: var(--primary) #eee; align-items: stretch; }
 .related-carousel::-webkit-scrollbar { height: 8px; }
 .related-carousel::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
 .related-carousel::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 4px; }
 .related-card { flex: 0 0 calc(25% - 1.125rem); min-width: 260px; scroll-snap-align: start; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background: #fff; text-decoration: none; color: inherit; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
 .related-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
-.related-img { width: 100%; height: 200px; object-fit: cover; }
-.related-info { padding: 1.5rem; }
+.related-img { width: 100%; height: 200px; object-fit: cover; display: block; flex-shrink: 0; }
+.related-info { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
 .related-info h4 { margin-top: 0; margin-bottom: 0.5rem; font-size: 1.15rem; color: var(--secondary-dark); }
 .related-info p { font-size: 0.9rem; opacity: 0.75; margin: 0; line-height: 1.5; }
 @media (max-width: 992px) { .related-card { flex: 0 0 calc(33.333% - 1rem); } }
@@ -484,19 +484,18 @@
     <!-- Tour Main Layout -->
     <section class="tour-detail-section">
         <div class="container">
-            <!-- Mode Switcher Widget -->
-            
-        <nav aria-label="breadcrumb" class="tour-breadcrumbs" style="margin-bottom: 1rem;">
-            <ol style="list-style: none; padding: 0; margin: 0; display: flex; gap: 0.5rem; font-size: 0.85rem; opacity: 0.8;">
-                <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
-                <li><span style="opacity: 0.5;">/</span></li>
-                <li><a href="all-tours.html" style="color: inherit; text-decoration: none;">Tours</a></li>
-                <li><span style="opacity: 0.5;">/</span></li>
-                <li aria-current="page" style="font-weight: 500;">Rajasthan Heritage Tour (07 Nights 08 Days)</li>
-            </ol>
-        </nav>
-        
-<div class="tour-layout-grid">
+
+            <nav aria-label="breadcrumb" class="tour-breadcrumbs" style="margin-bottom: 1rem;">
+                <ol style="list-style: none; padding: 0; margin: 0; display: flex; gap: 0.5rem; font-size: 0.85rem; opacity: 0.8;">
+                    <li><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></li>
+                    <li><span style="opacity: 0.5;">/</span></li>
+                    <li><a href="all-tours.html" style="color: inherit; text-decoration: none;">Tours</a></li>
+                    <li><span style="opacity: 0.5;">/</span></li>
+                    <li aria-current="page" style="font-weight: 500;">Rajasthan Heritage Tour (07 Nights 08 Days)</li>
+                </ol>
+            </nav>
+
+            <div class="tour-layout-grid">
                 <!-- Left: Tour Details & Itinerary -->
                 <div class="tour-left-col">
                     <!-- Description Block -->
