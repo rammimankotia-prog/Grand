@@ -106,7 +106,7 @@
 
   <!-- HERO SECTION -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
+    <div class="hero-bg" style="background-image: url('assets/car_booking_hero.png');">
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -209,10 +209,12 @@
               </div>
               <div class="field-group">
                 <label for="passengers" class="field-label required">Number of Pax (Guests)</label>
-                <div class="input-wrap icon-left">
-                  <span class="input-icon">👥</span>
-                  <input type="number" id="passengers" name="passengers" min="1" max="16" value="2" class="field-input" required/>
-                  <div class="input-glow"></div>
+                <div class="passenger-counter">
+                  <button type="button" class="counter-btn" id="decreaseBtn">−</button>
+                  <span class="counter-value" id="passengerCount">1</span>
+                  <input type="hidden" id="passengers" name="passengers" value="1"/>
+                  <button type="button" class="counter-btn" id="increaseBtn">+</button>
+                  <span class="counter-label">Person(s)</span>
                 </div>
               </div>
             </div>
@@ -328,7 +330,7 @@
 
 
 
-  <script src="car-booking.js"></script>
+  <script src="script.js"></script>
 <footer class="luxury-footer">
         <div class="container">
             <div class="footer-top">

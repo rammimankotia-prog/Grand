@@ -24,6 +24,7 @@ html = html.replace('<span class="stat-num">8,000+</span>\n          <span class
 html = html.replace('Ticket Booking', 'Car Booking')
 html = html.replace('Book Your Train Journey', 'Book Your Private Car')
 html = html.replace("we'll find the best trains for your route", "we'll arrange the perfect vehicle and driver for you")
+html = html.replace('assets/train_hero_banner.png', 'assets/car_booking_hero.png')
 
 # Form Replacement
 # We want to replace the entire <form id="mainBookingForm" novalidate> ... </form> section.
