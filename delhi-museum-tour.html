@@ -837,26 +837,7 @@
 </span>
 </a>
 <!-- Scripts -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const answer = btn.nextElementSibling;
-            const isOpen = btn.classList.contains('open');
-            document.querySelectorAll('.faq-question.open').forEach(other => {
-                if (other !== btn) {
-                    other.classList.remove('open');
-                    other.setAttribute('aria-expanded', 'false');
-                    other.nextElementSibling.classList.remove('open');
-                }
-            });
-            btn.classList.toggle('open', !isOpen);
-            btn.setAttribute('aria-expanded', String(!isOpen));
-            answer.classList.toggle('open', !isOpen);
-        });
-    });
-});
-</script>    <script src="global-ux.js"></script>
+<script src="delhi-museum-tour.js?v=2"></script>
+<script src="global-ux.js"></script>
 </body>
 </html>
