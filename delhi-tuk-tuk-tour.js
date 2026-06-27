@@ -168,28 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mobile Navigation Toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.querySelector('.nav-menu');
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-    }
-
-    // Dropdown toggle for mobile viewports
-    const dropdownToggle = document.querySelector('.dropdown-toggle');
-    const navDropdown = document.querySelector('.nav-dropdown');
-    if (dropdownToggle && navDropdown) {
-        dropdownToggle.addEventListener('click', (e) => {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                navDropdown.classList.toggle('active');
-            }
-        });
-    }
-
     // Handle Form Booking Request
     
     

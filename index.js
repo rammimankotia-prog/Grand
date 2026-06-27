@@ -28,13 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => revealObserver.observe(el));
 
 
-    // Mobile Navigation Toggle is handled by global-ux.js (initMobileMenu)
-    // which provides overlay, close button, keyboard support and dropdown toggling.
-
-    // 2. Parallax Effect on Hero Background Image
-    const heroBgImg = document.getElementById('heroBgImg');
-    window.addEventListener('scroll', () => {
-        const scrollOffset = window.scrollY;
         // Move image slower than scroll speed (parallax)
         if (scrollOffset < window.innerHeight) {
             heroBgImg.style.transform = `translateY(${scrollOffset * 0.3}px) scale(1.1)`;
