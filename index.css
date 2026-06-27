@@ -1523,3 +1523,61 @@ body.menu-open {
 .mobile-nav-toggle.open .bar:nth-child(1) { transform: rotate(45deg) translate(5px, 6px); }
 .mobile-nav-toggle.open .bar:nth-child(2) { opacity: 0; }
 .mobile-nav-toggle.open .bar:nth-child(3) { transform: rotate(-45deg) translate(5px, -6px); }
+
+/* =========================================================================
+   GLOBAL PRICE SUMMARY BOX (Tour Pages)
+   ========================================================================= */
+.price-summary-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1912;
+    border-radius: var(--r1, 8px);
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.summary-label {
+    font-family: var(--f-body, 'Outfit', sans-serif);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    color: #cca45c;
+    text-align: right;
+    max-width: 110px;
+    flex-shrink: 0;
+}
+
+.summary-value {
+    font-family: var(--f-display, 'Playfair Display', serif);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #e5b869;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 170px;
+}
+
+/* Adjust sizes for smaller screens */
+@media (max-width: 480px) {
+    .price-summary-box {
+        gap: 1rem;
+        padding: 1.25rem 0.75rem;
+    }
+    .summary-label {
+        font-size: 0.65rem;
+        max-width: 90px;
+    }
+    .summary-value {
+        font-size: 1.7rem;
+        max-width: 130px;
+    }
+}

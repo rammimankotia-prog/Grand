@@ -312,33 +312,8 @@
     box-shadow: var(--sh-md);
 }
 
-.price-summary-box {
-    background: var(--gold-bg);
-    border: 1px solid var(--gold-border);
-    border-radius: var(--r2);
-    padding: 0.9rem 1.2rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.8rem;
-}
 
-.summary-label {
-    font-family: var(--f-body);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: none;
-    color: var(--ink-soft);
-}
 
-.summary-value {
-    font-family: var(--f-display);
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--gold-bright);
-}
 
 .sidebar-title {
     font-family: var(--f-display);

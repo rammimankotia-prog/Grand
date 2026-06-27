@@ -364,13 +364,6 @@
 }
 .select-input option { background: #fff; color: var(--ink); }
 
-.price-summary-box {
-    display: flex; justify-content: space-between; align-items: center;
-    background: var(--gold-bg); border: 1px solid var(--gold-border);
-    border-radius: var(--r1); padding: 1rem 1.3rem; margin-top: 0.5rem;
-}
-.summary-label { font-size: 0.8rem; color: var(--ink-soft); font-weight: 500; }
-.summary-value { font-family: var(--f-display); font-size: 1.35rem; font-weight: 700; color: var(--gold); }
 
 .btn-sidebar-submit {
     width: 100%; padding: 1.1rem;
