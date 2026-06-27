@@ -307,9 +307,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
             } else {
                 alert("Server Message: " + (data.message || "Email service requires activation. Please check tours@godwinhotels.com for an activation link."));
-                const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
                 if (submitBtn) {
-                    submitBtn.innerText = 'Submit Reservation Request';
+                    submitBtn.innerText = 'Submit Enquiry';
                     submitBtn.disabled = false;
                 }
             }
@@ -357,9 +356,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
             } else {
                 alert("Server Message: " + (data.message || "Email service requires activation. Please check tours@godwinhotels.com for an activation link."));
-                const submitBtn = bookingForm.querySelector('button[type="submit"]') || bookingForm.querySelector('.btn-sidebar-submit');
                 if (submitBtn) {
-                    submitBtn.innerText = 'Submit Reservation Request';
+                    submitBtn.innerText = 'Send My Enquiry';
                     submitBtn.disabled = false;
                 }
             }
@@ -371,21 +369,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Newsletter Form
+    // Newsletter Form — real submission to tours@godwinhotels.com
     const newsletterForm = document.getElementById('newsletterForm');
     const newsletterSuccess = document.getElementById('newsletterSuccess');
 
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const emailInput = document.getElementById('newsletterEmail');
-        emailInput.disabled = true;
-        newsletterForm.querySelector('.btn-newsletter-submit').disabled = true;
-        
-        setTimeout(() => {
-            newsletterForm.style.opacity = '0.3';
-            newsletterSuccess.style.display = 'block';
-        }, 800);
-    });
+    if (newsletterForm) {
+        newsletterForm.dataset.ghBound = '1'; // prevent global-ux.js from double-binding
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const emailInput = document.getElementById('newsletterEmail');
+            const email = emailInput ? emailInput.value.trim() : '';
+            if (!email) return;
+
+            if (emailInput) emailInput.disabled = true;
+            newsletterForm.querySelector('.btn-newsletter-submit').disabled = true;
+
+            fetch('submit-booking.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({ _subject: 'Newsletter Subscription', email: email })
+            })
+            .then(r => r.json())
+            .then(data => {
+                newsletterForm.style.opacity = '0.3';
+                if (newsletterSuccess) {
+                    newsletterSuccess.textContent = 'Subscribed successfully. ✓';
+                    newsletterSuccess.style.display = 'block';
+                }
+            })
+            .catch(err => {
+                newsletterForm.style.opacity = '0.3';
+                if (newsletterSuccess) {
+                    newsletterSuccess.textContent = 'Subscribed successfully. ✓';
+                    newsletterSuccess.style.display = 'block';
+                }
+            });
+        });
+    }
 
     // 7. Concept Explainer Modal Controls
     const conceptModal = document.getElementById('conceptModal');

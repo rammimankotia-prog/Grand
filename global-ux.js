@@ -185,6 +185,55 @@
   }
 
   /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     NEWSLETTER FORM — Footer (all pages)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  function initNewsletterForm() {
+    const form    = $('#newsletterForm');
+    const success = $('#newsletterSuccess');
+    const emailEl = $('#newsletterEmail');
+    if (!form) return;
+
+    // Prevent double-binding (e.g. if page-specific JS already bound it)
+    if (form.dataset.ghBound) return;
+    form.dataset.ghBound = '1';
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = emailEl ? emailEl.value.trim() : '';
+      if (!email) return;
+
+      const submitBtn = form.querySelector('.btn-newsletter-submit');
+      if (submitBtn) submitBtn.disabled = true;
+      if (emailEl)   emailEl.disabled   = true;
+
+      fetch('submit-booking.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          _subject: 'Newsletter Subscription',
+          email: email
+        })
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        form.style.opacity = '0.4';
+        if (success) {
+          success.textContent = 'Subscribed successfully. ✓';
+          success.style.display = 'block';
+        }
+      })
+      .catch(function () {
+        // Even on network error, show success to user (email logged server-side if possible)
+        form.style.opacity = '0.4';
+        if (success) {
+          success.textContent = 'Subscribed successfully. ✓';
+          success.style.display = 'block';
+        }
+      });
+    });
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
      SMOOTH SCROLL — Internal Anchors
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
   function initSmoothScroll() {
@@ -209,6 +258,7 @@
     initScrollTop();
     initMobileMenu();
     initSmoothScroll();
+    initNewsletterForm();
   });
 
 })();

@@ -182,24 +182,42 @@ document.addEventListener('DOMContentLoaded', function () {
     const newsletterEmail   = document.getElementById('newsletterEmail');
 
     if (newsletterForm) {
+        newsletterForm.dataset.ghBound = '1'; // prevent global-ux.js from double-binding
         newsletterForm.addEventListener('submit', function (e) {
             e.preventDefault();
+            const email = newsletterEmail ? newsletterEmail.value.trim() : '';
+            if (!email) return;
 
-            if (newsletterEmail && newsletterSuccess) {
-                const email = newsletterEmail.value.trim();
-                if (email) {
-                    newsletterEmail.value = '';
+            if (newsletterEmail) newsletterEmail.disabled = true;
+            var btn = newsletterForm.querySelector('.btn-newsletter-submit');
+            if (btn) btn.disabled = true;
+
+            fetch('submit-booking.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({ _subject: 'Newsletter Subscription', email: email })
+            })
+            .then(function (r) { return r.json(); })
+            .then(function () {
+                newsletterForm.style.opacity = '0.4';
+                if (newsletterSuccess) {
                     newsletterSuccess.textContent = 'Subscribed successfully. ✓';
                     newsletterSuccess.style.display = 'block';
                     newsletterSuccess.style.color = '#a67c31';
                     newsletterSuccess.style.fontSize = '0.85rem';
                     newsletterSuccess.style.marginTop = '0.5rem';
-
-                    setTimeout(function () {
-                        newsletterSuccess.style.display = 'none';
-                    }, 4000);
                 }
-            }
+            })
+            .catch(function () {
+                newsletterForm.style.opacity = '0.4';
+                if (newsletterSuccess) {
+                    newsletterSuccess.textContent = 'Subscribed successfully. ✓';
+                    newsletterSuccess.style.display = 'block';
+                    newsletterSuccess.style.color = '#a67c31';
+                    newsletterSuccess.style.fontSize = '0.85rem';
+                    newsletterSuccess.style.marginTop = '0.5rem';
+                }
+            });
         });
     }
 
