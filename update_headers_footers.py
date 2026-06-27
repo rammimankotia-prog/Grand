@@ -140,7 +140,6 @@ HEADER_NON_HOME = """\
 <div class="header-contact-info">
 <a href="tel:+918860081995" class="header-contact-link">&#128222; +91 8860081995</a>
 </div>
-<a href="contact.html" class="btn btn-solid btn-nav">Enquire Now</a>
 <button class="mobile-nav-toggle" id="menuToggle" aria-label="Toggle navigation">
 <span class="bar"></span>
 <span class="bar"></span>
@@ -281,7 +280,6 @@ HEADER_HOME = """\
 <div class="header-contact-info">
 <a class="header-contact-link" href="tel:+918860081995">&#128222; +91 8860081995</a>
 </div>
-<button class="btn btn-solid btn-nav" id="openModalBtn">Enquire Now</button>
 <button aria-label="Toggle navigation" class="mobile-nav-toggle" id="menuToggle">
 <span class="bar"></span>
 <span class="bar"></span>
