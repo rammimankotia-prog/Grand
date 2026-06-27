@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const submitBtn = bookingForm.querySelector('.btn-sidebar-submit');
+            var origText = submitBtn ? submitBtn.innerText : 'Submit';
             submitBtn.innerText = 'Routing to Curator...';
             submitBtn.disabled = true;
 
@@ -127,6 +128,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 estimatedPrice: document.getElementById('summary-price-display').innerText
             };
 
+            // ── Required-field validation ────────────────────────────
+            var valName = document.getElementById('b-name') ? document.getElementById('b-name').value.trim() : '';
+            var valEmail = document.getElementById('b-email') ? document.getElementById('b-email').value.trim() : '';
+            var valMobile = document.getElementById('b-mobile') ? document.getElementById('b-mobile').value.trim() : '';
+            var valDate = document.getElementById('b-date') ? document.getElementById('b-date').value : '';
+
+            if (!valName || !valEmail || !valMobile || !valDate) {
+                var missing = [];
+                if (!valName)   missing.push('Full Name');
+                if (!valEmail)  missing.push('Email Address');
+                if (!valMobile) missing.push('Mobile Number');
+                if (!valDate)   missing.push('Preferred Date');
+                alert('Please fill in the required fields:\n\u2022 ' + missing.join('\n\u2022 '));
+                if (typeof submitBtn !== 'undefined' && submitBtn) { 
+                    submitBtn.innerText = (typeof origText !== 'undefined' ? origText : 'Send Reservation Request'); 
+                    submitBtn.disabled = false; 
+                }
+                return;
+            }
+            // ────────────────────────────────────────────────────────
             fetch("submit-booking.php", {
                 method: "POST",
                 headers: { 

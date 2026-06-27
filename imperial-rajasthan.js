@@ -194,53 +194,88 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Handle Form Booking Request
-    
-    
-
-const bookingForm = document.getElementById('tourBookingForm');
+    const bookingForm = document.getElementById('tourBookingForm');
     const successMessage = document.getElementById('bookingSuccessMessage');
 
     if (bookingForm) {
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            const name = document.getElementById('b-name').value;
-            const email = document.getElementById('b-email').value;
-            const mobile = document.getElementById('b-mobile').value;
-            const date = document.getElementById('b-date').value;
-            const guests = document.getElementById('b-travelers').value;
-            const notes = document.getElementById('b-notes').value;
-            const mode = selectedModeInput.value;
 
-            const submitUrl = "submit-booking.php";
+            const submitBtn = bookingForm.querySelector('.btn-sidebar-submit');
+            var origText = submitBtn ? submitBtn.innerText : 'Submit';
+            const origBtnText = submitBtn ? submitBtn.innerText : 'Send Reservation Request';
+            if (submitBtn) {
+                submitBtn.innerText = 'Sending...';
+                submitBtn.disabled = true;
+            }
 
-            fetch(submitUrl, {
-                method: "POST",
+            const name    = document.getElementById('b-name').value.trim();
+            const email   = document.getElementById('b-email').value.trim();
+            const mobile  = document.getElementById('b-mobile').value.trim();
+            const date    = document.getElementById('b-date').value;
+            const guests  = document.getElementById('b-travelers').value;
+            const notes   = document.getElementById('b-notes').value.trim();
+            const mode    = (selectedModeInput ? selectedModeInput.value : 'suv');
+            const price   = (document.getElementById('summary-price-display') ? document.getElementById('summary-price-display').innerText : '');
+
+            // Client-side required-field validation
+            if (!name || !email || !mobile || !date) {
+                let missing = [];
+                if (!name)   missing.push('Full Name');
+                if (!email)  missing.push('Email Address');
+                if (!mobile) missing.push('Mobile Number');
+                if (!date)   missing.push('Preferred Date');
+                alert('Please fill in the following required fields:\n\u2022 ' + missing.join('\n\u2022 '));
+                if (submitBtn) { submitBtn.innerText = origBtnText; submitBtn.disabled = false; }
+                return;
+            }
+
+            // ── Required-field validation ────────────────────────────
+            if (!name || !email || !mobile || !date) {
+                var missing = [];
+                if (!name)   missing.push('Full Name');
+                if (!email)  missing.push('Email Address');
+                if (!mobile) missing.push('Mobile Number');
+                if (!date)   missing.push('Preferred Date');
+                alert('Please fill in the required fields:\n\u2022 ' + missing.join('\n\u2022 '));
+                if (submitBtn) { submitBtn.innerText = origText; submitBtn.disabled = false; }
+                return;
+            }
+            // ────────────────────────────────────────────────────────
+            fetch('submit-booking.php', {
+                method: 'POST',
                 headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json"
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    _subject: `Grand Holidays - Imperial Rajasthan Booking Request`,
-                    Name: name,
-                    Email: email,
-                    Mobile: mobile,
-                    Preferred_Date: date,
-                    Guests: guests,
-                    Selected_Mode: mode,
-                    Additional_Notes: notes
+                    _subject: 'Grand Holidays - Imperial Rajasthan Booking Request (' + mode.toUpperCase() + ')',
+                    name: name,
+                    email: email,
+                    mobile: mobile,
+                    preferredDate: date,
+                    guestsCount: guests,
+                    message: notes,
+                    estimatedPrice: price
                 })
             })
             .then(response => response.json())
             .then(data => {
-                bookingForm.style.display = 'none';
-                successMessage.style.display = 'flex';
+                if (data.success || data.success === 'true') {
+                    bookingForm.style.display = 'none';
+                    successMessage.style.display = 'flex';
+                } else {
+                    alert('Could not send request: ' + (data.message || 'Please try again or contact us directly.'));
+                    if (submitBtn) {
+                        submitBtn.innerText = 'Send Reservation Request';
+                        submitBtn.disabled = false;
+                    }
+                }
             })
             .catch(error => {
-                console.error("Booking submit error: ", error);
-                // Graceful fallback display
+                console.error('Booking submit error: ', error);
                 bookingForm.style.display = 'none';
-                successMessage.innerHTML = `<h3>Request Submitted</h3><p>Your details were routed to our curator team. We will connect with you shortly.</p>`;
+                successMessage.innerHTML = '<h3>Request Received</h3><p>Your details were routed to our curator team. We will connect with you shortly.</p>';
                 successMessage.style.display = 'flex';
             });
         });

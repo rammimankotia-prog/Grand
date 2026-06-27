@@ -63,9 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $notes = strip_tags(trim($data["message"] ?? $data["notes"] ?? ''));
     $estimatedPrice = strip_tags(trim($data["estimatedPrice"] ?? ''));
 
-    if (empty($name) || empty($email) || empty($phone)) {
+    if (empty($name) || empty($email) || empty($phone) || empty($date)) {
         http_response_code(400);
-        echo json_encode(["success" => false, "message" => "Please fill all required fields (Name, Email, Phone)."]);
+        echo json_encode(["success" => false, "message" => "Please fill all required fields: Name, Email, Mobile Number, and Preferred Date."]);
         exit;
     }
 

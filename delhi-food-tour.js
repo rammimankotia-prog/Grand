@@ -214,6 +214,30 @@ const bookingForm = document.getElementById('tourBookingForm');
 
             const submitUrl = "submit-booking.php";
 
+            // Client-side required-field validation
+            if (!name || !email || !mobile || !date) {
+                let missing = [];
+                if (!name)   missing.push('Full Name');
+                if (!email)  missing.push('Email Address');
+                if (!mobile) missing.push('Mobile Number');
+                if (!date)   missing.push('Preferred Date');
+                alert('Please fill in the following required fields:\n\u2022 ' + missing.join('\n\u2022 '));
+                if (submitBtn) { submitBtn.innerText = origBtnText; submitBtn.disabled = false; }
+                return;
+            }
+
+            // ── Required-field validation ────────────────────────────
+            if (!name || !email || !mobile || !date) {
+                var missing = [];
+                if (!name)   missing.push('Full Name');
+                if (!email)  missing.push('Email Address');
+                if (!mobile) missing.push('Mobile Number');
+                if (!date)   missing.push('Preferred Date');
+                alert('Please fill in the required fields:\n\u2022 ' + missing.join('\n\u2022 '));
+                if (submitBtn) { submitBtn.innerText = origText; submitBtn.disabled = false; }
+                return;
+            }
+            // ────────────────────────────────────────────────────────
             fetch(submitUrl, {
                 method: "POST",
                 headers: {
