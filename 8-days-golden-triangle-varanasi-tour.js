@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         flight: {
             duration: "8 Days / 7 Nights",
             cities: "Delhi - Agra - Jaipur - Varanasi",
-            price: "₹22,050 per person",
+            price: "₹39,800 per person",
             shortDesc: "Experience the majestic Golden Triangle combined with the spiritual heart of India. This luxury itinerary includes private chauffeured drives and short domestic flights, allowing you to absorb India's beauty and profound spirituality at your own pace.",
             highlight: "✈️ Includes domestic flights (Jaipur - Varanasi, Varanasi - Delhi), dedicated private car for city tours, and an unforgettable sunrise boat ride on the sacred Ganges.",
             itinerary: [
