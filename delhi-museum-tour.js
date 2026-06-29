@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax2: {
             duration: "Half Day (10:00 AM - 2:00 PM)",
             cities: "Museum District, Delhi",
-            price: "₹15,000 Total",
+            price: "₹3,800 Total",
             shortDesc: "Explore Delhi's premier archives at a relaxed, customized pace. Perfect for couples or solo travelers who desire a tailored private tour of the National Museum, Rail Museum, and Dolls Museum in a private AC Sedan.",
             highlight: "🏛️ Includes private Sedan transfers (Dzire / Etios), professional local guide, entry tickets to all three museums, and bottled mineral water.",
             itinerary: [
@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Pickup and drop-off from Hotel Godwin Deluxe or Delhi NCR",
                 "Private air-conditioned Sedan (Toyota Etios / Maruti Dzire or similar)",
                 "Services of a professional local English-speaking guide",
-                "All museum and monument admission tickets",
                 "Bottled mineral water and refreshments",
                 "All toll taxes, parking, and driver allowances"
             ],
             exclusions: [
+                "All museum and monument admission tickets",
                 "Lunches and dining expenses",
                 "Camera or photography fees inside museums (where applicable)",
                 "Personal expenses and tips",
@@ -44,11 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Pickup and drop-off from Hotel Godwin Deluxe or Delhi NCR",
                 "Private air-conditioned SUV (Toyota Innova Crysta)",
                 "Services of a professional local English-speaking guide",
-                "All museum and monument admission tickets",
                 "Bottled mineral water and refreshments",
                 "All toll taxes, parking, and driver allowances"
             ],
             exclusions: [
+                "All museum and monument admission tickets",
                 "Lunches and dining expenses",
                 "Camera or photography fees inside museums (where applicable)",
                 "Personal expenses and tips",
@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Pickup and drop-off from Hotel Godwin Deluxe or Delhi NCR",
                 "Private air-conditioned Minivan (Tempo Traveller)",
                 "Services of a professional local English-speaking guide",
-                "All museum and monument admission tickets",
                 "Bottled mineral water and refreshments",
                 "All toll taxes, parking, and driver allowances"
             ],
             exclusions: [
+                "All museum and monument admission tickets",
                 "Lunches and dining expenses",
                 "Camera or photography fees inside museums (where applicable)",
                 "Personal expenses and tips",
@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Private air-conditioned luxury Mini-Coach (15-Seater)",
                 "Services of a professional local English-speaking guide",
                 "Dedicated tour coordinator to manage group flow",
-                "All museum and monument admission tickets",
                 "Bottled mineral water, soft drinks, and light snacks",
                 "All toll taxes, priority monument parking, and driver fees"
             ],
             exclusions: [
+                "All museum and monument admission tickets",
                 "Lunches and dining expenses",
                 "Camera or photography fees inside museums (where applicable)",
                 "Personal expenses and tips",
