@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax4: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "₹23,000 Total",
+            price: "₹8,800 for 4 Persons",
             shortDesc: "Tailored for families or small groups of friends seeking spacious comfort. Stay at Hotel Godwin Deluxe, enjoy a gourmet breakfast in the Indian Grill Restaurant, and travel together in a premium SUV (Toyota Innova Crysta) with your personal guide.",
             highlight: "🚘 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, premium Toyota Innova Crysta SUV, dedicated licensed guide, rickshaw ride, and all toll/parking fees.",
             itinerary: [
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax6: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "₹32,000 Total",
+            price: "₹10,600 for 6 Persons",
             shortDesc: "Ideal for medium-sized families or corporate groups wishing to explore Delhi together in luxury. Includes hotel lodging, breakfast, private hotel pickup and drop-off, and a premium AC Minivan (Tempo Traveller).",
             highlight: "🚐 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, luxury AC Minivan, dedicated licensed guide, rickshaw ride, and all toll/parking fees.",
             itinerary: [
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax10: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "₹45,000 Total",
+            price: "₹12,400 for 10 Pax",
             shortDesc: "Our signature package for larger groups or corporate delegations. Includes lodging at Hotel Godwin Deluxe, breakfast at the Indian Grill Restaurant, private pickup and drop-off, a premium AC Mini-Coach, and dedicated coordinators.",
             highlight: "🚌 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, luxury AC Mini-Coach, licensed guide, and tour coordinator.",
             itinerary: [
