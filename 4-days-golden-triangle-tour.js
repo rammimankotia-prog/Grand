@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-\n
+
     // Form Booking Handler
     const bookingForm = document.getElementById('tourBookingForm');
     const successMessage = document.getElementById('bookingSuccessMessage');
@@ -173,4 +173,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-\n});\n
+});
