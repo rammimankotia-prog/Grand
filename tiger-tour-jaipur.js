@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         car: {
             duration: "5 Days / 4 Nights",
             cities: "Jaipur - Ranthambore",
-            price: "On Request",
+            price: "₹32,500 for 2 Persons",
             shortDesc: "Experience the ultimate contrast of Rajasthan: the royal grandeur of Jaipur's palaces and the thrilling wilderness of Ranthambore, home to the magnificent Royal Bengal Tiger.",
             highlight: "🐅 Includes private premium A/C transport, comfortable hotel stays, and daily breakfast.",
             itinerary: [
