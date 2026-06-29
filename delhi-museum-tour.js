@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax4: {
             duration: "Half Day (10:00 AM - 2:00 PM)",
             cities: "Museum District, Delhi",
-            price: "₹23,000 Total",
+            price: "₹6,000 Total",
             shortDesc: "Perfect for families or small groups. Travel together in a private AC SUV (Innova Crysta) to explore Delhi's premier museum circuit with your dedicated guide.",
             highlight: "🚙 Includes private SUV transfers (Toyota Innova Crysta), professional local guide, entry tickets to all three museums, and bottled mineral water.",
             itinerary: [
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax6: {
             duration: "Half Day (10:00 AM - 2:00 PM)",
             cities: "Museum District, Delhi",
-            price: "₹32,000 Total",
+            price: "₹8,000 Total",
             shortDesc: "Spacious and comfortable. Travel in a private AC Tempo Traveller to tour the National Museum, Rail Museum, and Dolls Museum with your family and dedicated guide.",
             highlight: "🚐 Includes private AC Minivan (Tempo Traveller), professional local guide, entry tickets to all three museums, and bottled mineral water.",
             itinerary: [
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pax10: {
             duration: "Half Day (10:00 AM - 2:00 PM)",
             cities: "Museum District, Delhi",
-            price: "₹45,000 Total",
+            price: "₹12,000 Total",
             shortDesc: "Our signature group curation. Travel in a private AC Minibus with a dedicated guide and tour coordinator ensuring a seamless, premium educational experience.",
             highlight: "🚌 Includes private luxury AC Coach, tour coordinator + professional guide, entry tickets to all three museums, and onboard refreshments.",
             itinerary: [
