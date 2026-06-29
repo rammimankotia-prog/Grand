@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
         pax2: {
             duration: "8 Hours / 80 Km",
             cities: "Old & New Delhi",
-            price: "₹15,000 Total",
-            shortDesc: "Immerse yourself in Delhi's historical heritage at a relaxed, customized pace. Perfect for couples or solo travelers who desire a tailored private tour of Delhi staying at Hotel Godwin Deluxe, with a premium AC Sedan, a dedicated guide, and flexible itinerary pacing.",
-            highlight: "🚗 Includes 1 night stay at Hotel Godwin Deluxe, gourmet breakfast in the Indian Grill Restaurant, private pickup & drop-off at Hotel Godwin Deluxe, private AC Sedan (Maruti Dzire or Toyota Etios), dedicated licensed English-speaking historian guide, traditional rickshaw ride in Chandni Chowk, mineral water, and all toll/parking fees.",
+            price: "₹4,800 for 2 Persons",
+            shortDesc: "Immerse yourself in Delhi's historical heritage at a relaxed, customized pace. Perfect for couples or solo travelers who desire a tailored private tour of Delhi with a premium AC Sedan, a dedicated guide, and flexible itinerary pacing. Hotel Godwin Deluxe Stay is available at an extra cost of ₹4,400 per night, inclusive of Buffet Breakfast.",
+            highlight: "🚗 Tour price is ₹4,800 for 2 persons. Private pickup & drop-off, private AC Sedan (Maruti Dzire or Toyota Etios), dedicated licensed English-speaking historian guide, traditional rickshaw ride in Chandni Chowk, mineral water, and all toll/parking fees. 🏨 Hotel Godwin Deluxe Stay is on Extra Cost @ ₹4,400 per Night with Buffet Breakfast.",
             itinerary: [
                 { time: "08:00 AM", title: "Breakfast at Indian Grill Restaurant", desc: "Enjoy a delicious complimentary breakfast at the Indian Grill Restaurant inside Hotel Godwin Deluxe before embarking on your tour." },
                 { time: "09:00 AM", title: "Pickup from Hotel Godwin Deluxe", desc: "Your private chauffeur and expert guide greet you at the lobby of Hotel Godwin Deluxe to begin your sightseeing circuit in a premium AC Sedan." },
@@ -21,14 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 { time: "05:30 PM", title: "Drop-off at Hotel Godwin Deluxe", desc: "Your chauffeur transfers you back to Hotel Godwin Deluxe, concluding your curated sightseeing tour." }
             ],
             inclusions: [
-                "1 Night luxury stay at Hotel Godwin Deluxe, Delhi",
-                "Gourmet breakfast at the Indian Grill Restaurant (Hotel Godwin Deluxe)",
-                "Private pickup and drop-off from/to Hotel Godwin Deluxe",
+                "Private pickup and drop-off (from/to your hotel or meeting point)",
                 "Private AC Sedan (Dzire / Etios) for 8 Hours / 80 Km",
                 "Licensed English-speaking professional guide",
                 "Bespoke rickshaw ride in Chandni Chowk",
                 "Onboard mineral water and refreshments",
-                "All city toll taxes, fuel, and parking fees"
+                "All city toll taxes, fuel, and parking fees",
+                "Hotel Godwin Deluxe Stay on Extra Cost @ ₹4,400 per Night with Buffet Breakfast"
             ],
             exclusions: [
                 "Monument entry tickets and camera fees",
