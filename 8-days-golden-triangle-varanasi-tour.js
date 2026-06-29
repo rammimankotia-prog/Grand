@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             inclusions: [
                 "Pickup and drop-off at hotels and airports in Delhi",
-                "7 nights accommodation in a 3, 4, or 5-star hotel (as per preference)",
+                "7 nights accommodation in a 3-star hotel",
                 "Breakfast at Hotel",
                 "Round Trip Flight Ticket (Jaipur - Varanasi | Varanasi - Delhi)",
                 "All Sightseeing by private Air Conditioned Car",
