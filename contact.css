@@ -199,14 +199,160 @@
 
 /* ── RESPONSIVE ───────────────────────────────────────────── */
 @media (max-width: 1024px) {
-    .contact-layout-grid { grid-template-columns: 1fr; gap: 5rem; }
+    .contact-layout-grid { grid-template-columns: 1fr; gap: 4rem; }
+    .contact-layout-box { padding: 3rem 2.5rem; }
 }
+
+/* ── TABLET 768px ─────────────────────────────────────────── */
 @media (max-width: 768px) {
-    .contact-hero { padding: 8rem 2rem 5rem; }
-    .contact-layout-box { padding: 3rem 1.8rem; }
-    .faq-question { padding: 1.4rem 1.5rem; font-size: 0.9rem; }
-    .faq-answer { padding: 0 1.5rem; }
+
+    /* Hero — show it (mobile.css hides generic .contact-hero via hero-section;
+       we need to keep the contact-hero visible) */
+    .contact-hero {
+        display: flex !important;
+        min-height: auto !important;
+        padding: 6.5rem 1.4rem 3.5rem !important;
+    }
+    .contact-hero-content {
+        gap: 0.9rem !important;
+    }
+    .contact-badge {
+        font-size: 0.72rem !important;
+        letter-spacing: 3px !important;
+        padding: 0.4rem 1rem !important;
+    }
+    .contact-main-title {
+        font-size: clamp(1.9rem, 8vw, 3rem) !important;
+        line-height: 1.1 !important;
+        letter-spacing: -0.015em !important;
+    }
+    .contact-hero-subtitle {
+        font-size: 0.97rem !important;
+        line-height: 1.65 !important;
+        max-width: 100% !important;
+    }
+
+    /* Main section */
+    .contact-main-section { padding: 3rem 0 !important; }
+    .contact-layout-box {
+        padding: 2rem 1.3rem !important;
+        border-radius: 12px !important;
+    }
+    .contact-layout-grid { gap: 3rem !important; }
+
+    /* Section labels */
+    .contact-left-col .section-subtitle,
+    .contact-right-col .section-subtitle {
+        font-size: 0.72rem !important;
+        letter-spacing: 3px !important;
+    }
+    .block-title {
+        font-size: 1.5rem !important;
+        display: block !important;
+        width: 100% !important;
+    }
+    .block-desc {
+        font-size: 0.88rem !important;
+        margin-bottom: 1.8rem !important;
+    }
+
+    /* Office items */
+    .offices-details-list { gap: 1.4rem !important; }
+    .office-item {
+        gap: 1rem !important;
+        align-items: flex-start !important;
+    }
+    .office-icon {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.2rem !important;
+        flex-shrink: 0 !important;
+    }
+    .office-info h4 {
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+    }
+    .office-info p,
+    .office-detail-link {
+        font-size: 0.82rem !important;
+        line-height: 1.6 !important;
+        word-break: break-word !important;
+    }
+    .office-wa-link {
+        font-size: 0.88rem !important;
+        display: inline-block !important;
+        margin-top: 0.3rem !important;
+    }
+
+    /* Form */
+    .contact-page-form { gap: 1.4rem !important; }
+    .contact-page-form input,
+    .contact-page-form select,
+    .contact-page-form textarea,
+    .form-input {
+        font-size: 1rem !important;
+        padding: 0.95rem 1rem !important;
+    }
+    .btn-submit {
+        width: 100% !important;
+        font-size: 0.85rem !important;
+        padding: 1rem 1.5rem !important;
+        justify-content: center !important;
+    }
+
+    /* FAQ */
+    .contact-faq-section { padding: 3.5rem 0 5rem !important; }
+    .faq-container { margin-top: 2rem !important; }
+    .faq-question {
+        padding: 1.2rem 1.2rem !important;
+        font-size: 0.88rem !important;
+        line-height: 1.5 !important;
+        gap: 0.8rem !important;
+    }
+    .faq-question span:first-child {
+        flex: 1 !important;
+        min-width: 0 !important;
+        word-break: break-word !important;
+    }
+    .faq-icon {
+        font-size: 1.2rem !important;
+        margin-left: 0.8rem !important;
+        flex-shrink: 0 !important;
+    }
+    .faq-answer { padding: 0 1.2rem !important; }
+    .faq-answer p {
+        font-size: 0.88rem !important;
+        padding-bottom: 1.4rem !important;
+        line-height: 1.75 !important;
+    }
 }
+
+/* ── SMALL MOBILE 480px ───────────────────────────────────── */
+@media (max-width: 480px) {
+    .contact-hero {
+        padding: 6rem 1rem 3rem !important;
+    }
+    .contact-main-title {
+        font-size: clamp(1.7rem, 9vw, 2.4rem) !important;
+    }
+    .contact-layout-box {
+        padding: 1.6rem 1rem !important;
+        border-radius: 10px !important;
+    }
+    .office-item { flex-direction: row !important; }
+    .contact-page-form input,
+    .contact-page-form select,
+    .contact-page-form textarea,
+    .form-input {
+        font-size: 0.95rem !important;
+    }
+    .faq-question {
+        padding: 1rem !important;
+        font-size: 0.85rem !important;
+    }
+    .faq-answer { padding: 0 1rem !important; }
+}
+
 
 /* ══════════════════════════════════════════════
    FORCE WHITE THEME — contact page form inputs
