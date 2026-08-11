@@ -70,15 +70,20 @@ body.dark-mode {
 }
 
 /* Navigation */
+body.dark-mode .main-header,
 body.dark-mode .main-header.scrolled {
   background: var(--theme-nav-bg);
   border-bottom-color: var(--theme-border);
 }
+body.dark-mode .main-header .logo-main,
+body.dark-mode .main-header .logo-sub,
 body.dark-mode .main-header.scrolled .logo-main,
 body.dark-mode .main-header.scrolled .logo-sub {
   color: var(--theme-ink);
 }
+body.dark-mode .main-header .nav-link,
 body.dark-mode .main-header.scrolled .nav-link { color: var(--theme-ink-soft); }
+body.dark-mode .main-header .mobile-nav-toggle .bar,
 body.dark-mode .main-header.scrolled .mobile-nav-toggle .bar { background: var(--theme-ink); }
 
 /* Mobile Nav Drawer */
