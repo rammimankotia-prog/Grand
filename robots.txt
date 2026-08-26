@@ -1,8 +1,6 @@
-# robots.txt — Grand Holiday Tours
-# https://grandholidaytours.com/robots.txt
-
 User-agent: *
+Disallow: /*?*
+Disallow: /admin/
 Allow: /
 
-# Sitemap location
 Sitemap: https://grandholidaytours.com/sitemap.xml
